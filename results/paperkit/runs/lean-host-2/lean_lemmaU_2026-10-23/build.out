@@ -1,0 +1,43 @@
+bh-modes Lemma U Lean layer (BHM-052): build and audit, started 20261118T183119Z
+lean: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+
+== 1. sources
+ok   BHModesLemmaU.lean e788d32421f9066a1aa1de052b42d6fd577a3808482cbdbca5bb465ec5eef2d6
+scan for sorry / admit / axiom / native_decide / implemented_by / extern (informational):
+  (no occurrence)
+
+== 2. compile
+BHModesLemmaU: exit=0 seconds=4 errors=0 warnings=0 sorry=0
+
+== 3. axioms
+theorem headers: 10; #print axioms entries: 10; exit=0; axioms outside {propext, Classical.choice, Quot.sound}: none
+  'BHModes.LemmaU.split' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.Pos_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.kappa_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.Pos_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.Neg_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.corner_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.lemmaU' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.lemmaU_ell' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.LemmaU.xH_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== 4. checker negative controls (false proofs; each must be rejected)
+NC1_two_plus_two: exit=1 errors=4  (theorem bogus : (2:ℝ) + 2 = 5 := by norm_num)
+NC2_false_margin: exit=1 errors=3  (theorem bogus (l : ℝ) : l * (l - 3) / 9 + 1 / 4 = (2 * l + 3) ^ 2 / 36 := by ring)
+
+== 5. mutations (registration: LEMMAU_MUTATION_REGISTRATION.md sha256 b4f9104abe79c8eefe4826aaad38423f6561eb9803495cdeb34014616809f526, logged 2026-11-18T18:31:26Z, before the first run)
+{"id": "LUM1", "file": "BHModesLemmaU.lean", "expected_decl": "split", "exit": 1, "errors": 1, "failing_decls": ["split"], "first_error": [42, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 29, "pass": true}
+{"id": "LUM2", "file": "BHModesLemmaU.lean", "expected_decl": "split", "exit": 1, "errors": 2, "failing_decls": ["Pos_zero", "split"], "first_error": [42, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 33, "pass": true}
+{"id": "LUM3", "file": "BHModesLemmaU.lean", "expected_decl": "split", "exit": 1, "errors": 2, "failing_decls": ["corner", "split"], "first_error": [42, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 37, "pass": true}
+{"id": "LUM4", "file": "BHModesLemmaU.lean", "error_text": {"kappa_identity": "linarith failed to find a contradiction"}, "error_text_found": true, "expected_decl": "kappa_identity", "exit": 1, "errors": 2, "failing_decls": ["kappa_identity", "lemmaU"], "first_error": [57, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 52, "pass": true}
+{"id": "LUM5", "file": "BHModesLemmaU.lean", "error_text": {"lemmaU": "linarith failed to find a contradiction"}, "error_text_found": true, "expected_decl": "lemmaU", "exit": 1, "errors": 1, "failing_decls": ["lemmaU"], "first_error": [92, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 78, "pass": true}
+{"id": "LUM6", "file": "BHModesLemmaU.lean", "error_text": {"lemmaU": "linarith failed to find a contradiction"}, "error_text_found": true, "expected_decl": "lemmaU", "exit": 1, "errors": 2, "failing_decls": ["lemmaU"], "first_error": [97, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 97, "pass": true}
+{"id": "LUM7", "file": "BHModesLemmaU.lean", "expected_decl": "lemmaU", "exit": 1, "errors": 1, "failing_decls": ["lemmaU"], "first_error": [101, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 79, "pass": true}
+{"id": "LUM8", "file": "BHModesLemmaU.lean", "expected_decl": "lemmaU", "exit": 1, "errors": 2, "failing_decls": ["lemmaU"], "first_error": [94, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 93, "pass": true}
+{"id": "LUM9", "file": "BHModesLemmaU.lean", "expected_decl": "corner", "exit": 1, "errors": 2, "failing_decls": ["corner", "corner_margin"], "first_error": [71, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 71, "pass": true}
+{"id": "LUM10", "file": "BHModesLemmaU.lean", "expected_decl": "lemmaU_ell", "exit": 1, "errors": 1, "failing_decls": ["lemmaU_ell"], "first_error": [116, "mod_cast has type"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 112, "pass": true}
+mutations failing as required: 10 / 10
+
+BHModesLemmaU: ALL CHECKS AS REQUIRED
+finished 20261118T183204Z

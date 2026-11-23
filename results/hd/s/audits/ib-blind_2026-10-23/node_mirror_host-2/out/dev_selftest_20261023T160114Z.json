@@ -1,0 +1,20 @@
+{
+ "gate": {
+  "load1": 0.0,
+  "nproc": 16,
+  "mem_available_gb": 121.44,
+  "requested": 2,
+  "w": 2,
+  "rule": "w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w",
+  "ok": true
+ },
+ "selftest": {
+  "ok": true
+ },
+ "mode": "selftest",
+ "cross_eval_random_P": {
+  "points": 20,
+  "mismatches": 0,
+  "ok": true
+ }
+}

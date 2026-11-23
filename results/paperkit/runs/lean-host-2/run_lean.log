@@ -1,0 +1,12 @@
+paper kit, Lean part: host host-2, Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release), start 2026-11-18T18:22:28Z
+lean_onset_2026-10-22: build.sh exit 0; BHModesOnset: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_p3_sdeformation_2026-10-22: build.sh exit 0; BHModesP3: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_lemmaU_2026-10-23: build.sh exit 0; BHModesLemmaU: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_p3_sdeformation_v2_2026-10-23: build.sh exit 0; BHModesP3: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_p3_sdeformation_v3_2026-10-23: build.sh exit 0; BHModesP3: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_p3_sdeformation_v4_2026-10-24: build.sh exit 0; BHModesP3: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_z_2026-10-26: build.sh exit 0; BHModesZ: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+lean_z_d_2026-10-26: build.sh exit 0; BHModesZd: ALL CHECKS AS REQUIRED (as archived); log identical after masking times
+end 2026-11-18T18:46:57Z
+lean: KIT PASS
+lean exit 0

@@ -1,0 +1,8 @@
+none: VERIFIED
+nc-ell2: REJECT: E l=2
+nc-strict: REJECT: E l=3
+nc-bump: REJECT: E l=4
+td-coeff: REJECT: E0, E l=3
+td-verifier: REJECT: KAT
+KIT FAIL
+elementary kit exit 1

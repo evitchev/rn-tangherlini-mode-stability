@@ -1,0 +1,22 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: FAIL  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, False]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: FAIL  eps_n/mu: sign*p = -5 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: FAIL  T(zeta, 0) = -49055445024768*zeta - 17519801794560; minus the pencil limit: -70079207178240*zeta - 21562832977920
+CORNER: PASS  K(0, sigma) = -17519801794560*sigma - 49055445024768; minus sigma T(1/sigma, 0): 0
+FIRST: FAIL  M(0, 0) = 0; M_z(0, 0) = -49055445024768; K(0, 0) = -49055445024768; C0 eps_d(0)^2 R(0)^2 L(0) = 21023762153472 (C0 = 11501568)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: FAIL  27 points, seed 9004; mismatches at [['7469/10000', '4623/50000'], ['1491/2000', '633/250000'], ['4899/10000', '6027/62500'], ['1317/10000', '441/125000'], ['951/10000', '291/62500']]
+POS-O: FAIL  POS-O: sign*p = -49613569650062544172713407129901268575/618970019642690137449562112 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -19662576823919178765/33554432 <= 0 at (t, mu) = (0, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -17519801794560 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = -49055445024768 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C

@@ -1,0 +1,51 @@
+{
+ "3": {
+  "ok": true,
+  "splitting": "exact",
+  "K>0": "True",
+  "G>0": "True",
+  "mu_lo": "11/100"
+ },
+ "4": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "103/1000"
+ },
+ "5": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "49/500"
+ },
+ "6": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "47/500"
+ },
+ "7": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "91/1000"
+ },
+ "8": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "89/1000"
+ },
+ "9": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "87/1000"
+ },
+ "10": {
+  "ok": true,
+  "strict": "True",
+  "nodes": "1",
+  "mu_lo": "43/500"
+ }
+}

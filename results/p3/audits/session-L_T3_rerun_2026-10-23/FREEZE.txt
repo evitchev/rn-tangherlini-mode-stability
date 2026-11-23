@@ -1,0 +1,3 @@
+code/p3rerun.py sha256 9edeb8b155b57ce173c4f6888680cff891768ee37d48f7b8731d13ee59268e07
+frozen 2026-10-23T04:38:40Z (UTC), after the development run (out/dev.out: helper self-tests, KA1-KA4 PASS, every code path on a synthetic P)
+the next execution is the run of record, the first on T3 data; any later change makes a new, labelled run

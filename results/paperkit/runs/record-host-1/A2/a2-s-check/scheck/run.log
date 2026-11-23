@@ -1,0 +1,3 @@
+X0: PASS  computed {'A2-S lower end': '0.98937', 'T3': ['0.97277', '0.99019'], 'T3 upper end, 8 decimals truncated': '0.99019883'}; registered {'A2-S lower end': '0.98937', 'T3': ['0.97277', '0.99019'], 'T3 upper end, 8 decimals truncated': '0.99019883'}
+X1: PASS  this run's main record equals BHM-101's after removing timing, provenance, archive_sha256: True; differing keys []
+VERIFIED

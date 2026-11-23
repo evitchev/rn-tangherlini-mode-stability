@@ -1,0 +1,22 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: FAIL  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [False, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 21023762153472*zeta + 4043031183360; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 4043031183360*sigma + 21023762153472; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 21023762153472; K(0, 0) = 21023762153472; C0 eps_d(0)^2 R(0)^2 L(0) = 21023762153472 (C0 = 11501568)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 1430118475420914963012321211714398693153/154534871901153721801634742272
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 16912282230659198108486848751328055754588160496896104945175/730750818665451459101842416358141509827966271488
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 16912282230659198108486848751328055754588160496896104945175/22835963083295358096932575511191922182123945984
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/16']; least Bernstein coefficient 11274967754582087266947241934029981425/154742504910672534362390528
+REJECT: COVER

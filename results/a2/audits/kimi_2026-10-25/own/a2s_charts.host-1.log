@@ -1,0 +1,11 @@
+gate: Den > 0 on [0, 1/8]: OK
+gate: eps_d > 0: True ; eps_n = 7 mu >= 0, = 0 only at mu = 0; so S > 0 for (z, mu) != (0, 0)
+gate: q(1/8)^2 = 2961/3025 = 0.978843 <= (99/100)^2: True
+gate DIV-T: NL(mu zeta, mu)/mu^2 polynomial: OK
+gate DIV-C: NL(z, z sigma)/z^2 polynomial: OK
+POS-O : (True, {'nodes': 1})
+POS-O': (True, {'nodes': 1})
+POS-T : (True, {'nodes': 1})
+POS-C : (True, {'nodes': 1})
+gate COVER inequalities: True
+A2-S: ALL OK

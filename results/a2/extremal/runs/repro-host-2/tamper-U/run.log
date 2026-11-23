@@ -1,0 +1,8 @@
+E0: FAIL  S5 (5.63b),(5.62b) at n=4 minus TARGET.md forms: U -delta*m**2*x**2 - m*x**2, H 0
+E1: PASS  m - (l-1)(l+4), 25+4m-(2l+3)^2, delta - 1/(5(l+4)): [0, 0, 0]
+E2: PASS  f - (1-x/2)^2, f(1), lim (r-1)^2/f - 1/9: [0, 0, 0]
+E3: FAIL  c(l) = (80*ell**4 + 240*ell**3 - 720*ell**2 - 2159*ell - 1)/(720*(ell + 3)**2); c - claimed = (ell - 1)/(720*ell**2 + 4320*ell + 6480)
+E4: FAIL  c + 1/4 - (2l-3)^2/36 = (ell - 1)/(720*ell**2 + 4320*ell + 6480)
+E5: FAIL  p analytic at 1, (r-1)^2 V/f^2 analytic at 1 for l >= 2, p(1) = 2, q(1) = c, indicial roots (l-3)/3 and -l/3: [True, True, True, True, False]; p(1) = 2, q(1) = (80*ell**4 + 240*ell**3 - 720*ell**2 - 2159*ell - 1)/(720*ell**2 + 4320*ell + 6480)
+flint: FAIL  l=2: c = -1333/6000 != claimed -2/9
+REJECT: E0, E3, E4, E5, flint

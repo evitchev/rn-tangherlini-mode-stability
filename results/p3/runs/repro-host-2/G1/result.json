@@ -1,0 +1,19 @@
+{
+ "claim": "results/p3/PREREG.md",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "782fc56",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "tier": "G1",
+ "timing": {
+  "t_total_s": 0.58
+ },
+ "verdict": "REJECT: G1: N > 0: sign*p = -91611446723164375610330156810731703766386070956724917/374144419156711147060143317175368453031918731001856 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)"
+}

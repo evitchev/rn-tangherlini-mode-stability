@@ -1,0 +1,114 @@
+{
+ "E1": [],
+ "E2": [
+  {
+   "ell": 2,
+   "failure": "F: sign*p = -4518574272331731/10000000000 <= 0 at (t, mu) = (1/2, 1987/2000)  (a counterexample)",
+   "n": 6,
+   "q_hi": "1/10"
+  }
+ ],
+ "E3": [],
+ "L_EL": {
+  "5": 4,
+  "6": 5,
+  "7": 6,
+  "8": 6,
+  "9": 7
+ },
+ "bands": {
+  "D=10 l=3": [
+   "0.491294065310271",
+   "490/1000"
+  ],
+  "D=10 l=4": [
+   "0.921402689606592",
+   "920/1000"
+  ],
+  "D=10 l=5": [
+   "0.962330726004671",
+   "961/1000"
+  ],
+  "D=11 l=4": [
+   "0.898980683353904",
+   "897/1000"
+  ],
+  "D=11 l=5": [
+   "0.930967303640908",
+   "929/1000"
+  ],
+  "D=11 l=6": [
+   "0.969856860225322",
+   "968/1000"
+  ],
+  "D=7 l=2": [
+   "0.949691435450051",
+   "948/1000"
+  ],
+  "D=7 l=3": [
+   "0.978974227897648",
+   "977/1000"
+  ],
+  "D=8 l=3": [
+   "0.945000892435492",
+   "944/1000"
+  ],
+  "D=8 l=4": [
+   "0.984607646581368",
+   "983/1000"
+  ],
+  "D=9 l=3": [
+   "0.922249047654215",
+   "921/1000"
+  ],
+  "D=9 l=4": [
+   "0.953118911659811",
+   "952/1000"
+  ],
+  "D=9 l=5": [
+   "0.988544342135894",
+   "987/1000"
+  ]
+ },
+ "checks": {
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- = m + n(n+1)x/2 + n(n+1) m delta x/2: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "NC D=8 l=2 q<=1/10": {
+   "detail": "F: sign*p = -4518574272331731/10000000000 <= 0 at (t, mu) = (1/2, 1987/2000)  (a counterexample)",
+   "ok": false
+  },
+  "PARAM4": {
+   "detail": "param_n(4, l) = onset.param(l), l = 2..5: [True, True, True, True]",
+   "ok": true
+  }
+ },
+ "claim": "results/hd/elementary/PREREG.md, HD-E (E1-E3)",
+ "control": "nc-zero",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "6fe9689",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "qmax": "99/100",
+ "timing": {
+  "NC D=8 l=2 q<=1/10": 0.6,
+  "t_total_s": 0.7
+ },
+ "verdict": "REJECT: NC D=8 l=2 q<=1/10"
+}

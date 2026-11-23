@@ -1,0 +1,60 @@
+{
+ "audit": "bh-modes exact onset (BHM-017), O1-O5",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-22",
+ "brief_sha256": "318e709c00a91cb807dc4ef4652d73cba5101264ead256c2c0ba293f27ee81df",
+ "code_commit_reproduced": "180824b",
+ "inputs": {
+  "D": 6,
+  "ell": 2,
+  "m": 6,
+  "parametrisation": "w = 7mu/(6+mu^2)"
+ },
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0",
+  "gmpy2": "2.3.1",
+  "mpmath": "1.3.0"
+ },
+ "verdicts": {
+  "O1": {
+   "PASS": true,
+   "g_factor": "1024 (mu+15) (10 mu^3 - 11 mu^2 + 228 mu - 45)",
+   "mu_star_interval_width": "7e-46",
+   "q_star": "0.97305643672362259818154625232076896511970417...",
+   "minpoly_q2": "3025 Y^3 - 31521 Y^2 + 99792 Y - 68796 (irreducible, unique real root)",
+   "flint_agrees": true
+  },
+  "O2": {
+   "PASS": true,
+   "method": "my Bernstein; tau=1/16, mu_c=21/100; R1,R2,R3 each 1 node"
+  },
+  "O3": {
+   "PASS": true,
+   "method": "Sturm count 1 + g(0) = -691200"
+  },
+  "O4": {
+   "PASS": true,
+   "b": "4(4mu-3)/(mu+1); q(mu=3/4) = 3/5 exact"
+  },
+  "O5": {
+   "PASS": true
+  },
+  "controls": {
+   "perturbed_U_coeff": "REJECT (cubic no longer divides g; interval sign check fails)",
+   "moved_onset_1e-6": "REJECT (Sturm count 0 on shifted interval)"
+  },
+  "reproduction": {
+   "exit": 0,
+   "result": "KIT PASS; main result.json substantively identical to record"
+  },
+  "overall": "BHM-017 STANDS"
+ },
+ "timing": {
+  "own_checks_s": 2,
+  "kit_run_s": 209
+ },
+ "host": "host-0"
+}

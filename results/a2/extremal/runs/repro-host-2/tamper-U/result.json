@@ -1,0 +1,60 @@
+{
+ "checks": {
+  "E0": {
+   "detail": "S5 (5.63b),(5.62b) at n=4 minus TARGET.md forms: U -delta*m**2*x**2 - m*x**2, H 0",
+   "ok": false
+  },
+  "E1": {
+   "detail": "m - (l-1)(l+4), 25+4m-(2l+3)^2, delta - 1/(5(l+4)): [0, 0, 0]",
+   "ok": true
+  },
+  "E2": {
+   "detail": "f - (1-x/2)^2, f(1), lim (r-1)^2/f - 1/9: [0, 0, 0]",
+   "ok": true
+  },
+  "E3": {
+   "detail": "c(l) = (80*ell**4 + 240*ell**3 - 720*ell**2 - 2159*ell - 1)/(720*(ell + 3)**2); c - claimed = (ell - 1)/(720*ell**2 + 4320*ell + 6480)",
+   "ok": false
+  },
+  "E4": {
+   "detail": "c + 1/4 - (2l-3)^2/36 = (ell - 1)/(720*ell**2 + 4320*ell + 6480)",
+   "ok": false
+  },
+  "E5": {
+   "detail": "p analytic at 1, (r-1)^2 V/f^2 analytic at 1 for l >= 2, p(1) = 2, q(1) = c, indicial roots (l-3)/3 and -l/3: [True, True, True, True, False]; p(1) = 2, q(1) = (80*ell**4 + 240*ell**3 - 720*ell**2 - 2159*ell - 1)/(720*ell**2 + 4320*ell + 6480)",
+   "ok": false
+  },
+  "flint": {
+   "detail": "l=2: c = -1333/6000 != claimed -2/9",
+   "ok": false
+  }
+ },
+ "claim": "TARGET_A2.md section 3, checks E0-E5",
+ "control": "tamper-U",
+ "ell_max": 1000,
+ "facts": {
+  "H_minus_at_horizon": "(ell + 3)*(ell + 4)",
+  "c": "(80*ell**4 + 240*ell**3 - 720*ell**2 - 2159*ell - 1)/(720*(ell + 3)**2)",
+  "delta_q1": "1/(5*ell + 20)",
+  "indicial_roots": [
+   "ell/3 - 1",
+   "-ell/3"
+  ],
+  "margin": "(80*ell**4 + 240*ell**3 - 540*ell**2 - 1079*ell + 1619)/(720*(ell + 3)**2)"
+ },
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "8a19e06",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.149
+ },
+ "verdict": "REJECT: E0, E3, E4, E5, flint"
+}

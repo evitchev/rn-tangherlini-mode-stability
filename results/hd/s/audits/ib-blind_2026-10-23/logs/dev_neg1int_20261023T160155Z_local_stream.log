@@ -1,0 +1,34 @@
+2026-10-23T16:01:55Z
+host-2
+ 12:01:55 up 8 days, 20:01,  0 users,  load average: 0.44, 0.12, 0.08
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          97           0          25         121
+Swap:            49           0          49
+START 2026-10-23T16:01:55Z
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+GUARD tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS
+GATE {'load1': 0.44, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}
+{
+ "I1": "[0.1871709554704688776068838991783956820 +/- 4.34e-38]",
+ "I2": "[0.0215525859457038801379679700897760869 +/- 6.29e-38]",
+ "I3": "[0.0530298487829202339758351893630461447 +/- 5.27e-38]",
+ "I4": "[0.02539682539682539682539682539682539682 +/- 8.79e-39]",
+ "I4_exact": "8/315",
+ "I4_contains_exact": true,
+ "imag_ok": true,
+ "I1_plus_I2": "[0.208723541416172757744851869268171769 +/- 2.05e-37]",
+ "A3_unperturbed_negative": false,
+ "A": 10,
+ "Q_phi": "[-0.045244712552081210509116384700082199 +/- 4.94e-37]",
+ "Q_certified_negative": true,
+ "Q_le_minus_0p1_I3_minus_I4": true,
+ "Rayleigh_quotient_upper": "[-0.85319331641491598457780938561174797 +/- 6.77e-36]",
+ "q": "47/50",
+ "seconds": 0.01
+}
+END 2026-10-23T16:01:56Z
+EXIT=0
+2026-10-23T16:01:56Z
+host-2

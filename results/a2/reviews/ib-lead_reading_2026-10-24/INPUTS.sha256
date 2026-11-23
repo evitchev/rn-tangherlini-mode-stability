@@ -1,0 +1,36 @@
+# bh-modes files read for this reading, at commit 2416726 (git archive of HEAD, 2026-10-23 23:56:39 EDT); paths relative to the bh-modes root.
+167affa70456a621a9794f550f9cf66fe106b16fff176fcd5bb6b7add28ce590  outbox/2026-10-24-to-ib-lead-8.md
+e926d008a2cf4dc93ea578ed2025299eedcc8dd8a5cda4bfb3506477e2b501b1  results/a2/STAGE_REPORT.md
+c7dbbb67376e8bde8f20cda3b3422c5e0de74f753a5f94de43ed81057eeb4222  TARGET_A2_ADDENDUM_1.md
+d8207fbfa6b8cd157b5f792e806c2bea49da5ccabffec1bed29feb96beed9c5e  TARGET_A2.md
+9dfbc64602583872959e12b684b9138e2352dd09963dc14840cb1389e4c7dd27  TARGET.md
+a034f0091c4ce7da44f9759d4195c7ab0162d55bce13e32f7b953ee8bc491265  results/a2/s/PREREG.md
+081bae717ad6bcc226631efa66ecc769bf4a12818865c210b481e7dab9e860c4  results/a2/s/RESULT.md
+002136c05167e89e7fedf956128d66f4cb2a82d6feb578379244bdd2983c0f0a  results/a2/elementary/PREREG.md
+07fce2fc4278f5c76db0a069a27092dbdf5bc798dd91ec16ceb7a0d37721616d  results/a2/elementary/RESULT.md
+dba6c8815b3e8a7da3c7ea149664c0f2c0c89defede1cbb59a524da2e85f715e  results/a2/pilot/PREREG.md
+253d75b804681468315b5b7d7a3b26fad768ab7c885e3556c9d72d082606fae6  results/a2/pilot/RESULT.md
+26501fe6f55dfd465aceca0a1be6cd4c6ed811909353c0217fc56b9402703cee  results/a2/pilot/runs/record/main/result.json
+779fa2acbbdce7d0b887c48cbfe7259d83b6bbf0c281ccceca5838bdf2be51db  code/a2/scert.py
+9290579a6aa26b05c31327e5f27603f8def86aa30622c272f5fa3091bf2e6541  kit/a2/run_s.sh
+824216cdd4206e0376b592fb7f9048c0da10807db7cdb0eb3ad3a14f51a9f480  kit/a2/run_elementary.sh
+fc1b5df468bad51a22bd9a9024cb5e5e6375ab3a271e08e135f914d320e2baa7  kit/a2/run_pilot.sh
+b77e92151ca9d7f668bdcd9fb1bcdbcec0feadb27b74bc81d1bc63eeefc57014  code/hd/elementary.py
+17954fc041e1119322b5786540308b8598a4d2a103e18b387ba7686329d7b55c  code/p3/scert.py
+c479f3119e6b08c72cd882d251ec77d9a0f65b2b1a9d7e9e07bf9a6a77c56583  code/compare_runs.py
+1234ce3b9e026d643747d8a2106136b008419246728d9677d5c0b5195fb8f77f  ENVIRONMENT.md
+b1cc25e994509ec26b6458396917687afd106bf3e9279c15be15993eb8c3d726  CHARTER.md
+5f4662f0a3a641abfbba9186e8938bbff16035098d34de794fc5db9f5996989e  RULES.md
+03f12306ac1ad2fb9f2f0969618efa685d4c9fd5aefeea4ecb8e6bdf809b4980  REGISTRY.md
+6c296b494ae11adcbdc847c4ebc82ee893b3f308f03a685ddf3d21072133fa3e  [a record of another line of this project]
+82cdb25c3d8bc00510b47270b5fa14e1aa28e410086989db25fe4db6a2e92fea  results/a2/s/runs/record/none/result.json
+ec994f231dd34ec9739bce1c34785cf82b937b46ef3f873dcb8be121dee6b91a  results/a2/s/runs/record/nc-a2/result.json
+5c5053145be4bdd02aa450919b61eba7ddd882fcc9279cee91e63ddfc3679d8e  results/a2/s/runs/record/nc-zm/result.json
+b806f71bd5567298bc30d5677c11c866891c0574727392ed67450101e8fb658c  results/a2/s/runs/record/nc-res/result.json
+ec72090536e16c26c4d56b9c05a30418e7cd1408c314bd2e31dba2e5beef9293  results/a2/s/runs/record/nc-bound/result.json
+2f6520cb29d7f8cda7ac69d9d4b32eb2e01051c00e75cf999d2746d7d5f373a4  results/a2/s/runs/record/td-coeff/result.json
+a30903c94ec4fd803e668fa885ae87521f540b77ad60cdb4eef013fb4292d851  results/a2/s/runs/record/td-verifier/result.json
+d628386c6ffa1acbc785107a0e9f411d52b6ee1c15695f136d1e09c2ddefd3ec  results/a2/s/runs/record/td-chart/result.json
+de13957efb74baf5c117cc7a07825a332244c68fd3d88d05c37f7fcf5554a1a0  results/a2/s/runs/record/td-cover/result.json
+3a2dcd68979434a8bc398fa37fe6a92bc85276aedccc0db854f755ffa2051f0a  lean/lean_p3_sdeformation_v3_2026-10-23/lean/BHModesP3.lean   (read via git show 2416726:)
+65ab0d5540d2459b1e38e9a12082b41461afd617aa24459ddd9e1fdb44b00829  results/p3/RESULT_ADDENDUM_1.md   (read via git show 2416726:)

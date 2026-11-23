@@ -1,0 +1,6 @@
+deg_z: 68
+deg_mu: 0
+boxes: {'T1: L > 0': 1, 'T1: N > 0': 3}
+t_design_s: 0.41
+t_verify_s: 0.22
+VERIFIED

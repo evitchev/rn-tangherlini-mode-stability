@@ -1,0 +1,237 @@
+{
+ "band": "D=10 l=3",
+ "boxes": [
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "299/2500",
+    "329/2500"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "329/2500",
+    "181/1250"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "181/1250",
+    "1593/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1593/10000",
+    "1753/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1753/10000",
+    "1929/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1929/10000",
+    "1061/5000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1061/5000",
+    "467/2000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "467/2000",
+    "2569/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "2569/10000",
+    "1413/5000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1413/5000",
+    "3109/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "3109/10000",
+    "171/500"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "171/500",
+    "1881/5000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1881/5000",
+    "4139/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "4139/10000",
+    "4553/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "4553/10000",
+    "5009/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "5009/10000",
+    "551/1000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "551/1000",
+    "6061/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "6061/10000",
+    "1667/2500"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1667/2500",
+    "1467/2000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1467/2000",
+    "8069/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "8069/10000",
+    "8301/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  }
+ ],
+ "checks": {
+  "SEAL": true,
+  "X2": true
+ },
+ "claim": "results/hd/s/PREREG_ADDENDUM_1.md, X2",
+ "control": "none",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "record_sha256": "16768210a712af0b134df297adb45627673d2f2e7c82809cdd4b90293e76d937",
+ "timing": {
+  "t_total_s": 22.92
+ },
+ "verdict": "VERIFIED"
+}

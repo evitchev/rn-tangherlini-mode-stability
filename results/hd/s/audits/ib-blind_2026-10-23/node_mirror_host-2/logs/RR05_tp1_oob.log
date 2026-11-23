@@ -1,0 +1,20 @@
+2026-10-23T16:18:49Z
+host-2
+ 12:18:49 up 8 days, 20:18,  0 users,  load average: 0.41, 0.53, 0.50
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          95           0          27         121
+Swap:            49           0          49
+START 2026-10-23T16:18:49Z mode tp1_oob
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+GUARD tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS
+GATE {'load1': 0.41, 'nproc': 16, 'mem_available_gb': 121.44, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}
+BERNSTEIN SELF-TEST True pos leaves 16 neg failure {'corner': ('5/16', '1/2'), 'value': '-163/288000'}
+pieces built in 0.2s; deg_z(UD)=16 deg_mu(UD)=8 deg_z(G)=8 deg_mu(G)=6
+OOB cell certified: True [(24, 0.02, 0.0, True)]
+TP1 (oob): {'P_plus_Delta': True, 'P_minus_20': True, 'Delta': '121/1000', 'caught': True}
+END 2026-10-23T16:18:57Z
+EXIT=0
+2026-10-23T16:18:57Z
+host-2

@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "[run-folder]/e60de7f/code/a1/p1.py", line 275, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "[run-folder]/e60de7f/code/a1/p1.py", line 267, in main
+    dump_json(record, f"{a.out}/result.json")
+  File "[run-folder]/e60de7f/code/qnm1c/common.py", line 122, in dump_json
+    json.dump(obj, fh, indent=1, sort_keys=True)
+  File "[python]/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "[python]/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "[python]/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "[python]/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "[python]/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "[python]/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "[python]/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type BooleanTrue is not JSON serializable

@@ -1,0 +1,64 @@
+BHModesA1.lean:77:2: error: ring failed, ring expressions not equal
+q : ℝ
+hq : q ^ 2 ≤ 1
+hs : √(1 - q ^ 2) ^ 2 = 1 - q ^ 2
+hpos : 0 < 1 + √(1 - q ^ 2)
+⊢ -3 + √(1 - q ^ 2) ^ 2 * 3 + q ^ 2 * 3 = 0
+BHModesA1.lean:100:2: error: ring failed, ring expressions not equal
+M Q m δ : ℝ
+hM : M ≠ 0
+h58 : ((1 + 2 * m * δ) * M) ^ 2 = M ^ 2 + 4 * m * Q ^ 2 / (4 + 1) ^ 2
+⊢ m * δ * M ^ 2 * 96 + m * Q ^ 2 * (-96 / 25) + m ^ 2 * δ ^ 2 * M ^ 2 * 96 = 0
+Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+BHModesA1.lean:151:105: error: unsolved goals
+case a
+M r : ℝ
+hr : r ≠ 0
+h3 : HasDerivAt (fun r => r ^ 3) (3 * r ^ 2) r
+h6 : HasDerivAt (fun r => r ^ 6) (6 * r ^ 5) r
+hr3 : r ^ 3 ≠ 0
+hr6 : r ^ 6 ≠ 0
+this :
+  HasFDerivAtFilter (((fun x => 1) - (fun x => 2 * M) / fun r => r ^ 3) + (fun x => M ^ 2) / fun r => r ^ 6)
+    (ContinuousLinearMap.smulRight 1 0 -
+        ContinuousLinearMap.smulRight 1 ((0 * r ^ 3 - 2 * M * (3 * r ^ 2)) / (r ^ 3) ^ 2) +
+      ContinuousLinearMap.smulRight 1 ((0 * r ^ 6 - M ^ 2 * (6 * r ^ 5)) / (r ^ 6) ^ 2))
+    r (nhds r)
+⊢ HasDerivAt (fun r => 1 - M * r⁻¹ ^ 3 * 2 + M ^ 2 * r⁻¹ ^ 6) (M * r ^ 3 * r⁻¹ ^ 7 * 6 - M ^ 2 * r⁻¹ ^ 7 * 6) r ↔
+    HasFDerivAtFilter (((fun x => 1) - (fun x => M * 2) / fun r => r ^ 3) + (fun x => M ^ 2) / fun r => r ^ 6)
+      (ContinuousLinearMap.smulRight 1 0 - ContinuousLinearMap.smulRight 1 (-(M * r⁻¹ ^ 4 * 6)) +
+        ContinuousLinearMap.smulRight 1 (-(M ^ 2 * r⁻¹ ^ 7 * 6)))
+      r (nhds r)
+Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+BHModesA1.lean:164:108: error: unsolved goals
+case a
+M r : ℝ
+hr : r ≠ 0
+h4 : HasDerivAt (fun r => r ^ 4) (4 * r ^ 3) r
+h7 : HasDerivAt (fun r => r ^ 7) (7 * r ^ 6) r
+hr4 : r ^ 4 ≠ 0
+hr7 : r ^ 7 ≠ 0
+this :
+  HasFDerivAtFilter (((fun x => 6 * M) / fun r => r ^ 4) - (fun x => 6 * M ^ 2) / fun r => r ^ 7)
+    (ContinuousLinearMap.smulRight 1 ((0 * r ^ 4 - 6 * M * (4 * r ^ 3)) / (r ^ 4) ^ 2) -
+      ContinuousLinearMap.smulRight 1 ((0 * r ^ 7 - 6 * M ^ 2 * (7 * r ^ 6)) / (r ^ 7) ^ 2))
+    r (nhds r)
+⊢ HasDerivAt (fun r => M * r ^ 3 * r⁻¹ ^ 7 * 6 - M ^ 2 * r⁻¹ ^ 7 * 6)
+      (-(M * r ^ 3 * r⁻¹ ^ 8 * 24) + M ^ 2 * r⁻¹ ^ 8 * 42) r ↔
+    HasFDerivAtFilter (((fun x => M * 6) / fun r => r ^ 4) - (fun x => M ^ 2 * 6) / fun r => r ^ 7)
+      (ContinuousLinearMap.smulRight 1 (-(M * r⁻¹ ^ 5 * 24)) -
+        ContinuousLinearMap.smulRight 1 (-(M ^ 2 * r⁻¹ ^ 8 * 42)))
+      r (nhds r)
+Command exited with non-zero status 1
+WALL 6.20 s PEAK 1481208 KB
+exit 1

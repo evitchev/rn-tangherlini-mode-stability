@@ -1,0 +1,13 @@
+start 2026-10-24T04:04:00Z
+none: VERIFIED
+nc-a2: REJECT: POS-T, POS-C
+nc-zm: REJECT: POS-O, POS-C
+nc-res: REJECT: POS-O, POS-O', POS-T, POS-C
+nc-bound: REJECT: nc-bound (b)
+td-coeff: REJECT: E0
+td-verifier: REJECT: KAT
+td-chart: REJECT: POS-T
+td-cover: REJECT: COVER
+KIT FAIL
+kit exit 1
+end 2026-10-24T04:04:07Z

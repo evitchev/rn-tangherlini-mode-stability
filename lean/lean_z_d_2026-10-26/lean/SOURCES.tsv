@@ -1,0 +1,2 @@
+# file	sha256	origin
+BHModesZd.lean	2fa687d9f452e65a4b9771b3f4e4acab8ca71828c55c6b95ea5666ae7ae284d9	new (session-L, 2026-10-26): item (d) of the bh-modes lead's message 8 (BHM-126), as asked in message 9; lines 36-174 are lean_z_2026-10-26's BHModesZ.lean lines 25-163, and lines 180-239 are lean_p3_sdeformation_v5's BHModesP3.lean lines 86-145, byte for byte

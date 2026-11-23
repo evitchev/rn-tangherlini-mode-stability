@@ -1,0 +1,142 @@
+{
+ "D": 9,
+ "THROAT": {
+  "T(zeta, 0) - pencil limit": "not run",
+  "information": "T(zeta, 0) = 64 (n-1)^2 H(2)^2 L(0) [(c - a - a^2)(eps_d(0) zeta + eps_n'(0))^2 + (a^2 - a) eps_n'(0)^2]"
+ },
+ "archive_sha256": "6db58904a6b9b821e67fdf8a43d7d439221af73cdf87b4b3074c9775693bb4f5",
+ "bernstein_leaves": {
+  "L": 1,
+  "POS-C": 1,
+  "POS-O": 1,
+  "POS-O'": 1,
+  "eps_d": 1
+ },
+ "checks": {
+  "COVER": {
+   "detail": "ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]",
+   "ok": true
+  },
+  "DESIGN": {
+   "detail": "pilot record sealed; degree 12",
+   "ok": true
+  },
+  "DIV-C": {
+   "detail": "NL(z, z sigma) divisible by z^2",
+   "ok": true
+  },
+  "DIV-T": {
+   "detail": "NL(mu zeta, mu) divisible by mu^3 (td-divT)",
+   "ok": false
+  },
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "G-RES": {
+   "detail": "N polynomial in z: True; H(2) = (ell + 6)*(ell + 7); N(0) - 64 (n-1)^2 H(2)^2 (c - a(a+1)) = 0 (n = 7)",
+   "ok": true
+  },
+  "H": {
+   "detail": "every coefficient of H_- > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "L": {
+   "detail": "L = Ud Hd^2 fd > 0 on [0, 1/8]",
+   "ok": true
+  },
+  "PARAM": {
+   "detail": "s^2 = 1 + 4 m q^2/64, q(0) = 1, q(1/8)^2 = 36225/37249 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]",
+   "ok": true
+  },
+  "POS-C": {
+   "detail": "> 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 69852998149194689446875478330319943373956511194879430791999/146150163733090291820368483271628301965593254297600",
+   "ok": true
+  },
+  "POS-O": {
+   "detail": "> 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 69852998149194689446875478330319943373956511194879430791999/2338402619729444669125895732346052831449492068761600",
+   "ok": true
+  },
+  "POS-O'": {
+   "detail": "> 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 4860349986040474300314668714926413/6189700196426901374495621120",
+   "ok": true
+  },
+  "POS-T": {
+   "detail": "not run: the chart's division failed",
+   "ok": false
+  },
+  "S": {
+   "detail": "eps_n = 2*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0",
+   "ok": true
+  }
+ },
+ "claim": "HD-X-S (HD-X-1's S-certificate), band D,l = 9,5, q in [q(1/8), 1]",
+ "control": "td-divT",
+ "degrees": {
+  "C": [
+   60,
+   12
+  ],
+  "NL": [
+   50,
+   12
+  ],
+  "T": null
+ },
+ "design": {
+  "a": "-3/10",
+  "degree": 12,
+  "p0": {
+   "(0,)": "5143228253221149605/2305843009213693952",
+   "(1,)": "779417060965592357/1152921504606846976",
+   "(10,)": "-1574430029288164607/2199023255552",
+   "(11,)": "296314076933782853/1099511627776",
+   "(12,)": "-6038392017545301/137438953472",
+   "(2,)": "686079056570522479/144115188075855872",
+   "(3,)": "37368900765550344539/72057594037927936",
+   "(4,)": "-3415896293961692137/562949953421312",
+   "(5,)": "213003192557369704871/4503599627370496",
+   "(6,)": "-1895764675167235029/8796093022208",
+   "(7,)": "41298181662971151957/70368744177664",
+   "(8,)": "-35110948653654069081/35184372088832",
+   "(9,)": "18915384299699547133/17592186044416"
+  }
+ },
+ "ell": 5,
+ "eps": {
+  "den": "3*mu**2 + 12*mu + 9",
+  "num": "2*mu"
+ },
+ "min_bernstein": {
+  "L": "9",
+  "POS-C": "69852998149194689446875478330319943373956511194879430791999/146150163733090291820368483271628301965593254297600",
+  "POS-O": "69852998149194689446875478330319943373956511194879430791999/2338402619729444669125895732346052831449492068761600",
+  "POS-O'": "4860349986040474300314668714926413/6189700196426901374495621120",
+  "eps_d": "9"
+ },
+ "n": 7,
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "POS-C": 0.0,
+  "POS-O": 0.0,
+  "POS-O'": 0.0,
+  "build_s": 1.3,
+  "t_total_s": 1.5,
+  "utc_start": "2026-11-18T18:20:43+00:00"
+ },
+ "verdict": "REJECT: DIV-T, POS-T"
+}

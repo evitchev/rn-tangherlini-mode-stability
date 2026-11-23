@@ -1,0 +1,11 @@
+none: VERIFIED
+nc-a2: REJECT: POS-T, POS-C
+nc-zm: REJECT: POS-O, POS-C
+nc-res: REJECT: POS-O, POS-O', POS-T, POS-C
+nc-bound: REJECT: nc-bound (b)
+td-coeff: REJECT: E0
+td-verifier: REJECT: KAT
+td-chart: REJECT: POS-T
+td-cover: REJECT: COVER
+KIT PASS
+kit-exit=0

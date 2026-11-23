@@ -1,0 +1,17 @@
+ZD1    AGREES  first tortoise_q1 (reg tortoise_q1); set ['tortoise_q1']; errors 1; first_error [466, 'Application type mismatch: The argument']; pass True
+ZD2    AGREES  first tortoise_q1 (reg tortoise_q1); set ['tortoise_q1']; errors 1; first_error [466, 'Application type mismatch: The argument']; pass True
+ZD3    AGREES  first tort_hasDerivAt (reg tort_hasDerivAt); set ['Rt_hasDerivAt', 'tort_ge', 'tort_hasDerivAt', 'tort_le', 'tort_strictMonoOn', 'tortoise_q1']; errors 7; first_error [335, 'Type mismatch']; pass True
+ZD4    AGREES  first Rt_hasDerivAt (reg Rt_hasDerivAt); set ['A_nonneg', 'Rt_hasDerivAt', 'w_log_deriv', 'zero_mode']; errors 4; first_error [510, 'Type mismatch: After simplification, term']; pass True
+ZD5    AGREES  first riccati_plus (reg riccati_plus); set ['V_eq', 'riccati_plus']; errors 2; first_error [556, 'unsolved goals']; pass True
+ZD6    AGREES  first riccati_minus (reg riccati_minus); set ['Vt_eq', 'riccati_minus']; errors 2; first_error [577, 'unsolved goals']; pass True
+ZD7    AGREES  first V_eq (reg V_eq); set ['A_nonneg', 'V_eq', 'zero_mode']; errors 3; first_error [610, 'ring failed, ring expressions not equal']; pass True
+ZD8    AGREES  first log_u0_hasDerivAt (reg log_u0_hasDerivAt); set ['log_u0_hasDerivAt', 'w_log_deriv']; errors 2; first_error [669, "Tactic `apply` failed: could not unify the conclusion of `HasDerivAt.congr_of_eventuallyEq hL'`"]; pass True
+ZD9    AGREES  first log_u0_hasDerivAt (reg log_u0_hasDerivAt); set ['log_u0_hasDerivAt']; errors 1; first_error [644, 'unsolved goals']; pass True
+ZD10   AGREES  first zero_mode (reg zero_mode); set ['zero_mode']; errors 1; first_error [744, 'Tactic `unfold` failed to unfold `Vstar` in']; pass True
+ZD11   AGREES  first A_nonneg (reg A_nonneg); set ['A_nonneg']; errors 1; first_error [769, 'Type mismatch']; pass True
+ZD12   AGREES  first Vr_S5 (reg Vr_S5); set ['V_eq', 'Vr_S5', 'Vr_continuousAt']; errors 4; first_error [535, 'unsolved goals']; pass True
+ZD13   AGREES  first tort_le (reg tort_le); set ['tort_le', 'tort_surjOn']; errors 2; first_error [411, 'Tactic `rewrite` failed: Did not find an occurrence of the pattern']; pass True
+ZD14   AGREES  first one_sub_Yr_le (reg one_sub_Yr_le); set ['fr_le_sq', 'one_sub_Yr_le']; errors 2; first_error [284, 'linarith failed to find a contradiction']; pass True
+ZD15   AGREES  first wr_hasDerivAt (reg wr_hasDerivAt); set ['riccati_minus', 'riccati_plus', 'wr_hasDerivAt']; errors 3; first_error [539, 'unsolved goals']; pass True
+all registered ids seen
+ALL AGREE

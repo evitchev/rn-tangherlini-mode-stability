@@ -1,0 +1,4 @@
+$ grep -v "^#" SEALED.sha256 | sha256sum -c | count
+    346 OK
+$ (cd [deliveries]/ib-blind_hd-s_2026-10-23 && sha256sum -c SHA256SUMS | count)
+    152 OK

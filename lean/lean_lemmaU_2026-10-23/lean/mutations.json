@@ -1,0 +1,101 @@
+[
+ {
+  "id": "LUM1",
+  "file": "BHModesLemmaU.lean",
+  "decl": "split",
+  "old": "+ 7680 * m * (1 + m * δ) * x ^ 2",
+  "new": "+ 7681 * m * (1 + m * δ) * x ^ 2",
+  "note": "U_- with 7681",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "LUM2",
+  "file": "BHModesLemmaU.lean",
+  "decl": "split",
+  "old": "  64 + 384 * ε ^ 2 + 320 * ε * κ * x",
+  "new": "  65 + 384 * ε ^ 2 + 320 * ε * κ * x",
+  "note": "Pos with constant 65",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "LUM3",
+  "file": "BHModesLemmaU.lean",
+  "decl": "split",
+  "old": "7680 * ε ^ 3 * κ * x + 7680 * ε ^ 4 * x",
+  "new": "7680 * ε ^ 3 * κ * x + 7681 * ε ^ 4 * x",
+  "note": "Neg with 7681 eps^4 x",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "LUM4",
+  "file": "BHModesLemmaU.lean",
+  "decl": "kappa_identity",
+  "old": "(δ * Real.sqrt m) ^ 2 = q ^ 2 / 25 - δ := by",
+  "new": "(δ * Real.sqrt m) ^ 2 = q ^ 2 / 25 - 2 * δ := by",
+  "note": "kappa identity with -2 delta",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)",
+  "error_text": {
+   "kappa_identity": "linarith failed to find a contradiction"
+  }
+ },
+ {
+  "id": "LUM5",
+  "file": "BHModesLemmaU.lean",
+  "decl": "lemmaU",
+  "old": "(hm : 150 ≤ m)",
+  "new": "(hm : 140 ≤ m)",
+  "note": "Lemma U assumed from m >= 140",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)",
+  "error_text": {
+   "lemmaU": "linarith failed to find a contradiction"
+  }
+ },
+ {
+  "id": "LUM6",
+  "file": "BHModesLemmaU.lean",
+  "decl": "lemmaU",
+  "old": "have hκ5 : κ ≤ 1 / 5 := by nlinarith",
+  "new": "have hκ5 : κ ≤ 1 / 6 := by nlinarith",
+  "note": "kappa <= 1/6 claimed",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)",
+  "error_text": {
+   "lemmaU": "linarith failed to find a contradiction"
+  }
+ },
+ {
+  "id": "LUM7",
+  "file": "BHModesLemmaU.lean",
+  "decl": "lemmaU",
+  "old": "(hdef : (1 + 2 * m * δ) ^ 2 = 1 + 4 * m * q ^ 2 / 25) (hx0 : 0 ≤ x) (hx2 : x ≤ 2) :",
+  "new": "(hdef : (1 + 2 * m * δ) ^ 2 = 1 + 4 * m * q ^ 2 / 25) (hx0 : 0 ≤ x) (hx2 : x ≤ 3) :",
+  "note": "Lemma U assumed for x <= 3",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "LUM8",
+  "file": "BHModesLemmaU.lean",
+  "decl": "lemmaU",
+  "old": "have hε12 : ε ≤ 1 / 12 := by",
+  "new": "have hε12 : ε ≤ 1 / 13 := by",
+  "note": "eps <= 1/13 claimed",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "LUM9",
+  "file": "BHModesLemmaU.lean",
+  "decl": "corner",
+  "old": "theorem corner : Neg (1 / 12) (1 / 5) 2 = 159997 / 17496 := by",
+  "new": "theorem corner : Neg (1 / 12) (1 / 5) 2 = 159998 / 17496 := by",
+  "note": "corner value 159998/17496",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "LUM10",
+  "file": "BHModesLemmaU.lean",
+  "decl": "lemmaU_ell",
+  "old": "(hℓ : 11 ≤ ℓ)",
+  "new": "(hℓ : 10 ≤ ℓ)",
+  "note": "Lemma U assumed for l >= 10",
+  "origin": "bh-modes Lemma U Lean layer, BHM-052 (session-L, 2026-10-23)"
+ }
+]

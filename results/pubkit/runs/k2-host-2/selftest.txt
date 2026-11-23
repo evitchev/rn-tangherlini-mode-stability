@@ -1,0 +1,8 @@
+KC1-expected-tampered: exit 1, expected non-zero with 'RECORD ALTERED': as required
+KC2-value-changed: exit 1, expected non-zero with 'MISMATCH': as required
+KC3-masked-fields-only: exit 0, expected 0 with 'MATCH': as required
+KC4-job-missing: exit 1, expected non-zero with 'MISSING': as required
+KC5-p3-design-rule-1: exit 0, expected 0 with 'MATCH': as required
+KC6-p3-design-rule-2: exit 1, expected non-zero with 'MISMATCH': as required
+KC6b-design-rule-outside-p3: exit 1, expected non-zero with 'MISMATCH': as required
+canon selftest: ALL CONTROLS AS REQUIRED

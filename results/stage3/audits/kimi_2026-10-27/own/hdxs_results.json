@@ -1,0 +1,222 @@
+{
+ "7-3": {
+  "band": "7-3",
+  "a": "-7/20",
+  "deg": [
+   42,
+   8
+  ],
+  "q(mu1)^2": "64449/66049",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "8-3": {
+  "band": "8-3",
+  "a": "-11/25",
+  "deg": [
+   54,
+   8
+  ],
+  "q(mu1)^2": "81585/83521",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "8-4": {
+  "band": "8-4",
+  "a": "-8/25",
+  "deg": [
+   46,
+   8
+  ],
+  "q(mu1)^2": "402633/413449",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "9-4": {
+  "band": "9-4",
+  "a": "-2/5",
+  "deg": [
+   50,
+   8
+  ],
+  "q(mu1)^2": "9945/10201",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "9-5": {
+  "band": "9-5",
+  "a": "-3/10",
+  "deg": [
+   50,
+   8
+  ],
+  "q(mu1)^2": "36225/37249",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "10-4": {
+  "band": "10-4",
+  "a": "-16/35",
+  "deg": [
+   70,
+   8
+  ],
+  "q(mu1)^2": "64449/66049",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "10-5": {
+  "band": "10-5",
+  "a": "-13/35",
+  "deg": [
+   54,
+   8
+  ],
+  "q(mu1)^2": "42525/43681",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "10-6": {
+  "band": "10-6",
+  "a": "-2/7",
+  "deg": [
+   54,
+   8
+  ],
+  "q(mu1)^2": "788697/811801",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "11-5": {
+  "band": "11-5",
+  "a": "-17/40",
+  "deg": [
+   66,
+   8
+  ],
+  "q(mu1)^2": "609/625",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "11-6": {
+  "band": "11-6",
+  "a": "-7/20",
+  "deg": [
+   58,
+   8
+  ],
+  "q(mu1)^2": "36225/37249",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ },
+ "11-7": {
+  "band": "11-7",
+  "a": "-11/40",
+  "deg": [
+   58,
+   8
+  ],
+  "q(mu1)^2": "257481/265225",
+  "cover": true,
+  "Den>0": true,
+  "DIV-T": true,
+  "DIV-C": true,
+  "POS": {
+   "O": true,
+   "O'": true,
+   "T": true,
+   "C": true
+  },
+  "ok": true
+ }
+}

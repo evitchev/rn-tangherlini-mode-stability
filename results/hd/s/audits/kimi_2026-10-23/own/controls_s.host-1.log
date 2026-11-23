@@ -1,0 +1,13 @@
+(a)(i) A = [5.3871457056e-7 +/- 4.51e-18]  C = [1.8017e-12 +/- 6.56e-17]
+(a)(i) K = 598029  Q = A - K C = [-5.387e-7 +/- 4.80e-11]  < 0 rigorously: True
+(a)(ii) verifier on perturbed N: REJECT (correct) {'reason': 'negative value', 'z': '1/2', 'value': '-1866491825051501046443956857937908069833328663172671420592599023463608086146729'}
+(b) tampered certificate: REJECT (correct) {'reason': 'negative value', 'z': '1/2', 'mu': '1299/10000', 'value': '-1638496318537223850144391691487421920843263254271208819766847569843985337/2394524282602951341184917'}
+PASS KAT1 p=-1 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '-1'}
+PASS KAT2 p=z-1/2 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '0'}
+PASS KAT3 p=z(1-z) strict must REJECT  {'reason': 'non-positive value at Bernstein node', 'z': '0', 'value': '0'}
+PASS KAT4 p=1+z+z^2 must PASS  {'nodes': 1, 'min_bernstein_coeff': '1'}
+PASS KAT5 tampered verifier accepts p=-1 (must be caught here)  {'nodes': 1, 'min_bernstein_coeff': '-1'}
+PASS KAT6 substitute_1d coefficients exact  {0: '11/4', 1: '0', 2: '1/4'}
+PASS KAT7 substitute_2d coefficients exact  {(0, 0): '1/2', (0, 1): '1/4', (1, 0): '1', (1, 1): '1/2', (2, 0): '1/2', (2, 1): '1/4'}
+PASS KAT8 non-unit box rejection at corner  {0: '-1/8', 1: '1/4'}
+CONTROLS: ALL OK

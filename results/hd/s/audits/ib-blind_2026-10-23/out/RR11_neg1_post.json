@@ -1,0 +1,43 @@
+{
+ "gate": {
+  "load1": 1.28,
+  "nproc": 16,
+  "mem_available_gb": 121.44,
+  "requested": 1,
+  "w": 1,
+  "rule": "w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w",
+  "ok": true
+ },
+ "selftest": {
+  "ok": true
+ },
+ "mode": "neg1_refuse_post",
+ "neg1_refuse_post": {
+  "rows": [
+   {
+    "cell": [
+     "33679/160000",
+     "17611/80000"
+    ],
+    "d": 24,
+    "eps1": 0.02,
+    "eps2": 0.0,
+    "certified_with_well": false,
+    "well_part": {
+     "ok": false,
+     "leaves": 0,
+     "visited": 2,
+     "failure": {
+      "corner": [
+       "1/4",
+       "33679/160000"
+      ],
+      "value": "-7079273139232816952085510446240443979196352839182103189726482768834139030369643887023416041/23384026197294446691258957323460528314494920687616000000000000000000000000000000"
+     }
+    }
+   }
+  ],
+  "all_refused": true,
+  "n": 1
+ }
+}

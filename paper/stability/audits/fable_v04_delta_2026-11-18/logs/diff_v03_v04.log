@@ -1,0 +1,285 @@
+diff --git a/paper/stability/versions/DRAFT_v0.3.md b/paper/stability/versions/DRAFT_v0.4.md
+index 5db3777..a5bf2ba 100644
+--- a/paper/stability/versions/DRAFT_v0.3.md
++++ b/paper/stability/versions/DRAFT_v0.4.md
+@@ -1,10 +1,18 @@
+ # Mode stability of Reissner–Nordström–Tangherlini black holes in the scalar gravitational sector, for D = 6–11 and every charge up to extremality
+ 
+-*Internal draft v0.3, 2026-11-13, by the bh-modes lead (BHM-174, item 4). Frozen as `versions/DRAFT_v0.3.md`.*
+-- *v0.1 and v0.2 were written the same day. v0.2 wrote out §5 with exact range ends, checked against each step's
++*Internal draft v0.4, 2026-11-18, by the bh-modes lead (the operator's ruling BHM-182). Frozen as
++`versions/DRAFT_v0.4.md` (BHM-184).*
++- *v0.1 and v0.2 (2026-11-13, BHM-174 item 4): v0.2 wrote out §5 with exact range ends, checked against each step's
+   RESULT, and folded in Fable's remarks R1–R3 (BHM-177). It is frozen as `versions/DRAFT_v0.2.md`.*
+ - *v0.3 folds in the two audits of v0.2's §5: the session-R lead's reading (BHM-179) and Fable's pencil audit,
+-  items 1–5 SOUND (BHM-180).*
++  items 1–5 SOUND (BHM-180). It is frozen as `versions/DRAFT_v0.3.md`.*
++- *v0.4:*
++  - *§1 and §7 are rewritten from session-L's screen (S36) and the sources S37–S59, each read by the lead at its anchors
++    (BHM-183);*
++  - *§4.7, the certificate counts and degrees, is new;*
++  - *§6 confirms that every record matches its reproduction, 428 of 428.*
++
++  *Its second parties: Fable's delta audit of §§1, 4 and 7, and session-L's citation check of the new references.*
+ - *Not for circulation: nothing leaves the project without the operator's approval (CHARTER rule 8).*
+ - *Labels follow RULES.md A3.*
+ - *Citations are rows of `SOURCES.md` (S-numbers). Every cited source was fetched and read (A7).*
+@@ -39,22 +47,62 @@ check: a re-run with independently written code, or a Lean proof.
+ **The question.** Kodama and Ishibashi reduced the linear perturbations of static charged black holes in D = n + 2
+ dimensions to master equations of Schrödinger type, sector by sector [S5, S23]. For the Schwarzschild–Tangherlini
+ black hole they proved stability in every D [S6]. With charge, they proved stability for D = 4 and 5 [S5, S28]. They
+-left the scalar-type gravitational sector open for D ≥ 6 [S5, Table I: "d ≥ 6?"]. That sector's potential V_S− has
+-negative regions, so its sign does not decide the question.
++left the scalar-type gravitational sector open for D ≥ 6 [S5, Table I: "d ≥ 6?"; S28, Table 1]. In their review: "for
++scalar type perturbation, we were not able to prove even the stability of asymptotically flat black holes with charge
++in generic dimensions" [S48, l.2275–2276]. That sector's potential V_S− has negative regions, so its sign does not
++decide the question.
+ 
+ **What was known.**
+-- **Kodama and Ishibashi** note that a horizon-regular S-deformation cannot remove V_S−'s negative region near
+-  extremality [S5, l.1884–1888].
+-- **Numerical work.**
++- **Why the standard method stops.**
++  - The S-deformation that proves D = 4 [S28, eqs. (76)–(77)] leaves a negative region near the horizon for n > 2, and
++    Kodama and Ishibashi could not prove stability there by this method "except for some special cases" [S28,
++    l.762–767].
++  - A horizon-regular S-deformation cannot remove V_S−'s negative region near extremality [S5, l.1884–1888].
++  - In their words, "there does not seem to be a systematic method to find such a desirable function S" [S48,
++    l.2406–2408].
++- **Numerical and asymptotic evidence.**
+   - Konoplya and Zhidenko computed the ℓ = 2 quasinormal modes of V_S− for D = 5–11, up to q = 0.98 (0.9 for D = 9–11),
+     and found every computed mode damped [S14, Table I].
+   - They also found numerical evidence that asymptotically flat, extremally charged black holes are stable in every D
+     [S26].
+   - Han and Gwak's tables [S32] match S14's at the points we compared (D = 6 and 7, ℓ = 2).
+-- **S-deformations from a zero-energy solution.** Kimura [S9] and Kimura and Tanaka [S27] built S-deformations from a
+-  nodeless zero-energy solution. Our extremal step follows that route, with a closed form.
+-- [OPEN: the related-work screen (message 14) for proofs, partial results and other numerics in D ≥ 6, the
+-  mathematical literature, and computer-assisted proofs in black-hole perturbation theory.]
++  - At leading order in 1/D, the quasinormal modes of the charged black hole with Λ = 0 decay [S52, l.2476–2479;
++    S51, l.326–330]. These are asymptotic statements, not proofs at finite D.
++- **S-deformations found by other means.**
++  - Kimura [S9] and Kimura and Tanaka [S27] built S-deformations from a nodeless zero-energy solution. Our extremal
++    step follows that route, with a closed form.
++  - For coupled systems, Kimura and Tanaka found regular S-deformations numerically [S53, l.524–531].
++- **Other black holes, and beyond mode stability.**
++  - In D = 4 the charged case is settled beyond mode stability: Giorgi proved the linear stability of subextremal
++    Reissner–Nordström for every |Q| < M [S49, l.20–30].
++  - For the neutral black hole in higher D, Hung, Keller and Wang strengthened Kodama and Ishibashi's mode stability
++    "to a uniform boundedness estimate in all dimensions", with decay for D ≤ 6 [S50, l.26–29].
++  - For Kerr–Newman, Hintz separated the coupled perturbation equations and proved mode stability on the real axis
++    for the separated radial equations, i.e. the absence of real-frequency quasinormal modes [S40, l.7–12].
++  - Mode stability is an input to nonlinear stability. Hintz's proof for subextremal Kerr uses it "as a black box"
++    [S41, l.444–445]. As of that paper, for Kerr–de Sitter it "remains an open problem except in the slow-rotation
++    regime" [S41, l.539–541].
++  - With rotation in higher D, the gravitational perturbations of five-dimensional Myers–Perry were separated only
++    recently [S43, l.11–26]. Price's law for scalar waves there is proved assuming mode stability on the real axis,
++    which "has not been shown to hold yet" [S42, l.163–164, l.446–447].
++- **Computer-assisted proofs.**
++  - **Concurrent claims.**
++    - Padhi claims a computer-assisted proof of mode stability for Kerr–de Sitter: the spin ±2 Teukolsky equations
++      have no outgoing modes with Im σ ≥ 0 [S37, l.10–15]. The certificates are exact except one step [S37,
++      l.126–128]. It is an unrefereed preprint, and its author states: "No human expert has yet checked the argument"
++      [S37, l.1338].
++    - Chen, Zhang, Cao and Jing certify a count of exactly one quasinormal mode in one bounded frequency domain of
++      extremal Kerr, within a numerical survey [S39, l.139–141, l.1845–1848].
++    - Goldstein and Jejjala give a computer-assisted existence proof for a non-Schwarzschild black hole in Einstein–Weyl
++      gravity [S38, l.19–33].
++    - Two further unrefereed preprints claim a certified spectral gap for a test scalar field on one
++      Reissner–Nordström–de Sitter black hole [S58, l.8–22], and a certified linear instability of a seven-dimensional
++      Myers–Perry black hole [S59, l.8–22].
++  - **Earlier, and in other settings.**
++    - The existence of Choptuik's critical spacetime has a computer-assisted proof [S57, l.9–18].
++    - Mode stability has been proved with computer assistance for a self-similar wave map [S56, l.6–14] and for the
++      Larson–Penston collapse [S44, l.16–21].
++    - Certified computation is also in use in geometric analysis [S46] and, with a Lean layer, for water waves [S47].
+ 
+ **What we do.** We settle the open case for D = 6–11 by certified computation, for every ℓ ≥ 2 and every charge up to
+ extremality (Theorem 1).
+@@ -63,9 +111,26 @@ At extremality we give the zero-energy solution in closed form for every D ≥ 4
+ The proof is computer-assisted. Each certificate is a fail-closed computation in exact rational arithmetic. Each was
+ registered before it ran, carries negative controls, and was re-run by an independent party (§6).
+ 
+-**Relative to the sources read.** [OPEN: A7's completeness argument, after the related-work screen.] Our literature
+-check (S25) found no proof of mode stability at extremality for D ≥ 6, and no closed form of the zero-energy solution
+-for D ≥ 5. At D = 4 that solution is the decaying Zerilli–Moncrief function of [S33, eq. (4.14)].
++**Relative to the sources read.**
++- **What was searched.** We searched INSPIRE (titles, full texts and citations), the arXiv API (abstracts, all
++  categories), zbMATH Open, OpenAlex and Zenodo, in November 2026 (the last query on 18 November, UTC).
++  - The searches combined general queries with the complete citation sets of ten seed papers. Every seed was found
++    again by other queries.
++  - We read the relevant passages of the sources they returned: 88 in the screen for this paper, and 52 in an
++    earlier screen on the extremal case (S36, S25).
++  - Not searched: Google Scholar, ADS, MathSciNet, Semantic Scholar, the full texts of arXiv's mathematics papers, and
++    other preprint servers except through OpenAlex.
++- **Not found** in these sources:
++  - a proof of mode stability for the charged scalar-type sector at any D ≥ 6, analytic or computer-assisted;
++  - a computer-assisted proof of mode stability for the gravitational perturbations of any charged or
++    higher-dimensional black hole;
++  - an S-deformation whose positivity was checked in exact or interval arithmetic;
++  - a closed form of the zero-energy solution at extremality for D ≥ 5. At D = 4 that solution is the decaying
++    Zerilli–Moncrief function of [S33, eq. (4.14)].
++- **The claim.** Relative to these sources, Theorem 1 is the first proof of mode stability of this sector for
++  D = 6–11, for every ℓ ≥ 2 and every charge up to extremality. We do not claim a first computer-assisted proof of mode
++  stability for a black hole [S37].
++- [OPEN: the date of the last literature watch before posting.]
+ 
+ ## 2. Setting
+ 
+@@ -171,7 +236,8 @@ directly.
+ 
+ ### 4.5 The bands
+ 
+-Below ℓ = n − 1, V_S− has a negative region for some charges: one band at D = 6 (ℓ = 2, from q_* ≈ 0.97306), and the
++Below ℓ = n − 1, V_S− has a negative region for some charges: one band at D = 6 (ℓ = 2, from q_* ≈ 0.97306; its
++inward upper end in §5.1 is 0.97305), and the
+ bands ℓ = 2, …, n − 2 at D = 7–11, twenty in all. Some open at an onset q > 0; others are negative from q = 0⁺. Each
+ band is certified by stored designs P and N > 0 on boxes of (z, μ).
+ 
+@@ -206,6 +272,29 @@ Each chart's polynomial comes after an exact division.
+     0 ≤ w < 1 on [0, MU1]. Hence q is continuous, q(0) = 1, and q(μ) < 1 for μ > 0. So every q ∈ [q(MU1), 1) is
+     q(μ) for some μ ∈ (0, MU1].
+ 
++### 4.7 What was certified: counts and degrees
++
++Degrees are in the two variables of each box, (z or t, μ), or in a chart's own pair. A "leaf" is a box on which every
++Bernstein coefficient is positive, after any subdivision. Each entry is taken from its step's RESULT or from that
++RESULT's sealed JSON record (RULES.md A6), as cited.
++
++| Piece | What it certifies | Polynomials and degrees | Boxes and leaves | Source |
++|---|---|---|---|---|
++| O1, O2 (D = 6, ℓ = 2) | the onset q_*; U₋ ≥ 0 for q ≤ q_* | F(t, μ), degree (4, 104), integer coefficients | O1: one root, isolating interval of width 5.9·10⁻⁴⁶; O2: three regions | `results/onset/RESULT.md` l.10–16 |
++| T3 (D = 6, ℓ = 2) | N > 0 for q ∈ [0.97277, 0.99019] | design P of degree (28, 4); N of degree (68, 16) | 8 μ-boxes, 3 leaves each | `results/p3/RESULT.md` l.18 (decimals: `RESULT_ADDENDUM_1.md` l.16); P's degree from the record's `.result.boxes_mu[].P` |
++| P1 Part I (D = 6, ℓ = 3–10) | U₋ > 0 for q ≤ q(μ_lo(ℓ)) | F of degree (4, 4) | 8 values of ℓ, each one leaf (the first node) | `results/a1/RESULT.md` l.14–26 |
++| Lemma U(4) (ℓ ≥ 11) | m⁻³U₋ ≥ 959747/17496 | Neg: 9 monomials, evaluated at one corner | — | `results/a1/RESULT.md` l.33–41 |
++| A2-E (D = 6, ℓ = 3–10) | U₋ ≥ 0 for q ∈ [q(μ_lo), 1] | F of degree (4, 4); at ℓ = 3, F = μK + sG | 8 parts, one leaf each (K and G one each) | `results/a2/elementary/RESULT.md` l.16–25; degrees and leaves from the record's `.parts` |
++| A2-S (D = 6, ℓ = 2) | N > 0 for q ∈ [q(1/8), 1] | design: a pole term plus p₀ of degree 12; NL (38, 12) on O and O′, (38, 48) on T, (48, 12) on C | 4 charts, one leaf each | `results/a2/s/RESULT.md` l.12–24 |
++| HD-E E1 (D = 7–11) | U₋ > 0 for 35 (D, ℓ), q ≤ q(μ_lo) | F of degree (4, 4) | 35 boxes, each one leaf | `results/hd/elementary/RESULT.md` l.14–23 |
++| HD-E E2 | U₋ > 0 on 13 bands, q ≤ q_split | F of degree (4, 4) | 29 leaves in all | `results/hd/elementary/RESULT.md` l.27–41 |
++| HD-E E3: Lemma U(n), n = 5–9 | m⁻³U₋ ≥ the bound, ℓ > ℓ₀ | Neg: 10 monomials, one corner each | — | `results/hd/elementary/RESULT_ADDENDUM_1.md` l.23–29; the monomial count from the record's `.["E3"][].Neg_monomials` |
++| HD-S (18 bands, q ≤ 99/100) | N > 0 | designs of degree 16–32 in z or ζ, and 4 in μ; N·L from (48, 16) to (96, 16) | 231 μ-boxes, 919 leaves | `results/hd/s/RESULT.md` l.24–45; the μ-degree from the records' `.boxes[].P` |
++| HD-X-E (D = 7–11, ℓ = n − 1 … ℓ₀) | U₋ ≥ 0 for q ∈ [q(μ_lo), 1] | F of degree (4, 4) | 33 parts (5 split, 28 strict), one leaf each | `results/hdx/elementary/RESULT.md` l.13; degrees and leaves from the record's `.parts` |
++| HD-X-S (11 bands) | N > 0 for q ∈ [q(1/8), 1] | designs of degree 12–20; NL from (42, 12) to (70, 12) | 4 charts per band; one leaf each, except O: 3 at D = 8 ℓ = 3 and 5 at D = 10 ℓ = 4 | `results/hdx/s/RESULT.md` l.14–26; the leaves from the records' `.bernstein_leaves` |
++| HD-X-2 (9 critical bands) | N > 0 for q ∈ [q(MU1), 1) | a closed-form design; NL from (24, 14) to (48, 14) | 4 charts per band, one leaf each | `results/hdx/critical/RESULT.md` l.13–28 |
++| Z (q = 1) | Theorem 2's identities and u₀ > 0, n = 4–9 and symbolic n | exact identities | — | `results/extremal/RESULT.md` l.11–20 |
++
+ ## 5. Proof of Theorem 1
+ 
+ **Conventions.**
+@@ -292,7 +381,12 @@ Each chart's polynomial comes after an exact division.
+   a sealed and hashed file. Failed and void runs stay on the record. One piece of Theorem 1, T3, comes from a step whose
+   verdict as registered is FAIL; §5.1 gives its record.
+ - **Reproduction.** Each record was re-run from a clean archive of the recorded commit on a second machine, and
+-  compared after masking timing and host fields (RULES.md D). [OPEN: confirm this for every piece in §5.]
++  compared after masking timing and host fields (RULES.md D).
++  - Confirmed for every piece in §5 (the lead's check, 2026-11-18): every job's record and its reproduction are
++    identical in that masked form, 428 of 428. By step: onset 6, p3 7 (and rule 2's 4), a1 8, A2-E 6, A2-S 9 (and its
++    check runs 12), HD-E 9, HD-S 34 (and its check runs 26), HD-X-E 7, HD-X-S 198 (and the gate 1), HD-X-2 35 (and its
++    addendum 47), and Z 19.
++  - [OPEN: the kit's dry run, which re-runs every piece from one clean archive of a single commit (BHM-182 item 4).]
+ - **Second parties.** Every certified part was re-derived by a different agent with independently written code:
+   - the exact checks of A1, A2, HD and HD-X;
+   - for Z and for the reduction, a Lean formalisation;
+@@ -304,12 +398,32 @@ Each chart's polynomial comes after an exact division.
+ ## 7. Discussion
+ 
+ - **Scope.** Λ = 0, D = 6–11, the Φ₋ sector. The physical reading cites [S5] for the other sectors.
+-- **D ≥ 12.** A numerical screen (*numerical*, information only) finds the same pattern of bands for D = 12–20: ℓ = 2,
+-  …, n − 2. Certifying them needs the same S-deformations at larger n.
+-- **Λ > 0.** Konoplya and Zhidenko report instability at large charge and Λ for D ≥ 7 [S14].
+-- **Extremality.** Theorem 1 is a statement about L² modes. At an extremal horizon other notions of instability exist;
+-  [OPEN: the related-work screen's question 5; S31 is near-horizon only].
+-- **The zero mode.** [OPEN: what u₀'s closed form says beyond Theorem 2, after the screen.]
++- **D ≥ 12.**
++  - A numerical screen (*numerical*, information only) finds the same pattern of bands for D = 12–20: ℓ = 2, …, n − 2.
++    Certifying them needs the same S-deformations at larger n.
++  - At leading order in 1/D, the modes at Λ = 0 decay [S52, l.2476–2479; S51, l.326–330]. That is not a proof at any
++    finite D.
++- **Λ > 0.** This case is outside this paper.
++  - Konoplya and Zhidenko report instability at large charge and Λ for D ≥ 7 [S14].
++  - In the 1/D expansion, the de Sitter Reissner–Nordström black hole becomes unstable against gravitational
++    perturbations above a critical charge [S51, l.26–30].
++  - For a test scalar field, there are semiclassical quasinormal modes near the ultracold limit [S45, l.18–27], and a
++    claimed certified spectral gap at one parameter point [S58].
++- **Extremality.** Theorem 1 is a statement about L² modes with κ > 0 (§2). At an extremal horizon, other notions are in
++  use:
++  - quasinormal modes of extremal Reissner–Nordström, as eigenfunctions on spaces that are Gevrey regular at the
++    horizon and at infinity [S54, l.8–24];
++  - mode solutions of the Teukolsky equation on extremal Kerr, whose mode stability is proved in [S55, l.15–26];
++  - the instability at a degenerate horizon, studied for extremal black branes in [S31].
++
++  Theorem 1 says nothing about these.
++- **Rotation.**
++  - In higher D, the gravitational perturbations of five-dimensional Myers–Perry were separated only recently [S43],
++    and Price's law for scalar waves there assumes mode stability on the real axis [S42].
++  - A certified instability is claimed for an ultraspinning seven-dimensional Myers–Perry black hole [S59].
++  - Our method uses a Schrödinger operator with a real potential, which the static master equations provide [S5].
++- **The zero mode.** The step to A_{ℓ,1} ≥ 0 uses only that u₀ is a positive zero-energy solution (§4.6). What else its
++  closed form implies is outside this paper.
+ 
+ ## 8. Data and code
+ 
+@@ -342,6 +456,47 @@ other AI agents with independently written code. The human author(s) take respon
+   higher-dimensional Reissner–Nordström black hole, arXiv:2609.23434v2.
+ - [S33] L.-R. Gounis, A. Kehagias, G. Panagopoulos, A. Riotto, Non-vanishing non-linear static Love number of a class
+   of extremal Reissner–Nordström black holes, arXiv:2512.02506v1.
++- [S37] J. S. Padhi, Gravitational mode stability and the nonlinear stability of Kerr–de Sitter black holes in the
++  full subextremal range, Zenodo, doi:10.5281/zenodo.24146363 (v1, 2026; unrefereed preprint).
++- [S38] K. Goldstein, V. Jejjala, A computer assisted existence proof for a non-Schwarzschild black hole in
++  Einstein–Weyl gravity, arXiv:2609.21797v2.
++- [S39] C. Chen, X. Zhang, Z. Cao, J. Jing, Complete quasinormal modes of Type-D black holes. II. Extremal Kerr black
++  holes, arXiv:2610.39095v3.
++- [S40] P. Hintz, Perturbations of Kerr–Newman black holes: separation and mode stability, arXiv:2609.33661v1.
++- [S41] P. Hintz, Nonlinear stability of subextremal Kerr black holes, arXiv:2606.28253v2.
++- [S42] P.-B. Peters, Price's law for scalar waves on 1+4 dimensional subextremal Myers–Perry spacetimes,
++  arXiv:2610.33812v1.
++- [S43] J.-K. Zhao, H.-D. Lyu, Separation of gravitational perturbations of Myers–Perry black holes,
++  arXiv:2611.21591v1.
++- [S44] Y. Guo, M. Hadžić, J. Jang, M. Schrecker, Nonlinear stability of the Larson–Penston collapse,
++  arXiv:2509.12435v1.
++- [S45] B. Gwak, Geometrically induced semiclassical limit for quasinormal modes and greybody factors in
++  higher-dimensional near-ultracold spacetimes, arXiv:2610.28367v1.
++- [S46] M. R. Douglas, J. Gómez-Serrano, F. Lehmann, D. Platt, Y. Qi, A constructive computer-assisted existence
++  proof for a Calabi–Yau metric, arXiv:2611.16908v1.
++- [S47] M. Shavit, Y. Wang, T. Buckmaster, Rigorously certified neural-network computation of nonlinear water waves
++  at near-machine precision, arXiv:2611.07395v1.
++- [S48] A. Ishibashi, H. Kodama, Perturbations and stability of static black holes in higher dimensions,
++  arXiv:1103.6148v2.
++- [S49] E. Giorgi, The linear stability of Reissner–Nordström spacetime: the full subextremal range |Q| < M,
++  arXiv:1910.05630v2.
++- [S50] P.-K. Hung, J. Keller, M.-T. Wang, Linear stability of higher dimensional Schwarzschild spacetimes: decay of
++  master quantities, arXiv:1809.05144v1.
++- [S51] K. Tanabe, Instability of de Sitter Reissner–Nordström black hole in the 1/D expansion, arXiv:1511.06059v2.
++- [S52] S. Bhattacharyya, M. Mandlik, S. Minwalla, S. Thakur, A charged membrane paradigm at large D,
++  arXiv:1511.03432v2.
++- [S53] M. Kimura, T. Tanaka, Stability analysis of black holes by the S-deformation method for coupled systems,
++  arXiv:1809.00795v3.
++- [S54] D. Gajic, C. Warnick, Quasinormal modes in extremal Reissner–Nordström spacetimes, arXiv:1910.08479v2.
++- [S55] R. Teixeira da Costa, Mode stability for the Teukolsky equation on extremal and subextremal Kerr spacetimes,
++  arXiv:1910.02854v1.
++- [S56] O. Costin, R. Donninger, X. Xia, A proof for the mode stability of a self-similar wave map,
++  arXiv:1411.2947v3.
++- [S57] M. Reiterer, E. Trubowitz, Choptuik's critical spacetime exists, arXiv:1203.3766v1.
++- [S58] Neko2333OWO, A certified spectral gap and the failure of strong cosmic censorship for linear waves on an
++  explicit Reissner–Nordström–de Sitter black hole, Zenodo, doi:10.5281/zenodo.24285821 (2026; unrefereed).
++- [S59] Neko2333OWO, Linear instability of an ultraspinning Myers–Perry black hole in seven dimensions: a certified
++  negative canonical energy, Zenodo, doi:10.5281/zenodo.24288754 (2026; unrefereed).
+ 
+ ## Open items
+ 
+@@ -352,7 +507,11 @@ other AI agents with independently written code. The human author(s) take respon
+       remarks are folded into v0.3: Lemma U's 54.85, the decimals, §4.5's two covers, T3's record, the H² clause, q_*'s
+       comparison, E1's sliver, and P1 from q = 0.
+ - [x] HD-X-2's second pencil audit: SOUND (BHM-177). Its remarks R1–R3 are in §4.6.
+-- [ ] §1 and §7: the related-work screen (due 2026-11-20, once session-L's operator gives the go), then A7's completeness
+-      argument and the novelty wording.
+-- [ ] §4: the certificate counts and degrees, from the stage reports.
+-- [ ] The operator's items: authors, collaborator, kit, AI wording, and LaTeX for the external version.
++- [x] §1 and §7 (v0.4): A7's completeness argument on S36's SEARCHED and NOT SEARCHED lists, the novelty wording
++      scoped to this sector, and the related work, each source read at its anchors (BHM-183, `RELATED_WORK.md`).
++- [x] §4.7 (v0.4): the certificate counts and degrees, each from its RESULT or that RESULT's sealed record.
++- [x] §6 (v0.4): every record matches its reproduction, 428 of 428 (the lead's check).
++- [ ] v0.4's second parties: Fable's delta audit of §§1, 4 and 7, and session-L's citation check of the new references.
++- [ ] The kit's dry run, which re-runs every piece from one clean archive (BHM-182 item 4).
++- [ ] The operator's items (BHM-182 item 6): authors and affiliation, the collaborator, the kit on Zenodo, the AI wording,
++      LaTeX, the assembly's audits, venue and arXiv category.

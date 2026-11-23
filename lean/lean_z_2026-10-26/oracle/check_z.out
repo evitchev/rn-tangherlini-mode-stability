@@ -1,0 +1,37 @@
+ok   1. lines 34-53 are the c_n layer's definitions (lean_cn_2026-10-23, l. 24-43): sha256 ef3ad025862f7547...
+ok   1. the file ends with the namespace: 165 lines
+ok   1. the theorems are the expected ones, in order: gate_q1, gate_H, g_hasDerivAt, deriv_g, z_id, partner, partner_n4, partner_ends, partner_no_pole
+ok   2. gate_q1: (n + 1)^2 δ1 (1 + m δ1) = 1 holds identically
+ok   2. gate_H: H₋(2Y) = (ℓ + n)((ℓ − 1) + nY) holds identically
+ok   3. g_hasDerivAt: the stated derivative is sympy's derivative of the file's g
+ok   3. deriv_g's conclusion holds
+ok   4. z_id holds identically in n, ℓ, Y (∂_Y g by sympy from the file's g)
+ok   4. information: without the ∂_Y g term, or with +g in the bracket, z_id fails
+ok   4. sanity: W is not constant in Y
+ok   5. partner holds identically in n, ℓ, Y
+ok   5. partner_n4 holds identically
+ok   5. partner_ends holds identically
+ok   5. partner_no_pole's binders: n ℓ Y₀, hn, hY
+ok   5. partner_no_pole's function is partner's left side, character for character
+ok   5. at Y₀ = (1 − ℓ)/n, the partner expression at Y₀ ± 10⁻²⁰ is within 10⁻¹⁵ of Ut(Y₀): 2.25e-18
+ok   5. information: W itself has a pole there (|W(Y₀ ± 10⁻²⁰)| > 10³⁰): 1.76e+40
+ok   6. information: g = ρ ∂_ρ log u₀ at five sample points: 8.55e-50
+ok   6. information: Um and Hm at K = 1, y = 0 equal potentials.py's U_minus and H_minus, n = 2..11: potentials.py sha256 7d686b40ad326544...
+ok   7. ZM1: the mutated z_id is false: ν = ℓ + n/2 + 1
+ok   7. ZM2: the mutated g_hasDerivAt is false: g's last term with n(n + 1)
+ok   7. ZM3: the mutated z_id is false: W = U₋/(63H₋²)
+ok   7. ZM4: the mutated gate_q1 is false: δ₁ = 1/((n + 2)(ℓ + n))
+ok   7. ZM5: the mutated gate_q1 is false: m = (ℓ − 1)(ℓ + n − 1)
+ok   7. ZM6: the mutated z_id is false: Z-id with g² + g in the bracket
+ok   7. ZM7: the mutated z_id is false: Z-id with (n − 2)Y ∂_Y g
+ok   7. ZM8: the mutated partner is false: partner with −(n − 1)Y ∂_Y g
+ok   7. ZM9: the mutated partner is false: Ũ's constant term + 1
+ok   7. ZM10: the mutated gate_H is false: H₋(2Y) = (ℓ + n)(ℓ + nY)
+ok   7. ZM11: the mutated gate_q1 is false: gate_q1 assuming ℓ + n ≠ 1
+ok   7. ZM12: the mutated partner is false: partner assuming (ℓ − 1) + nY ≠ 1
+ok   7. ZM13: the mutated g_hasDerivAt is false: ∂_Y g stated with +ℓ/(1 − Y)²
+ok   7. ZM14: the mutated z_id is false: W with U₋ at x = Y
+ok   7. ZM15: the mutated z_id is false: W with U₋ at K = 0
+ok   7. ZM16: the mutated z_id is false: W with U₋ at y = 1
+ok   7. ZM17: the mutated partner_no_pole is false: P-reg with limit Ũ(Y₀) + 1
+ALL Z CHECKS HOLD (36/36)

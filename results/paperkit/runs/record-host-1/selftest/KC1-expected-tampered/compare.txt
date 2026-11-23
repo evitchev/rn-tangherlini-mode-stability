@@ -1,0 +1,4 @@
+RECORD ALTERED  A1 onset main (cited): 9e9a86077802aadc5e8a3f00be1b46d067e214319090b0228f49c2a45b309fd0 != expected 9e9a86077802aadc5e8a3f00be1b46d067e214319090b0228f49c2a45b309fd1
+part A1: cited 0/0 MATCH; controls 0/0 MATCH (information); run.log 0/0 byte-identical (information)
+no cited job for part A1
+canon compare A1: FAIL

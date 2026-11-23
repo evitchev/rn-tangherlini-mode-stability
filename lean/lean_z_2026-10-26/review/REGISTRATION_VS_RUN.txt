@@ -1,0 +1,19 @@
+ZM1    AGREES  first z_id (reg z_id); set ['partner', 'partner_ends', 'z_id']; errors 3; first_error [112, 'unsolved goals']; pass True
+ZM2    AGREES  first g_hasDerivAt (reg g_hasDerivAt); set ['g_hasDerivAt', 'partner', 'z_id']; errors 3; first_error [97, 'Tactic `rfl` failed: The left-hand side']; pass True
+ZM3    AGREES  first z_id (reg z_id); set ['z_id']; errors 1; first_error [112, 'unsolved goals']; pass True
+ZM4    DIFFERS  first gate_q1 (reg gate_q1); set ['deriv_g', 'gate_H', 'gate_q1'] (reg ['gate_H', 'gate_q1', 'z_id']); errors 3; first_error [76, 'unsolved goals']; pass True
+ZM5    DIFFERS  first gate_q1 (reg gate_q1); set ['deriv_g', 'gate_H', 'gate_q1'] (reg ['gate_H', 'gate_q1', 'z_id']); errors 3; first_error [76, 'unsolved goals']; pass True
+ZM6    AGREES  first z_id (reg z_id); set ['z_id']; errors 1; first_error [112, 'unsolved goals']; pass True
+ZM7    AGREES  first z_id (reg z_id); set ['z_id']; errors 1; first_error [112, 'unsolved goals']; pass True
+ZM8    AGREES  first partner (reg partner); set ['partner', 'partner_no_pole']; errors 2; first_error [126, 'unsolved goals']; pass True
+ZM9    AGREES  first partner (reg partner); set ['partner', 'partner_ends', 'partner_n4']; errors 3; first_error [126, 'unsolved goals']; pass True; error_text_found True
+ZM10   DIFFERS  first gate_H (reg gate_H); set ['deriv_g', 'gate_H'] (reg ['gate_H', 'z_id']); errors 2; first_error [81, 'unsolved goals']; pass True
+ZM11   AGREES  first gate_q1 (reg gate_q1); set ['gate_q1']; errors 1; first_error [76, 'unsolved goals']; pass True
+ZM12   AGREES  first partner (reg partner); set ['partner', 'partner_no_pole']; errors 3; first_error [127, 'Application type mismatch: The argument']; pass True
+ZM13   AGREES  first g_hasDerivAt (reg g_hasDerivAt); set ['deriv_g', 'g_hasDerivAt']; errors 2; first_error [88, 'unsolved goals']; pass True
+ZM14   AGREES  first z_id (reg z_id); set ['z_id']; errors 1; first_error [112, 'unsolved goals']; pass True
+ZM15   AGREES  first z_id (reg z_id); set ['z_id']; errors 1; first_error [112, 'unsolved goals']; pass True
+ZM16   AGREES  first z_id (reg z_id); set ['z_id']; errors 1; first_error [112, 'unsolved goals']; pass True
+ZM17   AGREES  first partner_no_pole (reg partner_no_pole); set ['partner_no_pole']; errors 1; first_error [161, 'Type mismatch']; pass True
+all registered ids seen
+NOT ALL AGREE

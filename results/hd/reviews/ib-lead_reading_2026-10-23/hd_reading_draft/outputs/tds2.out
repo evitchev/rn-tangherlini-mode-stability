@@ -1,0 +1,11 @@
+$ TD-S2 counterexample points vs each l = 2 band mu_a
+7-2 mu_a = 1237/10000
+td-horizon: FAIL  td-horizon: N > 0: sign*p = <negative rational> <= 0 at (t, mu) = (0, 1237/10000)  (a counterexample)
+8-2 mu_a = 157/1250
+td-horizon: FAIL  td-horizon: N > 0: sign*p = <negative rational> <= 0 at (t, mu) = (0, 157/1250)  (a counterexample)
+9-2 mu_a = 1271/10000
+td-horizon: FAIL  td-horizon: N > 0: sign*p = <negative rational> <= 0 at (t, mu) = (0, 1271/10000)  (a counterexample)
+10-2 mu_a = 321/2500
+td-horizon: FAIL  td-horizon: N > 0: sign*p = <negative rational> <= 0 at (t, mu) = (0, 321/2500)  (a counterexample)
+11-2 mu_a = 259/2000
+td-horizon: FAIL  td-horizon: N > 0: sign*p = <negative rational> <= 0 at (t, mu) = (0, 259/2000)  (a counterexample)

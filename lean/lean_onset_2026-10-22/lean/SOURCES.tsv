@@ -1,0 +1,2 @@
+# file	sha256	origin
+BHModesOnset.lean	c7c25c1b035d897580199d77a0e062287290358a778ebca050f17a0a36bdb1fa	new (session-L, 2026-10-22): hand-written in this workspace from bh-modes results/onset/PREREG.md (sha256 931bce6f0e91947a…), RESULT.md and TARGET.md §1, except the section "Generated", which is the output of oracle/gen_onset.py (sha256 d54df0f48b583ae7f2b613d9e2250ba6cf227bc076ad582f40b2a212b1bd5425) pasted verbatim; Lean checks every generated identity by ring

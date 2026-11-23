@@ -1,0 +1,92 @@
+[
+ {
+  "id": "A1M1",
+  "file": "BHModesA1.lean",
+  "decl": "KI_Um_n4",
+  "old": "+ 64 * m ^ 3 + 16 * n * (n + 2) * m ^ 2 * K",
+  "new": "+ 63 * m ^ 3 + 16 * n * (n + 2) * m ^ 2 * K",
+  "note": "the transcription of Kodama-Ishibashi (5.63b): its constant term 64 m^3 -> 63 m^3",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)",
+  "error_text": {
+   "KI_Um_n4": "unsolved goals"
+  }
+ },
+ {
+  "id": "A1M2",
+  "file": "BHModesA1.lean",
+  "decl": "KI_Um_n4",
+  "old": "+ 7680 * m * (1 + m * δ) * x ^ 2",
+  "new": "+ 7681 * m * (1 + m * δ) * x ^ 2",
+  "note": "TARGET.md's U-: the x^2 coefficient 7680 -> 7681",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)",
+  "error_text": {
+   "KI_Um_n4": "unsolved goals"
+  }
+ },
+ {
+  "id": "A1M3",
+  "file": "BHModesA1.lean",
+  "decl": "delta_extremal",
+  "old": "δ = 1 / (5 * (ℓ + 4)) := by",
+  "new": "δ = 1 / (5 * (ℓ + 5)) := by",
+  "note": "the extremal delta stated as 1/(5(l+5))",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)"
+ },
+ {
+  "id": "A1M4",
+  "file": "BHModesA1.lean",
+  "decl": "kappa_extremal",
+  "old": "(-24 * M / r ^ 5 + 42 * M ^ 2 / r ^ 8) / 2 * r ^ 2 = 9",
+  "new": "(-24 * M / r ^ 5 + 41 * M ^ 2 / r ^ 8) / 2 * r ^ 2 = 9",
+  "note": "the second derivative's 42 M^2 / r^8 -> 41 in the kappa identity",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)"
+ },
+ {
+  "id": "A1M5",
+  "file": "BHModesA1.lean",
+  "decl": "BF_margin",
+  "old": "(2 * ℓ - 3) ^ 2 / 36 := by ring",
+  "new": "(2 * ℓ + 3) ^ 2 / 36 := by ring",
+  "note": "the BF margin stated as (2l+3)^2/36",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)",
+  "error_text": {
+   "BF_margin": "unsolved goals"
+  }
+ },
+ {
+  "id": "A1M6",
+  "file": "BHModesA1.lean",
+  "decl": "f_horizon",
+  "old": "q ^ 2 * (2 / (1 + Real.sqrt (1 - q ^ 2))) ^ 2 / 4 = 0 := by",
+  "new": "q ^ 2 * (2 / (1 + Real.sqrt (1 - q ^ 2))) ^ 2 / 3 = 0 := by",
+  "note": "f at the outer horizon with q^2 x^2/3 in place of /4",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)",
+  "error_text": {
+   "f_horizon": "ring failed, ring expressions not equal"
+  }
+ },
+ {
+  "id": "A1M7",
+  "file": "BHModesA1.lean",
+  "decl": "delta_relation",
+  "old": "(h58 : μ ^ 2 = M ^ 2 + 4 * m * Q ^ 2 / (4 + 1) ^ 2)",
+  "new": "(h58 : μ ^ 2 = M ^ 2 + 4 * m * Q ^ 2 / (4 + 2) ^ 2)",
+  "note": "Kodama-Ishibashi (5.58) with (n+1)^2 -> (n+2)^2 at n = 4",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)",
+  "error_text": {
+   "delta_relation": "ring failed, ring expressions not equal"
+  }
+ },
+ {
+  "id": "A1M8",
+  "file": "BHModesA1.lean",
+  "decl": "s_param",
+  "old": "1 + 2 * m * δ = Real.sqrt (1 + 4 * m * q ^ 2 / 25) := by",
+  "new": "1 + 2 * m * δ = Real.sqrt (1 + 4 * m * q ^ 2 / 24) := by",
+  "note": "the parametrisation with 4mq^2/24",
+  "origin": "bh-modes A1 Lean layer (session-L, 2026-10-22)",
+  "error_text": {
+   "s_param": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+  }
+ }
+]

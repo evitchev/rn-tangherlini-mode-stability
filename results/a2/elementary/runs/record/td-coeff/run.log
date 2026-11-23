@@ -1,0 +1,12 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0: FAIL  S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: -delta*m**2*x**2 - m*x**2, 0
+H: PASS  H_- = m + 10 x + 10 m delta x: every coefficient > 0, so H_- >= m > 0
+E l=3: FAIL  l=3: the splitting fails: {'F(1, mu) divisible by mu': False, 'F(1 - s, mu) - F(1, mu) divisible by s': True, 'F(1 - s, mu) = mu K + s G': False, 'F(1, 0)': '2744'}
+E l=4: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '32118784', 'max_bernstein_Den': '11150011011643/200000000000', 'U_lower_bound': '6423756800000000000/11150011011643', 'U_lower_bound_approx': 576121.1171264515}
+E l=5: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '149310864', 'max_bernstein_Den': '97130390463/1562500000', 'U_lower_bound': '320025000000000/133237847', 'U_lower_bound_approx': 2401907.6201373925}
+E l=6: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '17920000', 'max_bernstein_Den': '171359687181/62500000000', 'U_lower_bound': '1120000000000000000/171359687181', 'U_lower_bound_approx': 6535959.643862978}
+E l=7: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '1103984640', 'max_bernstein_Den': '7496798004383/100000000000', 'U_lower_bound': '110398464000000000000/7496798004383', 'U_lower_bound_approx': 14726082.246774634}
+E l=8: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '2438553600', 'max_bernstein_Den': '16302200172687/200000000000', 'U_lower_bound': '2007040000000000000/67087243509', 'U_lower_bound_approx': 29916864.89147148}
+E l=9: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '4949401600', 'max_bernstein_Den': '137427108821/1562500000', 'U_lower_bound': '7733440000000000000/137427108821', 'U_lower_bound_approx': 56273031.32799565}
+E l=10: PASS  U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '9388431360', 'max_bernstein_Den': '1182680912709/12500000000', 'U_lower_bound': '4346496000000000000/43802996767', 'U_lower_bound_approx': 99228279.35997596}
+REJECT: E0, E l=3

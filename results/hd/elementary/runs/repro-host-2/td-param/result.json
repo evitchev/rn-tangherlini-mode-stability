@@ -1,0 +1,753 @@
+{
+ "E1": [
+  {
+   "ell": 4,
+   "failure": "n=5 l=4: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 5,
+   "failure": "n=5 l=5: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 6,
+   "failure": "n=5 l=6: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 7,
+   "failure": "n=5 l=7: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 8,
+   "failure": "n=5 l=8: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 9,
+   "failure": "n=5 l=9: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 10,
+   "failure": "n=5 l=10: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 5,
+   "failure": "n=6 l=5: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 6,
+   "failure": "n=6 l=6: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 7,
+   "failure": "n=6 l=7: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 8,
+   "failure": "n=6 l=8: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 9,
+   "failure": "n=6 l=9: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 10,
+   "failure": "n=6 l=10: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 6,
+   "failure": "n=7 l=6: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 7,
+   "failure": "n=7 l=7: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 8,
+   "failure": "n=7 l=8: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 9,
+   "failure": "n=7 l=9: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 10,
+   "failure": "n=7 l=10: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 11,
+   "failure": "n=7 l=11: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 6,
+   "failure": "n=8 l=6: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 7,
+   "failure": "n=8 l=7: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 8,
+   "failure": "n=8 l=8: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 9,
+   "failure": "n=8 l=9: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 10,
+   "failure": "n=8 l=10: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 11,
+   "failure": "n=8 l=11: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 12,
+   "failure": "n=8 l=12: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 13,
+   "failure": "n=8 l=13: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 7,
+   "failure": "n=9 l=7: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 8,
+   "failure": "n=9 l=8: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 9,
+   "failure": "n=9 l=9: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 10,
+   "failure": "n=9 l=10: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 11,
+   "failure": "n=9 l=11: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 12,
+   "failure": "n=9 l=12: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 13,
+   "failure": "n=9 l=13: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  },
+  {
+   "ell": 14,
+   "failure": "n=9 l=14: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "99/100"
+  }
+ ],
+ "E2": [
+  {
+   "ell": 2,
+   "failure": "n=5 l=2: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "237/250"
+  },
+  {
+   "ell": 3,
+   "failure": "n=5 l=3: parametrisation identities fail: [False, False, True, False]",
+   "n": 5,
+   "q_hi": "977/1000"
+  },
+  {
+   "ell": 3,
+   "failure": "n=6 l=3: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "118/125"
+  },
+  {
+   "ell": 4,
+   "failure": "n=6 l=4: parametrisation identities fail: [False, False, True, False]",
+   "n": 6,
+   "q_hi": "983/1000"
+  },
+  {
+   "ell": 3,
+   "failure": "n=7 l=3: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "921/1000"
+  },
+  {
+   "ell": 4,
+   "failure": "n=7 l=4: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "119/125"
+  },
+  {
+   "ell": 5,
+   "failure": "n=7 l=5: parametrisation identities fail: [False, False, True, False]",
+   "n": 7,
+   "q_hi": "987/1000"
+  },
+  {
+   "ell": 3,
+   "failure": "n=8 l=3: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "49/100"
+  },
+  {
+   "ell": 4,
+   "failure": "n=8 l=4: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "23/25"
+  },
+  {
+   "ell": 5,
+   "failure": "n=8 l=5: parametrisation identities fail: [False, False, True, False]",
+   "n": 8,
+   "q_hi": "961/1000"
+  },
+  {
+   "ell": 4,
+   "failure": "n=9 l=4: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "897/1000"
+  },
+  {
+   "ell": 5,
+   "failure": "n=9 l=5: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "929/1000"
+  },
+  {
+   "ell": 6,
+   "failure": "n=9 l=6: parametrisation identities fail: [False, False, True, False]",
+   "n": 9,
+   "q_hi": "121/125"
+  }
+ ],
+ "E3": [
+  {
+   "Neg_monomials": 10,
+   "bound": "399917/10368",
+   "bound_approx": 38.57224151234568,
+   "checks": {
+    "64 - Neg(eps_bar, 1/(n+1), 2) > 0": true,
+    "P = Pos - Neg": true,
+    "Pos(0, 0, 0) = 64": true,
+    "eps^6 U_- is a polynomial": true,
+    "eps_bar >= m0^(-1/2)": true,
+    "kappa identity from (5.58)": true
+   },
+   "eps_bar": "1/12",
+   "kappa_max": "1/6",
+   "l0": 10,
+   "m0": 160,
+   "n": 5,
+   "x_max": "2"
+  },
+  {
+   "Neg_monomials": 10,
+   "bound": "1481614528/62748517",
+   "bound_approx": 23.611944932499362,
+   "checks": {
+    "64 - Neg(eps_bar, 1/(n+1), 2) > 0": true,
+    "P = Pos - Neg": true,
+    "Pos(0, 0, 0) = 64": true,
+    "eps^6 U_- is a polynomial": true,
+    "eps_bar >= m0^(-1/2)": true,
+    "kappa identity from (5.58)": true
+   },
+   "eps_bar": "1/13",
+   "kappa_max": "1/7",
+   "l0": 10,
+   "m0": 170,
+   "n": 6,
+   "x_max": "2"
+  },
+  {
+   "Neg_monomials": 10,
+   "bound": "17257/2401",
+   "bound_approx": 7.187421907538526,
+   "checks": {
+    "64 - Neg(eps_bar, 1/(n+1), 2) > 0": true,
+    "P = Pos - Neg": true,
+    "Pos(0, 0, 0) = 64": true,
+    "eps^6 U_- is a polynomial": true,
+    "eps_bar >= m0^(-1/2)": true,
+    "kappa identity from (5.58)": true
+   },
+   "eps_bar": "1/14",
+   "kappa_max": "1/8",
+   "l0": 11,
+   "m0": 209,
+   "n": 7,
+   "x_max": "2"
+  },
+  {
+   "Neg_monomials": 10,
+   "bound": "79325/16384",
+   "bound_approx": 4.84161376953125,
+   "checks": {
+    "64 - Neg(eps_bar, 1/(n+1), 2) > 0": true,
+    "P = Pos - Neg": true,
+    "Pos(0, 0, 0) = 64": true,
+    "eps^6 U_- is a polynomial": true,
+    "eps_bar >= m0^(-1/2)": true,
+    "kappa identity from (5.58)": true
+   },
+   "eps_bar": "1/16",
+   "kappa_max": "1/9",
+   "l0": 13,
+   "m0": 286,
+   "n": 8,
+   "x_max": "2"
+  },
+  {
+   "Neg_monomials": 10,
+   "bound": "19870/6561",
+   "bound_approx": 3.028501752781588,
+   "checks": {
+    "64 - Neg(eps_bar, 1/(n+1), 2) > 0": true,
+    "P = Pos - Neg": true,
+    "Pos(0, 0, 0) = 64": true,
+    "eps^6 U_- is a polynomial": true,
+    "eps_bar >= m0^(-1/2)": true,
+    "kappa identity from (5.58)": true
+   },
+   "eps_bar": "1/18",
+   "kappa_max": "1/10",
+   "l0": 14,
+   "m0": 336,
+   "n": 9,
+   "x_max": "2"
+  }
+ ],
+ "L_EL": {
+  "5": 4,
+  "6": 5,
+  "7": 6,
+  "8": 6,
+  "9": 7
+ },
+ "bands": {
+  "D=10 l=3": [
+   "0.491294065310271",
+   "490/1000"
+  ],
+  "D=10 l=4": [
+   "0.921402689606592",
+   "920/1000"
+  ],
+  "D=10 l=5": [
+   "0.962330726004671",
+   "961/1000"
+  ],
+  "D=11 l=4": [
+   "0.898980683353904",
+   "897/1000"
+  ],
+  "D=11 l=5": [
+   "0.930967303640908",
+   "929/1000"
+  ],
+  "D=11 l=6": [
+   "0.969856860225322",
+   "968/1000"
+  ],
+  "D=7 l=2": [
+   "0.949691435450051",
+   "948/1000"
+  ],
+  "D=7 l=3": [
+   "0.978974227897648",
+   "977/1000"
+  ],
+  "D=8 l=3": [
+   "0.945000892435492",
+   "944/1000"
+  ],
+  "D=8 l=4": [
+   "0.984607646581368",
+   "983/1000"
+  ],
+  "D=9 l=3": [
+   "0.922249047654215",
+   "921/1000"
+  ],
+  "D=9 l=4": [
+   "0.953118911659811",
+   "952/1000"
+  ],
+  "D=9 l=5": [
+   "0.988544342135894",
+   "987/1000"
+  ]
+ },
+ "checks": {
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "E1 D=10 l=10 q<=99/100": {
+   "detail": "n=8 l=10: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=11 q<=99/100": {
+   "detail": "n=8 l=11: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=12 q<=99/100": {
+   "detail": "n=8 l=12: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=13 q<=99/100": {
+   "detail": "n=8 l=13: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=6 q<=99/100": {
+   "detail": "n=8 l=6: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=7 q<=99/100": {
+   "detail": "n=8 l=7: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=8 q<=99/100": {
+   "detail": "n=8 l=8: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=10 l=9 q<=99/100": {
+   "detail": "n=8 l=9: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=10 q<=99/100": {
+   "detail": "n=9 l=10: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=11 q<=99/100": {
+   "detail": "n=9 l=11: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=12 q<=99/100": {
+   "detail": "n=9 l=12: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=13 q<=99/100": {
+   "detail": "n=9 l=13: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=14 q<=99/100": {
+   "detail": "n=9 l=14: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=7 q<=99/100": {
+   "detail": "n=9 l=7: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=8 q<=99/100": {
+   "detail": "n=9 l=8: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=11 l=9 q<=99/100": {
+   "detail": "n=9 l=9: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=10 q<=99/100": {
+   "detail": "n=5 l=10: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=4 q<=99/100": {
+   "detail": "n=5 l=4: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=5 q<=99/100": {
+   "detail": "n=5 l=5: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=6 q<=99/100": {
+   "detail": "n=5 l=6: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=7 q<=99/100": {
+   "detail": "n=5 l=7: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=8 q<=99/100": {
+   "detail": "n=5 l=8: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=7 l=9 q<=99/100": {
+   "detail": "n=5 l=9: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=8 l=10 q<=99/100": {
+   "detail": "n=6 l=10: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=8 l=5 q<=99/100": {
+   "detail": "n=6 l=5: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=8 l=6 q<=99/100": {
+   "detail": "n=6 l=6: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=8 l=7 q<=99/100": {
+   "detail": "n=6 l=7: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=8 l=8 q<=99/100": {
+   "detail": "n=6 l=8: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=8 l=9 q<=99/100": {
+   "detail": "n=6 l=9: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=9 l=10 q<=99/100": {
+   "detail": "n=7 l=10: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=9 l=11 q<=99/100": {
+   "detail": "n=7 l=11: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=9 l=6 q<=99/100": {
+   "detail": "n=7 l=6: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=9 l=7 q<=99/100": {
+   "detail": "n=7 l=7: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=9 l=8 q<=99/100": {
+   "detail": "n=7 l=8: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E1 D=9 l=9 q<=99/100": {
+   "detail": "n=7 l=9: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=10 l=3 q<=49/100": {
+   "detail": "n=8 l=3: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=10 l=4 q<=23/25": {
+   "detail": "n=8 l=4: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=10 l=5 q<=961/1000": {
+   "detail": "n=8 l=5: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=11 l=4 q<=897/1000": {
+   "detail": "n=9 l=4: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=11 l=5 q<=929/1000": {
+   "detail": "n=9 l=5: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=11 l=6 q<=121/125": {
+   "detail": "n=9 l=6: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=7 l=2 q<=237/250": {
+   "detail": "n=5 l=2: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=7 l=3 q<=977/1000": {
+   "detail": "n=5 l=3: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=8 l=3 q<=118/125": {
+   "detail": "n=6 l=3: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=8 l=4 q<=983/1000": {
+   "detail": "n=6 l=4: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=9 l=3 q<=921/1000": {
+   "detail": "n=7 l=3: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=9 l=4 q<=119/125": {
+   "detail": "n=7 l=4: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E2 D=9 l=5 q<=987/1000": {
+   "detail": "n=7 l=5: parametrisation identities fail: [False, False, True, False]",
+   "ok": false
+  },
+  "E3 D=10": {
+   "detail": "l >= 14: U_- >= m^3 * 4.84161",
+   "ok": true
+  },
+  "E3 D=11": {
+   "detail": "l >= 15: U_- >= m^3 * 3.0285",
+   "ok": true
+  },
+  "E3 D=7": {
+   "detail": "l >= 11: U_- >= m^3 * 38.5722",
+   "ok": true
+  },
+  "E3 D=8": {
+   "detail": "l >= 11: U_- >= m^3 * 23.6119",
+   "ok": true
+  },
+  "E3 D=9": {
+   "detail": "l >= 12: U_- >= m^3 * 7.18742",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- = m + n(n+1)x/2 + n(n+1) m delta x/2: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "PARAM4": {
+   "detail": "param_n(4, l) = onset.param(l), l = 2..5: [True, True, True, True]",
+   "ok": true
+  }
+ },
+ "claim": "results/hd/elementary/PREREG.md, HD-E (E1-E3)",
+ "control": "td-param",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "6fe9689",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "qmax": "99/100",
+ "timing": {
+  "E1 D=10 l=10 q<=99/100": 0.02,
+  "E1 D=10 l=11 q<=99/100": 0.02,
+  "E1 D=10 l=12 q<=99/100": 0.02,
+  "E1 D=10 l=13 q<=99/100": 0.02,
+  "E1 D=10 l=6 q<=99/100": 0.02,
+  "E1 D=10 l=7 q<=99/100": 0.02,
+  "E1 D=10 l=8 q<=99/100": 0.02,
+  "E1 D=10 l=9 q<=99/100": 0.02,
+  "E1 D=11 l=10 q<=99/100": 0.02,
+  "E1 D=11 l=11 q<=99/100": 0.02,
+  "E1 D=11 l=12 q<=99/100": 0.02,
+  "E1 D=11 l=13 q<=99/100": 0.02,
+  "E1 D=11 l=14 q<=99/100": 0.02,
+  "E1 D=11 l=7 q<=99/100": 0.02,
+  "E1 D=11 l=8 q<=99/100": 0.02,
+  "E1 D=11 l=9 q<=99/100": 0.02,
+  "E1 D=7 l=10 q<=99/100": 0.02,
+  "E1 D=7 l=4 q<=99/100": 0.02,
+  "E1 D=7 l=5 q<=99/100": 0.02,
+  "E1 D=7 l=6 q<=99/100": 0.02,
+  "E1 D=7 l=7 q<=99/100": 0.02,
+  "E1 D=7 l=8 q<=99/100": 0.02,
+  "E1 D=7 l=9 q<=99/100": 0.02,
+  "E1 D=8 l=10 q<=99/100": 0.02,
+  "E1 D=8 l=5 q<=99/100": 0.02,
+  "E1 D=8 l=6 q<=99/100": 0.02,
+  "E1 D=8 l=7 q<=99/100": 0.02,
+  "E1 D=8 l=8 q<=99/100": 0.02,
+  "E1 D=8 l=9 q<=99/100": 0.02,
+  "E1 D=9 l=10 q<=99/100": 0.02,
+  "E1 D=9 l=11 q<=99/100": 0.02,
+  "E1 D=9 l=6 q<=99/100": 0.02,
+  "E1 D=9 l=7 q<=99/100": 0.02,
+  "E1 D=9 l=8 q<=99/100": 0.02,
+  "E1 D=9 l=9 q<=99/100": 0.02,
+  "E2 D=10 l=3 q<=49/100": 0.02,
+  "E2 D=10 l=4 q<=23/25": 0.02,
+  "E2 D=10 l=5 q<=961/1000": 0.02,
+  "E2 D=11 l=4 q<=897/1000": 0.02,
+  "E2 D=11 l=5 q<=929/1000": 0.02,
+  "E2 D=11 l=6 q<=121/125": 0.02,
+  "E2 D=7 l=2 q<=237/250": 0.02,
+  "E2 D=7 l=3 q<=977/1000": 0.02,
+  "E2 D=8 l=3 q<=118/125": 0.02,
+  "E2 D=8 l=4 q<=983/1000": 0.02,
+  "E2 D=9 l=3 q<=921/1000": 0.02,
+  "E2 D=9 l=4 q<=119/125": 0.02,
+  "E2 D=9 l=5 q<=987/1000": 0.02,
+  "E3 D=10": 0.03,
+  "E3 D=11": 0.03,
+  "E3 D=7": 0.03,
+  "E3 D=8": 0.02,
+  "E3 D=9": 0.03,
+  "t_total_s": 1.25
+ },
+ "verdict": "REJECT: E2 D=7 l=2 q<=237/250, E2 D=7 l=3 q<=977/1000, E2 D=8 l=3 q<=118/125, E2 D=8 l=4 q<=983/1000, E2 D=9 l=3 q<=921/1000, E2 D=9 l=4 q<=119/125, E2 D=9 l=5 q<=987/1000, E2 D=10 l=3 q<=49/100, E2 D=10 l=4 q<=23/25, E2 D=10 l=5 q<=961/1000, E2 D=11 l=4 q<=897/1000, E2 D=11 l=5 q<=929/1000, E2 D=11 l=6 q<=121/125, E1 D=7 l=4 q<=99/100, E1 D=7 l=5 q<=99/100, E1 D=7 l=6 q<=99/100, E1 D=7 l=7 q<=99/100, E1 D=7 l=8 q<=99/100, E1 D=7 l=9 q<=99/100, E1 D=7 l=10 q<=99/100, E1 D=8 l=5 q<=99/100, E1 D=8 l=6 q<=99/100, E1 D=8 l=7 q<=99/100, E1 D=8 l=8 q<=99/100, E1 D=8 l=9 q<=99/100, E1 D=8 l=10 q<=99/100, E1 D=9 l=6 q<=99/100, E1 D=9 l=7 q<=99/100, E1 D=9 l=8 q<=99/100, E1 D=9 l=9 q<=99/100, E1 D=9 l=10 q<=99/100, E1 D=9 l=11 q<=99/100, E1 D=10 l=6 q<=99/100, E1 D=10 l=7 q<=99/100, E1 D=10 l=8 q<=99/100, E1 D=10 l=9 q<=99/100, E1 D=10 l=10 q<=99/100, E1 D=10 l=11 q<=99/100, E1 D=10 l=12 q<=99/100, E1 D=10 l=13 q<=99/100, E1 D=11 l=7 q<=99/100, E1 D=11 l=8 q<=99/100, E1 D=11 l=9 q<=99/100, E1 D=11 l=10 q<=99/100, E1 D=11 l=11 q<=99/100, E1 D=11 l=12 q<=99/100, E1 D=11 l=13 q<=99/100, E1 D=11 l=14 q<=99/100"
+}

@@ -1,0 +1,340 @@
+# item1_result_lines.log  2026-11-18 12:36:15 EST  the RESULT lines cited by §4.7 (with context), bh-modes repository at 65cbd90
+=== results/onset/RESULT.md l.1-24 ===
+1	# Exact onset for D = 6, ℓ = 2: VERIFIED (BHM-017)
+2	
+3	*2026-10-22, the bh-modes lead. Registration: `results/onset/PREREG.md` (BHM-016, commit
+4	`180824b`, sealed before the run). Run at `180824b`. Every check is exact arithmetic (sympy
+5	1.14.0; python-flint 0.9.0 `fmpq`, `fmpz_poly`).*
+6	
+7	## Exact quantities
+8	
+9	Parametrisation (PREREG §1, ℓ = 2): w = √(1 − q²) = 7μ/(6 + μ²), s = 7(6 − μ²)/(5(6 + μ²)),
+10	μ ∈ [0, 1]; U₋(t·x_H) = F(t, μ)/Den(μ), with F of degree (4, 104) and integer coefficients,
+11	and Den > 0 on [0, 1].
+12	
+13	| Claim | Certified statement |
+14	|---|---|
+15	| **O1** | g(μ) = F(1, μ) has exactly one root in [0, 1], and it is simple. It is the root of the irreducible factor **10μ³ − 11μ² + 228μ − 45** in an isolating interval of width 5.9·10⁻⁴⁶. Hence **q_*² is a root of 3025Y³ − 31521Y² + 99792Y − 68796**, and **q_* = 0.973056436723622598181546252320768965119704171…** (45 digits; both ends of the isolating interval agree to all printed digits). Inside the registered prediction [0.9730564367, 0.9730564368]. Arb root isolation agrees |
+16	| **O2** | U₋(x; q) ≥ 0 for all q ∈ [0, q_*] and x ∈ [0, x_H(q)], with equality only at (q_*, x_H(q_*)). Proof: F > 0 on [0, 7/8] × [μ_lo, 1] and on [7/8, 1] × [μ_c, 1], and ∂F/∂t < 0 on [7/8, 1] × [μ_lo, μ_c], with μ_c = μ_hi + 1/64. Each region needed one Bernstein box |
+17	| **O3** | U₋(x_H(q); q) < 0 for all q ∈ (q_*, 1]. So the onset mechanism is the horizon |
+18	| **O4** | S5's (6.24) bracket at the horizon is > 0 for q < 3/5, = 0 at q = 3/5, < 0 for q > 3/5 |
+19	| **O5** | E0 (S5 (5.63b) at n = 4 equals `TARGET.md`'s U₋), s² = 1 + 4mq²/25, w increasing, Den > 0 |
+20	
+21	**Supplementary exact check** (sympy `real_roots` on host-2, after the run; not part of the registered
+22	run): both cubics are irreducible over ℚ, and each has exactly one real root:
+23	- μ_* = 0.19893240974605249258…;
+24	- q_*² = 0.94683882904927334931….
+=== results/p3/RESULT.md l.8-30 ===
+8	## Verdict as registered: FAIL (the must-pass gate G1 failed)
+9	
+10	| Tier or control | Registered | Outcome |
+11	|---|---|---|
+12	| **T1** (μ = 1/6, q ≈ 0.981091) | must pass | **VERIFIED.** N has degree 68 in z; 3 Bernstein boxes; design 0.39 s, verification 0.21 s |
+13	| **G1** (D = 10, ℓ = 2, Q = 0) | must pass | **REJECT.** Exact counterexample N(1/4) < 0 |
+14	| **NC-P1** (planted bound state) | must pass | **As registered.** (a) For K_p = 149694 a trial function certifies a bound state: Q[φ₀] = −9.934316448·10⁻⁷ ± 5.6·10⁻¹⁸ (Arb rigorous integration). (b) The T1 certificate is rejected on V + W, with an exact counterexample on the bump |
+15	| TD-P1 (coefficient 7680 → 7681) | must reject | REJECT (E0) |
+16	| TD-P2 (P(0) raised by 1/10) | must reject | REJECT, with an exact counterexample at z = 0 |
+17	| T2 (μ ∈ [97/600, 103/600], q ∈ [0.97994, 0.98221]) | either way | **VERIFIED.** Degree (68, 16); 3 boxes; 4.8 s |
+18	| **T3** (μ ∈ [3/25, 1/5], q ∈ [0.97277, 0.99020]) | stretch | **VERIFIED.** 8 μ-boxes, each of degree (68, 16) with 3 Bernstein boxes; 33 s in all |
+19	
+20	## What is certified, and what failed
+21	
+22	- **Certified** (exact; the verification is the trust base): A_{2,q} ≥ 0 at T1, on T2, and on
+23	  **all of T3, q ∈ [0.97277, 0.99020]**.
+24	  - Since q_* = 0.973056… > 0.97277 (BHM-017), T3 covers the whole non-elementary band
+25	    (q_*, 0.99]. With BHM-017's O2 (V ≥ 0 for q ≤ q_*), **the ℓ = 2 part of Theorem A1
+26	    (0 < q ≤ 99/100) is certified.**
+27	  - Labels: **certified** (exact). The reduction (`METHOD.md`) is proved (pencil; audited 0×).
+28	    Independent re-run by a second party pending.
+29	  - A1 as a whole still needs ℓ ≥ 3 (FEASIBILITY P1) under A1's own PREREG.
+30	- **G1 failed: the method's known-answer gate.**
+=== results/p3/RESULT_ADDENDUM_1.md l.8-22 ===
+8	
+9	## 1. The certified q-intervals, exactly (correction BHM-060)
+10	
+11	w = √(1 − q²) = 7μ/(6 + μ²) increases on these boxes, so a μ-box [a, b] certifies exactly
+12	q ∈ [q(b), q(a)]:
+13	
+14	| Tier | μ-box | q-interval, exact | inward decimals | quoted before |
+15	|---|---|---|---|---|
+16	| T3 | [3/25, 1/5] | [√(21576/22801), √(31416/32041)] = [0.9727663…, 0.9901987…] | **[0.97277, 0.99019]** | [0.97277, 0.99020] |
+17	| T2 | [97/600, 103/600] | [q(103/600), q(97/600)] = [0.97993875…, 0.98220861…] | **[0.97994, 0.98220]** | [0.97994, 0.98221] |
+18	
+19	- **What was wrong.** The quoted upper ends were rounded outward, by about 1.3·10⁻⁶. The same T3
+20	  quote appears in `RESULT.md` (l.18, l.23), `results/a1/STAGE_REPORT.md` (l.25, l.30),
+21	  `results/a1/RESULT.md` (l.61) and `FEASIBILITY.md` (l.20), and in registry rows BHM-023 and
+22	  BHM-052. Each should be read with the inward decimals above.
+=== results/a1/RESULT.md l.8-45 ===
+8	
+9	## The claim
+10	
+11	**P1: VERIFIED as registered.** For every ℓ ≥ 3, every q ∈ [0, 99/100] and every x ∈ [0, x_H(q)],
+12	U₋ > 0. So V_{ℓ,q} > 0 on the exterior and A_{ℓ,q} ≥ 0.
+13	
+14	**Part I, ℓ = 3…10** (exact Bernstein in (t, μ); U₋ = F/Den in lowest terms, F of degree (4, 4)).
+15	Every F was proved positive on its whole box at the first Bernstein node, with no subdivision.
+16	
+17	| ℓ | m | μ_lo | q(μ_lo) | Den(μ) | certified lower bound of U₋ on the region |
+18	|---|---|---|---|---|---|
+19	| 3 | 14 | 11/100 | 0.990018 | (μ + 1)³(2μ + 7) | 15271808607/781250 ≈ 1.95·10⁴ |
+20	| 4 | 24 | 103/1000 | 0.990000 | (μ + 1)³(3μ + 8) | ≈ 1.28·10⁵ |
+21	| 5 | 36 | 49/500 | 0.990016 | (μ + 1)³(4μ + 9) | ≈ 4.08·10⁵ |
+22	| 6 | 50 | 47/500 | 0.990098 | (μ + 1)³(μ + 2) | 399839270089/390625 ≈ 1.02·10⁶ |
+23	| 7 | 66 | 91/1000 | 0.990151 | (μ + 1)³(6μ + 11) | ≈ 2.21·10⁶ |
+24	| 8 | 84 | 89/1000 | 0.990113 | (μ + 1)³(7μ + 12) | ≈ 4.36·10⁶ |
+25	| 9 | 104 | 87/1000 | 0.990167 | (μ + 1)³(8μ + 13) | ≈ 7.97·10⁶ |
+26	| 10 | 126 | 43/500 | 0.990064 | (μ + 1)³(9μ + 14) | ≈ 1.38·10⁷ |
+27	
+28	- **Coverage.** q(μ_lo)² ≥ (99/100)² holds exactly for every ℓ, so each box covers
+29	  q ∈ [0, 99/100]. The exact values of q(μ_lo)² and of each bound are in `runs/record/main/result.json`.
+30	- **The bound.** The least accepted Bernstein coefficient of F, divided by the largest Bernstein
+31	  coefficient of Den on [μ_lo, 1].
+32	
+33	**Part II, Lemma U (ℓ ≥ 11, q ∈ [0, 1], x ∈ [0, 2]).**
+34	- ε⁶U₋(x; ε⁻², κε) = Pos − Neg, with Pos(0, 0, 0) = 64.
+35	- Neg has nine monomials:
+36	  7680ε³κx + 7680ε⁴x + 80000ε³κ³x³ + 134400ε⁴κ²x³ + 28800ε⁵κx³ + 400000ε⁴κ⁴x⁴ + 1200000ε⁵κ³x⁴ +
+37	  1200000ε⁶κ²x⁴ + 400000ε⁷κx⁴.
+38	- At the corner (ε̄, κ, x) = (1/12, 1/5, 2), Neg = 159997/17496 ≈ 9.145.
+39	- So **U₋ ≥ m³ · 959747/17496 ≈ 54.86 m³ > 0**.
+40	- The six exact checks pass: polynomiality, the split, Pos(0) = 64, the κ identity, ε̄ ≥ m₀^{−1/2},
+41	  and the sign of the bound.
+42	
+43	## Gates, controls and drills (all as registered)
+44	
+45	| Name | Registered | Observed |
+=== results/a2/elementary/RESULT.md l.8-30 ===
+8	
+9	## The result
+10	
+11	> **A2-E (certified).** For D = 6, every ℓ ∈ {3, …, 10} and every q ∈ [q(μ_lo(ℓ)), 1], U₋ ≥ 0 on the closed exterior.
+12	> For ℓ = 4…10 it is strict. For ℓ = 3 the only zero is at the extremal horizon. So V_S− ≥ 0 and A_{ℓ,q} ≥ 0.
+13	
+14	Every μ_lo(ℓ) has q(μ_lo)² ≥ (99/100)², so these boxes meet A1's P1 boxes [μ_lo, 1].
+15	
+16	| ℓ | μ_lo | q(μ_lo)² (exact) | Certified bound on [0, 1] × [0, μ_lo] |
+17	|---|---|---|---|
+18	| 3 | 11/100 | 134331349/137053849 | F = μK + sG, with min Bernstein K = 12192768 and G = 275106444444/390625; F(1, 0) = 0 |
+19	| 4 | 103/1000 | 63226555957929/64510244957929 | U₋ ≥ 917504000000000000/1592858715949 (> 5.7·10⁵) |
+20	| 5 | 49/500 | 312772999176/319113139801 | U₋ ≥ 320000000000000/133237847 (> 2.4·10⁶) |
+21	| 6 | 47/500 | 27471514409/28023764409 | U₋ ≥ 1120000000000000000/171359687181 (> 6.5·10⁶) |
+22	| 7 | 91/1000 | 29925587924649/30523890174649 | U₋ ≥ 110398464000000000000/7496798004383 (> 1.4·10⁷) |
+23	| 8 | 89/1000 | 142474321369809/145333802369809 | U₋ ≥ 2007040000000000000/67087243509 (> 2.9·10⁷) |
+24	| 9 | 87/1000 | 2613126399136/2665281539761 | U₋ ≥ 7733440000000000000/137427108821 (> 5.6·10⁷) |
+25	| 10 | 43/500 | 12122233672881/12366763922881 | U₋ ≥ 4346496000000000000/43802996767 (> 9.9·10⁷) |
+26	
+27	- **The bounds.** The exact rationals are the certified ones. The decimals are truncated, so they are inward.
+28	- **For ℓ = 3,** the exact splitting checks all hold: F(1, μ) is divisible by μ, F(1 − s, μ) − F(1, μ) by s, the
+29	  identity F(1 − s, μ) = μK + sG holds, and F(1, 0) = 0.
+30	
+=== results/a2/s/RESULT.md l.6-30 ===
+6	- *Both kits print KIT PASS.*
+7	- *All nine records are identical after masking, and the `run.log`s are byte-identical.*
+8	
+9	## The result
+10	
+11	> **A2-S (certified).** For D = 6, ℓ = 2 and every q ∈ [q(1/8), 1] (q(1/8)² = 2961/3025, so q(1/8) = 0.98936… < 99/100),
+12	> the design P = −(2/5)(1 + ε)/(z + ε) + p₀(z), with ε = w/(3(1 + w)) and p₀ the sealed degree-12 pilot polynomial, gives
+13	> N(z, μ) > 0 for every z ∈ (0, 1). Hence A_{2,q} ≥ 0 (Proposition 3 for P C¹ on (0, 1)).
+14	
+15	**The exact polynomials and their proofs:**
+16	
+17	| Chart | Polynomial (degrees in its two variables) | Box | Least Bernstein coefficient (exact, in the record) |
+18	|---|---|---|---|
+19	| O | NL (38, 12) | [1/4, 1] × [0, 1/8] | > 0, one box |
+20	| O′ | NL (38, 12) | [0, 1/4] × [1/32, 1/8] | > 0, one box |
+21	| T | NL(μζ, μ)/μ² (38, 48) | [0, 8] × [0, 1/32] | 528353280, one box |
+22	| C | NL(z, zσ)/z² (48, 12) | [0, 1/4] × [0, 1/8] | > 0, one box |
+23	
+24	No chart needed a bisection.
+25	
+26	**Gates, all passed:**
+27	- **KAT, E0** (S5 (5.62b), (5.63b) at n = 4 equal `TARGET.md`'s forms exactly), and **H**.
+28	- **PARAM:** s² = 1 + 4mq²/25, q(0) = 1, q(1/8)² = 2961/3025 ≤ (99/100)², and w increasing on [0, 1].
+29	- **DESIGN:** the pilot record's SHA-256 is the sealed one; the degree is 12.
+30	- **G-RES:** at q = 1 and P = a/z + b₀ + b₁z, N is a polynomial in z, and N(0) − 576H₋(2)²(ℓ(ℓ − 3)/9 − a(a + 1)) = 0
+=== results/hd/elementary/RESULT.md l.8-45 ===
+8	
+9	**VERIFIED as registered.** The gates KAT, E0n (our transcription equals Kimi's for n = 2…12),
+10	PARAM4 and H all hold.
+11	
+12	## E1: every elementary ℓ up to ℓ₀, q ≤ 99/100
+13	
+14	| D | ℓ checked one by one | ℓ₀ |
+15	|---|---|---|
+16	| 7 | 4…10 | 10 |
+17	| 8 | 5…10 | 10 |
+18	| 9 | 6…11 | 11 |
+19	| 10 | 6…13 | 13 |
+20	| 11 | 7…14 | 14 |
+21	
+22	Each of these 35 (D, ℓ) is proved at the first Bernstein node, on a μ-box whose coverage of
+23	q ≤ 99/100 is checked exactly. The certified lower bounds of U₋ are in `runs/record/main/result.json`.
+24	
+25	## E2: the 13 bands with an onset, up to q_split
+26	
+27	| D | ℓ | q ≤ q_split | μ_lo | Bernstein leaves | certified lower bound of U₋ |
+28	|---|---|---|---|---|---|
+29	| 7 | 2 | 0.948 | 176/625 | 7 | ≈ 345 |
+30	| 7 | 3 | 0.977 | 859/5000 | 1 | ≈ 2.84·10³ |
+31	| 8 | 3 | 0.944 | 343/1250 | 1 | ≈ 1.79·10³ |
+32	| 8 | 4 | 0.983 | 71/500 | 1 | ≈ 1.05·10⁴ |
+33	| 9 | 3 | 0.921 | 3317/10000 | 3 | ≈ 3.59·10³ |
+34	| 9 | 4 | 0.952 | 611/2500 | 1 | ≈ 7.44·10³ |
+35	| 9 | 5 | 0.987 | 1211/10000 | 1 | ≈ 3.59·10⁴ |
+36	| 10 | 3 | 0.490 (interior band) | 83/100 | 3 | ≈ 136 |
+37	| 10 | 4 | 0.920 | 201/625 | 1 | ≈ 1.17·10⁴ |
+38	| 10 | 5 | 0.961 | 134/625 | 1 | ≈ 2.72·10⁴ |
+39	| 11 | 4 | 0.897 | 741/2000 | 7 | ≈ 2.31·10⁴ |
+40	| 11 | 5 | 0.929 | 2949/10000 | 1 | ≈ 4.44·10⁴ |
+41	| 11 | 6 | 0.968 | 119/625 | 1 | ≈ 1.02·10⁵ |
+42	
+43	- The three zero-margin bands (D = 7 ℓ = 2, D = 9 ℓ = 3, D = 11 ℓ = 4) and the interior band needed
+44	  the most subdivision.
+45	- For each band, the exact q(μ_lo)² ≥ q_split² is in the JSON.
+=== results/hd/elementary/RESULT_ADDENDUM_1.md l.15-35 ===
+15	  - `STAGE_REPORT.md` and REGISTRY row BHM-063 quote 38.6, 7.19 and 3.03 for D = 7, 9 and 11, against 38.572…,
+16	    7.1874… and 3.0285….
+17	  - I repeated those values in my reports to the operator.
+18	- **E2:** 6 of the 13 "≈" values in `RESULT.md` are rounded up: D = 9 ℓ = 5, D = 10 ℓ = 3–5, D = 11 ℓ = 5–6. One
+19	  example is "≈ 136" for 135.959….
+20	
+21	## E3: Lemma U(n), m⁻³U₋ ≥ the bound, for every ℓ > ℓ₀ and q ∈ [0, 1]
+22	
+23	| D | holds from ℓ = | exact bound | inward decimal |
+24	|---|---|---|---|
+25	| 7 | 11 | 399917/10368 | 38.57 |
+26	| 8 | 11 | 1481614528/62748517 | 23.61 |
+27	| 9 | 12 | 17257/2401 | 7.187 |
+28	| 10 | 14 | 79325/16384 | 4.841 |
+29	| 11 | 15 | 19870/6561 | 3.028 |
+30	
+31	## E2: the 13 bands with an onset, U₋ ≥ the bound for q ≤ q_split
+32	
+33	The exact rationals are in `runs/record/main/result.json`, field `U_lower_bound`.
+34	
+35	| D | ℓ | inward decimal |
+=== results/hd/s/RESULT.md l.18-50 ===
+18	them in inward decimals.
+19	- Every box verified at the registered degree on its first attempt, so no fallback was used.
+20	- "N·L degree" is the largest degree in (z, μ) over the band's boxes.
+21	- "Leaves" counts the Bernstein leaves for N > 0.
+22	- "Min ψ₁" and "min σ" come from the planning records (untrusted).
+23	
+24	| D | ℓ | kind | q, inward | design | boxes | N·L degree | leaves | min ψ₁ | min σ (fit) |
+25	|---|---|---|---|---|---|---|---|---|---|
+26	| 7 | 2 | onset | [0.94798, 0.99000] | z 20 | 9 | (56, 16) | 27 | 0.891 | 0.0506 |
+27	| 7 | 3 | onset | [0.97699, 0.99000] | z 16 | 5 | (48, 16) | 17 | 0.986 | 0.00625 |
+28	| 8 | 2 | from 0⁺ | [0, 0.99000] | z 24 | 22 | (68, 16) | 84 | 0.742 | 0.0452 |
+29	| 8 | 3 | onset | [0.94399, 0.99001] | z 20 | 10 | (60, 16) | 30 | 0.901 | 0.0150 |
+30	| 8 | 4 | onset | [0.98300, 0.99001] | z 20 | 3 | (60, 16) | 11 | 0.996 | 0.00299 |
+31	| 9 | 2 | from 0⁺ | [0, 0.99001] | z 28 | 22 | (80, 16) | 80 | 0.625 | 0.0403 |
+32	| 9 | 3 | onset | [0.92100, 0.99001] | z 24 | 11 | (72, 16) | 33 | 0.799 | 0.0180 |
+33	| 9 | 4 | onset | [0.95198, 0.99000] | z 24 | 9 | (72, 16) | 27 | 0.930 | 0.00947 |
+34	| 9 | 5 | onset | [0.98699, 0.99001] | ζ 20 | 2 | (64, 16) | 10 | 1.000 | 0.00151 |
+35	| 10 | 2 | from 0⁺ | [0, 0.99000] | z 32 | 22 | (92, 16) | 100 | 0.545 | 0.0409 |
+36	| 10 | 3 | onset (interior) | [0.48986, 0.99001] | z 28 | 21 | (84, 16) | 63 | 0.699 | 0.0149 |
+37	| 10 | 4 | onset | [0.91998, 0.99000] | z 24 | 11 | (76, 16) | 63 | 0.847 | 0.00278 |
+38	| 10 | 5 | onset | [0.96099, 0.99001] | ζ 24 | 8 | (76, 16) | 24 | 0.954 | 0.00390 |
+39	| 11 | 2 | from 0⁺ | [0, 0.99000] | z 32 | 22 | (96, 16) | 174 | 0.487 | 0.00089 |
+40	| 11 | 3 | from 0⁺ | [0, 0.99000] | z 32 | 23 | (96, 16) | 75 | 0.618 | 0.0133 |
+41	| 11 | 4 | onset | [0.89697, 0.99001] | z 28 | 13 | (88, 16) | 39 | 0.762 | 0.00770 |
+42	| 11 | 5 | onset | [0.92900, 0.99001] | z 28 | 11 | (88, 16) | 39 | 0.884 | 0.00186 |
+43	| 11 | 6 | onset | [0.96800, 0.99001] | ζ 24 | 7 | (80, 16) | 23 | 0.971 | 0.00214 |
+44	
+45	In all, the 18 bands use 231 μ-boxes and 919 Bernstein leaves.
+46	
+47	**The gates held in every band:** KAT, E0n, PILOT, H and coverage.
+48	- **G-S6** held for each band from 0⁺: the box ending at μ = 1 (q = 0) verified, so S6's Q = 0 answer is
+49	  reproduced as part of the band.
+50	- **The interior band** (D = 10 ℓ = 3) starts at q(μ_b) = √(91914991536373201/383045380761373201) = 0.48986…,
+=== results/hdx/elementary/RESULT.md l.6-20 ===
+6	
+7	- **The record:** host-1 at `8679d8b`, from its `git archive` (SHA-256 `53e25088d611512a…`), 18:06:53–18:07:23 UTC. The
+8	  main run took 29.5 s.
+9	- **The reproduction:** host-2, with `BHM_REF`. All 7 jobs are IDENTICAL after masking.
+10	- **Every gate holds:** KAT, E0n, PARAM4, H, EXT, A2E4 and MEET.
+11	  - A2E4 means the general-n code at n = 4 reproduces A2-E's sealed record field by field.
+12	  - MEET means every μ_lo equals HD-E's sealed E1 lower end, and the hand-off ℓ₀ = 10, 10, 11, 13, 14 matches.
+13	- **All 33 parts are certified.**
+14	
+15	| Control | Verdict |
+16	|---|---|
+17	| nc-band | REJECT: E D=7 l=3, E D=11 l=7, as registered |
+18	| nc-strict | REJECT: E D=7 l=4, E D=11 l=8, as registered |
+19	| nc-bump | REJECT: E D=7 l=5, E D=11 l=9, as registered |
+20	| td-coeff | REJECT: E0n, EXT, A2E4, E D=7 l=4, E D=8 l=5, E D=9 l=6, E D=10 l=7, E D=11 l=8, the predicted full list |
+=== results/hdx/s/RESULT.md l.8-32 ===
+8	- **The record:** host-1 at `bf23bfc`, from its `git archive` (SHA-256 `99e8a5e2066aaae0…`), 18:26:59–18:29:02 UTC. All
+9	  198 band jobs (11 bands × 18) end as their rules require (`code/hdx/verdicts.py`).
+10	- **The gate band** D = 6 ℓ = 2 is VERIFIED and IDENTICAL to A2-S's record (BHM-101), including every chart's least
+11	  Bernstein coefficient.
+12	- **The reproduction:** host-2, with `BHM_REF`. KIT PASS, and all 199 jobs are IDENTICAL after masking.
+13	
+14	| D, ℓ | design degree | NL degree (z, μ) | `none` | its 17 controls |
+15	|---|---|---|---|---|
+16	| 7, 3 | 12 | (42, 12) | VERIFIED | as registered |
+17	| 8, 3 | 16 | (54, 12) | VERIFIED | as registered |
+18	| 8, 4 | 12 | (46, 12) | VERIFIED | as registered |
+19	| 9, 4 | 12 | (50, 12) | VERIFIED | as registered |
+20	| 9, 5 | 12 | (50, 12) | VERIFIED | as registered |
+21	| 10, 4 | 20 | (70, 12) | VERIFIED | as registered |
+22	| 10, 5 | 12 | (54, 12) | VERIFIED | as registered |
+23	| 10, 6 | 12 | (54, 12) | VERIFIED | as registered |
+24	| 11, 5 | 16 | (66, 12) | VERIFIED | as registered |
+25	| 11, 6 | 12 | (58, 12) | VERIFIED | as registered |
+26	| 11, 7 | 12 | (58, 12) | VERIFIED | as registered |
+27	
+28	- **Every gate holds in every band:** KAT, E0n, H, PARAM, DESIGN, G-RES, COVER, L, S, DIV-T and DIV-C.
+29	- **All four charts are positive in every band.** The exact least Bernstein coefficients are in each record's
+30	  `min_bernstein`.
+31	- **nc-well's (a)** is certified in every band (Q[b] < 0 in Arb), and its (b) is refused on the support, inside
+32	  U₋ < 0.
+=== results/hdx/critical/RESULT.md l.6-32 ===
+6	
+7	- **The record:** host-1 at `6cedd44`, from its `git archive` (SHA-256 `249b819a0b15ec1a…`), 01:52:14–01:52:52 UTC
+8	  (21:52–21:53 EDT on 2026-10-26).
+9	  - BHM_JOBS = 4, since host-1 was also running the D ≥ 12 screen's record and the [another line of this project] fork's jobs. The
+10	    parallelism changes no result.
+11	- **The reproduction:** host-2, with `BHM_REF` set to the record, 01:53:40–01:53:52 UTC. KIT PASS, and all 35 jobs are
+12	  IDENTICAL after masking.
+13	- **All 9 bands are VERIFIED.** Every gate holds in every band: KAT, E0n, PARAM, H, S, R, L, COVER, Z0, DIV-O, DIV-T,
+14	  DIV-C, THROAT, CORNER, FIRST, INF, XN, POS-O, POS-O′, POS-T and POS-C.
+15	- **Every chart is positive at the first Bernstein node** in every band: one leaf per chart, with no bisection. The exact
+16	  least Bernstein coefficients are in each record's `min_bernstein`.
+17	
+18	| D, ℓ | MU1 | q(MU1)², each ≤ (99/100)² | deg NL (z, μ) | `none` | time |
+19	|---|---|---|---|---|---|
+20	| 7, 2 | 1/8 | 197505/201601 | (24, 14) | VERIFIED | 1.9 s |
+21	| 8, 2 | 13/100 | 698908729/714118729 | (30, 14) | VERIFIED | 2.7 s |
+22	| 9, 2 | 13/100 | 7961448561/8130448561 | (36, 14) | VERIFIED | 2.8 s |
+23	| 9, 3 | 3/25 | 2404864/2455489 | (36, 14) | VERIFIED | 2.2 s |
+24	| 10, 2 | 13/100 | 9829338561/10033828561 | (42, 14) | VERIFIED | 2.9 s |
+25	| 10, 3 | 3/25 | 46562824/47513449 | (42, 14) | VERIFIED | 2.9 s |
+26	| 11, 2 | 13/100 | 1321538729/1348578729 | (48, 14) | VERIFIED | 3.6 s |
+27	| 11, 3 | 1/8 | 2961/3025 | (48, 14) | VERIFIED | 2.8 s |
+28	| 11, 4 | 3/25 | 1015861/1038361 | (48, 14) | VERIFIED | 3.0 s |
+29	
+30	**The controls,** on D = 7 ℓ = 2 and D = 11 ℓ = 4. Each ends in its registered form (PREREG §4), as `hdx.kitcheck` found
+31	in both runs.
+32	
+=== results/extremal/RESULT.md l.6-24 ===
+6	## Verdict: VERIFIED as registered, KIT PASS
+7	
+8	- **The record:** host-1 at `8967b5f`, from its `git archive` (SHA-256 `0b92a6aa69c4476b…`), 18:00:57–18:00:59 UTC.
+9	- **The reproduction:** host-2, with `BHM_REF` set to the record. All 19 jobs are IDENTICAL after masking.
+10	
+11	| Job | Verdict |
+12	|---|---|
+13	| claim: n = 4, 5, 6, 7, 8, 9 (D = 6–11) | VERIFIED, each |
+14	| n symbolic (N) | VERIFIED |
+15	| information: n = 2, 3 (D = 4, 5) | VERIFIED, each |
+16	| nc-nu, at n = 4 and 9 | REJECT: Z-inf, Z-id, P-reg, P-asym, as registered |
+17	| nc-exp, at n = 4 and 9 | REJECT: Z-thr, Z-id, P-reg, P-asym, as registered |
+18	| td-U, at n = 4 and 9 | REJECT: Z-inf, Z-thr, Z-id, P-reg, P-asym, as registered |
+19	| td-zid, at n = 4 and 9 | REJECT: Z-id, P-reg, P-asym, as registered |
+20	| td-preg, at n = 4 and 9 | REJECT: P-reg, P-asym, as registered |
+21	
+22	## What is certified, and what rests on pencil
+23	
+24	**The identity** (*certified*, exact). Put Y = ρ^{−(n−1)}. Then

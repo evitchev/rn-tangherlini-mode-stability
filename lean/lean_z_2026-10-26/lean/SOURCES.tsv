@@ -1,0 +1,2 @@
+# file	sha256	origin
+BHModesZ.lean	ed1633537fd6f327ed80efe6aeb7a00a7763c325d84d420ad8612300193602a5	new (session-L, 2026-10-26): hand-written from bh-modes results/extremal/RESULT.md (BHM-126) and the lead's message 8; lines 34-53 are the c_n layer's definitions (lean_cn_2026-10-23, lines 24-43), byte for byte

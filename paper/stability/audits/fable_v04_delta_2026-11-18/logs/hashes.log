@@ -1,0 +1,61 @@
+# hashes.log 2026-11-18 12:24:15 EST
+## brief and drafts
+646e127de8cc613ba9b876cb92bbb67ef5da95cd791d7223ae62b47cc01524af  paper/stability/briefs/BRIEF_fable_2026-11-18_v04_delta.md
+28af203ac2910320c7466878fbbf8120b5a5e59bb73610d6f3006064357e8864  paper/stability/versions/DRAFT_v0.4.md
+7380111ba5e3f8ae948799caf4f3f28f6f481e0f87bfea2b223e23eaac5a6f17  paper/stability/versions/DRAFT_v0.3.md
+## text layers: brief prefix vs computed
+OK   S5 6d3dda73f7bdad4a literature/cache/hep-th_0308128/hep-th_0308128.txt
+OK   S28 7be01c77a197775c literature/zmode-litcheck-2026-11-10/cache/sources/gr-qc_0312012/paper.txt
+OK   S37 f66a4c526da8f014 literature/cache/zenodo_24146363/paper.txt
+OK   S38 0edd6e65bc79ca09 literature/cache/2609.21797/paper.txt
+OK   S39 2c8f8ee04b11f33d literature/cache/2610.39095/paper.txt
+OK   S40 7991e065c473afd2 literature/cache/2609.33661/paper.txt
+OK   S41 d3ef2c85ad593364 literature/cache/2606.28253/paper.txt
+OK   S42 325ea17a120be59d literature/cache/2610.33812/paper.txt
+OK   S43 37193e2a7eb069e0 literature/cache/2611.21591/paper.txt
+OK   S44 1057a45e55dea3b7 literature/cache/2509.12435/paper.txt
+OK   S45 49b547e798611c21 literature/cache/2610.28367/paper.txt
+OK   S46 386f6eb434a1f34a literature/cache/2611.16908/paper.txt
+OK   S47 dfa83849636ac574 literature/cache/2611.07395/paper.txt
+OK   S48 b0c800e810dbb65e literature/cache/1103.6148/paper.txt
+OK   S49 c5332d7c2ca36fd0 literature/cache/1910.05630/paper.txt
+OK   S50 9bd6404faebb5347 literature/cache/1809.05144/paper.txt
+OK   S51 a714fea5175b88ad literature/cache/1511.06059/paper.txt
+OK   S52 de2aeb4afafd6239 literature/cache/1511.03432/paper.txt
+OK   S53 12b6f59326a69463 literature/cache/1809.00795/paper.txt
+OK   S54 942e3c895e267adf literature/cache/1910.08479/paper.txt
+OK   S55 0360e0ad3080cf47 literature/cache/1910.02854/paper.txt
+OK   S56 fc99a79562528f04 literature/cache/1411.2947/paper.txt
+OK   S57 024869e5f7963a7a literature/cache/1203.3766/paper.txt
+OK   S58 947ce0bc8fb3211f literature/cache/zenodo_24285821/paper.txt
+OK   S59 d1676470a1ca69e2 literature/cache/zenodo_24288754/paper.txt
+## allow-list dirs
+exists  CHARTER.md
+exists  RULES.md
+exists  TARGET.md
+exists  results/onset
+exists  results/p3
+exists  results/p3/RULE2_RESULT.md
+exists  results/a1
+exists  results/a2/elementary
+exists  results/a2/s
+exists  results/hd/elementary
+exists  results/hd/s
+exists  results/hdx/elementary
+exists  results/hdx/s
+exists  results/hdx/critical
+exists  results/extremal
+exists  literature/stability-relwork-2026-11-18/README.md
+exists  literature/stability-relwork-2026-11-18/ledger
+exists  literature/zmode-litcheck-2026-11-10/README.md
+exists  literature/zmode-litcheck-2026-11-10/ledger
+exists  code
+exists  results/stage3/audits/fable_2026-10-26
+exists  results/hdx/critical/audits/fable_2026-11-13
+exists  paper/stability/audits/fable_assembly_2026-11-13
+TARGET_A2_ADDENDUM_1.md
+TARGET_A2.md
+TARGET_HD_ADDENDUM_1.md
+TARGET_HD_ADDENDUM_2.md
+TARGET_HD_ADDENDUM_3.md
+TARGET_HD.md

@@ -1,0 +1,198 @@
+# item2_screens.log  2026-11-18 12:36:17 EST  the two screens' own accounts behind §1 'What was searched' (README.md and ledger/searches.md only)
+## relwork README: services, volume, reading, seeds, not searched (l.151-177)
+=== stability-relwork-2026-11-18/README.md l.151-177 ===
+151	## Scale and scope
+152	
+153	- **Services.**
+154	  - INSPIRE: title, fulltext and citer queries.
+155	  - The arXiv API: abstracts, all categories.
+156	  - zbMATH Open.
+157	  - OpenAlex: seed works, full citer sets of ten seeds, relevance searches top 200.
+158	  - Zenodo's public record search: added after OpenAlex surfaced Zenodo-only preprints; same refusal list.
+159	- **Volume.** 175 logged queries: topic queries, citer sets, 10 seed-work lookups, 6 title-matching probes, and 9
+160	  Zenodo queries that answered HTTP 400 and were re-run. Also 10 INSPIRE record-id lookups and 10 Zenodo record lookups.
+161	  That is 316 logged requests in all (`cache/searches/search_log.tsv`), giving 4,099 unique records.
+162	- **Reading.** Every record was read by title (`screen/triage.tsv`), with abstracts for candidates. 88 sources were
+163	  fetched (67) or reused (21) and read at their anchors. 81 passages are quoted verbatim.
+164	- **Positive controls.** All ten seeds (S5, S6, S23, S28, S8, S14, S26, S9, S27, S31) surfaced through queries other
+165	  than their own lookups (`screen/positive_controls.tsv`). The OpenAlex citer sets added records that INSPIRE's do not
+166	  have, counted there.
+167	- **Not searched:**
+168	  - Google Scholar, ADS and MathSciNet (account or automation restrictions);
+169	  - Semantic Scholar (not needed; the OpenAlex citer sets are complete);
+170	  - OpenAlex cursor paging with an API key (basic paging was used instead);
+171	  - full texts of papers not indexed by INSPIRE, except those fetched;
+172	  - preprint repositories other than Zenodo (Research Square, Preprints.org and the like) beyond what OpenAlex
+173	    returned.
+174	- **Incidents.** All are recorded in `ledger/searches.md` (Errata), each with its re-run or the coverage left:
+175	  - OpenAlex rate limits;
+176	  - zbMATH responses cut off, and HTTP 502 beyond the second page;
+177	  - Zenodo's page-size limit.
+## relwork README: commission and arXiv API (l.1-6, 37-41)
+=== stability-relwork-2026-11-18/README.md l.1-6 ===
+1	# Related-work screen for the paper on the stability theorem (bh-modes message 14, BHM-174 item 3): session-L, 2026-11-18
+2	
+3	**Commission.**
+4	- This answers the bh-modes lead's message 14 (`outbox/2026-11-13-to-session-L-14.md`, direct channel, BHM-057), as
+5	  amended by message 15 and message 16 (`outbox/2026-11-17-to-session-L-16.md`).
+6	- My operator gave the go on 2026-11-17. Delivered on 2026-11-18, inside the date asked (2026-11-20 EST).
+=== stability-relwork-2026-11-18/README.md l.37-41 ===
+37	**The arXiv API (message 16).**
+38	- Searched: 33 requests, all HTTP 200.
+39	- My note of 2026-11-13 said the API refused this client with HTTP 406 since 09-16. That claim was stale. The 406 was a
+40	  September state that had cleared by 10-05, and I had not probed since.
+41	- The cause and the probe are in `ledger/searches.md` and `[deliveries]/session-L/arxiv_api_status_2026-11-18/`.
+## relwork README: predictions timestamps (l.133, 147-149)
+=== stability-relwork-2026-11-18/README.md l.133-133 ===
+133	## Predictions registered before searching (session-L's prediction ledger, 2026-11-18 03:26Z), resolved here
+=== stability-relwork-2026-11-18/README.md l.147-149 ===
+147	Brier score for these nine: 0.109. Mean forecast 0.38, outcome rate 0.44, resolved in the ledger on
+148	2026-11-18 04:38Z. P21598318729e is TRUE only through Zenodo, which round 1 had not planned to search.
+149	P8856e168cb5d is TRUE on arXiv alone (Chen et al.), and Zenodo adds Padhi's mode-stability claim.
+## relwork searches.md: method, coverage, not searched (l.1-15, 61-92)
+=== stability-relwork-2026-11-18/ledger/searches.md l.1-15 ===
+1	# Searches: method, coverage, what was not searched, errata, and every query
+2	
+3	## Method
+4	
+5	- **Services.** All four need no account and allow automated queries.
+6	  - INSPIRE (`inspirehep.net/api/literature`): title, fulltext and `refersto:recid:` citer queries, every page.
+7	  - The arXiv API (`export.arxiv.org/api/query`): abstracts and titles, all categories, math included. 100 per page, at
+8	    most three pages, 4 s between requests.
+9	  - zbMATH Open (`api.zbmath.org`).
+10	  - OpenAlex (`api.openalex.org`): seed works, citer sets, and relevance searches (top 200).
+11	  - **Zenodo** (`zenodo.org/api/records`), the public record search.
+12	    - Added in round 5, after OpenAlex's O05/O06 surfaced three Zenodo-only computer-assisted preprints that no other
+13	      service had returned. 25 records per page is the anonymous limit.
+14	    - Record metadata and file lists are saved as `cache/searches/zenodo_<id>.json`. PDFs were fetched from the record's
+15	      file link (`tools/fetch_url.py`).
+=== stability-relwork-2026-11-18/ledger/searches.md l.61-92 ===
+61	## Positive controls
+62	
+63	Your S5, S6, S23, S28, S8, S14, S26, S9, S27 and S31 are seeds. Each also surfaced through queries other than its own
+64	lookups and citer set (`screen/positive_controls.tsv`).
+65	
+66	## Coverage
+67	
+68	- **Citers beyond INSPIRE (message 14, Q1).** OpenAlex citer sets were taken in full for S5, S6, S23, S28, S8, S14, S26,
+69	  S9, S27 and S31. The records found only through OpenAlex are counted in `screen/positive_controls.tsv`.
+70	- **Weak spots.**
+71	  - Title queries miss papers whose titles do not name the setting. The citer sets and fulltext queries are there to
+72	    cover that.
+73	  - INSPIRE's fulltext covers only INSPIRE-indexed papers, mostly hep, gr-qc and math-ph.
+74	  - arXiv math full texts are not full-text searched by any service used. Abstracts were searched through the arXiv
+75	    API, OpenAlex and zbMATH.
+76	
+77	## Not searched
+78	
+79	- **Google Scholar, ADS, MathSciNet.** They need an account or a subscription, or forbid automated access.
+80	- **Semantic Scholar.** Not used. Message 14 asked for OpenAlex or Semantic Scholar, and the OpenAlex citer sets were
+81	  complete.
+82	- **OpenAlex deep paging with a key.**
+83	  - Since 2026, OpenAlex refuses cursor paging past the first page without an API key (HTTP 401, OC01–OC03, page 2).
+84	    An account was not created.
+85	  - Basic paging (`page=2, 3`) needs no key, and all citer sets were then fetched in full (OC01b probe; OC01c, OC02b,
+86	    OC03b).
+87	- **Full texts of non-INSPIRE papers** beyond those fetched.
+88	- **Other repositories.** Zenodo was searched only with N01b–N17. Other repositories that host unrefereed preprints
+89	  (Research Square, Preprints.org, ESS Open Archive) were not searched directly. Some of their records came through
+90	  OpenAlex and were screened by title.
+91	- **Publisher-only sources.** None was needed. Dafermos's essay is open access at the publisher, and that copy was
+92	  fetched.
+## zmode README: scale (l.16-21)
+=== zmode-litcheck-2026-11-10/README.md l.16-21 ===
+16	- **Scale.**
+17	  - 93 INSPIRE queries (106 requests, all HTTP 200);
+18	  - 451 unique records screened by title and abstract;
+19	  - 52 sources: 34 fetched (none failed, none paywalled) and 18 reused, all with hashes equal to the earlier copies.
+20	- **Host.** All fetching and reading ran on this session's host. No computation was run, beyond text processing of the
+21	  fetched files.
+## zmode searches.md: scale and NOT SEARCHED (l.3-12, 132-145)
+=== zmode-litcheck-2026-11-10/ledger/searches.md l.3-12 ===
+3	**Scale.**
+4	- INSPIRE only (`inspirehep.net/api/literature`), in two sessions: 2026-10-26 (74 requests) and 2026-11-10 (32 requests).
+5	  Every one of the 106 requests returned HTTP 200 (`cache/searches/search_log.tsv`).
+6	- **93 queries** in all (`cache/searches/queries.tsv`): the 62 planned on 10-26 (A01–E05), one probe (P01), 24 re-runs
+7	  (suffix b) and two additions (A16, C13), and four dimension-variant queries (A17, B16, C14, E06).
+8	- **5 record-id lookups** (`api/arxiv/<id>`) for the `refersto:recid:` citer queries: S5 hep-th/0308128 = 626243,
+9	  S6 hep-th/0305185 = 619316, S23 hep-th/0305147 = 619043, S22 2208.14031 = 2143701, S8 hep-th/0703231 = 747189.
+10	- Results were fetched 25 per page, most cited first, all pages.
+11	- 451 unique records were screened by title and abstract (`screen/index.json` in the cache). 52 sources were fetched
+12	  or reused (see the README).
+=== zmode-litcheck-2026-11-10/ledger/searches.md l.132-145 ===
+132	## NOT SEARCHED
+133	
+134	- arXiv full-text search, Google Scholar, ADS, MathSciNet and zbMATH. INSPIRE's own full-text (`fulltext:`) was used in
+135	  A15, A16, C09 and C13 only.
+136	- **Mathematical literature** on ODEs with three or more irregular singular points (Heun-class multi-confluent equations,
+137	  Stokes data, connection problems) outside INSPIRE. Q4's negative is about the physics literature indexed by INSPIRE.
+138	- **Books:** Chandrasekhar (1983), and the standard sectorial theory at a rank-1 irregular point (H2's source, BHM-166
+139	  §1). That one is a separate item.
+140	- **Citer sets** beyond the five seeds above (S5, S6, S23, S22, S8). The 1103.6148 review was reached through A11–A14
+141	  and B10 only.
+142	- **Conference proceedings and theses** not on INSPIRE. Non-English literature.
+143	- **The session-L watches' OAI harvests** (bh-modes: physics:gr-qc and physics:math-ph; session-R: physics:hep-th
+144	  and physics:math-ph) were read locally for the weeks to 2026-11-03. Three candidates were screened (Q1 ledger, end).
+145	  Older harvests were not re-read for this check.
+## relwork ledgers: the 'not found' statements behind §1
+stability-relwork-2026-11-18/ledger/q4_computer_assisted.md:81:1. **Still NOT FOUND there:** a computer-assisted proof of mode stability for any black hole, in the sources searched
+stability-relwork-2026-11-18/ledger/q4_computer_assisted.md:129:## Not found (relative to the sources searched)
+stability-relwork-2026-11-18/ledger/q1_prior_results.md:16:**NOT FOUND: a proof for any D ≥ 6, for any charge range, of the scalar-type gravitational sector at Λ = 0.**
+stability-relwork-2026-11-18/ledger/q1_prior_results.md:111:## Not found (relative to the sources searched)
+stability-relwork-2026-11-18/ledger/q5_math_literature.md:34:### (b) Reissner–Nordström–Tangherlini (charged, D ≥ 5): NOT FOUND in the math literature searched
+stability-relwork-2026-11-18/ledger/q5_math_literature.md:108:## Not found (relative to the sources searched)
+stability-relwork-2026-11-18/ledger/q3_s_deformation.md:59:4. **NOT FOUND: positivity checked in exact or interval arithmetic.**
+stability-relwork-2026-11-18/ledger/q3_s_deformation.md:87:## Not found (relative to the sources searched)
+=== stability-relwork-2026-11-18/ledger/q1_prior_results.md l.111-116 ===
+111	## Not found (relative to the sources searched)
+112	
+113	- A proof, analytic or computer-assisted, of no growing scalar-type gravitational modes of higher-dimensional RN with
+114	  Λ = 0 for any D ≥ 6. This includes small charge, single multipoles and near extremality.
+115	- A claimed instability of that sector at Λ = 0 in Einstein–Maxwell theory.
+116	- A finite-D analytic result on that sector after Ishibashi–Kodama 2011.
+=== stability-relwork-2026-11-18/ledger/q3_s_deformation.md l.87-91 ===
+87	## Not found (relative to the sources searched)
+88	
+89	- An S-deformation whose positivity was checked in exact, rational or interval arithmetic, or by any certified
+90	  computation.
+91	- A general construction of S for the scalar-type potential of charged higher-dimensional black holes. Ishibashi–Kodama
+=== stability-relwork-2026-11-18/ledger/q4_computer_assisted.md l.129-134 ===
+129	## Not found (relative to the sources searched)
+130	
+131	- A refereed or arXiv computer-assisted proof of mode stability for any black hole.
+132	- Any computer-assisted mode-stability result, refereed or not, for charged or higher-dimensional black holes, or for
+133	  coupled gravitational–electromagnetic perturbations.
+134	- Prediction P8856e168cb5d (a computer-assisted proof or certified enclosure of a BH perturbation statement, 0.55) is
+=== stability-relwork-2026-11-18/ledger/q5_math_literature.md l.108-111 ===
+108	## Not found (relative to the sources searched)
+109	
+110	- A mathematical proof of mode or linear stability for charged higher-dimensional (D ≥ 5) static black holes.
+111	- A definition of, or result on, modes of the coupled gravitational–electromagnetic system at an extremal horizon in
+## zmode q1: closed forms at extremality found for other sectors (l.1-16, 39-47)
+=== zmode-litcheck-2026-11-10/ledger/q1_static_solutions.md l.1-16 ===
+1	# Q1: explicit static (ω = 0) solutions of the Kodama–Ishibashi master equations for charged, and extremal, higher-D black holes
+2	
+3	**Answer, relative to the sources below.** No closed-form static solution of the scalar-type master equations of a
+4	charged black hole in D ≥ 5 was found, at extremality or at any other charge.
+5	- **Found elsewhere in closed form:**
+6	  - the tensor and vector types at extremality (Pereñiguez–Cardoso), and spin-0 test fields;
+7	  - the neutral scalar type (Kodama 2004, Kol–Smolkin, Hui et al., the ladder papers);
+8	  - in D = 4, RN at every charge (Rai–Santoni; two 2024–25 extremal papers).
+9	- **Only numerically:** the charged scalar type in D ≥ 5. Xia–Ma–Pang (2025) solve the static scalar-type equations of
+10	  D-dimensional RN at q/µ = 0.1, and they write that these Love numbers "have not been studied" before.
+11	- **Only near the horizon, as scaling exponents:** static deformations of extremal RN in D dimensions (Horowitz et al.;
+12	  Chen–de Rham–Tolley; Chen–Kovács).
+13	- **Confidence:** medium-high for D ≥ 5. The negative rests on 93 generic queries (`searches.md`) and on reading the
+14	  papers below. It is not a proof of absence.
+15	
+16	**D = 4.** Z covers D ≥ 4, and the 4D literature has general analytic static solutions for RN at every charge. I did not
+=== zmode-litcheck-2026-11-10/ledger/q1_static_solutions.md l.39-47 ===
+39	**2112.08400v2, Pereñiguez, Cardoso, "Love numbers and magnetic susceptibility of charged black holes"** (FETCHED).
+40	- l.94–99 (right column): the KI formalism is adopted.
+41	- l.125–134 (left column): "When the extremality bound is saturated … Whenever any of these two limits takes place, i.e. Q = 0 or
+42	  TH = 0, the equations become hypergeometric and Love numbers and magnetic susceptibilities are exactly solvable."
+43	  CONFIRMED.
+44	- l.126–134 (right column): "In the remaining of this work we adopt the KI formalism … and focus on tensor and vector
+45	  fluctuations … A more thorough analysis including the scalar sector will be considered elsewhere." CONFIRMED.
+46	- So closed-form extremal static solutions in D dimensions are given for the **tensor and vector** types, not the
+47	  scalar type.

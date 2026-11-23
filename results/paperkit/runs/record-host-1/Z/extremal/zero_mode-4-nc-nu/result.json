@@ -1,0 +1,67 @@
+{
+ "archive_sha256": "6db58904a6b9b821e67fdf8a43d7d439221af73cdf87b4b3074c9775693bb4f5",
+ "checks": {
+  "H": {
+   "detail": "H_-(2Y) - (l + n) h = 0",
+   "ok": true
+  },
+  "P-asym": {
+   "detail": "not computed: Z-id failed",
+   "ok": false
+  },
+  "P-reg": {
+   "detail": "not computed: Z-id failed",
+   "ok": false
+  },
+  "Z-id": {
+   "detail": "identity residual nonzero: 2*(Y - 1)*(8*Y**2 + Y*ell - Y - ell**2 - ell + 2)/(4*Y + ell - 1)",
+   "ok": false
+  },
+  "Z-inf": {
+   "detail": "W(0) - nu (nu + 1) = -2*(ell + 2)",
+   "ok": false
+  },
+  "Z-pos": {
+   "detail": "h at l = 2 + t: 4*Y + t + 1",
+   "ok": true
+  },
+  "Z-thr": {
+   "detail": "alpha (alpha - 1) (n-1)^2 - W(1) = 0; W(1) = ell*(ell - 3)",
+   "ok": true
+  },
+  "q1": {
+   "detail": "(n+1)^2 delta (1 + m delta) = 1; 1 + 2 m delta - (2l+n-1)/(n+1) = 0",
+   "ok": true
+  }
+ },
+ "claim": "results/extremal/PREREG.md: Z, the extremal zero mode, and its Darboux partner",
+ "control": "nc-nu",
+ "facts": {
+  "W": "-(160*Y**4 + 80*Y**3*ell - 208*Y**3 - 96*Y**2*ell + 96*Y**2 - 2*Y*ell**3 + 6*Y*ell**2 + 42*Y*ell - 46*Y - ell**4 - ell**3 + 3*ell**2 + ell - 2)/(4*Y + ell - 1)**2",
+  "throat_classification": {
+   "l=2": {
+    "2l<=n-1": false,
+    "alpha": "2/3",
+    "alpha_minus": "1/3",
+    "throat_principal": false
+   }
+  }
+ },
+ "n": "4",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.2,
+  "utc_start": "2026-11-18T18:22:30+00:00"
+ },
+ "verdict": "REJECT: Z-inf, Z-id, P-reg, P-asym"
+}

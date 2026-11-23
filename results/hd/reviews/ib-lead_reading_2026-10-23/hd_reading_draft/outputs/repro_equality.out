@@ -1,0 +1,37 @@
+$ for each of the 34 HD-S records: python3 -I jsondiff.py record repro-host-2 <compare_runs.py MASK_KEYS>
+10-2: differing leaves: 0
+10-2-nc-bound: differing leaves: 0
+10-2-td-coeff: differing leaves: 0
+10-2-td-horizon: differing leaves: 0
+10-3: differing leaves: 0
+10-4: differing leaves: 0
+10-5: differing leaves: 0
+11-2: differing leaves: 0
+11-2-nc-bound: differing leaves: 0
+11-2-td-coeff: differing leaves: 0
+11-2-td-horizon: differing leaves: 0
+11-3: differing leaves: 0
+11-4: differing leaves: 0
+11-5: differing leaves: 0
+11-6: differing leaves: 0
+7-2: differing leaves: 0
+7-2-nc-bound: differing leaves: 0
+7-2-td-coeff: differing leaves: 0
+7-2-td-horizon: differing leaves: 0
+7-2-td-verifier: differing leaves: 0
+7-3: differing leaves: 0
+8-2: differing leaves: 0
+8-2-nc-bound: differing leaves: 0
+8-2-td-coeff: differing leaves: 0
+8-2-td-horizon: differing leaves: 0
+8-3: differing leaves: 0
+8-4: differing leaves: 0
+9-2: differing leaves: 0
+9-2-nc-bound: differing leaves: 0
+9-2-td-coeff: differing leaves: 0
+9-2-td-horizon: differing leaves: 0
+9-3: differing leaves: 0
+9-4: differing leaves: 0
+9-5: differing leaves: 0
+$ same for the pilot VALID record vs repro
+differing leaves: 0

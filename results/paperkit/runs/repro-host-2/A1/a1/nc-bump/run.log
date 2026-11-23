@@ -1,0 +1,5 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0: PASS  S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0
+H: PASS  H_- = m + 10 x + 10 m delta x: every coefficient > 0, so H_- >= m > 0
+P1 l=3: FAIL  F: sign*p = -37682004040209/390625 <= 0 at (t, mu) = (1/2, 11/100)  (a counterexample)
+REJECT: P1 l=3

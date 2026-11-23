@@ -1,0 +1,27 @@
+scheck D=7 l=2 none: VERIFIED
+scheck D=7 l=3 none: VERIFIED
+scheck D=8 l=2 none: VERIFIED
+scheck D=8 l=3 none: VERIFIED
+scheck D=8 l=4 none: VERIFIED
+scheck D=9 l=2 none: VERIFIED
+scheck D=9 l=3 none: VERIFIED
+scheck D=9 l=4 none: VERIFIED
+scheck D=9 l=5 none: VERIFIED
+scheck D=10 l=2 none: VERIFIED
+scheck D=10 l=3 none: VERIFIED
+scheck D=10 l=4 none: VERIFIED
+scheck D=10 l=5 none: VERIFIED
+scheck D=11 l=2 none: VERIFIED
+scheck D=11 l=3 none: VERIFIED
+scheck D=11 l=4 none: VERIFIED
+scheck D=11 l=5 none: VERIFIED
+scheck D=11 l=6 none: VERIFIED
+scheck D=7 l=2 td-direct: REJECT: X2
+scheck D=11 l=6 td-direct: REJECT: X2
+scert D=9 l=5 td-horizon: REJECT: td-horizon
+scert D=9 l=5 nc-bound: REJECT: nc-bound (b)
+scert D=10 l=5 td-horizon: REJECT: td-horizon
+scert D=10 l=5 nc-bound: REJECT: nc-bound (b)
+scert D=11 l=6 td-horizon: REJECT: td-horizon
+scert D=11 l=6 nc-bound: REJECT: nc-bound (b)
+KIT PASS

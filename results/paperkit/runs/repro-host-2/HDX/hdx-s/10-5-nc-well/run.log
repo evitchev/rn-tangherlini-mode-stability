@@ -1,0 +1,18 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+H: PASS  every coefficient of H_- > 0
+PARAM: PASS  s^2 = 1 + 4 m q^2/81, q(0) = 1, q(1/8)^2 = 42525/43681 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]
+DESIGN: PASS  pilot record sealed; degree 12
+G-RES: PASS  N polynomial in z: True; H(2) = (ell + 7)*(ell + 8); N(0) - 64 (n-1)^2 H(2)^2 (c - a(a+1)) = 0 (n = 8)
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, 1/8]
+S: PASS  eps_n = 17*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 9651390366419723735930392291446948118498853458295995374022882157334792193/438749104839665906388641679639762179667987409998062125318144000
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 23453142442759221730126795800270932409/9903520314283042199192993792
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 10041246978048/5
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 183772423824626017693575118449611751474051465435609101443723217859943299883/283364289875660265733514277771257040150267162228491263913492480
+nc-well (a): PASS  Q[b] certified < 0: True; {'support': ['9/1000', '7/200'], 'K': '31404201134', 'I1_float': 3.243365962123017e-15, 'Q_b': '[-3.243365962e-15 +/- 1.49e-25]', 'message': 'nc-well on the support: sign*p = -79034153996477004246189435948898630461749380220072973261542821515912498550546705551788998633537307
+nc-well (b): FAIL  the certificate on the planted potential: rejected True
+REJECT: nc-well (b)

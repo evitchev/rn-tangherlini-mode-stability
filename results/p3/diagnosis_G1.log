@@ -1,0 +1,2 @@
+G1: min over z of [rho f' + f (2 P_true - 1 - EPS)] = -1.288 at z = 0.2875 (P_true = -0.5601); P_true range [-0.6148, 6]
+T1: min over z of [rho f' + f (2 P_true - 1 - EPS)] = 0.9921 at z = 0.0025 (P_true = -0.2488); P_true range [-0.2488, 4]

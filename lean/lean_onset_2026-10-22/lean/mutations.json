@@ -1,0 +1,98 @@
+[
+ {
+  "id": "ONM1",
+  "file": "BHModesOnset.lean",
+  "decl": "param_U",
+  "old": "    + 7680 * m * (1 + m * δ) * x ^ 2 - 16 * m * (5 * m * (96 - 4 * m) * δ + 480) * x + 64 * m ^ 3 + 384 * m ^ 2",
+  "new": "    + 7681 * m * (1 + m * δ) * x ^ 2 - 16 * m * (5 * m * (96 - 4 * m) * δ + 480) * x + 64 * m ^ 3 + 384 * m ^ 2",
+  "note": "TARGET.md's U-: 7680 -> 7681",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM2",
+  "file": "BHModesOnset.lean",
+  "decl": "B1_split",
+  "old": "(812224/3 : ℝ) * (1 * u ^ 0 * ub ^ 4 * v ^ 0 * vb ^ 4)",
+  "new": "(812225/3 : ℝ) * (1 * u ^ 0 * ub ^ 4 * v ^ 0 * vb ^ 4)",
+  "note": "one Bernstein coefficient of box 1 changed",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM3",
+  "file": "BHModesOnset.lean",
+  "decl": "box3",
+  "old": "theorem box3 (t μ : ℝ) (ht0 : 7 / 8 ≤ t) (ht1 : t ≤ 1) (hμ0 : 1 / 6 ≤ μ) (hμ1 : μ ≤ 1 / 4) : Qp t μ < 0 := by",
+  "new": "theorem box3 (t μ : ℝ) (ht0 : 7 / 8 ≤ t) (ht1 : t ≤ 1) (hμ0 : 1 / 6 ≤ μ) (hμ1 : μ ≤ 1 / 3) : Qp t μ < 0 := by",
+  "note": "box 3 claimed up to mu = 1/3",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM4",
+  "file": "BHModesOnset.lean",
+  "decl": "g_factor",
+  "old": "theorem g_factor (μ : ℝ) : Fp 1 μ = 1024 * (μ + 15) * pμ μ := by unfold Fp pμ; ring",
+  "new": "theorem g_factor (μ : ℝ) : Fp 1 μ = 1023 * (μ + 15) * pμ μ := by unfold Fp pμ; ring",
+  "note": "g = 1023 (mu + 15) p",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)",
+  "error_text": {
+   "g_factor": "unsolved goals"
+  }
+ },
+ {
+  "id": "ONM5",
+  "file": "BHModesOnset.lean",
+  "decl": "p_lo",
+  "old": "theorem p_lo : pμ (19893240974 / 10 ^ 11) < 0 := by unfold pμ; norm_num",
+  "new": "theorem p_lo : pμ (19893240976 / 10 ^ 11) < 0 := by unfold pμ; norm_num",
+  "note": "p < 0 claimed beyond the root",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM6",
+  "file": "BHModesOnset.lean",
+  "decl": "C_pos",
+  "old": "theorem C_pos (Y : ℝ) (h : 1 ≤ Y) : 0 < CY Y := by",
+  "new": "theorem C_pos (Y : ℝ) (h : 0 ≤ Y) : 0 < CY Y := by",
+  "note": "C > 0 claimed from Y = 0",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)",
+  "error_text": {
+   "C_pos": "linarith failed to find a contradiction"
+  }
+ },
+ {
+  "id": "ONM7",
+  "file": "BHModesOnset.lean",
+  "decl": "O4_bracket",
+  "old": "theorem O4_bracket (μ : ℝ) (h0 : 0 ≤ μ) : 2 * 6 - 10 * (1 + 6 * δp μ) * xHp μ = 4 * (4 * μ - 3) / (μ + 1) := by",
+  "new": "theorem O4_bracket (μ : ℝ) (h0 : 0 ≤ μ) : 2 * 6 - 10 * (1 + 6 * δp μ) * xHp μ = 4 * (4 * μ - 2) / (μ + 1) := by",
+  "note": "bracket with 4mu - 2",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM8",
+  "file": "BHModesOnset.lean",
+  "decl": "param_of_q",
+  "old": "    ∃ μ, 0 ≤ μ ∧ μ ≤ 1 ∧ w μ = Real.sqrt (1 - q ^ 2) ∧ q2p μ = q ^ 2 := by",
+  "new": "    ∃ μ, 0 ≤ μ ∧ μ ≤ 1 ∧ w μ = Real.sqrt (1 - q ^ 2) ∧ q2p μ = q := by",
+  "note": "q(mu)^2 = q instead of q^2",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM9",
+  "file": "BHModesOnset.lean",
+  "decl": "param_U",
+  "old": "    + (165888 : ℝ)\n",
+  "new": "    + (165889 : ℝ)\n",
+  "note": "F's constant term 165888 -> 165889",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "ONM10",
+  "file": "BHModesOnset.lean",
+  "decl": "C_relation",
+  "old": "theorem C_relation (μ : ℝ) : (6 + μ ^ 2) ^ 6 * CY (q2p μ) = pμ μ * Kμ μ := by",
+  "new": "theorem C_relation (μ : ℝ) : (6 + μ ^ 2) ^ 5 * CY (q2p μ) = pμ μ * Kμ μ := by",
+  "note": "resultant relation with (6 + mu^2)^5",
+  "origin": "bh-modes onset Lean layer, item (b) (session-L, 2026-10-22)"
+ }
+]

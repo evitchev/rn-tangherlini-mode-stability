@@ -1,0 +1,3 @@
+tampered g factored: 8*(6397*mu**4 + 88975*mu**3 + 40320*mu**2 + 2160090*mu - 431892)/5
+claimed cubic divides tampered g: False
+tampered g signs at the certified interval: SAME SIGN -> interval claim REJECTED

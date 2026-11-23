@@ -1,0 +1,37 @@
+factor over QQ: 10*mu**3 - 11*mu**2 + 228*mu - 45
+real roots of cubic (whole line): 1
+roots in [0,1]: 1
+cubic mod cubic': True
+mu_* in interval of width 7.006492321624085e-46
+mu_lo = 17745363925905626654152559759676860468319283/89202980794122492566142873090593446023921664
+mu_hi = 283925822814490026466440956154829767493108529/1427247692705959881058285969449495136382746624
+mu_* ~ 0.1989324097460525
+q_*^2 in [ 0.9468388290492733 , 0.9468388290492733 ]
+Traceback (most recent call last):
+  File "<stdin>", line 58, in <module>
+TypeError: float() argument must be a string or a real number, not 'tuple'
+q_* in [0.9730564367236226308577329291438218206167221069 ... , 0.9730564367236226308577329291438218206167221069 ]
+within prediction [0.9730564367, 0.9730564368]: True
+resultant factored: 9529569*(3025*Y**3 - 31521*Y**2 + 99792*Y - 68796)
+resultant / claimed: 9529569  remainder: 0
+claimed irreducible: True
+claimed cubic: total real roots = 1
+Traceback (most recent call last):
+  File "<stdin>", line 47, in <module>
+  File "[python-2]/lib/python3.12/site-packages/sympy/core/numbers.py", line 918, in __new__
+    _mpf_ = mpmath.mpf(num, prec=precision)._mpf_
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[python-2]/lib/python3.12/site-packages/mpmath/ctx_mp_python.py", line 79, in __new__
+    v._mpf_ = mpf_pos(cls.mpf_convert_arg(val, prec, rounding), prec, rounding)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[python-2]/lib/python3.12/site-packages/mpmath/ctx_mp_python.py", line 98, in mpf_convert_arg
+    raise TypeError("cannot create mpf from " + repr(x))
+TypeError: cannot create mpf from Fraction(143313164785470114247660167953215114657612075854892173341153691004945755290308500556914353537722887724267256045476364735800935415815472483179514854834936913817620731347993217598341825, 151359619386724706079264295213015488032983617825161516928436423037262391350862516174617343412190695419091916133429252821091505447697303013886475347780687415655304129436423320932041409)
+flint complex_roots of 10mu^3-11mu^2+228mu-45:
+   [0.198932409746052 +/- 4.93e-16]
+   [0.450533795126974 +/- 2.47e-16] + [4.73474051584405 +/- 2.00e-15]j
+   [0.450533795126974 +/- 2.47e-16] + [-4.73474051584405 +/- 2.00e-15]j
+flint roots of 3025Y^3-31521Y^2+99792Y-68796:
+   [0.946838829049273 +/- 3.50e-16]
+   [4.73666323010346 +/- 2.50e-15] + [1.25833184053052 +/- 2.52e-15]j
+   [4.73666323010346 +/- 2.50e-15] + [-1.25833184053052 +/- 2.52e-15]j

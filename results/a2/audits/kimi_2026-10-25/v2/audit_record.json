@@ -1,0 +1,68 @@
+{
+ "audit": "bh-modes A2-E and A2-S (BHM-096, BHM-100), D = 6 through extremality",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-25",
+ "brief_sha256": "6a818337dbfccc19f31b775a930dbe7fa84f01af8f8274987346e3935531c86f",
+ "code_commits_reproduced": [
+  "e422d74",
+  "25c796e"
+ ],
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0"
+ },
+ "hosts": {
+  "own_suite": "host-1",
+  "reproductions": "host-2",
+  "development_spot_checks": "host-0"
+ },
+ "verdicts": {
+  "A2-E": {
+   "ell_4_to_10": "strict positivity, one box each",
+   "ell_3": "exact splitting F = mu K + s G, K > 0, G > 0; only zero at (x,q) = (2,1)",
+   "gate": "U_-(x_H) = 64 l (l-3) (l+3)^2 (l+4)^2 at q=1, identically in ell"
+  },
+  "A2-S": {
+   "build": "own NL = N S^2 Den; NL(0,0) = 0 exactly",
+   "gates": "Den > 0; S > 0 off corner; q(1/8)^2 = 2961/3025 <= (99/100)^2; divisions exact",
+   "charts": {
+    "O": "POSITIVE",
+    "O'": "POSITIVE",
+    "T": "POSITIVE",
+    "C": "POSITIVE"
+   },
+   "coverage": "exact (own argument, inequalities checked)",
+   "G-RES": "re-derived symbolically in (ell, a, b0, b1)"
+  },
+  "pencil": {
+   "a_singular_design": "SOUND",
+   "b_tortoise_q1": "SOUND",
+   "c_composition": "SOUND"
+  },
+  "controls": {
+   "a": "REJECT, F(1,0) = -691200",
+   "b": "REJECT, exact 0 at (1,0)",
+   "c": "REJECT, T and C charts negative",
+   "d": "REJECT, exact 0 corner, rest positive (N/z > 0 verified)",
+   "e": "Q[b] < 0 rigorous (full support); certificate REJECTs",
+   "f": "KATs catch the tampered verifier"
+  },
+  "reproductions": {
+   "elementary_host-2": "KIT PASS, identical to record",
+   "s_host-2": "KIT PASS, identical to record"
+  },
+  "self_corrections": [
+   "delta slip 1/25 -> 1/30 at ell=2 in early (d)/(e) drafts, caught by G-RES cross-check",
+   "first (d) construction lacked the rest-positive premise; replaced by window-edge + p0 lift"
+  ],
+  "overall": "A2-E AND A2-S STAND (certified, independently verified)",
+  "reconciliation_logs": "own/reconcile.py + own/reconcile.log (added 2026-10-25 after the lead's receipt)",
+  "notes_from_receipt_2026-10-25": [
+   "control (e) bump not throat-specific (U_-<0 only for z<0.0866846); (e)(ii) partly vacuous at z=0; nc-bound covers the planted case",
+   "ball radii in AUDIT.md now rounded outward",
+   "controls_a2.py docstring fixed (a=-1/3, as the code always used)"
+  ]
+ }
+}

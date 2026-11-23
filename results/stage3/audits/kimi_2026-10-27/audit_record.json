@@ -1,0 +1,59 @@
+{
+ "audit": "bh-modes HD-X-E / HD-X-S / HD-X-2 (BHM-127, BHM-131, BHM-143), D = 7-11 through extremality",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-27",
+ "brief_sha256": "efdfd025595b04290c15933929be39199781d689332d4004fe092d28065765ef",
+ "brief_seal_note": "hash is the cover message's; SEALED.sha256 not opened, per the brief",
+ "code_commits_reproduced": [
+  "8679d8b",
+  "bf23bfc",
+  "6cedd44"
+ ],
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0"
+ },
+ "hosts": {
+  "own_suite": "host-1",
+  "reproductions": "host-2 + host-1 (run_critical)",
+  "development_spot_checks": "host-0"
+ },
+ "verdicts": {
+  "HD-X-2": {
+   "bands": 9,
+   "all": "VERIFIED (Z0 exact, divisions exact, charts O/O'/T/C positive, coverage exact)",
+   "q(MU1)^2": "matches the PREREG's table per band"
+  },
+  "HD-X-S": {
+   "bands": 11,
+   "all": "VERIFIED (Den>0, divisions exact, four charts positive, coverage exact)"
+  },
+  "HD-X-E": {
+   "cases": "33/33 POSITIVE; five touching cases by the exact splitting; EXT symbolic in (ell, n)"
+  },
+  "pencil": {
+   "a_singular_designs": "SOUND",
+   "b_tortoise_general_n": "SOUND",
+   "c_composition": "SOUND"
+  },
+  "controls": {
+   "a_band_case": "REJECT (corner -4816896)",
+   "b_touching_strict": "REJECT (exact 0 at (1,0))",
+   "c_ehat_outside_window": "REJECT both directions on the T chart",
+   "d_residue_outside_window": "REJECT on all four charts",
+   "e_throat_bound_state": "Q[b] < 0 rigorous (100-digit acb, full support, derived weights); planted certificate refused on the T chart",
+   "f_verifier_tamper": "caught by KATs"
+  },
+  "reproductions": {
+   "elementary": "KIT PASS, 7/7 jobs identical",
+   "s": "KIT PASS, 198/198 jobs identical; --gate KIT PASS, gate band identical to A2-S's record",
+   "critical": "KIT PASS, 9/9 bands identical"
+  },
+  "self_corrections": [
+   "an extra x_H^2 in my (1-z) f_z term at general n, caught because the Z0 identity failed in my first build; fixed before any verdict"
+  ],
+  "overall": "HD-X-E, HD-X-S, HD-X-2 ALL STAND (certified, independently verified)"
+ }
+}

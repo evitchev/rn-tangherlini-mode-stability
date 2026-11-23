@@ -1,0 +1,4 @@
+42c42
+<     U2 = rf_scale(one_md, 46080)               # 7680 m (1 + m d)
+---
+>     U2 = rf_scale(one_md, 46081)               # 7680 m (1 + m d)

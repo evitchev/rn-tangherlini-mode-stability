@@ -1,0 +1,39 @@
+{
+ "audit": "bh-modes HD-S (BHM-078): S-certificates on the 18 bands of D = 7-11, 231 mu-boxes",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-23",
+ "brief_sha256": "e5e9c7df35402576e80c2ac45ec63a36faa3535d3a48352c795a0c827cba416d",
+ "code_commit_reproduced": "0aa267335c280c1239da0ec537651b5daf809195",
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0"
+ },
+ "hosts": {
+  "own_suite": "host-1",
+  "kit_reproduction": "host-2",
+  "development_spot_checks": "host-0"
+ },
+ "verdicts": {
+  "transcription": "PASS (own general-n KI transcription, BHM-036)",
+  "builder_crosschecks": "PASS (z-design vs sympy at 7-2 box 0, all coefficients; zeta-design at 9-5 box 0, point evaluations)",
+  "all_boxes": "231/231 POSITIVE (own exact Bernstein, fixed verifier)",
+  "all_bands": "18/18 VERIFIED with exact coverage (contiguity, q(mu_a)^2 >= 0.99^2, low end)",
+  "interior_band_10_3": "first box starts below the onset: q2(mu_b) = 91914991536373201/383045380761373201 <= (49/100)^2",
+  "pencil": {
+   "a_general_n": "SOUND",
+   "b_zeta_design": "SOUND"
+  },
+  "controls": {
+   "a_planted_bound_state": "Q[b] < 0 rigorous (acb), certificate REJECTs",
+   "b_coefficient_tamper": "REJECT at (1/2, 1299/10000)",
+   "c_verifier_tamper": "caught by KAT1-8"
+  },
+  "reproduction_host-2": {
+   "exit": 0,
+   "result": "KIT PASS; all 18 bands VERIFIED, all controls/drills REJECT as registered; substantively identical to record"
+  },
+  "overall": "HD-S STANDS (certified, independently verified)"
+ }
+}

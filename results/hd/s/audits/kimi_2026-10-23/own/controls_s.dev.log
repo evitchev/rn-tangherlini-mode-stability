@@ -1,0 +1,11 @@
+(a)(i) A = [5.3871457056e-7 +/- 4.51e-18]  C = [1.8017e-12 +/- 6.56e-17]
+(a)(i) K = 598029  Q = A - K C = [-5.387e-7 +/- 4.80e-11]  < 0 rigorously: True
+(a)(ii) verifier on perturbed N: REJECT (correct) {'reason': 'negative value', 'z': '1/2', 'value': '-1866491825051501046443956857937908069833328663172671420592599023463608086146729'}
+Traceback (most recent call last):
+  File "[kimi-folder]/bhm-hd-s-audit-2026-10-23/own/controls_s.py", line 160, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "[kimi-folder]/bhm-hd-s-audit-2026-10-23/own/controls_s.py", line 147, in main
+    ok2, info2 = verify_2d(N2, fmpq(0), fmpq(1), fmpq(ma.numerator, ma.denominator),
+                 ^^^^^^^^^
+NameError: name 'verify_2d' is not defined. Did you mean: 'verify_1d'?

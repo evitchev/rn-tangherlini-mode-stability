@@ -1,0 +1,22 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: FAIL  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [False, False, False, False, False, False, False, False, False, False, False]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: FAIL  NL(z, 0) = 0 identically
+DIV-O: FAIL  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: FAIL  NL(z, z sigma) divisible by z^2 sigma
+THROAT: FAIL  T(zeta, 0) = 150590720*zeta**2 + 15084887552*zeta + 5387459840; minus the pencil limit: 150590720*zeta**2 + 215129600*zeta + 76832000
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): False; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  not run: the chart's division failed
+POS-O': FAIL  not run: the chart's division failed
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 5387459840
+POS-C: FAIL  not run: the chart's division failed
+REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C

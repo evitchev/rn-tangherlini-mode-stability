@@ -1,0 +1,6 @@
+horizon bound at mu=1/6: P(0) < 64/741 = 0.08636977058029689
+certificate P(0) = -22176555900408918442549/75557863725914323419136  margin: 21268531200661525264753513/55988377020902513653579776
+control (a): tampered N(z=0) = -68044288/3515 < 0 ? True
+control (a): verifier on tampered N: REJECT (correct) {'reason': 'negative value', 'z': '1/2', 'value': '-976448823708735032589794723000311937026207579603427956873/181224749020445017660628091127987717764165445405900800'}
+control (b): perturbed U_- vs KI (5.63b) mismatch detected: True  (diff = -d*m**2 - m * x^2 )
+CONTROLS: ALL OK

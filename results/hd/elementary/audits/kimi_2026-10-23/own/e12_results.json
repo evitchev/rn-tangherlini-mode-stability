@@ -1,0 +1,770 @@
+{
+ "E1 D=7 l=4": {
+  "ok": true,
+  "mu_lo": "1061/10000",
+  "q2(mu_lo)": 0.9801365333870353,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=7 l=5": {
+  "ok": true,
+  "mu_lo": "1011/10000",
+  "q2(mu_lo)": 0.9801292430969711,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=7 l=6": {
+  "ok": true,
+  "mu_lo": "487/5000",
+  "q2(mu_lo)": 0.980100825361925,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=7 l=7": {
+  "ok": true,
+  "mu_lo": "59/625",
+  "q2(mu_lo)": 0.9801269306172953,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=7 l=8": {
+  "ok": true,
+  "mu_lo": "921/10000",
+  "q2(mu_lo)": 0.9801054398521626,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=7 l=9": {
+  "ok": true,
+  "mu_lo": "901/10000",
+  "q2(mu_lo)": 0.9801381853857373,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=7 l=10": {
+  "ok": true,
+  "mu_lo": "177/2000",
+  "q2(mu_lo)": 0.9801365690899262,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=8 l=5": {
+  "ok": true,
+  "mu_lo": "519/5000",
+  "q2(mu_lo)": 0.980120960735991,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=8 l=6": {
+  "ok": true,
+  "mu_lo": "999/10000",
+  "q2(mu_lo)": 0.9801362184702109,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=8 l=7": {
+  "ok": true,
+  "mu_lo": "969/10000",
+  "q2(mu_lo)": 0.9801156220361728,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=8 l=8": {
+  "ok": true,
+  "mu_lo": "59/625",
+  "q2(mu_lo)": 0.9801269306172953,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=8 l=9": {
+  "ok": true,
+  "mu_lo": "231/2500",
+  "q2(mu_lo)": 0.980108342248971,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=8 l=10": {
+  "ok": true,
+  "mu_lo": "907/10000",
+  "q2(mu_lo)": 0.9801003889507691,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=9 l=6": {
+  "ok": true,
+  "mu_lo": "511/5000",
+  "q2(mu_lo)": 0.9801354948105738,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=9 l=7": {
+  "ok": true,
+  "mu_lo": "991/10000",
+  "q2(mu_lo)": 0.9801251856449776,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=9 l=8": {
+  "ok": true,
+  "mu_lo": "483/5000",
+  "q2(mu_lo)": 0.9801004690570269,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=9 l=9": {
+  "ok": true,
+  "mu_lo": "59/625",
+  "q2(mu_lo)": 0.9801269306172953,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=9 l=10": {
+  "ok": true,
+  "mu_lo": "463/5000",
+  "q2(mu_lo)": 0.9801236460751349,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=9 l=11": {
+  "ok": true,
+  "mu_lo": "911/10000",
+  "q2(mu_lo)": 0.9801018714848447,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=6": {
+  "ok": true,
+  "mu_lo": "1043/10000",
+  "q2(mu_lo)": 0.9801183847140645,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=7": {
+  "ok": true,
+  "mu_lo": "1011/10000",
+  "q2(mu_lo)": 0.9801292430969711,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=8": {
+  "ok": true,
+  "mu_lo": "197/2000",
+  "q2(mu_lo)": 0.980120335934991,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=9": {
+  "ok": true,
+  "mu_lo": "963/10000",
+  "q2(mu_lo)": 0.9801183512783666,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=10": {
+  "ok": true,
+  "mu_lo": "59/625",
+  "q2(mu_lo)": 0.9801269306172953,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=11": {
+  "ok": true,
+  "mu_lo": "58/625",
+  "q2(mu_lo)": 0.9801181532929368,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=12": {
+  "ok": true,
+  "mu_lo": "457/5000",
+  "q2(mu_lo)": 0.9801127816694662,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=10 l=13": {
+  "ok": true,
+  "mu_lo": "901/10000",
+  "q2(mu_lo)": 0.9801381853857373,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=7": {
+  "ok": true,
+  "mu_lo": "103/1000",
+  "q2(mu_lo)": 0.9801010056489916,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=8": {
+  "ok": true,
+  "mu_lo": "1003/10000",
+  "q2(mu_lo)": 0.9801145279835201,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=9": {
+  "ok": true,
+  "mu_lo": "49/500",
+  "q2(mu_lo)": 0.9801319976076394,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=10": {
+  "ok": true,
+  "mu_lo": "961/10000",
+  "q2(mu_lo)": 0.9801178101231215,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=11": {
+  "ok": true,
+  "mu_lo": "59/625",
+  "q2(mu_lo)": 0.9801269306172953,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=12": {
+  "ok": true,
+  "mu_lo": "929/10000",
+  "q2(mu_lo)": 0.9801401930868948,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=13": {
+  "ok": true,
+  "mu_lo": "229/2500",
+  "q2(mu_lo)": 0.9801419205219544,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E1 D=11 l=14": {
+  "ok": true,
+  "mu_lo": "181/2000",
+  "q2(mu_lo)": 0.9801191553399972,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=7 l=2": {
+  "ok": true,
+  "mu_lo": "176/625",
+  "q2(mu_lo)": 0.8987337290068104,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 5,
+  "F_info": {
+   "nodes": "5"
+  }
+ },
+ "E2 D=7 l=3": {
+  "ok": true,
+  "mu_lo": "859/5000",
+  "q2(mu_lo)": 0.9545555635303589,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=8 l=3": {
+  "ok": true,
+  "mu_lo": "343/1250",
+  "q2(mu_lo)": 0.8911933792790234,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=8 l=4": {
+  "ok": true,
+  "mu_lo": "71/500",
+  "q2(mu_lo)": 0.9663314081207359,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=9 l=3": {
+  "ok": true,
+  "mu_lo": "3317/10000",
+  "q2(mu_lo)": 0.848313331578525,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 3,
+  "F_info": {
+   "nodes": "3"
+  }
+ },
+ "E2 D=9 l=4": {
+  "ok": true,
+  "mu_lo": "611/2500",
+  "q2(mu_lo)": 0.9063220274913245,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=9 l=5": {
+  "ok": true,
+  "mu_lo": "1211/10000",
+  "q2(mu_lo)": 0.9741815544760289,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=10 l=3": {
+  "ok": true,
+  "mu_lo": "83/100",
+  "q2(mu_lo)": 0.24010083522728343,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 3,
+  "F_info": {
+   "nodes": "3"
+  }
+ },
+ "E2 D=10 l=4": {
+  "ok": true,
+  "mu_lo": "201/625",
+  "q2(mu_lo)": 0.8464397683787256,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=10 l=5": {
+  "ok": true,
+  "mu_lo": "134/625",
+  "q2(mu_lo)": 0.9235703945415042,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=11 l=4": {
+  "ok": true,
+  "mu_lo": "741/2000",
+  "q2(mu_lo)": 0.8046373414068729,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 5,
+  "F_info": {
+   "nodes": "5"
+  }
+ },
+ "E2 D=11 l=5": {
+  "ok": true,
+  "mu_lo": "2949/10000",
+  "q2(mu_lo)": 0.8631262865639446,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ },
+ "E2 D=11 l=6": {
+  "ok": true,
+  "mu_lo": "119/625",
+  "q2(mu_lo)": 0.937081523632995,
+  "Den_exps": [
+   0,
+   1,
+   3
+  ],
+  "Den_ok": true,
+  "F_ok": true,
+  "F_nodes": 1,
+  "F_info": {
+   "nodes": "1"
+  }
+ }
+}

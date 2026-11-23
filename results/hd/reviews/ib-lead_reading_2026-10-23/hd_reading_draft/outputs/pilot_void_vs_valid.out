@@ -1,0 +1,28 @@
+$ python3 -I jsondiff.py <VOID record> <VALID record> timing
+masked keys: ['timing']
+differing leaves: 5
+provenance/git_commit | '8c2d6d2' | '710488b'
+result/gates/NC-H/ok | False | True
+result/gates/NC-H/sigma | None | -0.9964382002917467
+result/gates/NC-H/z_min | None | 0.682
+verdict | 'VOID: a gate or control is not as registered' | 'VALID'
+
+$ python3 -I jsondiff.py <VOID repro-host-2> <VALID repro-host-2> timing
+masked keys: ['timing']
+differing leaves: 5
+provenance/git_commit | '8c2d6d2' | '710488b'
+result/gates/NC-H/ok | False | True
+result/gates/NC-H/sigma | None | -0.9964382002917467
+result/gates/NC-H/z_min | None | 0.682
+verdict | 'VOID: a gate or control is not as registered' | 'VALID'
+
+$ diff <VOID record run.log> <VALID record run.log>
+5c5
+< NC-H: ok = False, sigma = None
+---
+> NC-H: ok = True, sigma = -0.9964382002917467
+52c52
+< VOID: a gate or control is not as registered
+---
+> VALID
+(diff exit 1)

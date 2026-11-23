@@ -1,0 +1,559 @@
+{
+ "workspace": "[session-R-runs]/hds_2026-10-23 (node copy: <node>:[session-R-runs]/hds_2026-10-23)",
+ "brief_sha256": "1339b7fbd0c0761e055e375501bbb857485fc728c40c5c2b2bf2e0e19a8703dd",
+ "phase": "2 (GO 2026-10-23; PREREG + AMEND_1 sealed)",
+ "runs": [
+  {
+   "id": "P1-01",
+   "purpose": "environment probe (hostname, uptime, nproc, free, df ~, venv versions)",
+   "kind": "spot check (not of record)",
+   "hosts": [
+    "host-1",
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T15:27:39Z",
+   "command": "ssh -o BatchMode=yes <host> 'hostname; uptime; nproc; free -g; df -h ~; ls -d [venv] && [venv]/bin/python3 -I -c \"import sys,flint,sympy,mpmath; print(versions)\"; ls -d [session-R-runs]'",
+   "caps": "ssh timeout 60 s; no ulimit (version print only)",
+   "exit": "2 (expected: [session-R-runs] did not exist yet on the nodes)",
+   "log": null,
+   "note": "output displayed but not tee'd to logs/ (a slip); repeated with a log as P1-07"
+  },
+  {
+   "id": "P1-02",
+   "purpose": "transcription checks C1-C9 + tamper drills (first version of the script)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:32:27Z",
+   "end_utc": "2026-10-23T15:32:28Z",
+   "command": "ulimit -v 8000000; timeout 1200 nice -n 19 [venv]/bin/python3 -I code/check_transcription.py",
+   "code_sha256": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py (v1; byte-exact copy restored at code/archive/check_transcription_v1_9ca152c8.py)": "9ca152c82e47937e51f16d568a62d2c2a4eb42f6fe6706e90234d52795c576e7"
+   },
+   "exit": 0,
+   "result": "ALL_PASS",
+   "log": "logs/check_transcription_20261023T153226Z.log",
+   "log_sha256": "ee2244733c0542e5e776187888f17efa2e3ccdddfa354f8949c58b5a58839bf7"
+  },
+  {
+   "id": "P1-03",
+   "purpose": "python-flint 0.9.0 feature probe (fmpq_mpoly, acb.integral, ...)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:35:20Z",
+   "command": "ssh host-2 '[venv]/bin/python3 -I -c <feature probe>'",
+   "caps": "ssh timeout 120 s; no ulimit (feature probe only)",
+   "exit": 0,
+   "log": "logs/flint_probe_host-2_20261023T153520Z.log",
+   "log_sha256": "3eaba9413fadac0c57b68459db8102db7d95dfc285fd0d4627ae4494ad785d5f"
+  },
+  {
+   "id": "P1-04",
+   "purpose": "extremal inverse-square coefficient kappa(n,l) from the transcription (observation)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:35:42Z",
+   "end_utc": "2026-10-23T15:35:42Z",
+   "command": "ulimit -v 8000000; timeout 600 nice -n 19 [venv]/bin/python3 -I code/extremal_kappa.py",
+   "code_sha256": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/extremal_kappa.py": "ca821a5aa6aae8567793ae537c60f3479716aafd838ca753fbc94b05d67b38e9"
+   },
+   "exit": 0,
+   "result": "kappa(n,l) = l(l-n+1)/(n-1)^2",
+   "log": "logs/extremal_kappa_20261023T153541Z.log",
+   "log_sha256": "3e4b8a562c32bb83a5c24a4e4ca952e53c8f2a55a33b7b13a030d8759a4ec11f"
+  },
+  {
+   "id": "P1-05",
+   "purpose": "transcription checks C1-C10 + tamper drills (reference run quoted in TRANSCRIPTION.md and PREREG.md)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:36:12Z",
+   "end_utc": "2026-10-23T15:36:14Z",
+   "command": "ulimit -v 8000000; timeout 1200 nice -n 19 [venv]/bin/python3 -I code/check_transcription.py",
+   "code_sha256": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4"
+   },
+   "exit": 0,
+   "result": "ALL_PASS (C1-C10; tampers T1-T4 each caught)",
+   "log": "logs/check_transcription_20261023T153612Z.log",
+   "log_sha256": "12b0ef81b1149621845b285b2f4c57831762ff2467a2e7f5adf689dc940745f4"
+  },
+  {
+   "id": "P1-06",
+   "purpose": "exact band edges in mu_T (Fraction arithmetic)",
+   "kind": "spot check (not of record)",
+   "host": "host-0",
+   "start_utc": "2026-10-23T15:39:21Z",
+   "command": "ulimit -v 8000000; timeout 60 python3 -I -c <band-edge arithmetic>  (system Python 3.8.10, stdlib only)",
+   "exit": 0,
+   "result": "mu_lo = 1237/10000 (q = 0.990000611), mu_hi = 2817/10000 (q = 0.947978590)",
+   "log": "logs/band_edges_host-0_20261023T153921Z.log",
+   "log_sha256": "ede220d19251d2b7d6acd16c210a25a50d7c6260b035edbd3f4fa7cde686c3fc"
+  },
+  {
+   "id": "P1-07",
+   "purpose": "environment probe repeated with a log",
+   "kind": "spot check (not of record)",
+   "hosts": [
+    "host-1",
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T15:43:33Z",
+   "command": "ssh -o BatchMode=yes <host> 'date -u; hostname; uptime; nproc; free -g; df -h ~; [venv]/bin/python3 -I -c <versions>'",
+   "caps": "ssh timeout 60 s; no ulimit (version print only)",
+   "exit": 0,
+   "log": "logs/env_probe_host-1_host-2_20261023T154333Z.log",
+   "log_sha256": "27a612c7b8ffd0659256b4e8961f30c9789f97e7f601c8795c4e2836606ccc26"
+  }
+ ],
+ "prereg": {
+  "file": "PREREG.md",
+  "sha256": "7addc5911fdda10724a222558d26421dc05e8b016b12eb650e9d9f38ddfb1b87",
+  "sealed_utc": "2026-10-23T15:44:53Z"
+ },
+ "amendments": [
+  {
+   "file": "PREREG_AMEND_1_2026-10-23.md",
+   "sha256": "7787687075b214c2c8d96752c7b745ad53493829ed734c8542c1192ea7966c30",
+   "sealed_utc": "2026-10-23T15:53:41Z",
+   "content": "A1 node gate, A2 no in-place edits (code/rec versioned, 0444), A3 immediate stop; X1-X5 execution clarifications"
+  }
+ ],
+ "phase1_record_copy": {
+  "file": "records/runs_phase1_3ea47ab2.json",
+  "sha256": "3ea47ab2e6f307eb15734c14bf6186419e1d90be10920c8fb045d1c3bb3b371e"
+ },
+ "phase2_runs": [
+  {
+   "id": "RR-01",
+   "purpose": "TP2 drill: transcription guard with T1-tampered U_- must abort before computing",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:17:04Z",
+   "end_utc": "2026-10-23T16:17:05Z",
+   "exit": 3,
+   "node_gate_uptime": "12:17:04 up 8 days, 20:17,  0 users,  load average: 0.16, 0.59, 0.52",
+   "gate": null,
+   "guard": "tamper=T1_x3_sign {'C1': False, 'C2': False, 'C3': False, 'C4': False, 'C5': True, 'C6': True, 'C7': True, 'C8': False, 'C9': True, 'C10': False} -> FAIL",
+   "command": "launch_v1.sh RR01_tp2_drill 600 -- env IB_TAMPER=T1_x3_sign [venv]/bin/python3 -I code/rec/p2_sturm_v1.py --mode pos0 --workers 1",
+   "expect": "GUARD FAIL, EXIT=3, nothing computed",
+   "result": "CAUGHT: GUARD FAIL (C1,C2,C3,C4,C8,C10 false), EXIT=3; Python gate not reached (no workers started)",
+   "log": "logs/RR01_tp2_drill.log",
+   "log_sha256": "79d41bdd8847de946bf07ea012f508fc922caba48ff6fec0dbef649bc52b8bd9",
+   "outputs": {},
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-02",
+   "purpose": "NEG1 ground truth at q=97/100: rigorous integrals I1..I4 (acb.integral, 128 bits), amplitude A, Q[phi]; A3 check on unperturbed I1+I2",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:17:32Z",
+   "end_utc": "2026-10-23T16:17:33Z",
+   "exit": 0,
+   "node_gate_uptime": "12:17:32 up 8 days, 20:17,  0 users,  load average: 0.11, 0.54, 0.50",
+   "gate": "{'load1': 0.11, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR02_neg1_integrals 1800 -- [venv]/bin/python3 -I code/rec/p2_controls_v1.py",
+   "expect": "I1+I2 > 0 (else A3 stop); Q[phi] certified < 0",
+   "result": "I1+I2 = 0.19999597 > 0 (A3 not triggered); A = 10; Q[phi] = -0.0539723 certified < 0, <= -0.1 I3 - I4; Rayleigh <= -0.9735",
+   "log": "logs/RR02_neg1_integrals.log",
+   "log_sha256": "316a4dd930c0b5565318aab60b585a02147fad1cabe1d6795e104a353d66dce0",
+   "outputs": {
+    "out/RR02_neg1_integrals.json": "281c30010f6232e8f23303663074e37e2470863ac26f8eb0c526a3f59df452d3"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_controls_v1.py": "8350e76c724bdbd098c3cb768005dd86b8c4535bd184c0b0b2c363b6d5747183",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-03",
+   "purpose": "NEG1 Sturm: planted well A=10 at q=97/100 must give Z>=1 with both integrators",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:17:59Z",
+   "end_utc": "2026-10-23T16:18:10Z",
+   "exit": 0,
+   "node_gate_uptime": "12:17:59 up 8 days, 20:17,  0 users,  load average: 0.19, 0.52, 0.50",
+   "gate": "{'load1': 0.19, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR03_neg1_sturm 1800 -- [venv]/bin/python3 -I code/rec/p2_sturm_v1.py --mode neg1 --well 10 --workers 1",
+   "expect": "Z >= 1 (I and II)",
+   "result": "DETECTED: Z=1 in I (sign, Pruefer), II (N, 2N; sign, Pruefer) and the dps-45 check; psi changes sign between rho=1.5 and 2",
+   "log": "logs/RR03_neg1_sturm.log",
+   "log_sha256": "414c9a4e92f0140a03b06ce71a5f5f9494304f1580f72a8f32ef147a064f74a0",
+   "outputs": {
+    "out/RR03_neg1_sturm.json": "8a2120eda9f4476359fd5a12e827eae3127186dc79564b13d47029cbcfad6f38"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-04",
+   "purpose": "POS0 sanity: q=0 (Schwarzschild-Tangherlini, known stable) must give Z=0",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:18:23Z",
+   "end_utc": "2026-10-23T16:18:32Z",
+   "exit": 0,
+   "node_gate_uptime": "12:18:23 up 8 days, 20:18,  0 users,  load average: 0.27, 0.52, 0.50",
+   "gate": "{'load1': 0.32, 'nproc': 16, 'mem_available_gb': 121.46, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR04_pos0 1800 -- [venv]/bin/python3 -I code/rec/p2_sturm_v1.py --mode pos0 --workers 1",
+   "expect": "Z = 0",
+   "result": "Z=0 in I, II and dps-45 check",
+   "log": "logs/RR04_pos0.log",
+   "log_sha256": "65c907031bfcc834458568c0404e456c146140c449f525372a310c8d2b39062f",
+   "outputs": {
+    "out/RR04_pos0.json": "c2e4e148c2fd21a1102b5c3dca0e1a4647490314e662f6edc8eaa84dec5ec37b"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-05",
+   "purpose": "TP1 drill (amend X2) on out-of-band cell mu_T in [3/10, 31/100]: certify, cross-evaluate, then P+Delta and P-20 must be rejected",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:18:49Z",
+   "end_utc": "2026-10-23T16:18:57Z",
+   "exit": 0,
+   "node_gate_uptime": "12:18:49 up 8 days, 20:18,  0 users,  load average: 0.41, 0.53, 0.50",
+   "gate": "{'load1': 0.41, 'nproc': 16, 'mem_available_gb': 121.44, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR05_tp1_oob 1800 -- [venv]/bin/python3 -I code/rec/p2_cert_v1.py --mode tp1_oob --workers 1",
+   "expect": "cell certified; both tampers rejected",
+   "result": "cell certified (d=24, eps1=0.02); cross-eval 50/50 exact; TP1 caught: P+121/1000 rejected (N(0)<0), P-20 rejected (N(1)<0)",
+   "log": "logs/RR05_tp1_oob.log",
+   "log_sha256": "26df50bac3e62f7c95ae7d34ea96083253aeab3ba3f3a008dc6a0389a644d84f",
+   "outputs": {
+    "out/RR05_tp1_oob.json": "f696696f4e82bcb342cf63ab175c80e6419e4e4221ef07c2286451f88bdc8ee1"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/p2_bern_v1.py": "e4c277c78e5d670c41da06a334fa5185117a4d93fdd10e71a6988e10cb133cc6",
+    "code/rec/p2_cert_v1.py": "a2ce8ad673d0087b5e96a60819266c03504143bc4cd4b7c13c5bf25ba55d0594",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-06",
+   "purpose": "NEG1 certifier refusal (amend X3a): well A=10 on the cell containing q=97/100, 4 retry settings, must all be rejected",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:19:04Z",
+   "end_utc": "2026-10-23T16:19:13Z",
+   "exit": 0,
+   "node_gate_uptime": "12:19:04 up 8 days, 20:19,  0 users,  load average: 0.38, 0.52, 0.50",
+   "gate": "{'load1': 0.38, 'nproc': 16, 'mem_available_gb': 121.44, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR06_neg1_refuse 1800 -- [venv]/bin/python3 -I code/rec/p2_cert_v1.py --mode neg1_refuse --well 10 --workers 1",
+   "expect": "all attempts rejected",
+   "result": "REFUSED: 4/4 attempts rejected (negative exact corner values); cell [33679/160000, 17611/80000]",
+   "log": "logs/RR06_neg1_refuse.log",
+   "log_sha256": "923f99dc4c4b72a19872a75a7fb120d699efc009758e61fc70281f0d4e588899",
+   "outputs": {
+    "out/RR06_neg1_refuse.json": "2365d412705ebc6771063f4ff1838a3f95d3729929228a583613cc0a9d135f2e"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/p2_bern_v1.py": "e4c277c78e5d670c41da06a334fa5185117a4d93fdd10e71a6988e10cb133cc6",
+    "code/rec/p2_cert_v1.py": "a2ce8ad673d0087b5e96a60819266c03504143bc4cd4b7c13c5bf25ba55d0594",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-07",
+   "purpose": "Part E (exact): E2 cover, E0 U_->0 on [0,1]x[2780/10000,2817/10000], E1 tail positivity for rho1* in (1.5,2,3,5,10,30,100)",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:19:36Z",
+   "end_utc": "2026-10-23T16:19:37Z",
+   "exit": 0,
+   "node_gate_uptime": "12:19:36 up 8 days, 20:19,  0 users,  load average: 0.28, 0.49, 0.49",
+   "gate": "{'load1': 0.28, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR07_partE 1800 -- [venv]/bin/python3 -I code/rec/p2_cert_v1.py --mode E --workers 1",
+   "expect": "E2 pass; E0 pass (else sub-band to Part C); E1 per candidate",
+   "result": "E2 PASS (q(mu_lo)=0.99000061>=0.99, q(mu_hi)=0.94797859<=0.948); E0 PASS (3 leaves): V>0 on exterior, certified A>=0 for q in [0.947979, 0.949342]; E1 PASS for all 7 candidates",
+   "log": "logs/RR07_partE.log",
+   "log_sha256": "295f3f39eda8b309584854d208f0e65fb467f6beba90781a8611735fd92ca325",
+   "outputs": {
+    "out/RR07_partE.json": "eb217eb1de619b34eb8bce3628a1018e06e818b1f2c87db18268a1d5cd67374f"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/p2_bern_v1.py": "e4c277c78e5d670c41da06a334fa5185117a4d93fdd10e71a6988e10cb133cc6",
+    "code/rec/p2_cert_v1.py": "a2ce8ad673d0087b5e96a60819266c03504143bc4cd4b7c13c5bf25ba55d0594",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-08",
+   "purpose": "Part N band sweep: 85 grid points q_i = 948/1000 + i/2000, integrators I (dps30, K60) and II (float RK4 N, 2N), dps45/K90 check every 4th point; A3 stop on Z>=1",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:20:04Z",
+   "end_utc": "2026-10-23T16:21:06Z",
+   "exit": 0,
+   "node_gate_uptime": "12:20:04 up 8 days, 20:20,  0 users,  load average: 0.17, 0.44, 0.47",
+   "gate": "{'load1': 0.17, 'nproc': 16, 'mem_available_gb': 121.44, 'requested': 8, 'w': 8, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR08_partN_band 3600 -- [venv]/bin/python3 -I code/rec/p2_sturm_v1.py --mode band --workers 8",
+   "expect": "per PREREG Part N",
+   "result": "85/85 points Z=0 (I sign+Pruefer; II N and 2N sign+Pruefer; dps45 at 22 points); max rel I-vs-II 8.3e-13 (psi), 4.6e-11 (psi'); Richardson 1.2e-13; dps45 vs dps30 4.8e-25; psi_min from 1.0014 (q=0.948) to 0.8912 (q=0.99); A3 not triggered",
+   "log": "logs/RR08_partN_band.log",
+   "log_sha256": "dd09c3fb2aaa197bf6fcfc120243a444caaa023e3f0e743128413652d87ca4b9",
+   "outputs": {
+    "out/RR08_partN_band.json": "c8d8f6d206292d701f492438d4b58377c9037e5d90709643f2463120f1d72b03"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-09",
+   "purpose": "Part N decision: rho1* rule and gap argument (PREREG Part N) from RR-08 + RR-07",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:21:54Z",
+   "end_utc": "2026-10-23T16:21:54Z",
+   "exit": 0,
+   "node_gate_uptime": "12:21:54 up 8 days, 20:21,  0 users,  load average: 1.93, 1.42, 0.85",
+   "gate": null,
+   "guard": null,
+   "command": "launch_v1.sh RR09_gap 1800 -- [venv]/bin/python3 -I code/rec/p2_gap_v1.py --band out/RR08_partN_band.json --E out/RR07_partE.json",
+   "expect": "rho1* chosen; all cells pass or bisect",
+   "result": "rho1*=1.5; no point failures; gap test psi(1.5;q): 84/84 cells pass (worst margin ratio 12463); psi'(1.5;q): 84/84 pass (worst [1979/2000,99/100]: 0.00812 vs bound 2.97e-5, ratio 273); part_N_pass=True; no bisection needed",
+   "log": "logs/RR09_gap.log",
+   "log_sha256": "e519823b47d1f0f4aaeb4a3a783f26dfffc8590b543b324cc41c5549cf8e07bd",
+   "outputs": {
+    "out/RR09_gap.json": "793958e433fb60d868d502b1d7b653a238ce8f66d9a43a36054e20d62c1c8949"
+   },
+   "code": {
+    "code/rec/p2_gap_v1.py": "e808e33134d642a4a361f754fe15a126ee93428189c22b24df96222300a70deb",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-10",
+   "purpose": "Part C (exact S-deformation certificate) on mu_T in [1237/10000, 2780/10000]: 16 cells, P linear in mu, Bernstein exact; cross-evaluation; TP1 on first certified band cell",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:22:09Z",
+   "end_utc": "2026-10-23T16:22:33Z",
+   "exit": 0,
+   "node_gate_uptime": "12:22:09 up 8 days, 20:22,  0 users,  load average: 1.50, 1.35, 0.84",
+   "gate": "{'load1': 1.5, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 8, 'w': 8, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR10_partC 7200 -- [venv]/bin/python3 -I code/rec/p2_cert_v1.py --mode C --workers 8",
+   "expect": "all cells certified (else bisect); cross-eval exact; TP1 caught",
+   "result": "16/16 cells CERTIFIED at first attempt (d=24, eps1=0.02, eps2=0; 2 Bernstein leaves each); coverage of [1237/10000, 139/500] complete; cross-eval 50/50 exact in every cell; TP1 (band) caught: P+3/25 and P-20 rejected",
+   "log": "logs/RR10_partC.log",
+   "log_sha256": "f9db05195d07b51ca142e4e45172776d0f72434270920fa37d132346954bcac1",
+   "outputs": {
+    "out/RR10_partC.json": "f302c9b2b2eb914a82b2f271b7615b7e6a66615e6792647fcc04f5e201567974"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/p2_bern_v1.py": "e4c277c78e5d670c41da06a334fa5185117a4d93fdd10e71a6988e10cb133cc6",
+    "code/rec/p2_cert_v1.py": "a2ce8ad673d0087b5e96a60819266c03504143bc4cd4b7c13c5bf25ba55d0594",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  },
+  {
+   "id": "RR-11",
+   "purpose": "NEG1 post refusal (amend X3b): every P tried on the unperturbed Part C cell containing q=97/100, re-verified with the well A=10, must be rejected",
+   "kind": "run of record",
+   "host": "host-2",
+   "hosts_seen": [
+    "host-2"
+   ],
+   "start_utc": "2026-10-23T16:23:17Z",
+   "end_utc": "2026-10-23T16:23:18Z",
+   "exit": 0,
+   "node_gate_uptime": "12:23:17 up 8 days, 20:23,  0 users,  load average: 1.28, 1.41, 0.90",
+   "gate": "{'load1': 1.28, 'nproc': 16, 'mem_available_gb': 121.44, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}",
+   "guard": "tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS",
+   "command": "launch_v1.sh RR11_neg1_post 1800 -- [venv]/bin/python3 -I code/rec/p2_cert_v1.py --mode neg1_refuse_post --well 10 --cfile out/RR10_partC.json --workers 1",
+   "expect": "all rejected",
+   "result": "REFUSED: the certified P of cell [33679/160000, 17611/80000] (q in [0.96828, 0.97101]) is rejected with the well (negative exact corner at z=1/4)",
+   "log": "logs/RR11_neg1_post.log",
+   "log_sha256": "868507a073f9f4132a4c853cc1e7d2f90343cd58410fa114c550fa2916e236c6",
+   "outputs": {
+    "out/RR11_neg1_post.json": "313207d88cf6e3490866b7fb9bdd4cb23a5ac9b3d5f581ec355eb66479cc19ca"
+   },
+   "code": {
+    "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+    "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+    "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+    "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3",
+    "code/rec/p2_bern_v1.py": "e4c277c78e5d670c41da06a334fa5185117a4d93fdd10e71a6988e10cb133cc6",
+    "code/rec/p2_cert_v1.py": "a2ce8ad673d0087b5e96a60819266c03504143bc4cd4b7c13c5bf25ba55d0594",
+    "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e"
+   }
+  }
+ ],
+ "phase2_dev_runs": [
+  {
+   "id": "D-01",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "python-flint/mpmath API probe (no model)",
+   "result": "ok",
+   "log": "logs/dev_api_probe_20261023T155403Z.log",
+   "log_sha256": "2a6724da4d742da018f93ca7edaa6e7afeabd77d0651d0316f3221261f746c66"
+  },
+  {
+   "id": "D-02",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "Bernstein self-test, exact pieces, cross-eval on random P (cell [3/10,31/100])",
+   "result": "ok; 20/20 exact",
+   "log": "node_mirror_host-2/logs/dev_selftest_20261023T160114Z.log",
+   "log_sha256": "8f7ea8fb09279431eaf508d5e53d9ff0157449f7ed31f6424c5b99d243de61a2"
+  },
+  {
+   "id": "D-03",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "Sturm I/II at out-of-band q in {0,1/2,9/10,47/50}",
+   "result": "Z=0; I-vs-II ~1e-13; dps45 ~1e-25",
+   "log": "node_mirror_host-2/logs/dev_sturm_20261023T160124Z.log",
+   "log_sha256": "feea9712f68d02b89bb1398a87a132be153660b9ce7f9c523d530d7bb938e53d"
+  },
+  {
+   "id": "D-04",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "NEG1 integral code at out-of-band q=47/50",
+   "result": "A=10, Q[phi]<0 certified",
+   "log": "node_mirror_host-2/logs/dev_neg1int_20261023T160155Z.log",
+   "log_sha256": "53d5c9c97a80f0e95e3c85857c53d02259a667d78cad523e061453471967d61f"
+  },
+  {
+   "id": "D-05",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "well-perturbed Sturm at out-of-band q=47/50, A=10",
+   "result": "Z=1 both integrators",
+   "log": "node_mirror_host-2/logs/dev_wellsturm_20261023T160208Z.log",
+   "log_sha256": "5d7d6a0ff4981e4c390a7b44f143c5e722fc75de18cfe4143ea35b13dbe0794d"
+  },
+  {
+   "id": "D-06",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "Part C machinery on cell [3/10,31/100] (first version)",
+   "result": "CRASHED: GNU MP cannot reallocate memory at the 8 GB address-space cap (odefun ~1e5 steps to rho=5e4); EXIT 134; fixed by integrating rho>100 in log(rho)",
+   "log": "logs/dev_tp1oob_20261023T160230Z.log",
+   "log_sha256": "d1322a4e0fdbe9922d202a6a7020930d9bc56bbc7caea903a88234b90e5b4a35"
+  },
+  {
+   "id": "D-07",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "Part C machinery, after the log(rho) fix",
+   "result": "not certified: Chebyshev nodes mirrored (P(0)~4.48, P(1)~0.09); the exact verifier refused; fixed node orientation",
+   "log": "logs/dev_tp1oob2_20261023T161341Z.log",
+   "log_sha256": "1961f65355de4d1342666abfa9ec548948faa937fcdd7ad3cec5eb9292db32e2"
+  },
+  {
+   "id": "D-08",
+   "kind": "development (not of record; out-of-band parameters only, amend X1)",
+   "host": "host-2",
+   "code": "code/dev/ (pre-freeze versions; the frozen code is code/rec/*_v1.py)",
+   "purpose": "Part C machinery, after the node fix",
+   "result": "certified (d=24, eps1=0.02); cross-eval 50/50; TP1 caught",
+   "log": "logs/dev_tp1oob3_20261023T161449Z.log",
+   "log_sha256": "66ca0c26208fdab31857751631bf7be6c87719aa78dc26cb69f8f76ecd077f8d"
+  }
+ ],
+ "code_rec_v1": {
+  "code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+  "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4",
+  "code/rec/launch_v1.sh": "2801a6e41562bcaba6874c861d4563f18ae03ef177f270e43a56aa153fb6807e",
+  "code/rec/p2_bern_v1.py": "e4c277c78e5d670c41da06a334fa5185117a4d93fdd10e71a6988e10cb133cc6",
+  "code/rec/p2_cert_v1.py": "a2ce8ad673d0087b5e96a60819266c03504143bc4cd4b7c13c5bf25ba55d0594",
+  "code/rec/p2_controls_v1.py": "8350e76c724bdbd098c3cb768005dd86b8c4535bd184c0b0b2c363b6d5747183",
+  "code/rec/p2_gap_v1.py": "e808e33134d642a4a361f754fe15a126ee93428189c22b24df96222300a70deb",
+  "code/rec/p2_model_v1.py": "7867a612288f1aff1a0b640dfedc0a702764fab5e7531f2ff2be54bae23944fb",
+  "code/rec/p2_sturm_v1.py": "10ff569dfdbeb8ce450f5f7b73e1d6a1ca166ff83cea6095a52c824ea894daa3"
+ }
+}

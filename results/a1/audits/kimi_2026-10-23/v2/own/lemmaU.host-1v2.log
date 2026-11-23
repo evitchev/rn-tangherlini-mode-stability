@@ -1,0 +1,17 @@
+P(eps,kap,x) terms: 15
+P has only nonnegative eps powers: True
+Pos(0,0,0) = 64
+Neg(1/12, 1/5, 2) = 159997/17496 = 9.144775948788295
+64 - Neg(1/12,1/5,2) = 959747/17496 = 54.85522405121171  > 0: True
+Neg =
+    7680 * eps^3 kap^1 x^1
+    80000 * eps^3 kap^3 x^3
+    7680 * eps^4 kap^0 x^1
+    134400 * eps^4 kap^2 x^3
+    400000 * eps^4 kap^4 x^4
+    28800 * eps^5 kap^1 x^3
+    1200000 * eps^5 kap^3 x^4
+    1200000 * eps^6 kap^2 x^4
+    400000 * eps^7 kap^1 x^4
+Pos - Neg == P: True
+LEMMA U: PASS

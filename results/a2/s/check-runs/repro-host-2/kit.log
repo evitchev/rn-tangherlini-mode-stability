@@ -1,0 +1,14 @@
+none: VERIFIED
+td-H: REJECT: H
+td-param: REJECT: PARAM
+td-design: REJECT: DESIGN
+td-gres: REJECT: G-RES
+td-L: REJECT: L
+td-S: REJECT: S, POS-O, POS-O', POS-T, POS-C
+td-divT: REJECT: DIV-T, POS-T
+td-divC: REJECT: DIV-C, POS-C
+d0: REJECT: POS-C
+d6: REJECT: POS-O, POS-O', POS-T
+scheck: VERIFIED
+KIT PASS
+kit-exit=0

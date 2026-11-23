@@ -1,0 +1,10 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM4: PASS  param_n(4, l) = onset.param(l), l = 2..5: [True, True, True, True]
+H: PASS  H_- = m + n(n+1)x/2 + n(n+1) m delta x/2, n = 4..9: every coefficient > 0, so H_- >= m > 0
+EXT: PASS  at q = 1, symbolic in l: {4: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 5: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 6: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 7: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 8: {'H_-(x_H)'
+A2E4: PASS  A2-E record SHA-256 matches: True; l = 3..10 identical field by field: {3: True, 4: True, 5: True, 6: True, 7: True, 8: True, 9: True, 10: True}
+MEET: PASS  HD-E record SHA-256 matches: True; l0 = {5: 10, 6: 10, 7: 11, 8: 13, 9: 14}; failures: []
+E D=7 l=5: FAIL  F: sign*p = -22211505 <= 0 at (t, mu) = (1/2, 0)  (a counterexample)
+E D=11 l=9: FAIL  F: sign*p = -1433642661 <= 0 at (t, mu) = (1/2, 0)  (a counterexample)
+REJECT: E D=7 l=5, E D=11 l=9

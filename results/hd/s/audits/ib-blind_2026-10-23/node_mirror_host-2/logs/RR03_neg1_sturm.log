@@ -1,0 +1,17 @@
+2026-10-23T16:17:59Z
+host-2
+ 12:17:59 up 8 days, 20:17,  0 users,  load average: 0.19, 0.52, 0.50
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          95           0          27         121
+Swap:            49           0          49
+START 2026-10-23T16:18:00Z mode neg1
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+GUARD tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS
+GATE {'load1': 0.19, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 1, 'w': 1, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}
+neg1 q=97/100 Z_I(sign,prufer)=(1,1) Z_II(N:1,1 2N:1,1) psi_min=-27953203.9815038 @rho=100.0 P(100)=4.49999944072182 t=9.7s
+END 2026-10-23T16:18:10Z
+EXIT=0
+2026-10-23T16:18:10Z
+host-2

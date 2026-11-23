@@ -1,0 +1,19 @@
+(a) D=7 ell=3 (a band): REJECT (correct); F(1,0) = -4816896 (< 0: True)
+(b) D=7 ell=4 strict: REJECT (correct); F(1,0) = 0 (exactly 0: True); info={'reason': 'non-positive value at Bernstein node', 'z': '1', 'mu': '0', 'value': '0'}
+(c) ehat below the window: T chart REJECT (correct) {'reason': 'negative value', 'z': '4', 'mu': '1/64', 'value': '-2729581837793906456890617902109651127925455290737945/557518629963265578538392956816209037'}
+(c) ehat above the window: T chart REJECT (correct) {'reason': 'non-positive value at Bernstein node', 'z': '0', 'mu': '0', 'value': '-455196672'}
+(d) HD-X-S a=-4/5 at 7-3: REJECT (correct) POS={'O': False, "O'": False, 'T': False, 'C': False}
+(e) z_U (first root of U_- at mu=1/64) = 0.10472342665739953
+(e) support [za, zb] = [0.0209, 0.0837]
+(e)(i) A = [2.929328869655574543290716645602132015900900202155128925315597062006759729067587112382011712697788e-12 +/- 8.55e-109], C = [1.96725222445138034180388401060985052281052281052281052281052281052281052281052281052281052e-20 +/- 7.47e-110], K = 297809182, Q = [-2.9293288878598852403442343706238570375038411897862630160763443299346322123243542795593802e-12 +/- 4.26e-101], rigorously < 0: True
+(e)(ii) at the bump centre: N = 55345.5663, N' = -22301083.3926 (< 0: True)
+(e)(ii) planted NL on the T chart: REJECT (correct) {'reason': 'negative value', 'z': '4', 'mu': '1/64', 'value': '-342159080049218038764777607577142142504188838353207803731156713/1361129467683753853853498'}
+PASS KAT1 p=-1 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '-1'}
+PASS KAT2 p=z-1/2 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '0'}
+PASS KAT3 p=z(1-z) strict must REJECT  {'reason': 'non-positive value at Bernstein node', 'z': '0', 'value': '0'}
+PASS KAT4 p=1+z+z^2 must PASS  {'nodes': 1, 'min_bernstein_coeff': '1'}
+PASS KAT5 tampered verifier accepts p=-1 (must be caught here)  {'nodes': 1, 'min_bernstein_coeff': '-1'}
+PASS KAT6 substitute_1d coefficients exact  {0: '11/4', 1: '0', 2: '1/4'}
+PASS KAT7 substitute_2d coefficients exact  {(0, 0): '1/2', (0, 1): '1/4', (1, 0): '1', (1, 1): '1/2', (2, 0): '1/2', (2, 1): '1/4'}
+PASS KAT8 non-unit box rejection at corner  {0: '-1/8', 1: '1/4'}
+CONTROLS (a)-(f): ALL OK

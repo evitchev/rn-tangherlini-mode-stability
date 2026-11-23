@@ -1,0 +1,2 @@
+ad1741b0dd99379b5cea8722a754b1eee07f35f5f04556ecd8b11834fc569689  [repository]/kit_pilot_lead.log
+moved out of [repository] at 2026-10-24 00:13:52 EDT; created 00:13 EDT by the lead's malformed command (second job ran in the bh-modes cwd); exit 127 before any run; nothing else written

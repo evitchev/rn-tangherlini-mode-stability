@@ -1,0 +1,124 @@
+2026-10-23T15:32:27Z
+host-2
+b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b  code/ki_s5.py
+9ca152c82e47937e51f16d568a62d2c2a4eb42f6fe6706e90234d52795c576e7  code/check_transcription.py
+host host-2 | python 3.12.8 | sympy 1.14.0
+time_utc 2026-10-23T15:32:27Z
+== transcription checks (no tamper) ==
+[PASS] C1 Q=0 limit vs Paper I (general n,m,x,y,K) 
+[PASS] C2 n=2 Q=0 vs Zerilli 
+[PASS] C3 n=2 charged vs Chandrasekhar V_2^(+), V_1^(+) 
+[PASS] C4 involution U_-(delta') = m^2 U_+(delta), H_-(delta') = m H_+(delta) 
+[PASS] C5 (5.66) H_+ H_- = H of (5.38) with z from (5.65) 
+[PASS] C6 x->0: r^2 V -> ((2l+n-1)^2-1)/4; n=5,l=2 -> 63/4
+[PASS] C7 TARGET_HD sec.1 setting items {"a_m": true, "b_z": true, "c_roots": true, "d_delta": true, "e_B2": true, "e_s2": true, "e_ends": true, "f_dw": "-8*(mu_T**2 - 7)/(mu_T**2 + 7)**2", "f_s_minus_1": "-7*(mu_T - 1)*(mu_T + 1)/(3*(mu_T**2 + 7))", "f_monotone_and_delta_nonneg": true}
+   C8a: roots mu_T in (0,1) of numerator of U_-(x_H): [0.277043497762344]
+   C8a: corresponding q: [0.949691435450029]
+   C8a: sign of den on (0,1) at mu=1/2: 1
+   C8b: delta(q=1) = 1/42, x_H = 2, f(1) = 0, f'(1) = 0, a = f''(1)/2 = 16, W_H = (V/f)_H = -4, kappa = W_H/a = -1/4
+[PASS] C8 brief background (q~0.9497 sign change; kappa=-1/4 at q=1) {"q_sign_change": ["0.949691435450029"], "kappa": "-1/4"}
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+[PASS] C9 METHOD.md Lemma 2 identity + N(1) window 
+== explicit n=5, l=2 forms ==
+   H_- (n=5,l=2) = 105*delta*x + 15*x + 7
+   U_- coefficient of x^4: -2106000*delta*(7*delta + 1)**3   [= -722358000*delta**4 - 309582000*delta**3 - 44226000*delta**2 - 2106000*delta]
+   U_- coefficient of x^3: -3600*(7*delta + 1)**2*(546*delta - 25)   [= -96314400*delta**3 - 23108400*delta**2 - 705600*delta + 90000]
+   U_- coefficient of x^2: 144*(7*delta + 1)*(672*delta + 985)   [= 677376*delta**2 + 1089648*delta + 141840]
+   U_- coefficient of x^1: -336*(2758*delta + 485)   [= -926688*delta - 162960]
+   U_- coefficient of x^0: 49392   [= 49392]
+   delta(mu_T) = -(mu_T - 1)*(mu_T + 1)/(6*(mu_T**2 + 7)) ; 1 + m delta = -(mu_T - 7)*(mu_T + 7)/(6*(mu_T**2 + 7))
+   q^2(mu_T) = (mu_T - 7)*(mu_T - 1)*(mu_T + 1)*(mu_T + 7)/(mu_T**2 + 7)**2 ; x_H(mu_T) = 2*(mu_T**2 + 7)/((mu_T + 1)*(mu_T + 7))
+   mu_T = 1: q^2 = 0, delta = 0, x_H = 1
+   mu_T = 0: q^2 = 1, delta = 1/42, x_H = 2
+== negative drills: tampered U_- must be caught ==
+   T1_x3_sign: C1=FAIL, C2=FAIL, C3=FAIL, C4=FAIL, C6=pass, C8=FAIL  -> caught by ['C1', 'C2', 'C3', 'C4', 'C8']
+   T2_x4_power: C1=pass, C2=pass, C3=FAIL, C4=FAIL, C6=pass, C8=FAIL  -> caught by ['C3', 'C4', 'C8']
+   T3_const: C1=FAIL, C2=FAIL, C3=FAIL, C4=FAIL, C6=FAIL, C8=FAIL  -> caught by ['C1', 'C2', 'C3', 'C4', 'C6', 'C8']
+   T4_x2_delta_sq: C1=pass, C2=pass, C3=pass, C4=FAIL, C6=pass, C8=FAIL  -> caught by ['C4', 'C8']
+[PASS] D  every tamper caught by at least one check 
+== summary ==
+{
+ "results": {
+  "C1 Q=0 limit vs Paper I (general n,m,x,y,K)": true,
+  "C2 n=2 Q=0 vs Zerilli": true,
+  "C3 n=2 charged vs Chandrasekhar V_2^(+), V_1^(+)": true,
+  "C4 involution U_-(delta') = m^2 U_+(delta), H_-(delta') = m H_+(delta)": true,
+  "C5 (5.66) H_+ H_- = H of (5.38) with z from (5.65)": true,
+  "C6 x->0: r^2 V -> ((2l+n-1)^2-1)/4; n=5,l=2 ->": true,
+  "C7 TARGET_HD sec.1 setting items": true,
+  "C8 brief background (q~0.9497 sign change; kappa=-1/4 at q=1)": true,
+  "C9 METHOD.md Lemma 2 identity + N(1) window": true,
+  "D  every tamper caught by at least one check": true
+ },
+ "drills": {
+  "T1_x3_sign": {
+   "results": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "C6": true,
+    "C8": false
+   },
+   "caught_by": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C8"
+   ]
+  },
+  "T2_x4_power": {
+   "results": {
+    "C1": true,
+    "C2": true,
+    "C3": false,
+    "C4": false,
+    "C6": true,
+    "C8": false
+   },
+   "caught_by": [
+    "C3",
+    "C4",
+    "C8"
+   ]
+  },
+  "T3_const": {
+   "results": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "C6": false,
+    "C8": false
+   },
+   "caught_by": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C6",
+    "C8"
+   ]
+  },
+  "T4_x2_delta_sq": {
+   "results": {
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "C4": false,
+    "C6": true,
+    "C8": false
+   },
+   "caught_by": [
+    "C4",
+    "C8"
+   ]
+  }
+ }
+}
+elapsed_s 1.2
+ALL_PASS
+EXIT=0
+2026-10-23T15:32:28Z

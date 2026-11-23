@@ -1,0 +1,21 @@
+n=4 none: VERIFIED
+n=5 none: VERIFIED
+n=6 none: VERIFIED
+n=7 none: VERIFIED
+n=8 none: VERIFIED
+n=9 none: VERIFIED
+n=N none: VERIFIED
+n=2 none: VERIFIED
+n=3 none: VERIFIED
+n=4 nc-nu: REJECT: Z-inf, Z-id, P-reg, P-asym
+n=4 nc-exp: REJECT: Z-thr, Z-id, P-reg, P-asym
+n=4 td-U: REJECT: Z-inf, Z-thr, Z-id, P-reg, P-asym
+n=4 td-zid: REJECT: Z-id, P-reg, P-asym
+n=4 td-preg: REJECT: P-reg, P-asym
+n=9 nc-nu: REJECT: Z-inf, Z-id, P-reg, P-asym
+n=9 nc-exp: REJECT: Z-thr, Z-id, P-reg, P-asym
+n=9 td-U: REJECT: Z-inf, Z-thr, Z-id, P-reg, P-asym
+n=9 td-zid: REJECT: Z-id, P-reg, P-asym
+n=9 td-preg: REJECT: P-reg, P-asym
+KIT PASS
+exit=0

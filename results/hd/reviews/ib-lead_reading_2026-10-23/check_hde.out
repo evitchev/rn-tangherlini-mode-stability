@@ -1,0 +1,23 @@
+== E3: quoted bounds vs exact
+D = 7: exact 399917/10368 = 38.572242; stage report '>= 38.6' inward: False; HD-E RESULT '>= 38.57' inward: True
+D = 8: exact 1481614528/62748517 = 23.611945; stage report '>= 23.6' inward: True; HD-E RESULT '>= 23.61' inward: True
+D = 9: exact 17257/2401 = 7.187422; stage report '>= 7.19' inward: False; HD-E RESULT '>= 7.187' inward: True
+D = 10: exact 79325/16384 = 4.841614; stage report '>= 4.84' inward: True; HD-E RESULT '>= 4.842' inward: False
+D = 11: exact 19870/6561 = 3.028502; stage report '>= 3.03' inward: False; HD-E RESULT '>= 3.029' inward: False
+
+== E1 coverage (q <= 99/100) and E2 coverage (q <= q_split)
+E2 D = 7 l = 2: mu_lo 176/625, q(mu_lo) = 0.948016 >= q_hi 237/250: True; U lower bound 345.024; leaves 7
+E2 D = 7 l = 3: mu_lo 859/5000, q(mu_lo) = 0.977014 >= q_hi 977/1000: True; U lower bound 2843.4; leaves 1
+E2 D = 8 l = 3: mu_lo 343/1250, q(mu_lo) = 0.944030 >= q_hi 118/125: True; U lower bound 1793.41; leaves 1
+E2 D = 8 l = 4: mu_lo 71/500, q(mu_lo) = 0.983022 >= q_hi 983/1000: True; U lower bound 10519.4; leaves 1
+E2 D = 9 l = 3: mu_lo 3317/10000, q(mu_lo) = 0.921039 >= q_hi 921/1000: True; U lower bound 3593.2; leaves 3
+E2 D = 9 l = 4: mu_lo 611/2500, q(mu_lo) = 0.952009 >= q_hi 119/125: True; U lower bound 7442.31; leaves 1
+E2 D = 9 l = 5: mu_lo 1211/10000, q(mu_lo) = 0.987006 >= q_hi 987/1000: True; U lower bound 35853.8; leaves 1
+E2 D = 10 l = 3: mu_lo 83/100, q(mu_lo) = 0.490001 >= q_hi 49/100: True; U lower bound 135.96; leaves 3
+E2 D = 10 l = 4: mu_lo 201/625, q(mu_lo) = 0.920022 >= q_hi 23/25: True; U lower bound 11674.2; leaves 1
+E2 D = 10 l = 5: mu_lo 134/625, q(mu_lo) = 0.961026 >= q_hi 961/1000: True; U lower bound 27162.7; leaves 1
+E2 D = 11 l = 4: mu_lo 741/2000, q(mu_lo) = 0.897016 >= q_hi 897/1000: True; U lower bound 23142.6; leaves 7
+E2 D = 11 l = 5: mu_lo 2949/10000, q(mu_lo) = 0.929046 >= q_hi 929/1000: True; U lower bound 44357.9; leaves 1
+E2 D = 11 l = 6: mu_lo 119/625, q(mu_lo) = 0.968030 >= q_hi 121/125: True; U lower bound 101871; leaves 1
+E1 entries: 35; E2 entries: 13; failures: 0
+verdict: VERIFIED

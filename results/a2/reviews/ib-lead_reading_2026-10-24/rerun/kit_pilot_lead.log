@@ -1,0 +1,5 @@
+DIFF /provenance/gmpy2: '2.3.2' != '2.3.1'
+1 difference(s)
+pilot: exit 0, VALID: qualifies at degree 12
+KIT FAIL
+pilot kit exit 1

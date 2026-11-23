@@ -1,0 +1,15 @@
+2026-10-23T16:17:04Z
+host-2
+ 12:17:04 up 8 days, 20:17,  0 users,  load average: 0.16, 0.59, 0.52
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          95           0          27         121
+Swap:            49           0          49
+START 2026-10-23T16:17:05Z mode pos0
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+GUARD tamper=T1_x3_sign {'C1': False, 'C2': False, 'C3': False, 'C4': False, 'C5': True, 'C6': True, 'C7': True, 'C8': False, 'C9': True, 'C10': False} -> FAIL
+GUARD ABORT: transcription checks failed; nothing computed.
+EXIT=3
+2026-10-23T16:17:05Z
+host-2

@@ -1,0 +1,6 @@
+part1: KI (5.62b)/(5.63b) at n=4 == TARGET.md transcription (symbolic, all m, d)
+part1: G1 (n=8, Q=0): U_- = 1327104*x**3 + 1741824*x**2 - 1812480*x + 192000  H_- = 36*x + 10
+part1: parametrisation identities exact (s^2 law, x_H, kappa^3 = (1-w)/(1+w))
+part1: q^2(mu) = (mu - 6)*(mu - 1)*(mu + 1)*(mu + 6)/(mu**2 + 6)**2
+part2: identity  V~ = f N /(64 rho^2 H_-^2)  holds for abstract f(z), P(z)
+BUILD-PARTS-1-2 OK

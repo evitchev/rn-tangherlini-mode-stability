@@ -1,0 +1,9 @@
+none: exit 1, TypeError: Object of type BooleanTrue is not JSON serializable
+nc-ell2: exit 1, REJECT: P1 l=2
+nc-bump: exit 1, REJECT: P1 l=3
+nc-coverage: exit 1, REJECT: P1 l=3
+nc-uniform: exit 1, TypeError: Object of type BooleanTrue is not JSON serializable
+td-coeff: exit 1, TypeError: Object of type BooleanTrue is not JSON serializable
+td-split: exit 1, TypeError: Object of type BooleanTrue is not JSON serializable
+td-verifier: exit 1, REJECT: exception KeyError: 'F'
+KIT FAIL

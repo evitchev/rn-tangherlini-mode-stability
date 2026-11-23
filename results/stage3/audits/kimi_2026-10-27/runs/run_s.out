@@ -1,0 +1,199 @@
+D=7 l=3 OK  none: VERIFIED
+D=7 l=3 OK  nc-a2: REJECT: POS-T, POS-C
+D=7 l=3 OK  nc-res: REJECT: POS-O, POS-O', POS-T, POS-C
+D=7 l=3 OK  nc-well: REJECT: nc-well (b)
+D=7 l=3 OK  d0: REJECT: POS-C
+D=7 l=3 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=7 l=3 OK  td-coeff: REJECT: E0n
+D=7 l=3 OK  td-verifier: REJECT: KAT
+D=7 l=3 OK  td-chart: REJECT: POS-T
+D=7 l=3 OK  td-cover: REJECT: COVER
+D=7 l=3 OK  td-H: REJECT: H
+D=7 l=3 OK  td-param: REJECT: PARAM
+D=7 l=3 OK  td-design: REJECT: DESIGN
+D=7 l=3 OK  td-gres: REJECT: G-RES
+D=7 l=3 OK  td-L: REJECT: L
+D=7 l=3 OK  td-S: REJECT: S, POS-O', POS-T
+D=7 l=3 OK  td-divT: REJECT: DIV-T, POS-T
+D=7 l=3 OK  td-divC: REJECT: DIV-C, POS-C
+D=8 l=3 OK  none: VERIFIED
+D=8 l=3 OK  nc-a2: REJECT: POS-T, POS-C
+D=8 l=3 OK  nc-res: REJECT: POS-O, POS-O', POS-T, POS-C
+D=8 l=3 OK  nc-well: REJECT: nc-well (b)
+D=8 l=3 OK  d0: REJECT: POS-C
+D=8 l=3 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=8 l=3 OK  td-coeff: REJECT: E0n
+D=8 l=3 OK  td-verifier: REJECT: KAT
+D=8 l=3 OK  td-chart: REJECT: POS-T
+D=8 l=3 OK  td-cover: REJECT: COVER
+D=8 l=3 OK  td-H: REJECT: H
+D=8 l=3 OK  td-param: REJECT: PARAM
+D=8 l=3 OK  td-design: REJECT: DESIGN
+D=8 l=3 OK  td-gres: REJECT: G-RES
+D=8 l=3 OK  td-L: REJECT: L
+D=8 l=3 OK  td-S: REJECT: S, POS-O, POS-O', POS-T, POS-C
+D=8 l=3 OK  td-divT: REJECT: DIV-T, POS-T
+D=8 l=3 OK  td-divC: REJECT: DIV-C, POS-C
+D=8 l=4 OK  none: VERIFIED
+D=8 l=4 OK  nc-a2: REJECT: POS-T, POS-C
+D=8 l=4 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=8 l=4 OK  nc-well: REJECT: nc-well (b)
+D=8 l=4 OK  d0: REJECT: POS-C
+D=8 l=4 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=8 l=4 OK  td-coeff: REJECT: E0n
+D=8 l=4 OK  td-verifier: REJECT: KAT
+D=8 l=4 OK  td-chart: REJECT: POS-T
+D=8 l=4 OK  td-cover: REJECT: COVER
+D=8 l=4 OK  td-H: REJECT: H
+D=8 l=4 OK  td-param: REJECT: PARAM
+D=8 l=4 OK  td-design: REJECT: DESIGN
+D=8 l=4 OK  td-gres: REJECT: G-RES
+D=8 l=4 OK  td-L: REJECT: L
+D=8 l=4 OK  td-S: REJECT: S, POS-O', POS-T
+D=8 l=4 OK  td-divT: REJECT: DIV-T, POS-T
+D=8 l=4 OK  td-divC: REJECT: DIV-C, POS-C
+D=9 l=4 OK  none: VERIFIED
+D=9 l=4 OK  nc-a2: REJECT: POS-T, POS-C
+D=9 l=4 OK  nc-res: REJECT: POS-O, POS-O', POS-T, POS-C
+D=9 l=4 OK  nc-well: REJECT: nc-well (b)
+D=9 l=4 OK  d0: REJECT: POS-C
+D=9 l=4 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=9 l=4 OK  td-coeff: REJECT: E0n
+D=9 l=4 OK  td-verifier: REJECT: KAT
+D=9 l=4 OK  td-chart: REJECT: POS-T
+D=9 l=4 OK  td-cover: REJECT: COVER
+D=9 l=4 OK  td-H: REJECT: H
+D=9 l=4 OK  td-param: REJECT: PARAM
+D=9 l=4 OK  td-design: REJECT: DESIGN
+D=9 l=4 OK  td-gres: REJECT: G-RES
+D=9 l=4 OK  td-L: REJECT: L
+D=9 l=4 OK  td-S: REJECT: S, POS-O', POS-T, POS-C
+D=9 l=4 OK  td-divT: REJECT: DIV-T, POS-T
+D=9 l=4 OK  td-divC: REJECT: DIV-C, POS-C
+D=9 l=5 OK  none: VERIFIED
+D=9 l=5 OK  nc-a2: REJECT: POS-T, POS-C
+D=9 l=5 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=9 l=5 OK  nc-well: REJECT: nc-well (b)
+D=9 l=5 OK  d0: REJECT: POS-C
+D=9 l=5 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=9 l=5 OK  td-coeff: REJECT: E0n
+D=9 l=5 OK  td-verifier: REJECT: KAT
+D=9 l=5 OK  td-chart: REJECT: POS-T
+D=9 l=5 OK  td-cover: REJECT: COVER
+D=9 l=5 OK  td-H: REJECT: H
+D=9 l=5 OK  td-param: REJECT: PARAM
+D=9 l=5 OK  td-design: REJECT: DESIGN
+D=9 l=5 OK  td-gres: REJECT: G-RES
+D=9 l=5 OK  td-L: REJECT: L
+D=9 l=5 OK  td-S: REJECT: S, POS-O', POS-T
+D=9 l=5 OK  td-divT: REJECT: DIV-T, POS-T
+D=9 l=5 OK  td-divC: REJECT: DIV-C, POS-C
+D=10 l=4 OK  none: VERIFIED
+D=10 l=4 OK  nc-a2: REJECT: POS-T, POS-C
+D=10 l=4 OK  nc-res: REJECT: POS-O, POS-O', POS-T, POS-C
+D=10 l=4 OK  nc-well: REJECT: nc-well (b)
+D=10 l=4 OK  d0: REJECT: POS-C
+D=10 l=4 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=10 l=4 OK  td-coeff: REJECT: E0n
+D=10 l=4 OK  td-verifier: REJECT: KAT
+D=10 l=4 OK  td-chart: REJECT: POS-T
+D=10 l=4 OK  td-cover: REJECT: COVER
+D=10 l=4 OK  td-H: REJECT: H
+D=10 l=4 OK  td-param: REJECT: PARAM
+D=10 l=4 OK  td-design: REJECT: DESIGN
+D=10 l=4 OK  td-gres: REJECT: G-RES
+D=10 l=4 OK  td-L: REJECT: L
+D=10 l=4 OK  td-S: REJECT: S, POS-O', POS-T, POS-C
+D=10 l=4 OK  td-divT: REJECT: DIV-T, POS-T
+D=10 l=4 OK  td-divC: REJECT: DIV-C, POS-C
+D=10 l=5 OK  none: VERIFIED
+D=10 l=5 OK  nc-a2: REJECT: POS-T, POS-C
+D=10 l=5 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=10 l=5 OK  nc-well: REJECT: nc-well (b)
+D=10 l=5 OK  d0: REJECT: POS-C
+D=10 l=5 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=10 l=5 OK  td-coeff: REJECT: E0n
+D=10 l=5 OK  td-verifier: REJECT: KAT
+D=10 l=5 OK  td-chart: REJECT: POS-T
+D=10 l=5 OK  td-cover: REJECT: COVER
+D=10 l=5 OK  td-H: REJECT: H
+D=10 l=5 OK  td-param: REJECT: PARAM
+D=10 l=5 OK  td-design: REJECT: DESIGN
+D=10 l=5 OK  td-gres: REJECT: G-RES
+D=10 l=5 OK  td-L: REJECT: L
+D=10 l=5 OK  td-S: REJECT: S, POS-O', POS-T
+D=10 l=5 OK  td-divT: REJECT: DIV-T, POS-T
+D=10 l=5 OK  td-divC: REJECT: DIV-C, POS-C
+D=10 l=6 OK  none: VERIFIED
+D=10 l=6 OK  nc-a2: REJECT: POS-T, POS-C
+D=10 l=6 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=10 l=6 OK  nc-well: REJECT: nc-well (b)
+D=10 l=6 OK  d0: REJECT: POS-C
+D=10 l=6 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=10 l=6 OK  td-coeff: REJECT: E0n
+D=10 l=6 OK  td-verifier: REJECT: KAT
+D=10 l=6 OK  td-chart: REJECT: POS-T
+D=10 l=6 OK  td-cover: REJECT: COVER
+D=10 l=6 OK  td-H: REJECT: H
+D=10 l=6 OK  td-param: REJECT: PARAM
+D=10 l=6 OK  td-design: REJECT: DESIGN
+D=10 l=6 OK  td-gres: REJECT: G-RES
+D=10 l=6 OK  td-L: REJECT: L
+D=10 l=6 OK  td-S: REJECT: S, POS-O', POS-T
+D=10 l=6 OK  td-divT: REJECT: DIV-T, POS-T
+D=10 l=6 OK  td-divC: REJECT: DIV-C, POS-C
+D=11 l=5 OK  none: VERIFIED
+D=11 l=5 OK  nc-a2: REJECT: POS-T, POS-C
+D=11 l=5 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=11 l=5 OK  nc-well: REJECT: nc-well (b)
+D=11 l=5 OK  d0: REJECT: POS-C
+D=11 l=5 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=11 l=5 OK  td-coeff: REJECT: E0n
+D=11 l=5 OK  td-verifier: REJECT: KAT
+D=11 l=5 OK  td-chart: REJECT: POS-T
+D=11 l=5 OK  td-cover: REJECT: COVER
+D=11 l=5 OK  td-H: REJECT: H
+D=11 l=5 OK  td-param: REJECT: PARAM
+D=11 l=5 OK  td-design: REJECT: DESIGN
+D=11 l=5 OK  td-gres: REJECT: G-RES
+D=11 l=5 OK  td-L: REJECT: L
+D=11 l=5 OK  td-S: REJECT: S, POS-O', POS-T, POS-C
+D=11 l=5 OK  td-divT: REJECT: DIV-T, POS-T
+D=11 l=5 OK  td-divC: REJECT: DIV-C, POS-C
+D=11 l=6 OK  none: VERIFIED
+D=11 l=6 OK  nc-a2: REJECT: POS-T, POS-C
+D=11 l=6 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=11 l=6 OK  nc-well: REJECT: nc-well (b)
+D=11 l=6 OK  d0: REJECT: POS-C
+D=11 l=6 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=11 l=6 OK  td-coeff: REJECT: E0n
+D=11 l=6 OK  td-verifier: REJECT: KAT
+D=11 l=6 OK  td-chart: REJECT: POS-T
+D=11 l=6 OK  td-cover: REJECT: COVER
+D=11 l=6 OK  td-H: REJECT: H
+D=11 l=6 OK  td-param: REJECT: PARAM
+D=11 l=6 OK  td-design: REJECT: DESIGN
+D=11 l=6 OK  td-gres: REJECT: G-RES
+D=11 l=6 OK  td-L: REJECT: L
+D=11 l=6 OK  td-S: REJECT: S, POS-O', POS-T
+D=11 l=6 OK  td-divT: REJECT: DIV-T, POS-T
+D=11 l=6 OK  td-divC: REJECT: DIV-C, POS-C
+D=11 l=7 OK  none: VERIFIED
+D=11 l=7 OK  nc-a2: REJECT: POS-T, POS-C
+D=11 l=7 OK  nc-res: REJECT: POS-O', POS-T, POS-C
+D=11 l=7 OK  nc-well: REJECT: nc-well (b)
+D=11 l=7 OK  d0: REJECT: POS-C
+D=11 l=7 OK  d6: REJECT: POS-O, POS-O', POS-T
+D=11 l=7 OK  td-coeff: REJECT: E0n
+D=11 l=7 OK  td-verifier: REJECT: KAT
+D=11 l=7 OK  td-chart: REJECT: POS-T
+D=11 l=7 OK  td-cover: REJECT: COVER
+D=11 l=7 OK  td-H: REJECT: H
+D=11 l=7 OK  td-param: REJECT: PARAM
+D=11 l=7 OK  td-design: REJECT: DESIGN
+D=11 l=7 OK  td-gres: REJECT: G-RES
+D=11 l=7 OK  td-L: REJECT: L
+D=11 l=7 OK  td-S: REJECT: S, POS-O', POS-T
+D=11 l=7 OK  td-divT: REJECT: DIV-T, POS-T
+D=11 l=7 OK  td-divC: REJECT: DIV-C, POS-C
+KIT PASS

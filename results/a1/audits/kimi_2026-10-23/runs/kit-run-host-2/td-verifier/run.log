@@ -1,0 +1,13 @@
+KAT: FAIL  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': False, 'KAT3 t(1-t)+mu (zero at a corner) rejected': False, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0: PASS  S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0
+H: PASS  H_- = m + 10 x + 10 m delta x: every coefficient > 0, so H_- >= m > 0
+P1 l=3: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 19547.9
+P1 l=4: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 128382
+P1 l=5: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 407682
+P1 l=6: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 1.02359e+06
+P1 l=7: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 2.21293e+06
+P1 l=8: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 4.35897e+06
+P1 l=9: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 7.97283e+06
+P1 l=10: PASS  U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 1.37932e+07
+P1 uniform: PASS  l >= 11 (m >= 150), q in [0, 1], x in [0, 2]: U_- >= m^3 (64 - Neg(corner)) = m^3 * 54.8552
+REJECT: KAT

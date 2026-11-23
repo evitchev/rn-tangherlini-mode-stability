@@ -1,0 +1,42 @@
+$ git -C [repository] diff 8c2d6d2 710488b -- code/hd/pilot.py kit/
+diff --git a/code/hd/pilot.py b/code/hd/pilot.py
+index f229a3b..b96cdf9 100644
+--- a/code/hd/pilot.py
++++ b/code/hd/pilot.py
+@@ -21,7 +21,8 @@ band of D active there qualifies (a rung with no active band qualifies); if none
+ Gates and controls (all in the same run; VALID only if all are as registered):
+     PG1   the recorded rule-2 certificates T1 and G1 (BHM-025; N > 0 proved exactly): sigma > 0 under this evaluator
+     PG2   the pilot's own design at T1 and G1 (z, degree 28, eps = 1/50): sigma >= THETA
+-    NC-H  T1's pilot design with P(0) raised 1/10 above the horizon bound W(0)/f_z(0): sigma < 0
++    NC-H  T1's pilot design plus c (1 - z), which raises P(0) to 1/10 above the horizon bound W(0)/f_z(0) and leaves
++          P(1) unchanged (PREREG_ADDENDUM_1.md): sigma < 0
+     NC-B  a planted bound state at G1's setting, W - K b on [3/10, 3/5], b = ((z - 3/10)(3/5 - z))^2, K = 2 I1/I2
+           (the trial function b then has energy -I1 < 0): no qualifying design at all, and G1's design gives sigma < 0
+ """
+@@ -358,8 +359,8 @@ def gates(root):
+         sg, zm = slack(tab, own[name][2])
+         g[f"PG2 {name}"] = {"sigma": sg, "z_min": zm, "ok": sg is not None and sg >= THETA}
+     S, tab, fit = own["T1"]
+-    shift = S.W(0.0) / S.fz(0.0) - fit(0.0)[0] + 0.1
+-    sg, zm = slack(tab, lambda z: (fit(z)[0] + shift, fit(z)[1]))
++    shift = S.W(0.0) / S.fz(0.0) - fit(0.0)[0] + 0.1          # addendum 1: + shift (1 - z) keeps P(1)
++    sg, zm = slack(tab, lambda z: (fit(z)[0] + shift * (1 - z), fit(z)[1] - shift))
+     g["NC-H"] = {"shift": shift, "sigma": sg, "z_min": zm, "ok": sg is not None and sg < 0}
+     S0 = own["G1"][0]
+     K, I1 = bound_K(S0)
+
+$ git -C [repository] log --format="%h %ad %s" --date=iso-strict 8c2d6d2^..b22c087 (subjects cut to 120 chars)
+b22c087 2026-10-23T12:29:59-04:00 REGISTRY: commit of BHM-083 filled in
+cf129f2 2026-10-23T12:29:57-04:00 The blind replication of HD-S's first band, D = 7 l = 2: holds (certified), agreeing with S(7, 2) (BHM-083)
+a6e621f 2026-10-23T11:49:23-04:00 REGISTRY: commits of BHM-081 and BHM-082 filled in
+e35d88e 2026-10-23T11:49:21-04:00 Session-L's [another line of this project] literature screen archived (BHM-081; SOURCES S19-S24, six anchors read by the lead); the note's a
+8862d7c 2026-10-23T11:22:16-04:00 Outbox status: the session-R lead's acknowledgement of messages 6 and 7
+7452f40 2026-10-23T11:21:55-04:00 Outbox: the prompt for the session-R lead's reading of the D = 7-11 stage report, sequenced after the blin
+00a69f9 2026-10-23T11:21:08-04:00 REGISTRY: commits of BHM-078 to BHM-080 filled in
+8ddbef0 2026-10-23T11:21:06-04:00 HD-S VERIFIED: all 18 bands of D = 7-11, so Theorem HD is certified for q <= 99/100 (BHM-078); the D = 7-11 stage re
+0aa2673 2026-10-23T11:14:34-04:00 HD-S registered (BHM-076): S-certificates on the 18 bands of D = 7-11, before any run on claim data; the blind brief
+e9f59ab 2026-10-23T11:11:09-04:00 Development code for HD-S (S-certificates on the D = 7-11 bands); not run on claim data
+e89c65e 2026-10-23T11:10:02-04:00 HD-PILOT VALID: q_max(D) = 99/100 for D = 7-11 (BHM-074); TARGET_HD addendum 1 fixes q_max and the band designs befo
+710488b 2026-10-23T11:02:53-04:00 HD-PILOT attempt at 8c2d6d2 VOID as registered: NC-H's constant shift made sigma undefined (BHM-072); addendum 1 fix
+d224f28 2026-10-23T11:01:15-04:00 [another line of this project]: the lead's answer documented (BHM-070, Lemma R); literature screen requested from session-L (BHM-071); TODO 
+8c2d6d2 2026-10-23T10:54:38-04:00 HD-PILOT registered (BHM-069): the untrusted design pilot that fixes q_max(D) for D = 7-11, before any run on claim 

@@ -1,0 +1,71 @@
+=== Lemma U(n) ===
+n=5: terms=20 l0=10 eps_bar=1/12 Neg_corner=263635/10368 bound=399917/10368 (38.57224151234568)
+n=6: terms=20 l0=10 eps_bar=1/13 Neg_corner=2534290560/62748517 bound=1481614528/62748517 (23.611944932499362)
+n=7: terms=20 l0=11 eps_bar=1/14 Neg_corner=136407/2401 bound=17257/2401 (7.187421907538526)
+n=8: terms=20 l0=13 eps_bar=1/16 Neg_corner=969251/16384 bound=79325/16384 (4.84161376953125)
+n=9: terms=20 l0=14 eps_bar=1/18 Neg_corner=400034/6561 bound=19870/6561 (3.028501752781588)
+LEMMA U(n): ALL PASS
+=== E1 + E2 ===
+E1 D=7 l=4: POSITIVE mu_lo=1061/10000 nodes=1
+E1 D=7 l=5: POSITIVE mu_lo=1011/10000 nodes=1
+E1 D=7 l=6: POSITIVE mu_lo=487/5000 nodes=1
+E1 D=7 l=7: POSITIVE mu_lo=59/625 nodes=1
+E1 D=7 l=8: POSITIVE mu_lo=921/10000 nodes=1
+E1 D=7 l=9: POSITIVE mu_lo=901/10000 nodes=1
+E1 D=7 l=10: POSITIVE mu_lo=177/2000 nodes=1
+E1 D=8 l=5: POSITIVE mu_lo=519/5000 nodes=1
+E1 D=8 l=6: POSITIVE mu_lo=999/10000 nodes=1
+E1 D=8 l=7: POSITIVE mu_lo=969/10000 nodes=1
+E1 D=8 l=8: POSITIVE mu_lo=59/625 nodes=1
+E1 D=8 l=9: POSITIVE mu_lo=231/2500 nodes=1
+E1 D=8 l=10: POSITIVE mu_lo=907/10000 nodes=1
+E1 D=9 l=6: POSITIVE mu_lo=511/5000 nodes=1
+E1 D=9 l=7: POSITIVE mu_lo=991/10000 nodes=1
+E1 D=9 l=8: POSITIVE mu_lo=483/5000 nodes=1
+E1 D=9 l=9: POSITIVE mu_lo=59/625 nodes=1
+E1 D=9 l=10: POSITIVE mu_lo=463/5000 nodes=1
+E1 D=9 l=11: POSITIVE mu_lo=911/10000 nodes=1
+E1 D=10 l=6: POSITIVE mu_lo=1043/10000 nodes=1
+E1 D=10 l=7: POSITIVE mu_lo=1011/10000 nodes=1
+E1 D=10 l=8: POSITIVE mu_lo=197/2000 nodes=1
+E1 D=10 l=9: POSITIVE mu_lo=963/10000 nodes=1
+E1 D=10 l=10: POSITIVE mu_lo=59/625 nodes=1
+E1 D=10 l=11: POSITIVE mu_lo=58/625 nodes=1
+E1 D=10 l=12: POSITIVE mu_lo=457/5000 nodes=1
+E1 D=10 l=13: POSITIVE mu_lo=901/10000 nodes=1
+E1 D=11 l=7: POSITIVE mu_lo=103/1000 nodes=1
+E1 D=11 l=8: POSITIVE mu_lo=1003/10000 nodes=1
+E1 D=11 l=9: POSITIVE mu_lo=49/500 nodes=1
+E1 D=11 l=10: POSITIVE mu_lo=961/10000 nodes=1
+E1 D=11 l=11: POSITIVE mu_lo=59/625 nodes=1
+E1 D=11 l=12: POSITIVE mu_lo=929/10000 nodes=1
+E1 D=11 l=13: POSITIVE mu_lo=229/2500 nodes=1
+E1 D=11 l=14: POSITIVE mu_lo=181/2000 nodes=1
+E2 D=7 l=2 q<=237/250: POSITIVE mu_lo=176/625 nodes=5
+E2 D=7 l=3 q<=977/1000: POSITIVE mu_lo=859/5000 nodes=1
+E2 D=8 l=3 q<=118/125: POSITIVE mu_lo=343/1250 nodes=1
+E2 D=8 l=4 q<=983/1000: POSITIVE mu_lo=71/500 nodes=1
+E2 D=9 l=3 q<=921/1000: POSITIVE mu_lo=3317/10000 nodes=3
+E2 D=9 l=4 q<=119/125: POSITIVE mu_lo=611/2500 nodes=1
+E2 D=9 l=5 q<=987/1000: POSITIVE mu_lo=1211/10000 nodes=1
+E2 D=10 l=3 q<=49/100: POSITIVE mu_lo=83/100 nodes=3
+E2 D=10 l=4 q<=23/25: POSITIVE mu_lo=201/625 nodes=1
+E2 D=10 l=5 q<=961/1000: POSITIVE mu_lo=134/625 nodes=1
+E2 D=11 l=4 q<=897/1000: POSITIVE mu_lo=741/2000 nodes=5
+E2 D=11 l=5 q<=929/1000: POSITIVE mu_lo=2949/10000 nodes=1
+E2 D=11 l=6 q<=121/125: POSITIVE mu_lo=119/625 nodes=1
+E1+E2: ALL POSITIVE
+=== controls ===
+(a) D=7 l=2 q<=951/1000: F(1,mu_lo=1367/5000) = -4937563735773837/122070312500  (<0: True); verdict: REJECT (correct); info={'reason': 'non-positive value at Bernstein node', 'z': '1', 'mu': '1367/5000', 'value': '-4937563735773837/122070312500'}
+(b) D=10 l=3 q<=99/200: verdict REJECT (correct); info={'reason': 'non-positive value at Bernstein node', 'z': '1/2', 'mu': '1653/2000', 'value': '-6078885677633951/62500000000'}; corner F(1,mu_lo)=364090466450079993/3125000000; F(1/2,mu_lo)=-97262.171
+(c) planted bump D=7 l=4: F(1/2,mu_lo)=-109338770.39; verdict REJECT (correct); info={'reason': 'negative value', 'z': '1/2', 'mu': '11061/20000', 'value': '-54960987859429443214043907/160000000000000000'}
+PASS KAT1 p=-1 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '-1'}
+PASS KAT2 p=z-1/2 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '0'}
+PASS KAT3 p=z(1-z) strict must REJECT  {'reason': 'non-positive value at Bernstein node', 'z': '0', 'value': '0'}
+PASS KAT4 p=1+z+z^2 must PASS  {'nodes': 1, 'min_bernstein_coeff': '1'}
+PASS KAT5 tampered verifier accepts p=-1 (must be caught here)  {'nodes': 1, 'min_bernstein_coeff': '-1'}
+PASS KAT6 substitute_1d coefficients exact  {0: '11/4', 1: '0', 2: '1/4'}
+PASS KAT7 substitute_2d coefficients exact  {(0, 0): '1/2', (0, 1): '1/4', (1, 0): '1', (1, 1): '1/2', (2, 0): '1/2', (2, 1): '1/4'}
+PASS KAT8 non-unit box rejection at corner  {0: '-1/8', 1: '1/4'}
+CONTROLS: ALL OK
+RUN_ALL: ALL OK

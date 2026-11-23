@@ -1,0 +1,5 @@
+w(mu) = 7*mu/(mu**2 + 6): w(0) = 0, w(1) = 1, dw/dmu = 7*(6 - mu**2)/(mu**4 + 12*mu**2 + 36) (> 0 on [0, 1): numerator 7(6 - mu^2) > 0)
+s(mu) = (42 - 7*mu**2)/(5*mu**2 + 30): s(1) = 1, s(0) = 7/5, ds/dmu = -168*mu/(5*(mu**2 + 6)**2) (< 0 on (0, 1])
+q^2(mu) = (mu - 6)*(mu - 1)*(mu + 1)*(mu + 6)/(mu**2 + 6)**2: q(1) = 0, q(0) = 1; delta = (s - 1)/12 = -(mu - 1)*(mu + 1)/(5*(mu**2 + 6)) >= 0 on [0, 1]
+(3b) at l = 2: w increasing from 0 to 1, s decreasing from 7/5 to 1 (so delta >= 0 and q decreases from 1 to 0): True
+== exit status 0

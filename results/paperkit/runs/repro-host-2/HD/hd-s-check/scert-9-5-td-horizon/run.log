@@ -1,0 +1,7 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PILOT: PASS  the pilot record is VALID and DESIGN equals its designs at q_max: True
+H: PASS  H_- has positive coefficients, so H_- >= m > 0
+coverage: PASS  {"mu_a": "1061/10000", "mu_b": "303/2500", "q(mu_a)^2": "88875546247769841/90676699847769841", "q(mu_b)^2": "38425874043609/39445974043609", "contiguous": true, "q(mu_a) >= q_max": true, "q(mu_b) <= q_lo or mu_b = 1": true, "w increases on 
+td-horizon: FAIL  td-horizon: N > 0: sign*p = -37622058517568343324351939306882039685264685751576460090027824674322781737470560217630851985049423914935289174472875803349/5382457815589331268873157483916235998661743506743762750607927809869939745399064951781519
+REJECT: td-horizon

@@ -1,0 +1,17 @@
+q_* = 0.973056436723622598181546252321
+record g degree 104 ; cofactor degree 100
+1 TARGET U_- = F/Den at 20 rational points: True
+2 F(1, mu) = 1024 (mu + 15) p(mu): True
+2 p irreducible over Q: True
+2 C irreducible over Q: True
+2 p has one real root, in (LO, HI): True
+2 C has one real root: True
+3 record minimal polynomial of mu_*: True
+3 record minimal polynomial of q_*^2: True
+3 record mu_* interval inside (LO, HI): True
+3 record q_* decimal inside (0.9730564367, 0.9730564368): True
+3 record g = my g * cofactor, exactly: True
+3 cofactor has no root in [0, 1]: True
+4 bracket = 4(4mu - 3)/(mu + 1): True
+5 sanity grid: True
+ALL ONSET CHECKS HOLD

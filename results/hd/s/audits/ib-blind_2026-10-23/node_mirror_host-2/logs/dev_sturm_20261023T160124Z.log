@@ -1,0 +1,20 @@
+2026-10-23T16:01:24Z
+host-2
+ 12:01:24 up 8 days, 20:01,  0 users,  load average: 0.00, 0.00, 0.04
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          97           0          25         121
+Swap:            49           0          49
+START 2026-10-23T16:01:24Z mode refine
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+GUARD tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS
+GATE {'load1': 0.0, 'nproc': 16, 'mem_available_gb': 121.46, 'requested': 4, 'w': 4, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}
+p0 q=0 Z_I(sign,prufer)=(0,0) Z_II(N:0,0 2N:0,0) psi_min=1.01873171785699 @rho=1.02 P(100)=4.4999996957141 t=8.8s
+p1 q=1/2 Z_I(sign,prufer)=(0,0) Z_II(N:0,0 2N:0,0) psi_min=1.0177577829817 @rho=1.02 P(100)=4.49999966021107 t=9.4s
+p2 q=9/10 Z_I(sign,prufer)=(0,0) Z_II(N:0,0 2N:0,0) psi_min=1.00863215239236 @rho=1.02 P(100)=4.49999952331237 t=9.5s
+p3 q=47/50 Z_I(sign,prufer)=(0,0) Z_II(N:0,0 2N:0,0) psi_min=1.00316537693324 @rho=1.02 P(100)=4.49999948510272 t=9.6s
+END 2026-10-23T16:01:34Z
+EXIT=0
+2026-10-23T16:01:34Z
+host-2

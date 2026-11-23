@@ -1,0 +1,350 @@
+{
+ "checks": {
+  "E0": {
+   "detail": "S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- = m + 10 x + 10 m delta x: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "P1 l=10": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 1.37932e+07",
+   "ok": true
+  },
+  "P1 l=3": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 19547.9",
+   "ok": true
+  },
+  "P1 l=4": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 128382",
+   "ok": true
+  },
+  "P1 l=5": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 407682",
+   "ok": true
+  },
+  "P1 l=6": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 1.02359e+06",
+   "ok": true
+  },
+  "P1 l=7": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 2.21293e+06",
+   "ok": true
+  },
+  "P1 l=8": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 4.35897e+06",
+   "ok": true
+  },
+  "P1 l=9": {
+   "detail": "U_- > 0 on [0, x_H] for q <= q(mu_lo), lower bound 7.97283e+06",
+   "ok": true
+  },
+  "P1 uniform": {
+   "detail": "l >= 11 (m >= 150), q in [0, 1], x in [0, 2]: U_- >= m^3 (64 - Neg(corner)) = m^3 * 54.8552",
+   "ok": true
+  }
+ },
+ "claim": "results/a1/PREREG.md, P1 (A1 for l >= 3)",
+ "control": "none",
+ "ell0": 10,
+ "part1": [
+  {
+   "Den": "(mu + 1)**3*(2*mu + 7)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "15271808607/781250",
+   "U_lower_bound_approx": 19547.91501696,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 3,
+   "m": 14,
+   "max_bernstein_Den": "72",
+   "min_bernstein_F": "549785109852/390625",
+   "mu_lo": "11/100",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.990017951916537,
+   "q_at_mu_lo_squared": "134331349/137053849"
+  },
+  {
+   "Den": "(mu + 1)**3*(3*mu + 8)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "1103285703447109/8593750000",
+   "U_lower_bound_approx": 128382.33640111814,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 4,
+   "m": 24,
+   "max_bernstein_Den": "88",
+   "min_bernstein_F": "1103285703447109/97656250",
+   "mu_lo": "103/1000",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.9900005079034008,
+   "q_at_mu_lo_squared": "63226555957929/64510244957929"
+  },
+  {
+   "Den": "(mu + 1)**3*(4*mu + 9)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "1293913947765591/3173828125",
+   "U_lower_bound_approx": 407682.425388297,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 5,
+   "m": 36,
+   "max_bernstein_Den": "104",
+   "min_bernstein_F": "10351311582124728/244140625",
+   "mu_lo": "49/500",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.9900161602760024,
+   "q_at_mu_lo_squared": "312772999176/319113139801"
+  },
+  {
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "399839270089/390625",
+   "U_lower_bound_approx": 1023588.53142784,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 6,
+   "m": 50,
+   "max_bernstein_Den": "24",
+   "min_bernstein_F": "9596142482136/390625",
+   "mu_lo": "47/500",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.9900977280959307,
+   "q_at_mu_lo_squared": "27471514409/28023764409"
+  },
+  {
+   "Den": "(mu + 1)**3*(6*mu + 11)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "73476117240957783/33203125000",
+   "U_lower_bound_approx": 2212927.766315905,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 7,
+   "m": 66,
+   "max_bernstein_Den": "136",
+   "min_bernstein_F": "73476117240957783/244140625",
+   "mu_lo": "91/1000",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.9901509410357423,
+   "q_at_mu_lo_squared": "29925587924649/30523890174649"
+  },
+  {
+   "Den": "(mu + 1)**3*(7*mu + 12)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "64703432485394703/14843750000",
+   "U_lower_bound_approx": 4358968.08322659,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 8,
+   "m": 84,
+   "max_bernstein_Den": "152",
+   "min_bernstein_F": "64703432485394703/97656250",
+   "mu_lo": "89/1000",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.9901134962804157,
+   "q_at_mu_lo_squared": "142474321369809/145333802369809"
+  },
+  {
+   "Den": "(mu + 1)**3*(8*mu + 13)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "8175263849543648/1025390625",
+   "U_lower_bound_approx": 7972828.7446978055,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 9,
+   "m": 104,
+   "max_bernstein_Den": "168",
+   "min_bernstein_F": "65402110796349184/48828125",
+   "mu_lo": "87/1000",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.9901674898858085,
+   "q_at_mu_lo_squared": "2613126399136/2665281539761"
+  },
+  {
+   "Den": "(mu + 1)**3*(9*mu + 14)",
+   "Den_degree": 4,
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U_lower_bound": "154903997903886693/11230468750",
+   "U_lower_bound_approx": 13793190.76987652,
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "covers_q_max": true,
+   "ell": 10,
+   "m": 126,
+   "max_bernstein_Den": "184",
+   "min_bernstein_F": "619615991615546772/244140625",
+   "mu_lo": "43/500",
+   "parametrisation": {
+    "s^2 = 1 + 4mq^2/25, q(1) = 0, q(0) = 1, delta(1) = 0": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "w increasing on [0, 1]": true
+   },
+   "q_at_mu_lo_approx": 0.990064048395034,
+   "q_at_mu_lo_squared": "12122233672881/12366763922881"
+  }
+ ],
+ "part2": {
+  "Neg": {
+   "(3, 1, 1)": "7680",
+   "(3, 3, 3)": "80000",
+   "(4, 0, 1)": "7680",
+   "(4, 2, 3)": "134400",
+   "(4, 4, 4)": "400000",
+   "(5, 1, 3)": "28800",
+   "(5, 3, 4)": "1200000",
+   "(6, 2, 4)": "1200000",
+   "(7, 1, 4)": "400000"
+  },
+  "Neg_at_corner": "159997/17496",
+  "Pos": {
+   "(0, 0, 0)": "64",
+   "(1, 1, 1)": "320",
+   "(2, 0, 0)": "384",
+   "(3, 1, 2)": "7680",
+   "(4, 0, 2)": "7680",
+   "(6, 0, 3)": "25600"
+  },
+  "bound": "959747/17496",
+  "bound_approx": 54.85522405121171,
+  "checks": {
+   "(1 + 2 m delta)^2 = 1 + 4 m q^2/25  <=>  m delta^2 + delta = q^2/25": true,
+   "64 - Neg(eps_bar, 1/5, 2) > 0": true,
+   "P = Pos - Neg": true,
+   "Pos(0, 0, 0) = 64": true,
+   "eps^6 U_- is a polynomial in (eps, kappa, x)": true,
+   "eps_bar >= m0^(-1/2)": 

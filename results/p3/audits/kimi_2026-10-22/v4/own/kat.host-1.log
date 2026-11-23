@@ -1,0 +1,9 @@
+PASS KAT1 p=-1 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '-1'}
+PASS KAT2 p=z-1/2 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '0'}
+PASS KAT3 p=z(1-z) strict must REJECT  {'reason': 'non-positive value at Bernstein node', 'z': '0', 'value': '0'}
+PASS KAT4 p=1+z+z^2 must PASS  {'nodes': 1, 'min_bernstein_coeff': '1'}
+PASS KAT5 tampered verifier accepts p=-1 (must be caught here)  {'nodes': 1, 'min_bernstein_coeff': '-1'}
+PASS KAT6 substitute_1d coefficients exact  {0: '11/4', 1: '0', 2: '1/4'}
+PASS KAT7 substitute_2d coefficients exact  {(0, 0): '1/2', (0, 1): '1/4', (1, 0): '1', (1, 1): '1/2', (2, 0): '1/2', (2, 1): '1/4'}
+PASS KAT8 non-unit box rejection at corner  {0: '-1/8', 1: '1/4'}
+KAT SUITE OK

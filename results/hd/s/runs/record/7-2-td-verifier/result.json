@@ -1,0 +1,107 @@
+{
+ "D": 7,
+ "band": "D=7 l=2",
+ "boxes_registered": [
+  [
+   "1237/10000",
+   "1361/10000"
+  ],
+  [
+   "1361/10000",
+   "749/5000"
+  ],
+  [
+   "749/5000",
+   "103/625"
+  ],
+  [
+   "103/625",
+   "1813/10000"
+  ],
+  [
+   "1813/10000",
+   "399/2000"
+  ],
+  [
+   "399/2000",
+   "439/2000"
+  ],
+  [
+   "439/2000",
+   "483/2000"
+  ],
+  [
+   "483/2000",
+   "2657/10000"
+  ],
+  [
+   "2657/10000",
+   "2817/10000"
+  ]
+ ],
+ "checks": {
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- has positive coefficients, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': False, 'KAT3 t(1-t)+mu (zero at a corner) rejected': False, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": false
+  },
+  "PILOT": {
+   "detail": "the pilot record is VALID and DESIGN equals its designs at q_max: True",
+   "ok": true
+  },
+  "coverage": {
+   "detail": "{\"mu_a\": \"1237/10000\", \"mu_b\": \"2817/10000\", \"q(mu_a)^2\": \"482351496417168561/492144578017168561\", \"q(mu_b)^2\": \"450385526985669121/501172656585669121\", \"contiguous\": true, \"q(mu_a) >= q_max\": true, \"q(mu_b) <= q_lo or mu_b = 1\": true, \"w increases on [0, 1]\": true}",
+   "ok": true
+  }
+ },
+ "claim": "results/hd/s/PREREG.md, HD-S",
+ "claim_q": {
+  "exact": "[sqrt(450385526985669121/501172656585669121), sqrt(482351496417168561/492144578017168561)]",
+  "inward": [
+   "0.94798",
+   "0.99000"
+  ]
+ },
+ "control": "td-verifier",
+ "coverage": {
+  "contiguous": true,
+  "mu_a": "1237/10000",
+  "mu_b": "2817/10000",
+  "q(mu_a) >= q_max": true,
+  "q(mu_a)^2": "482351496417168561/492144578017168561",
+  "q(mu_b) <= q_lo or mu_b = 1": true,
+  "q(mu_b)^2": "450385526985669121/501172656585669121",
+  "w increases on [0, 1]": true
+ },
+ "design": [
+  "1/50",
+  "z",
+  "20"
+ ],
+ "kind": "onset",
+ "l": 2,
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0aa2673",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "q_lo": "948/1000",
+ "q_max": "99/100",
+ "timing": {
+  "t_total_s": 0.06
+ },
+ "verdict": "REJECT: KAT"
+}

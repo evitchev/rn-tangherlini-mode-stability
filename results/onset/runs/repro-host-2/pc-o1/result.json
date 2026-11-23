@@ -1,0 +1,37 @@
+{
+ "F_degrees": [
+  4,
+  104
+ ],
+ "checks": {
+  "E0": {
+   "detail": "S5 (5.63b) at n = 4 minus TARGET.md's U_-: 0",
+   "ok": true
+  },
+  "O5": {
+   "detail": "s^2 = 1 + 4mq^2/25, w increasing, Den > 0 on [0,1], q(1) = 0, q(0) = 1: [True, True, True, True, True]",
+   "ok": true
+  },
+  "PC-O1": {
+   "detail": "l = 3: U_- > 0 on the exterior for q <= q(1/30)^(1/2) = 0.999082; boxes {'PC-O1': 1}",
+   "ok": true
+  }
+ },
+ "claim": "results/onset/PREREG.md, O1-O5",
+ "control": "pc-o1",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "180824b",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 27.95
+ },
+ "verdict": "VERIFIED"
+}

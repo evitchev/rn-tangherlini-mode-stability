@@ -1,0 +1,137 @@
+[
+ {
+  "id": "ZD1",
+  "file": "BHModesZd.lean",
+  "decl": "tortoise_q1",
+  "old": "Set.BijOn (tort n) (Set.Ioi 1) Set.univ ∧",
+  "new": "Set.BijOn (tort n) (Set.Ioi 2) Set.univ ∧",
+  "note": "r* maps (2, ∞) onto ℝ",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD2",
+  "file": "BHModesZd.lean",
+  "decl": "tortoise_q1",
+  "old": "StrictMonoOn (tort n) (Set.Ioi 1) ∧ Set.BijOn",
+  "new": "StrictAntiOn (tort n) (Set.Ioi 1) ∧ Set.BijOn",
+  "note": "r* decreasing",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD3",
+  "file": "BHModesZd.lean",
+  "decl": "tort_hasDerivAt",
+  "old": "HasDerivAt (tort n) (1 / fr n ρ) ρ := by",
+  "new": "HasDerivAt (tort n) (2 / fr n ρ) ρ := by",
+  "note": "dr*/dρ = 2/f",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD4",
+  "file": "BHModesZd.lean",
+  "decl": "Rt_hasDerivAt",
+  "old": "HasDerivAt (Rt n) (fr n (Rt n t)) t := by",
+  "new": "HasDerivAt (Rt n) (1 / fr n (Rt n t)) t := by",
+  "note": "dR/dr* = 1/f(R)",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD5",
+  "file": "BHModesZd.lean",
+  "decl": "riccati_plus",
+  "old": "ρ ^ 2 * (wr n ℓ ρ ^ 2 + fr n ρ * deriv (wr n ℓ) ρ) / fr n ρ",
+  "new": "ρ ^ 2 * (wr n ℓ ρ ^ 2 + deriv (wr n ℓ) ρ) / fr n ρ",
+  "note": "w′ taken as dw/dρ, without f",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD6",
+  "file": "BHModesZd.lean",
+  "decl": "riccati_minus",
+  "old": "(g n ℓ (Yr n ρ) ^ 2 + g n ℓ (Yr n ρ) + ((n : ℝ) - 1)",
+  "new": "(g n ℓ (Yr n ρ) ^ 2 - g n ℓ (Yr n ρ) + ((n : ℝ) - 1)",
+  "note": "(c)'s bracket with g² − g",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD7",
+  "file": "BHModesZd.lean",
+  "decl": "V_eq",
+  "old": "Vr n ℓ ρ = wr n ℓ ρ ^ 2 + fr n ρ * deriv (wr n ℓ) ρ := by",
+  "new": "Vr n ℓ ρ = wr n ℓ ρ ^ 2 - fr n ρ * deriv (wr n ℓ) ρ := by",
+  "note": "V = w² − w′",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD8",
+  "file": "BHModesZd.lean",
+  "decl": "log_u0_hasDerivAt",
+  "old": "HasDerivAt (fun x => Real.log (u0 n ℓ x)) (g n ℓ (Yr n ρ) / ρ) ρ := by",
+  "new": "HasDerivAt (fun x => Real.log (u0 n ℓ x)) (g n ℓ (Yr n ρ) * ρ) ρ := by",
+  "note": "d(log u₀)/dρ = gρ",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD9",
+  "file": "BHModesZd.lean",
+  "decl": "log_u0_hasDerivAt",
+  "old": "(1 - Yr n ρ) ^ (-(ℓ / ((n : ℝ) - 1))) / ((ℓ - 1) + n * Yr n ρ)",
+  "new": "(1 - Yr n ρ) ^ (-(ℓ / ((n : ℝ) + 1))) / ((ℓ - 1) + n * Yr n ρ)",
+  "note": "u₀'s throat exponent ℓ/(n + 1)",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD10",
+  "file": "BHModesZd.lean",
+  "decl": "zero_mode",
+  "old": "(Vstar n ℓ t * u0 n ℓ (Rt n t)) t := by",
+  "new": "(Vtr n ℓ (Rt n t) * u0 n ℓ (Rt n t)) t := by",
+  "note": "U″ = Ṽ U",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD11",
+  "file": "BHModesZd.lean",
+  "decl": "A_nonneg",
+  "old": "0 ≤ ∫ x, (‖φ' x‖ ^ 2 + Vstar n ℓ x * ‖φ x‖ ^ 2) := by",
+  "new": "0 ≤ ∫ x, (‖φ' x‖ ^ 2 + (Vstar n ℓ x - 1) * ‖φ x‖ ^ 2) := by",
+  "note": "A_{ℓ,1} − 1 ≥ 0",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD12",
+  "file": "BHModesZd.lean",
+  "decl": "Vr_S5",
+  "old": "def Vr (n : ℕ) (ℓ ρ : ℝ) : ℝ := fr n ρ * W n ℓ (Yr n ρ) / ρ ^ 2",
+  "new": "def Vr (n : ℕ) (ℓ ρ : ℝ) : ℝ := fr n ρ * W n ℓ (Yr n ρ) / ρ ^ 3",
+  "note": "V = f W/ρ³",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD13",
+  "file": "BHModesZd.lean",
+  "decl": "tort_le",
+  "old": "tort n ρ ≤ (1 - 1 / (ρ - 1)) / ((n : ℝ) - 1) ^ 2 := by",
+  "new": "tort n ρ ≤ (1 - 1 / (ρ - 1)) / ((n : ℝ) - 1) := by",
+  "note": "r*'s bound with (n − 1) for (n − 1)²",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD14",
+  "file": "BHModesZd.lean",
+  "decl": "one_sub_Yr_le",
+  "old": "1 - Yr n ρ ≤ ((n : ℝ) - 1) * (ρ - 1) := by",
+  "new": "1 - Yr n ρ ≤ ((n : ℝ) - 2) * (ρ - 1) := by",
+  "note": "Bernoulli with n − 2",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZD15",
+  "file": "BHModesZd.lean",
+  "decl": "wr_hasDerivAt",
+  "old": "def dg (n ℓ Y : ℝ) : ℝ := -ℓ / (1 - Y) ^ 2 +",
+  "new": "def dg (n ℓ Y : ℝ) : ℝ := ℓ / (1 - Y) ^ 2 +",
+  "note": "dg with +ℓ/(1 − Y)²",
+  "origin": "bh-modes Z Lean layer, item (d), BHM-126 (session-L, 2026-10-26)"
+ }
+]

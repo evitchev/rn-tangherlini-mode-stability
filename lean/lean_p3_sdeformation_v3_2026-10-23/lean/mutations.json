@@ -1,0 +1,236 @@
+[
+ {
+  "id": "P3M1",
+  "file": "BHModesP3.lean",
+  "decl": "ansatz_identity",
+  "old": "  U z - 64 * H z ^ 2 * ((1 - z) * F' z * P z + F z * (-P z + (1 - z) * P' z + P z ^ 2))",
+  "new": "  U z - 63 * H z ^ 2 * ((1 - z) * F' z * P z + F z * (-P z + (1 - z) * P' z + P z ^ 2))",
+  "note": "METHOD.md's N: 64 H^2 -> 63 H^2",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)",
+  "error_text": {
+   "ansatz_identity": "unsolved goals"
+  }
+ },
+ {
+  "id": "P3M2",
+  "file": "BHModesP3.lean",
+  "decl": "sdef_identity",
+  "old": "      (∫ x, ‖φ' x + (S x : ℂ) * φ x‖ ^ 2) + ∫ x, (V x + S' x - S x ^ 2) * ‖φ x‖ ^ 2 := by",
+  "new": "      (∫ x, ‖φ' x + (S x : ℂ) * φ x‖ ^ 2) + ∫ x, (V x - S' x - S x ^ 2) * ‖φ x‖ ^ 2 := by",
+  "note": "Lemma 1 stated with V - S' - S^2",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "P3M3",
+  "file": "BHModesP3.lean",
+  "decl": "beta_hasDerivAt",
+  "old": "      ((1 - zc ρ) ^ 2 * (-P (zc ρ) + (1 - zc ρ) * P' (zc ρ))) ρ := by",
+  "new": "      ((1 - zc ρ) ^ 2 * (P (zc ρ) + (1 - zc ρ) * P' (zc ρ))) ρ := by",
+  "note": "beta' stated with +P",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "P3M4",
+  "file": "BHModesP3.lean",
+  "decl": "zc_hasDerivAt",
+  "old": "theorem zc_hasDerivAt (ρ : ℝ) (hρ : ρ ≠ 0) : HasDerivAt zc ((1 - zc ρ) ^ 2) ρ := by",
+  "new": "theorem zc_hasDerivAt (ρ : ℝ) (hρ : ρ ≠ 0) : HasDerivAt zc ((1 - zc ρ) ^ 3) ρ := by",
+  "note": "dz/drho stated as (1 - z)^3",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "P3M5",
+  "file": "BHModesP3.lean",
+  "decl": "N_at_infinity_D6",
+  "old": "    Nz (U6 q m δ) (H6 q m δ) (F6 q) (F6' q) P P' 1 = 64 * m ^ 2 * (m + 6 - P 1 ^ 2 + P 1) := by",
+  "new": "    Nz (U6 q m δ) (H6 q m δ) (F6 q) (F6' q) P P' 1 = 64 * m ^ 2 * (m + 5 - P 1 ^ 2 + P 1) := by",
+  "note": "N(1) stated with m + 5",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)",
+  "error_text": {
+   "N_at_infinity_D6": "unsolved goals"
+  }
+ },
+ {
+  "id": "P3M6",
+  "file": "BHModesP3.lean",
+  "decl": "N_at_infinity_ell2",
+  "old": "    0 < Nz (U6 q 6 δ) (H6 q 6 δ) (F6 q) (F6' q) P P' 1 ↔ -3 < P 1 ∧ P 1 < 4 := by",
+  "new": "    0 < Nz (U6 q 6 δ) (H6 q 6 δ) (F6 q) (F6' q) P P' 1 ↔ -4 < P 1 ∧ P 1 < 4 := by",
+  "note": "the l = 2 window stated as -4 < P(1) < 4",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "P3M7",
+  "file": "BHModesP3.lean",
+  "decl": "F6_hasDerivAt",
+  "old": "noncomputable def F6' (q z : ℝ) : ℝ := 3 * xH q * (1 - z) ^ 2 * (1 - q ^ 2 * x6 q z / 2)",
+  "new": "noncomputable def F6' (q z : ℝ) : ℝ := 2 * xH q * (1 - z) ^ 2 * (1 - q ^ 2 * x6 q z / 2)",
+  "note": "f_z at D = 6: 3 x_H -> 2 x_H",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)",
+  "error_text": {
+   "F6_hasDerivAt": "unsolved goals"
+  }
+ },
+ {
+  "id": "P3M8",
+  "file": "BHModesP3.lean",
+  "decl": "prop3",
+  "old": "    (hf : ∀ z, 0 < z → z < 1 → 0 ≤ F z)",
+  "new": "    (hf : ∀ z, 0 < z → z < 1 → 0 ≤ F' z)",
+  "note": "Proposition 3 assuming f_z >= 0 instead of f >= 0",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "P3M9",
+  "file": "BHModesP3.lean",
+  "decl": "prop3",
+  "old": "noncomputable def Vrho (U H F : ℝ → ℝ) (ρ : ℝ) : ℝ := F (zc ρ) * U (zc ρ) / (64 * ρ ^ 2 * H (zc ρ) ^ 2)",
+  "new": "noncomputable def Vrho (U H F : ℝ → ℝ) (ρ : ℝ) : ℝ := F (zc ρ) * U (zc ρ) / (64 * ρ ^ 3 * H (zc ρ) ^ 2)",
+  "note": "V = f U/(64 rho^3 H^2) instead of rho^2",
+  "origin": "bh-modes p3 Lean layer, item (a) (session-L, 2026-10-22)"
+ },
+ {
+  "id": "P3M10",
+  "file": "BHModesP3.lean",
+  "decl": "prop3_Ioo",
+  "old": "(hP : ∀ z, 0 < z → z < 1 → HasDerivAt P (P' z) z)",
+  "new": "(hP : ∀ z, 0 < z → z < 1 / 2 → HasDerivAt P (P' z) z)",
+  "note": "prop3_Ioo with the derivative of P given only on (0, 1/2)",
+  "origin": "bh-modes p3 Lean layer v2, BHM-085 §1.3 and BHM-086 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M11",
+  "file": "BHModesP3.lean",
+  "decl": "prop3_Ioo",
+  "old": "(hP' : ContinuousOn P' (Set.Ioo 0 1))",
+  "new": "(hP' : ContinuousOn P' (Set.Ioo 0 (1 / 2)))",
+  "note": "prop3_Ioo with P' continuous only on (0, 1/2)",
+  "origin": "bh-modes p3 Lean layer v2, BHM-085 §1.3 and BHM-086 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M12",
+  "file": "BHModesP3.lean",
+  "decl": "Pzeta_hasDerivAt",
+  "old": "(Ph' z * (z + δ) - d * Ph z) / (z + δ) ^ (d + 1)",
+  "new": "(Ph' z * (z + δ) - (d + 1) * Ph z) / (z + δ) ^ (d + 1)",
+  "note": "zeta-design derivative with (d + 1) P-hat instead of d P-hat",
+  "origin": "bh-modes p3 Lean layer v2, BHM-085 §1.3 and BHM-086 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M13",
+  "file": "BHModesP3.lean",
+  "decl": "prop3_zeta",
+  "old": "(d : ℕ) (hδ : 0 ≤ δ)",
+  "new": "(d : ℕ) (hδ : -1 / 2 ≤ δ)",
+  "note": "zeta-design with delta >= -1/2, so the pole may lie in (0, 1)",
+  "origin": "bh-modes p3 Lean layer v2, BHM-085 §1.3 and BHM-086 (session-L, 2026-10-23)",
+  "error_text": {
+   "prop3_zeta": "linarith failed to find a contradiction"
+  }
+ },
+ {
+  "id": "P3M14",
+  "file": "BHModesP3.lean",
+  "decl": "prop3_near",
+  "old": "(ha : a < 0)",
+  "new": "(ha : a < 1 / 2)",
+  "note": "open-interval form with a < 1/2, so (a, b) need not contain (0, 1)",
+  "origin": "bh-modes p3 Lean layer v2, BHM-085 §1.3 and BHM-086 (session-L, 2026-10-23)",
+  "error_text": {
+   "prop3_near": "linarith failed to find a contradiction"
+  }
+ },
+ {
+  "id": "P3M15",
+  "file": "BHModesP3.lean",
+  "decl": "pole_not_differentiable",
+  "old": "Pzeta (fun _ => 1) δ 1) (P' z) z",
+  "new": "Pzeta (fun _ => 1) δ 0) (P' z) z",
+  "note": "the pole theorem at d = 0 (P = 1, no pole), which is false",
+  "origin": "bh-modes p3 Lean layer v2, BHM-085 §1.3 and BHM-086 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M16",
+  "file": "BHModesP3.lean",
+  "decl": "UmN_four",
+  "old": "16 * n * (n + 2) * m ^ 2 * K",
+  "new": "16 * n * (n + 3) * m ^ 2 * K",
+  "note": "U_- at general n with 16 n (n + 3) m^2 K (the bh-modes td-coeff control)",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M17",
+  "file": "BHModesP3.lean",
+  "decl": "HmN_four",
+  "old": "noncomputable def HmN (n m δ x : ℝ) : ℝ := m + n * (n + 1) / 2 * (1 + m * δ) * x",
+  "new": "noncomputable def HmN (n m δ x : ℝ) : ℝ := m + n * (n + 2) / 2 * (1 + m * δ) * x",
+  "note": "H_- at general n with n (n + 2)",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M18",
+  "file": "BHModesP3.lean",
+  "decl": "Fn_hasDerivAt",
+  "old": "noncomputable def Fn' (n : ℕ) (q z : ℝ) : ℝ := (n - 1) * xH q * (1 - z) ^ (n - 2)",
+  "new": "noncomputable def Fn' (n : ℕ) (q z : ℝ) : ℝ := n * xH q * (1 - z) ^ (n - 2)",
+  "note": "f_z at general n with n in place of n - 1",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M19",
+  "file": "BHModesP3.lean",
+  "decl": "Fn_pos",
+  "old": "theorem Fn_pos (n : ℕ) (hn : 2 ≤ n)",
+  "new": "theorem Fn_pos (n : ℕ) (hn : 1 ≤ n)",
+  "note": "f > 0 on (0, 1) claimed from n >= 1 (false at n = 1, where f = 0)",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M20",
+  "file": "BHModesP3.lean",
+  "decl": "Fn_zero",
+  "old": "theorem Fn_zero (n : ℕ) (q : ℝ) (hq : q ^ 2 ≤ 1)",
+  "new": "theorem Fn_zero (n : ℕ) (q : ℝ) (hq : q ^ 2 ≤ 2)",
+  "note": "f(0) = 0 claimed for q^2 <= 2 (false for q^2 > 1)",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M21",
+  "file": "BHModesP3.lean",
+  "decl": "Hn_pos",
+  "old": "(hm : 0 < m) (hδ : 0 ≤ δ) (hz1 : z ≤ 1) : 0 < Hn n q m δ z",
+  "new": "(hm : 0 ≤ m) (hδ : 0 ≤ δ) (hz1 : z ≤ 1) : 0 < Hn n q m δ z",
+  "note": "H_- > 0 claimed for m >= 0 (false at z = 1, m = 0)",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M22",
+  "file": "BHModesP3.lean",
+  "decl": "Fn_zc_TARGET",
+  "old": "Fn n q (zc ρ) = 1 - 2 * M / ρ ^ (n - 1) + (q * M) ^ 2 / (ρ ^ (n - 1)) ^ 2 := by",
+  "new": "Fn n q (zc ρ) = 1 - 2 * M / ρ ^ (n - 1) + q * M ^ 2 / (ρ ^ (n - 1)) ^ 2 := by",
+  "note": "TARGET_HD's f with q M^2 in place of (q M)^2",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)",
+  "error_text": {
+   "Fn_zc_TARGET": "unsolved goals"
+  }
+ },
+ {
+  "id": "P3M23",
+  "file": "BHModesP3.lean",
+  "decl": "N_at_infinity_Dn",
+  "old": "= 64 * m ^ 2 * (m + n * (n + 2) / 4 - P 1 ^ 2 + P 1) := by",
+  "new": "= 64 * m ^ 2 * (m + n * (n + 1) / 4 - P 1 ^ 2 + P 1) := by",
+  "note": "N(1) at general n stated with n (n + 1) / 4",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ },
+ {
+  "id": "P3M24",
+  "file": "BHModesP3.lean",
+  "decl": "prop3_Dn",
+  "old": "(hP : ∀ z ∈ Set.Ioo (0 : ℝ) 1, HasDerivAt P (P' z) z)",
+  "new": "(hP : ∀ z ∈ Set.Ioo (0 : ℝ) (1 / 2), HasDerivAt P (P' z) z)",
+  "note": "prop3_Dn with the derivative of P given only on (0, 1/2)",
+  "origin": "bh-modes p3 Lean layer v3, BHM-090 (session-L, 2026-10-23)"
+ }
+]

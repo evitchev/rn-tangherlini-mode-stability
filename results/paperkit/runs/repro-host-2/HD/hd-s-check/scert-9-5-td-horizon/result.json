@@ -1,0 +1,84 @@
+{
+ "D": 9,
+ "band": "D=9 l=5",
+ "boxes_registered": [
+  [
+   "1061/10000",
+   "73/625"
+  ],
+  [
+   "73/625",
+   "303/2500"
+  ]
+ ],
+ "checks": {
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- has positive coefficients, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "PILOT": {
+   "detail": "the pilot record is VALID and DESIGN equals its designs at q_max: True",
+   "ok": true
+  },
+  "coverage": {
+   "detail": "{\"mu_a\": \"1061/10000\", \"mu_b\": \"303/2500\", \"q(mu_a)^2\": \"88875546247769841/90676699847769841\", \"q(mu_b)^2\": \"38425874043609/39445974043609\", \"contiguous\": true, \"q(mu_a) >= q_max\": true, \"q(mu_b) <= q_lo or mu_b = 1\": true, \"w increases on [0, 1]\": true}",
+   "ok": true
+  },
+  "td-horizon": {
+   "detail": "td-horizon: N > 0: sign*p = -37622058517568343324351939306882039685264685751576460090027824674322781737470560217630851985049423914935289174472875803349/5382457815589331268873157483916235998661743506743762750607927809869939745399064951781519331827220342576107861221758544921875000000000000000 <= 0 at ",
+   "ok": false
+  }
+ },
+ "claim": "results/hd/s/PREREG.md, HD-S",
+ "claim_q": {
+  "exact": "[sqrt(38425874043609/39445974043609), sqrt(88875546247769841/90676699847769841)]",
+  "inward": [
+   "0.98699",
+   "0.99001"
+  ]
+ },
+ "control": "td-horizon",
+ "coverage": {
+  "contiguous": true,
+  "mu_a": "1061/10000",
+  "mu_b": "303/2500",
+  "q(mu_a) >= q_max": true,
+  "q(mu_a)^2": "88875546247769841/90676699847769841",
+  "q(mu_b) <= q_lo or mu_b = 1": true,
+  "q(mu_b)^2": "38425874043609/39445974043609",
+  "w increases on [0, 1]": true
+ },
+ "design": [
+  "1/50",
+  "zeta",
+  "20"
+ ],
+ "kind": "onset",
+ "l": 5,
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "q_lo": "987/1000",
+ "q_max": "99/100",
+ "timing": {
+  "exact parts": 0.23,
+  "t_total_s": 2.95
+ },
+ "verdict": "REJECT: td-horizon"
+}

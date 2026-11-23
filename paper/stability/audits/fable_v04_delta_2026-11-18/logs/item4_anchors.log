@@ -1,0 +1,581 @@
+# item4_anchors.log  2026-11-18 12:36:17 EST  text layers at the anchors cited in §§1 and 7 (paths under literature/)
+### S5 Table I
+1899:Table I. Stabilities of generalised static black holes. In this table, “d” represents the spacetime
+1931:summarised in Table I. As shown there, maximally symmetric black holes are stable
+=== cache/hep-th_0308128/hep-th_0308128.txt l.1899-1912 ===
+1899	Table I. Stabilities of generalised static black holes. In this table, “d” represents the spacetime
+1900	   dimension, n + 2. The results for tensor perturbations apply only for maximally symmetric
+1901	   black holes, while those for vector and scalar perturbations are valid for black holes with generic
+1902	   Einstein horizons, except in the case with K = 1, Q = 0, λ > 0 and d = 6.
+1903	                        Tensor             Vector                      Scalar
+1904	                     Q = 0 Q 6= 0       Q = 0 Q 6= 0          Q=0              Q 6= 0
+1905	                                                                            d = 4, 5 OK
+1906	 K=1        λ=0       OK        OK       OK       OK           OK
+1907	                                                                            d≥6?
+1908	                                                            d≤6   OK        d = 4, 5 OK
+1909	            λ>0       OK        OK       OK       OK
+1910	                                                            d≥7   ?         d≥6?
+1911	                                                            d=4   OK         d = 4 OK
+1912	            λ<0       OK        OK       OK       OK
+### S28 Table 1
+=== zmode-litcheck-2026-11-10/cache/sources/gr-qc_0312012/paper.txt l.740-752 ===
+740	                          Table 1: Stability of static black holes.
+741	                               Tensor                      Vector                                  Scalar
+742	                           Q = 0    Q 6= 0             Q = 0    Q 6= 0            Q = 0                    Q 6= 0
+743	                                                                                                         D = 4, 5 OK
+744	         K = 1    λ =0      OK           OK             OK          OK             OK
+745	                                                                                                         D ≥ 6 ?
+746	                                                                              D   ≤   6   OK             D = 4, 5 OK
+747	                  λ >0      OK           OK             OK          OK
+748	                                                                              D   ≥   7   ?              D ≥ 6 ?
+749	                                                                              D   =   4   OK              D = 4 OK
+750	                  λ <0      OK           OK             OK          OK
+751	                                                                              D   ≥   5   ?               D ≥ 5 ?
+752	                                                                              D   =   4   OK              D = 4 OK
+=== cache/1103.6148/paper.txt l.2272-2279 ===
+2272	left open.
+2273	     Our results are summarized in Table I. As shown there, maximally symmetric
+2274	black holes are stable with respect to tensor and vector perturbations over the entire
+2275	parameter range. In contrast, for scalar type perturbation, we were not able to prove
+2276	even the stability of asymptotically flat black holes with charge in generic dimensions,
+2277	due to the existence of a negative region in the effective potential around the horizon
+2278	in the extremal and near extremal cases.
+2279	     In this regard, it should be noted that by extensive numerical studies, Konoplya
+=== cache/1103.6148/paper.txt l.2403-2411 ===
+2403	black holes has not been completed yet even within the context of general relativity.
+2404	For some cases, in particular, when electric charge and cosmological constant are
+2405	involved, we have not yet been able to draw definite conclusions for the stability
+2406	problem with respect to scalar type perturbations. This is in part because there does
+2407	not seem to be a systematic method to find such a desirable function S that could
+2408	apply to generic cases. In particular, for the charged black hole case, the potential
+2409	for scalar-type perturbation admits a negative ditch in the immediate vicinity of the
+2410	horizon, which appears to be difficult to remove by the S-deformation. In connection
+2411	to this, it would be interesting to note that the existence of such a negative ditch in
+### S28 eqs (76)-(77)
+=== zmode-litcheck-2026-11-10/cache/sources/gr-qc_0312012/paper.txt l.705-712 ===
+705	         By the similar S-deformation
+706	                                     f dh
+707	                                S=        ;   h = r n/2−1 H− ,           (76)
+708	                                     h dr
+709	      the effective potential VS− for Φ− is transformed to
+710	                               k2 f
+711	                     ṼS− =           [2m − (n + 1)(n − 2)(1 + mδ)x] .   (77)
+712	                              2r 2 H−
+=== zmode-litcheck-2026-11-10/cache/sources/gr-qc_0312012/paper.txt l.758-770 ===
+758	
+759	
+760	
+761	
+762	        Hence, the gravitational mode is also stable for n = 2.
+763	            However, for n > 2, ṼS− becomes negative near the horizon in general
+764	        (See Fig.3). The S-deformation used in the neutral case does not work
+765	        either, because it cannot remove a negative ditch of VS− produced by the
+766	        charge near the horizon. We have not been able to prove the stability for
+767	        n > 2 by this method, except for some special cases.
+768	
+769	
+770	        5        Summary
+=== cache/hep-th_0308128/hep-th_0308128.txt l.1880-1891 ===
+1880	of xh (see Fig. 2), we can show that ṼS− > 0. Hence, in these special cases, the
+1881	black hole is stable with respect to any type of perturbation.
+1882	     However, for the other cases, ṼS− is not positive definite for generic values of
+1883	the parameters. The S-deformation used to prove the stability of neutral black holes
+1884	in Paper II is not effective either. This is because VS− has a negative region around
+1885	the horizon for the extremal and near extremal cases, as shown in Fig. 4, and the
+1886	S-deformation cannot remove this negative region if S is a regular function at the
+1887	horizon. Hence, determination of the stability for these generic cases with n ≥ 3 is
+1888	left as an open problem.
+1889	
+1890	                                  §7.        Summary and Discussion
+1891	
+=== cache/1511.03432/paper.txt l.2473-2482 ===
+2473	
+2474	
+2475	
+2476	                                              – 43 –
+2477	     As we have mentioned above, (5.22) is correct as stated for l ≥ 2. It is easily
+2478	verified 38 that all quasinormal modes with l ≥ 2 have negative imaginary components
+2479	(and so represent decaying fluctuations).
+2480	
+2481	5.2    The spectrum of velocity fluctuations
+2482	The fact that the shape fluctuation δr obeys the equation of the previous subsection
+### S52 section headers
+77:5 Light quasinormal spectrum or the RN black hole                                   39
+2225:5        Light quasinormal spectrum or the RN black hole
+2373:5.1         The spectrum of shape fluctuations
+2481:5.2    The spectrum of velocity fluctuations
+2541:5.3    The spectrum of charge fluctuations
+2604:5.4   A consistency check for shape fluctuations
+=== cache/1511.06059/paper.txt l.323-333 ===
+323	for the gauge field perturbation (Fm (z) 6= Fq (z)). ℓ = 0, 1, 2, ... is the quantum number on
+324	S n+1 . As boundary condition we demanded Fm (z) ∝ (cos z)ℓ at z = π/2 5 . The modes with
+325	ℓ > 1 (ℓ > 0) describe dynamical perturbation of gravitational perturbations (gauge field
+326	perturbations). So we consider the gravitational perturbations with ℓ > 1 and gauge field
+327	perturbations with ℓ > 0. At the zero cosmological constant limit L → ∞, these results
+328	reproduce the quasinormal modes of Reissner-Nordstrom black hole obtained in [12]. At
+329	Q = 0, ω± reduces to quasinormal modes of scalar type perturbation of (Anti) de Sitter
+330	Schwarzschild black hole [15]. At the both limits, the perturbations are stable. On the other
+331	hand we can see that, as a striking effect of a positive cosmological constant, the gravitational
+332	perturbation becomes unstable at Q > Qℓ where
+333	                                          s
+=== cache/1511.06059/paper.txt l.23-33 ===
+23	
+24	                                                                                     Abstract
+25	
+26	                                           We study the large D effective theory for D dimensional charged (Anti) de Sitter black holes.
+27	                                           Then we show that the de Sitter Reissner-Nordstrom black hole becomes unstable against
+28	                                           gravitational perturbations at larger charge than a critical charge in a higher dimension.
+29	                                           Furthermore we find that there is a non-trivial zero-mode static perturbation at the critical
+30	                                           charge. The existence of static perturbations suggests the appearance of non-spherical sym-
+31	                                           metric solution branches of static charged de Sitter black holes. This expectation is confirmed
+32	                                           by constructing the non-spherical symmetric static solutions of large D effective equations.
+33	1       Introduction
+=== cache/1809.00795/paper.txt l.521-534 ===
+521	
+522	IV.     SUMMARY AND DISCUSSION
+523	
+524	
+525	     In this paper, we extended the formalism in [16, 17] to coupled systems where the per-
+526	turbative field equations take the form of systems of coupled Schrödinger equations. Similar
+527	to [16, 17], the existence of S-deformation implies the linear mode stability of the system.
+528	Also, we applied our formalism to the case of the Schwarzschild black hole in dynamical
+529	Chern-Simons gravity and a charged Kaluza-Klein black hole [22, 30], and we showed the
+530	stability of the spacetime by finding a regular S-deformation function numerically. While
+531	the dynamical Chern-Simons gravity case is a test problem because the stability was already
+532	shown in [26], our study of charged Kaluza-Klein black hole case gives a first numerical proof
+533	
+534	9
+=== cache/1910.05630/paper.txt l.17-33 ===
+17	
+18	
+19	
+20	                                         Abstract We prove the linear stability of subextremal Reissner-Nordström spacetimes as solutions
+21	                                         to the Einstein–Maxwell equation. We make use of a novel representation of gauge-invariant quanti-
+22	                                         ties which satisfy a symmetric system of coupled wave equations. This system is composed of two of
+23	                                         the three equations derived in our previous works [20], [21], where the estimates required arbitrary
+24	                                         smallness of the charge. Here, the estimates are obtained by defining a combined energy-momentum
+25	                                         tensor for the system in terms of the symmetric structure of the right hand sides of the equations.
+26	                                         We obtain boundedness of the energy, Morawetz estimates and decay for the full subextremal range
+27	                                         |Q| < M , completely in physical space. Such decay estimates, together with the estimates for the
+28	                                         gauge-dependent quantities of the perturbations obtained in [22], settle the problem of linear sta-
+29	                                         bility to gravitational and electromagnetic perturbations of Reissner-Nordström solution in the full
+30	                                         subextremal range |Q| < M .
+31	
+32	                                         Keywords Black hole stability · Reissner–Nordström spacetime · Regge–Wheeler equation
+33	
+=== cache/1809.05144/paper.txt l.23-32 ===
+23	                                                 Regge-Wheeler quantities found in the setting of four spacetime dimen-
+24	                                                 sions; beyond these quantities, we further discover a higher-dimensional
+25	                                                 analog of the Cunningham-Moncrief-Price quantity in the co-vector por-
+26	                                                 tion. In the analysis of the master quantities, we strengthen the mode
+27	                                                 stability result of Kodama-Ishibashi to a uniform boundedness estimate
+28	                                                 in all dimensions; further, we prove decay estimates in the case of six
+29	                                                 or fewer spacetime dimensions. Finally, we provide a rigorous argument
+30	                                                 that linearized solutions of low angular frequency are decomposable as a
+31	                                                 sum of pure gauge solution and linearized Myers-Perry solution, the lat-
+32	                                                 ter solutions generalizing the linearized Kerr solutions in four spacetime
+=== cache/2609.33661/paper.txt l.4-15 ===
+4	                                                                        Department of Mathematics, Pennsylvania State University,
+5	                                                                         54 McAllister St, State College, PA 16801, United States
+6	                                                                                       (Dated: September 29, 2026)
+7	                                                         We study linearized perturbations of the subextremal Kerr–Newman black hole solution of the
+8	                                                      Einstein–Maxwell equations. We show how to overcome what Chandrasekhar called the “apparent
+9	                                                      indissolubility of the coupling between the spin-1 and spin-2 fields” by using a matrix integrating
+10	                                                      factor for suitably transformed first-order systems that describe the radiative degrees of freedom.
+11	                                                      For the radial ODEs obtained after angular separation, we prove mode stability on the real axis,
+12	                                                      i.e., the absence of quasinormal modes with real frequencies, using a Whiting-type transform.
+13	
+14	
+15	                                            Introduction—The Kerr–Newman (KN) solution [1] of               Detailed numerical studies [36, 37] gave evidence for
+=== cache/2606.28253/paper.txt l.441-448 ===
+441	         (b) a non-degenerate source at the conormal bundle of the event horizon, as pointed out
+442	             by Vasy [Vas13] in a closely related context. (This is related to the non-degenerate
+443	             red-shift effect [DR09].)
+444	    (2) The mode stability result of Andersson–Häfner–Whiting [AHW24] for linearized gravity
+445	        holds in the full subextremal range and is used here as a black box.
+446	In particular, our approach treats the full subextremal range of angular momenta in a uniform
+447	fashion. Restricting to axisymmetry, ultimately Schwarzschildean spacetimes, or small angular
+448	momenta would not lead to simplifications in our arguments.
+=== cache/2606.28253/paper.txt l.536-544 ===
+536	       the regime of small angular momenta in view of the mode stability result [AHW24] and the
+537	       verification of certain non-degeneracy properties of the spectral family in [Hin24b].
+538	(15)   Hintz–Petersen–Vasy [HPV25] proved the nonlinear stability of Kerr–de Sitter black holes in
+539	       the full subextremal range, conditional on the validity of mode stability for the linearized
+540	       Einstein equation—which, unlike in the Kerr case, remains an open problem except in the
+541	       slow-rotation regime (see also [Hin25b] for the small mass regime). The basic strategy is
+542	       the same as in [HV18b], but the implementation of constraint damping is considerably more
+543	       involved.
+544	   We also mention the papers by Fournodavlos–Schlue [FS24] and Hintz–Vasy [HV24] on the sta-
+=== cache/2611.21591/paper.txt l.8-29 ===
+8	                                                                             Institute of Frontier and Interdisciplinary Science,
+9	                                                                          Shandong University, Qingdao, Shandong 266237, China
+10	
+11	                                                          We study linearized gravitational perturbations of five-dimensional asymptotically flat Myers–
+12	                                                       Perry black holes with two unequal spins. We construct separated solutions for the five coupled
+13	                                                       gauge-invariant polarizations for arbitrary azimuthal mode numbers. The key observation is that
+14	                                                       the Killing–Yano symmetry induces a first-order angular operator that, together with a commuting
+15	                                                       second-order operator, determines the angular profiles of all five gravitational polarizations. The
+16	                                                       Carter interchange relates the scalar angular and radial equations, and the five tidal components
+17	arXiv:2611.21591v1 [gr-qc] 16 Nov 2026
+18	
+19	
+20	
+21	
+22	                                                       of each separated solution share a single radial amplitude. We prove completeness of the angular
+23	                                                       harmonics at real frequencies and show that the resulting physical perturbations admit local metric
+24	                                                       reconstruction. In the singly spinning limit, we recover Santos’s angular operators and radial equation
+25	                                                       for perturbations with mψ = 0 and even parity under ψ → −ψ. These results provide a framework
+26	                                                       for studying quasinormal modes and gravitational stability of five-dimensional rotating black holes
+27	                                                       with two independent spins.
+28	
+29	
+### S43 Santos mentions
+24:                                                       reconstruction. In the singly spinning limit, we recover Santos’s angular operators and radial equation
+35:                                         offer a powerful probe of strong-field gravity [1, 2]. A           transverse-sphere-invariant sector of singly spinning black
+242:treatment.                                                        As a nontrivial consistency check, the singly spinning limit
+243:  Single-spin limit.— The singly spinning limit provides          reproduces the five-dimensional separation equations of
+244:both a nontrivial consistency check with Santos [17] and          Santos [17] in the corresponding symmetry sector.
+246:by our construction. To make direct contact with Santos’s            The separated equations provide a framework for in-
+275:mψ ̸= 0 in the singly spinning limit. For the general five-          Acknowledgments.—We thank Li Li, Peng-Cheng Li,
+291:     arXiv:gr-qc/0512160.                                          [17] J. E. Santos, Separation of gravitational perturba-
+292: [2] E. Berti, V. Cardoso, and A. O. Starinets, Quasinormal             tions of singly spinning Myers-Perry black holes (2026),
+992:    For µ > a2 > 0 the only additional scalar denominator in the open exterior is Santos’s Π. For ωS ̸= 0 its leading
+995:the Santos problem, with the tensor equation providing continuation through isolated zeros of Π. Ref. [12] excludes
+1026:[12]   J. E. Santos, Separation of gravitational perturbations of singly spinning Myers-Perry black holes (2026), arXiv:2610.18956
+=== cache/2610.33812/paper.txt l.160-167 ===
+160	the special case d = 4 for the wave equation
+161	                  □ga,b,m ϕ = −|g|−1/2 ∂µ (|g|1/2 g µν ∂ν ϕ) = 0, ϕ(0, x) = ϕ0 (x), ∂t ϕ(0, x) = ϕ1 (x),      (1.4)
+162	   where to keep consistency with literature on the case d = 4 we rename the momenta {ai }i for i = 1, 2 in this
+163	case to a and b and also renormalize G such that µ = 2m. The theorem is as of writing still condition on the
+164	assumption of real mode stability for the wave equation.
+165	Theorem 1.1. (Price’s Law on 1 + 4-dimenional Myers-Perry spacetime in the full subextremal range.). Let
+166	(M, ga,b,m ) be a 1 + 4-dimensional Myers-Perry spacetime and a, b ∈ R2 satisfy the subextremality constraint
+167	                                                      (|a| + |b|)2 < 2m                                       (1.5)
+=== cache/2610.33812/paper.txt l.443-450 ===
+443	        on suitable function spaces. Combined with the statement that ind □(σ)       ˆ      = 0 for all σ ∈ H this
+444	        immediately leads to invertibility and existence of the resolvent □(σ)ˆ    −1
+445	                                                                                      , as well as the For Im σ > 0
+446	        this is exactly the content of [CPWZ22], however it has not been shown to hold yet down to the real
+447	        axis Im σ = 0. For the purposes of this paper we will take the latter as a mild conditional assumption,
+448	        although a real mode stability result obtained by means analogous to [SR15],[AMPW17] are expected
+449	        to hold in the case of 1 + 4 dimensional Myers-Perry as well.
+450	    (3) Following existence of the resolvent □ˆ −1
+=== cache/zenodo_24146363/paper.txt l.7-18 ===
+7	
+8	            Abstract.    We prove that subextremal Kerrde Sitter black holes are nonlinearly stable as
+9	            solutions of the Einstein vacuum equations with positive cosmological constant, in the full
+10	            subextremal range. Hintz, Petersen and Vasy reduced this to mode stability of the ungauged
+11	            linearized Einstein equation; we prove that statement. The main step is mode stability of the
+12	            Teukolsky equations of spin ±2: there are no nontrivial outgoing modes with Im σ ≥ 0. From
+13	            it we deduce that every generalized mode of the linearized Einstein equation with Im σ ≥ 0
+14	            is pure gauge, up to a linearized Kerrde Sitter metric when σ = 0. Part of the proof is
+15	            computer-assisted.
+16	
+17	
+18	
+=== cache/zenodo_24146363/paper.txt l.123-131 ===
+123	statement of Theorem 1.1; a reader interested only in the radial analysis can stop after 4.
+124	
+125	
+126	Computer assistance.             The computer-assisted steps are listed in Appendix A. All are exact
+127	except C9, which uses oating-point arithmetic with rigorous error bounds. The code is available
+128	on request.
+129	
+130	
+131	Acknowledgments.             I thank the authors of [3, 4] for making their work publicly available.
+=== cache/zenodo_24146363/paper.txt l.1335-1341 ===
+1335	model. These passes found errors, including invalid earlier versions of the large-A regime of the
+1336	event lemma and of the passage to the upper half plane, and every error found was corrected.
+1337	Numerical experiments were used only to guide the search for proofs, and no result depends on
+1338	them. No human expert has yet checked the argument. I have reviewed and edited the content
+1339	and take full responsibility for it.
+1340	
+1341	
+=== cache/2610.39095/paper.txt l.136-144 ===
+136	                                                                       d2 Rℓm                              4M ω 2 + 2isω
+137	                                                                                                    
+138	these families; it is not a damping threshold or a claim to ex-                    2(s + 1) dRℓm       2
+139	                                                                                +                 +  ω   +
+140	haust all Riemann sheets. A certified contour establishes ex-           dr2         r − M dr                  r−M
+141	actly one simple DM in the stated (3, 3) domain, while critical            7M 2 ω 2 − s Aℓm (M ω) M (4M ω − 2is)(2M ω − m)
+142	matching gives local accumulation and exclusion results near           +                          +
+143	                                                                                  (r − M )2                  (r − M )3
+144	the branch points. These certified domains and the broader
+=== cache/2610.39095/paper.txt l.1842-1851 ===
+1842	   Continuous control uses overlapping frequency disks on the                  gle. Thus the continuous connection and its numerical poly-
+1843	same angular branch and Riemann sheet. On a disk of radius                     gon have the same winding, establishing Eq. (50). Together
+1844	ρi centered at ωi , approximate the connection by a degree-Ji                  with angular isolation and the absence of normalization poles,
+1845	polynomial Pi in the scaled frequency, with coefficients ci,q :                this proves that D33 contains exactly the one simple QNM
+1846	                                                                               shown in Fig. 10a. The statement applies to this domain, an-
+1847	                                   Ji                       q
+1848	                                   X                ω − ωi                     gular branch, and Riemann sheet.
+1849	                       Pi (ω) =          ci,q                     ,   (B13a)      The boundary cover uses frequency-polynomial degree
+1850	                                   q=0
+1851	                                                      ρi
+=== cache/2609.21797/paper.txt l.16-36 ===
+16	
+17	                                          E-mail: kevin.goldstein@wits.ac.za, v.jejjala@wits.ac.za
+18	
+19	                                         Abstract: Static, asymptotically flat, non-Schwarzschild black holes in four-dimensional
+20	                                         Einstein–Weyl gravity have previously been constructed by numerical shooting, while the
+21	                                         local field equations admit horizon and asymptotic expansions to all orders. We give a
+22	                                         computer assisted existence proof for a non-Schwarzschild solution whose dimensionless
+23	                                         horizon radius is one in units of the massive spin-two scale, with parameters close to the
+24	                                         previously reported numerical branch. The exterior is divided into a convergent horizon
+25	                                         series domain, a compact core enclosed by a parameter dependent Taylor model with
+26	                                         directed rounding, and an infinite asymptotic domain treated as a centered stable manifold
+27	                                         fixed point problem. The resulting five-dimensional matching map between the core and tail
+28	                                         is continuous on a rigorously specified box. After exact rational preconditioning, the signs
+29	                                         on opposite faces satisfy the hypotheses of the Poincaré–Miranda theorem and therefore
+30	                                         certify a matching zero. The solution has a regular nondegenerate horizon, no additional
+31	                                         exterior horizon, vanishing Ricci scalar, and nonvanishing Ricci tensor. The strict bounds
+32	                                         also imply existence at every sufficiently nearby horizon radius and a local continuous family
+33	                                         at fixed coupling. The proof establishes existence, but not uniqueness of the matching zero.
+34	
+35	                                         Keywords: Black Holes, Classical Theories of Gravity
+36	Contents
+=== cache/zenodo_24285821/paper.txt l.5-25 ===
+5	                                            NEKO2333OWO
+6	
+7	
+8	       Abstract. We consider the subextremal Reissner–Nordström–de Sitter black hole whose
+9	       horizons are at r− = 19/20, r+ = 1 and rc = 2, with cosmological constant Λ = 1200/4301.
+10	       We prove that every nonzero quasinormal mode of the massless scalar wave equation on its
+11	       exterior, for every angular momentum ℓ, satisfies Im ω < − 35 κ− , where κ− is the surface
+12	       gravity of the Cauchy horizon. The frequency ω = 0 occurs only for ℓ = 0, with a constant
+13	       mode, and is a simple zero. By a theorem of Hintz and Vasy, solutions with smooth initial
+14	                                                           1
+15	       data then extend across the Cauchy horizon in Hloc     and are continuous up to it, so the
+16	       Christodoulou formulation of strong cosmic censorship fails for this linear model at this
+17	       parameter point. Bounded frequencies and low angular momenta are handled by interval-
+18	       arithmetic certificates for the radial Wronskian. All remaining frequencies are excluded
+19	       by a Hermite-type monotone quantity integrated along complex contours in the tortoise
+20	       coordinate. This quantity gives certificates that hold uniformly in ℓ ≥ 10, so the infinitely
+21	       many angular momenta are covered by finitely many interval computations. The certificates
+22	       and the programs that check them are in the supplement.
+23	
+24	
+25	
+=== cache/zenodo_24288754/paper.txt l.5-25 ===
+5	                                              NEKO2333OWO
+6	
+7	
+8	       Abstract. We prove that the singly spinning Myers–Perry black hole in seven spacetime
+9	       dimensions with rotation parameter a/r+ = 8 is linearly unstable in the sense of Prabhu and
+10	       Wald. We construct smooth, compactly supported, constraint-satisfying initial data that are
+11	       invariant under U (1) × SO(4) and odd under the (t-ϕ) reflection. For their gauge-fixed repre-
+12	       sentative P ′ we establish that the potential energy of KP ′ , the initial time derivative of the
+13	       corresponding solution, is negative. Positivity of the kinetic energy makes the Rayleigh–Ritz
+14	       quotient ω 2 of Prabhu and Wald negative, and their variational principle gives exponential
+15	       growth of the kinetic energy of the time derivative of the solution. We identify this potential
+16	       energy with the local canonical energy of the evolved compactly supported data, by an ar-
+17	       gument that uses only identities from the Prabhu–Wald framework. The trial is explicit; the
+18	       negativity is established by a computer-assisted certificate: a rigorous adaptive quadrature in
+19	       which the integrand is bounded on complex polydiscs by bivariate Taylor models with inter-
+20	       val remainders. The certified value is a small residue of large contributions of both signs, and
+21	       its sign relies on the exactness of the symbolic derivation; we state this dependence explicitly.
+22	       The certificate, its records and the programs that check them are in the supplement.
+23	
+24	
+25	
+=== cache/1203.3766/paper.txt l.6-21 ===
+6	
+7	
+8	
+9	                                        Abstract: About twenty years ago, Choptuik studied numerically the gravi-
+10	                                        tational collapse (Einstein field equations) of a massless scalar field in spheri-
+11	                                        cal symmetry, and found strong evidence for a universal, self-similar solution
+12	                                        at the threshold of black hole formation. We prove rigorously the existence of
+13	                                        a real analytic solution, that we interpret as the solution observed by Chop-
+14	                                        tuik. Our construction covers an open neighborhood of the past light cone of
+15	                                        the singularity. The proof is computer assisted. Starting from an explicit ap-
+16	                                        proximate solution, we show that nearby there is a true solution. The source
+17	                                        code and a high precision data file (about 80 significant decimal digits, with
+18	                                        rigorous error bounds) are included. We do not study perturbations.
+19	
+20	
+21	                                        Contents
+=== cache/1411.2947/paper.txt l.3-17 ===
+3	                                                                                  O. COSTIN, R. DONNINGER, AND X. XIA
+4	
+5	
+6	                                                   Abstract. We study the fundamental self-similar solution to the SU(2) sigma model, found by Shatah
+7	                                                   and Turok-Spergel. We give a rigorous proof for its mode stability. Based on earlier results by the second
+8	arXiv:1411.2947v3 [math.AP] 18 Dec 2014
+9	
+10	
+11	
+12	
+13	                                                   author, the present paper constitutes the last building block for a completely rigorous proof of the nonlinear
+14	                                                   stability of the Shatah-Turok-Spergel wave map.
+15	
+16	
+17	
+### S56 computer-algebra mentions
+7:                                                   and Turok-Spergel. We give a rigorous proof for its mode stability. Based on earlier results by the second
+13:                                                   author, the present paper constitutes the last building block for a completely rigorous proof of the nonlinear
+85:[7, 1, 11]. Unfortunately, it seems to be very challenging to prove the mode stability of ψ T rigorously. The
+99:and a rigorous version of a method used by Bizoń [1] which relates the existence of eigenvalues to the
+100:convergence of a certain continued fraction. We provide rigorous error estimates for all our approximations.
+102:rational numbers. As a consequence, our result is completely rigorous although we have to admit that it
+103:seems unrealistic to perform all our computations without the aid of some computer algebra system.
+107:   We reiterate that Theorem 1.1 in conjunction with the result in [5] provides a completely rigorous proof
+256:the chosen approximations are proved rigorously to be small.
+310:   (iv) Each cc,n,i is replaced by a rational number cn,i within e−7 of it, to allow for rigorous proofs. Finally
+753:this purpose the analysis need not be rigorous, since in the sequel we prove that the relative error |rn /r̃n − 1|
+759:and is rigorous.
+=== cache/1411.2947/paper.txt l.97-108 ===
+97	2 , |Imλ| ≤ 380} is then studied by a new approach which is in some sense “brute force”. This means that
+98	we work with suitable approximations to solutions of the equation, e.g. truncated Chebyshev expansions,
+99	and a rigorous version of a method used by Bizoń [1] which relates the existence of eigenvalues to the
+100	convergence of a certain continued fraction. We provide rigorous error estimates for all our approximations.
+101	Furthermore, we emphasize that all computations are free of rounding errors since we work exclusively with
+102	rational numbers. As a consequence, our result is completely rigorous although we have to admit that it
+103	seems unrealistic to perform all our computations without the aid of some computer algebra system.
+104	    In the present paper we prove the following result.
+105	Theorem 1.1. The Shatah-Turok-Spergel wave map is mode stable, i.e., there does not exist a nontrivial
+106	solution uλ ∈ C ∞ [0, 1] to Eq. (1.3) if Reλ ≥ 0 and λ 6= 1.
+107	   We reiterate that Theorem 1.1 in conjunction with the result in [5] provides a completely rigorous proof
+108	of the nonlinear stability of ψ T in the sense of [5].
+=== cache/2509.12435/paper.txt l.13-24 ===
+13	                                                  the first full nonlinear stability result for radially imploding compressible flows. At the heart of the
+14	                                                  proof is the ground state character of the Larson-Penston solution, which exhibits important global
+15	                                                  monotonicity properties used throughout the proof.
+16	                                                      One of the key challenges is the proof of mode-stability for the non self-adjoint spectral prob-
+17	                                                  lem which arises when linearising the dynamics around the Larson-Penston collapsing solution. To
+18	                                                  exclude the presence of complex growing modes other than the trivial one associated with time trans-
+19	                                                  lation symmetry, we use a high-order energy method in low and high frequency regimes, for which
+20	                                                  the monotonicity properties are crucially exploited, and use rigorous computer-assisted techniques in
+21	                                                  the intermediate regime. In addition, the maximal dissipativity of the linearised operator is proven on
+22	                                                  arbitrary large backward light cones emanating from the singular point using the global monotonicity
+23	                                                  of the Larson-Penston solutions. Such a flexibility in linear analysis also facilitates nonlinear analysis
+24	                                                  and allows us to identify the exact number of derivatives necessary for the nonlinear stability statement.
+=== cache/2611.16908/paper.txt l.1-28 ===
+1	                                                        A constructive computer-assisted existence proof
+2	                                                                    for a Calabi–Yau metric
+3	                                                    Michael R. Douglas∗             Javier Gómez-Serrano†                                                 Fabian Lehmann‡
+4	                                                                                Daniel Platt§                             Yidi Qi¶
+5	arXiv:2611.16908v1 [math.DG] 12 Nov 2026
+6	
+7	
+8	
+9	
+10	                                                                                     13 November 2026
+11	
+12	
+13	                                                                                                  Abstract
+14	                                                    We give a rigorous, constructive proof that there exists a Ricci-flat Kähler metric on the
+15	                                                Fermat quartic hypersurface, independently of Yau’s famous theorem, along with an explicit
+16	                                                and accurate analytic approximation to the metric. The proof combines numerical techniques to
+17	                                                obtain the approximately Ricci flat metric, a fixed point theorem to prove existence, and verified
+18	                                                numerics to get the bounds used by the fixed point theorem. The method is general and we
+19	                                                discuss the computational issues in applying it to other manifolds.
+20	
+21	
+22	                                           Contents
+23	                                           1 Introduction                                                                                                                                                         2
+24	
+25	                                           2 Approximate Calabi-Yau metrics                                                                                                                                       4
+26	                                             2.1 Computing ultra high-accuracy approximate Calabi-Yau metrics . . . . . . . . . . .                                                                               4
+27	                                             2.2 Certified error bounds for the approximate Calabi-Yau metric . . . . . . . . . . . . .                                                                           7
+28	
+=== cache/2611.07395/paper.txt l.1-30 ===
+1	                                          Rigorously Certified Neural-Network Computation
+2	                                             of Nonlinear Water Waves at Near-Machine
+3	                                                               Precision
+4	
+5	                                                 Michal Shavit1*, Yongji Wang1 and Tristan Buckmaster1
+6	arXiv:2611.07395v1 [math.AP] 5 Nov 2026
+7	
+8	
+9	
+10	
+11	                                           1*
+12	                                                Courant Institute of Mathematical Sciences, New York University,
+13	                                                                      NY, 10012, USA.
+14	
+15	
+16	                                                   *Corresponding author(s). E-mail(s): ms14479@nyu.edu;
+17	
+18	
+19	                                                                               Abstract
+20	                                           We present a computational framework that combines machine-learning-based
+21	                                           discovery with rigorous computer-assisted numerical certification and formal ver-
+22	                                           ification for strongly nonlinear partial differential equations. We demonstrate the
+23	                                           approach for periodic gravity–capillary traveling water waves. Physics-informed
+24	                                           neural networks are used as a search mechanism, with the wave profile, wave
+25	                                           speed and, in continuation experiments, surface tension learned directly from the
+26	                                           governing equations without training data. Through a staged training and refine-
+27	                                           ment procedure, the neural networks achieve near-machine-precision residuals of
+28	                                           the governing equations, even in strongly nonlinear regimes. A single formulation
+29	                                           recovers three classical high-amplitude regimes: pure-gravity Stokes waves, pure-
+30	                                           capillary Crapper waves and gravity–capillary Wilton ripples. Starting from a
+### S47 Lean mentions
+38:                                           formalize the mathematical structure of the certification argument in Lean, which
+44:                                           mathematical deductions are checked by the Lean kernel. Together, these steps
+55:     Computer-assisted proofs, Formal verification in Lean
+60:       Paper repository: computer-assisted accuracy proof and Lean
+70:  2.3 Certified residual estimates and formal verification in Lean . .        .   .   .   .   .   12
+72:      2.3.2 Formal verification in Lean . . . . . . . . . . . . . . .         .   .   .   .   .   13
+85:      4.3.2 Formal verification in Lean . . . . . . . . . . . . . . . . . . . .                   22
+106:formally verify the mathematical deductions underlying the certificate in Lean. The
+=== cache/1910.08479/paper.txt l.5-27 ===
+5	                                                                           DEJAN GAJIC∗1 AND CLAUDE WARNICK†1
+6	
+7	
+8	                                                Abstract. We present a new framework for characterizing quasinormal modes (QNMs) or resonant
+9	                                                states for the wave equation on asymptotically flat spacetimes, applied to the setting of extremal
+10	                                                Reissner–Nordström black holes. We show that QNMs can be interpreted as honest eigenfunctions
+11	                                                of generators of time translations acting on Hilbert spaces of initial data, corresponding to a suitable
+12	                                                time slicing. The main difficulty that is present in the asymptotically flat setting, but is absent in the
+13	                                                previously studied asymptotically de Sitter or anti de Sitter sub-extremal black hole spacetimes, is that
+14	                                                L2 -based Sobolev spaces are not suitable Hilbert space choices. Instead, we consider Hilbert spaces
+15	                                                of functions that are additionally Gevrey regular at infinity and at the event horizon. We introduce
+16	                                                L2 -based Gevrey estimates for the wave equation that are intimately connected to the existence of
+17	                                                conserved quantities along null infinity and the event horizon. We relate this new framework to the
+18	arXiv:1910.08479v2 [gr-qc] 7 Jun 2021
+19	
+20	
+21	
+22	
+23	                                                traditional interpretation of quasinormal frequencies as poles of the meromorphic continuation of a
+24	                                                resolvent operator and obtain new quantitative results in this setting.
+25	
+26	
+27	
+=== cache/1910.02854/paper.txt l.12-29 ===
+12	
+13	
+14	                                                                                   Abstract
+15	                                                We prove that there are no exponentially growing modes nor modes on the real
+16	                                             axis for the Teukolsky equation on Kerr black hole spacetimes, both in the extremal
+17	                                             and subextremal case. We also give a quantitative refinement of mode stability. As an
+18	                                             immediate application, we show that the transmission and reflection coefficients of the
+19	                                             scattering problem are bounded, independently of the specific angular momentum of
+20	                                             the black hole, in any compact set of real frequencies excluding zero frequency and the
+21	                                             superradiant threshold.
+22	                                                While in the subextremal setting these results were known previously, the extremal
+23	                                             case is more involved and has remained an open problem. Ours are the first results
+24	                                             outside axisymmetry and could serve as a preliminary step towards understanding
+25	                                             boundedness, scattering and decay properties of general solutions to the Teukolsky
+26	                                             equation on extremal Kerr black holes.
+27	
+28	
+29	                                        Contents
+=== cache/2610.28367/paper.txt l.15-30 ===
+15	
+16	                                                                                           Abstract
+17	
+18	                                            In this work, we investigate the correspondence between quasinormal modes (QNMs) and greybody factors
+19	                                         (GBFs) in higher-dimensional Reissner–Nordstöm–de Sitter black holes based on the massless scalar field. Our
+20	                                         analysis focuses on the QNMs in the near-ultracold family where the inner, outer, and cosmological horizons
+21	                                         are close together. Under the geometric limit condition, the leading-order Wentzel–Kramers–Brillouin term of
+22	                                         the QNM is dominant for fixed angular quantum numbers and dimensionality without imposing the eikonal
+23	                                         limit. Particularly, the corresponding GBFs also retain the explicit form of both parameters. Furthermore, we
+24	                                         demonstrate that the half-transmission frequency of the GBF and its derivative are related to null geodesics, in
+25	                                         terms of aspects such as the angular frequency and Lyapunov exponent, with the use of both parameters. We
+26	                                         provide their relationships in arbitrary dimensionality. Furthermore, the higher-order corrections to the QNMs
+27	                                         are investigated at the Nariai limit and in the near-ultracold geometry with separated horizons.
+28	
+29	
+30	

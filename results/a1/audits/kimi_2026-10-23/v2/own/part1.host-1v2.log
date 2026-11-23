@@ -1,0 +1,9 @@
+ell=3: m=14 mu_lo=11/100 q(mu_lo)^2=0.980136 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=4: m=24 mu_lo=103/1000 q(mu_lo)^2=0.980101 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=5: m=36 mu_lo=49/500 q(mu_lo)^2=0.980132 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=6: m=50 mu_lo=47/500 q(mu_lo)^2=0.980294 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=7: m=66 mu_lo=91/1000 q(mu_lo)^2=0.980399 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=8: m=84 mu_lo=89/1000 q(mu_lo)^2=0.980325 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=9: m=104 mu_lo=87/1000 q(mu_lo)^2=0.980432 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+ell=10: m=126 mu_lo=43/500 q(mu_lo)^2=0.980227 Den_exps=(0, 1, 3) Den>0:True F>0:True w-inc:True nodes=1
+PART I: ALL POSITIVE

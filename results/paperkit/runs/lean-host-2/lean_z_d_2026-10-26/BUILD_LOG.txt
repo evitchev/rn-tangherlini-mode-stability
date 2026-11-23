@@ -1,0 +1,84 @@
+bh-modes Z Lean layer, item (d) (BHM-126): build and audit, started 20261118T184450Z
+lean: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+
+== 1. sources
+ok   BHModesZd.lean 638590d638db5209bc6003b2da53592943e5acd5e323b1ea086b9f6047014232
+scan for sorry / admit / axiom / native_decide / implemented_by / extern (informational):
+  (no occurrence)
+
+== 2. compile
+BHModesZd: exit=0 seconds=6 errors=0 warnings=0 sorry=0
+
+== 3. axioms
+theorem headers: 46; #print axioms entries: 46; exit=0; axioms outside {propext, Classical.choice, Quot.sound}: none
+  'BHModes.Z.gate_q1' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.gate_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.g_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.deriv_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.z_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner_n4' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner_ends' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner_no_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.sdef_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.form_nonneg_of_sdef' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.fr_S5' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Yr_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.fr_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.fr_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.one_sub_Yr_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.fr_le_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Yr_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.fr_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.invfr_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tort_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tort_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tort_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tort_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tort_surjOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tort_bijOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.tortoise_q1' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Rt_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Rt_tort' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Rt_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Rt_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Rt_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Vr_S5' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.wr_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.riccati_plus' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.riccati_minus' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.V_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Vt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.u0_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.log_u0_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.w_log_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.S_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.W_continuousAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.Vr_continuousAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.zero_mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.A_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== 4. checker negative controls (false proofs; each must be rejected)
+NC1_two_plus_two: exit=1 errors=4  (theorem bogus : (2:ℝ) + 2 = 5 := by norm_num)
+NC2_false_margin: exit=1 errors=3  (theorem bogus (l : ℝ) : l * (l - 3) / 9 + 1 / 4 = (2 * l + 3) ^ 2 / 36 := by ring)
+
+== 5. mutations (registration: ZD_MUTATION_REGISTRATION.md sha256 0f12a18af9a7a03a01c04fe75f98429688606cdde179c7f26224ea8198b4ad6d, logged 2026-11-18T18:45:21Z, before the first run)
+{"id": "ZD1", "file": "BHModesZd.lean", "expected_decl": "tortoise_q1", "exit": 1, "errors": 1, "failing_decls": ["tortoise_q1"], "first_error": [466, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 464, "pass": true}
+{"id": "ZD2", "file": "BHModesZd.lean", "expected_decl": "tortoise_q1", "exit": 1, "errors": 1, "failing_decls": ["tortoise_q1"], "first_error": [466, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 464, "pass": true}
+{"id": "ZD3", "file": "BHModesZd.lean", "expected_decl": "tort_hasDerivAt", "exit": 1, "errors": 7, "failing_decls": ["Rt_hasDerivAt", "tort_ge", "tort_hasDerivAt", "tort_le", "tort_strictMonoOn", "tortoise_q1"], "first_error": [335, "Type mismatch"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 328, "pass": true}
+{"id": "ZD4", "file": "BHModesZd.lean", "expected_decl": "Rt_hasDerivAt", "exit": 1, "errors": 4, "failing_decls": ["A_nonneg", "Rt_hasDerivAt", "w_log_deriv", "zero_mode"], "first_error": [510, "Type mismatch: After simplification, term"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 505, "pass": true}
+{"id": "ZD5", "file": "BHModesZd.lean", "expected_decl": "riccati_plus", "exit": 1, "errors": 2, "failing_decls": ["V_eq", "riccati_plus"], "first_error": [556, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 553, "pass": true}
+{"id": "ZD6", "file": "BHModesZd.lean", "expected_decl": "riccati_minus", "exit": 1, "errors": 2, "failing_decls": ["Vt_eq", "riccati_minus"], "first_error": [577, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 576, "pass": true}
+{"id": "ZD7", "file": "BHModesZd.lean", "expected_decl": "V_eq", "exit": 1, "errors": 3, "failing_decls": ["A_nonneg", "V_eq", "zero_mode"], "first_error": [610, "ring failed, ring expressions not equal"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 596, "pass": true}
+{"id": "ZD8", "file": "BHModesZd.lean", "expected_decl": "log_u0_hasDerivAt", "exit": 1, "errors": 2, "failing_decls": ["log_u0_hasDerivAt", "w_log_deriv"], "first_error": [669, "Tactic `apply` failed: could not unify the conclusion of `HasDerivAt.congr_of_eventuallyEq hL'`"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 644, "pass": true}
+{"id": "ZD9", "file": "BHModesZd.lean", "expected_decl": "log_u0_hasDerivAt", "exit": 1, "errors": 1, "failing_decls": ["log_u0_hasDerivAt"], "first_error": [644, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 632, "pass": true}
+{"id": "ZD10", "file": "BHModesZd.lean", "expected_decl": "zero_mode", "exit": 1, "errors": 1, "failing_decls": ["zero_mode"], "first_error": [744, "Tactic `unfold` failed to unfold `Vstar` in"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 729, "pass": true}
+{"id": "ZD11", "file": "BHModesZd.lean", "expected_decl": "A_nonneg", "exit": 1, "errors": 1, "failing_decls": ["A_nonneg"], "first_error": [769, "Type mismatch"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 753, "pass": true}
+{"id": "ZD12", "file": "BHModesZd.lean", "expected_decl": "Vr_S5", "exit": 1, "errors": 4, "failing_decls": ["V_eq", "Vr_S5", "Vr_continuousAt"], "first_error": [535, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 527, "pass": true}
+{"id": "ZD13", "file": "BHModesZd.lean", "expected_decl": "tort_le", "exit": 1, "errors": 2, "failing_decls": ["tort_le", "tort_surjOn"], "first_error": [411, "Tactic `rewrite` failed: Did not find an occurrence of the pattern"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 375, "pass": true}
+{"id": "ZD14", "file": "BHModesZd.lean", "expected_decl": "one_sub_Yr_le", "exit": 1, "errors": 2, "failing_decls": ["fr_le_sq", "one_sub_Yr_le"], "first_error": [284, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 270, "pass": true}
+{"id": "ZD15", "file": "BHModesZd.lean", "expected_decl": "wr_hasDerivAt", "exit": 1, "errors": 3, "failing_decls": ["riccati_minus", "riccati_plus", "wr_hasDerivAt"], "first_error": [539, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 515, "pass": true}
+mutations failing as required: 15 / 15
+
+BHModesZd: ALL CHECKS AS REQUIRED
+finished 20261118T184657Z

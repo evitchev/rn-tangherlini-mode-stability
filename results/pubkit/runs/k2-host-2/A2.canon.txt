@@ -1,0 +1,33 @@
+MATCH  A2 a2-elementary nc-bump (control)  e2de3a384f563ad9
+MATCH  A2 a2-elementary nc-ell2 (control)  b13b4c845fb889d2
+MATCH  A2 a2-elementary nc-strict (control)  8ec2b667ace86f9f
+MATCH  A2 a2-elementary none (cited)  aface5b5cc2142b1
+MATCH  A2 a2-elementary td-coeff (control)  39301b5793c90079
+MATCH  A2 a2-elementary td-verifier (control)  8a86834049936847
+MISMATCH  A2 a2-s nc-a2 (control): 5ac61d2be007e714ced5d57abd2fd5618934e153305e3b031da42c5faee43e86 != expected 2af72f46470e6157d365993ab6afe67d8236f2678243742cc652da33b3cf77b8
+  (information) run.log differs from the record's: A2 a2-s nc-a2 (control)
+MATCH  A2 a2-s nc-bound (control)  482ab8208af00123
+MISMATCH  A2 a2-s nc-res (control): 19b24b31ba5a1bbecf169f59cb78296d409a7351aa0ef3d10aec018356bd188b != expected 7f32474b71ff9d916ccc862448d713b8f5470daae39d9fd1302398b041e253f6
+  (information) run.log differs from the record's: A2 a2-s nc-res (control)
+MISMATCH  A2 a2-s nc-zm (control): 7069e28998cf1f981b5ef574f585f26b832ee7d5d9aea6ef03330c94c984c8fc != expected 38e42ea8dde7ef03edfad0645d85606f8f5f84c11a12e4ab9d4d09bf0d7618e3
+  (information) run.log differs from the record's: A2 a2-s nc-zm (control)
+MATCH  A2 a2-s none (cited)  4d37bd9e3d83585d
+MISMATCH  A2 a2-s td-chart (control): 0d0f770b49173fb5662bbeba4ac45e2ecd7681ba0ed0664a0dcf59efdf4bba32 != expected 0cd45707fcfd2ffcb523935a2d964f6f7df29be093eaee3ce41d798934abdeae
+  (information) run.log differs from the record's: A2 a2-s td-chart (control)
+MATCH  A2 a2-s td-coeff (control)  769f95677b8e7234
+MATCH  A2 a2-s td-cover (control)  309a09d6af7b3794
+MATCH  A2 a2-s td-verifier (control)  aec9316eeb9568e9
+MATCH  A2 a2-s-check d0 (control)  38f8bb810dfc26e5
+MATCH  A2 a2-s-check d6 (control)  0cc5a2d9ebd71e59
+MATCH  A2 a2-s-check none (control)  4d37bd9e3d83585d
+MATCH  A2 a2-s-check scheck (control)  86de4cb876e9d2f2
+MATCH  A2 a2-s-check td-H (control)  82ba266ede187cd0
+MATCH  A2 a2-s-check td-L (control)  59947b79d26bc199
+MATCH  A2 a2-s-check td-S (control)  63b59ef3b88be597
+MATCH  A2 a2-s-check td-design (control)  976350ba5c2b3f5d
+MATCH  A2 a2-s-check td-divC (control)  364cfe3468dcb11d
+MATCH  A2 a2-s-check td-divT (control)  439cafb477e6165a
+MATCH  A2 a2-s-check td-gres (control)  000f8e2b44b94feb
+MATCH  A2 a2-s-check td-param (control)  a6b96622bf2a8d44
+part A2: cited 2/2 MATCH; controls 21/25 MATCH (information); run.log 23/27 byte-identical (information)
+canon compare A2: PASS

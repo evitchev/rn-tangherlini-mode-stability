@@ -1,0 +1,23 @@
+ok   1. lines 1-520 are the v2 build's: prefix sha256 eb9af1c12d32c288...
+ok   1. the v3 section starts at line 521
+ok   1. the file ends with the namespace: 682 lines
+ok   2. HmN's body is the c_n layer's, byte for byte: f4a710dc71517c96...
+ok   2. UmN's body is the c_n layer's, byte for byte: e69e48f7a9bca631...
+ok   3. UmN(K = 1, y = 0) = potentials.py U_minus(n), symbolic n
+ok   3. UmN(K, y = 0) = U_minus(n, K), symbolic n and K
+ok   3. HmN = potentials.py H_minus(n), symbolic n
+ok   4. UmN(4, 1, m, delta, x, 0) = the file's TARGET.md Um
+ok   4. HmN(4, m, delta, x) = the file's TARGET.md Hm
+     parsed Fn  = q**2*xH**2*(1 - z)**(2*n - 2)/4 - xH*(1 - z)**(n - 1) + 1
+     parsed Fn' = xH*(1 - z)**(n - 2)*(n - 1)*(-q**2*xH*(1 - z)**(n - 1)/2 + 1)
+ok   5. Fn' = d/dz Fn for n = 2..12
+ok   6. Fn(1 - 1/rho) = 1 - 2M/rho^(n-1) + (qM)^2/rho^(2(n-1)), x_H = 2M, n = 2..12
+ok   7. N(1) = 64 m^2 (m + n(n + 2)/4 - P(1)^2 + P(1)) for n = 2..12
+ok   8. f(0) = 0 at q = 0, 3/5, 1 for n = 2..12
+ok   8. f > 0 on z = j/20 (j = 1..19), q in {0, 1/2, 3/5, 99/100, 1}, n = 2..12: min 0.00250000
+ok   8. H > 0 on that grid with z = 1 added, m in {1/10, 6, 100}, delta in {0, 1/2}: min 0.100000
+ok   8. controls: f = 0 at n = 1; f(0) = 1 at q^2 = 2; H = 0 at z = 1, m = 0, n = 2: 0, 1, 0
+ok   9. prop3_Dn adds exactly n, hn: n : ℕ, hn : 2 ≤ n
+ok   9. otherwise only hP and hP' differ, in prop3_Ioo's form: hP : ∀ z ∈ Set.Ioo (0 : ℝ) 1, HasDerivAt P (P' z) z; hP' : ContinuousOn P' (Set.Ioo (0 : ℝ) 1)
+ok   9. the conclusions agree: 0 ≤ ∫ t, (‖φ' t‖ ^ 2 + Vrho (Un n q m δ) (Hn n q m δ) (Fn n q) (R t) * ‖φ t‖ ^ 2)
+ALL P3 V3 CHECKS HOLD (20/20)

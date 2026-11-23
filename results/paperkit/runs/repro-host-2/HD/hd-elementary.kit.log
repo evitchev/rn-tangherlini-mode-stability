@@ -1,0 +1,11 @@
+none: exit 0, VERIFIED
+nc-onset-h: exit 1, REJECT: NC D=7 l=2 q<=951/1000
+nc-onset-i: exit 1, REJECT: NC D=10 l=3 q<=99/200
+nc-zero: exit 1, REJECT: NC D=8 l=2 q<=1/10
+nc-coverage: exit 1, REJECT: NC D=7 l=4 q<=99/100
+nc-uniform: exit 1, REJECT: E3 D=11
+td-coeff: exit 1, REJECT: E0n
+td-param: exit 1, REJECT: E2 D=7 l=2 q<=237/250, E2 D=7 l=3 q<=977/1000, E2 D=8 l=3 q<=118/125, E2 D=8 l=4 q<=983/1000, E2 D=9 l=3 q<=921/1000, E2 D=9 l=4 q<=119/125, E2 D=9 l=5 q<=987/1000, E2 D=10 l=3 q<=49/100, E2 D
+td-verifier: exit 1, REJECT: KAT
+IDENTICAL after masking
+KIT PASS

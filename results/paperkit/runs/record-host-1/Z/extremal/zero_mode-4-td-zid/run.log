@@ -1,0 +1,9 @@
+q1: PASS  (n+1)^2 delta (1 + m delta) = 1; 1 + 2 m delta - (2l+n-1)/(n+1) = 0
+H: PASS  H_-(2Y) - (l + n) h = 0
+Z-pos: PASS  h at l = 2 + t: 4*Y + t + 1
+Z-inf: PASS  W(0) - nu (nu + 1) = 0
+Z-thr: PASS  alpha (alpha - 1) (n-1)^2 - W(1) = 0; W(1) = ell*(ell - 3)
+Z-id: FAIL  identity residual nonzero: 3*Y*(8*Y**2 + 3*Y*ell - 7*Y + ell**2 - 1)/(4*Y + ell - 1)
+P-reg: FAIL  not computed: Z-id failed
+P-asym: FAIL  not computed: Z-id failed
+REJECT: Z-id, P-reg, P-asym

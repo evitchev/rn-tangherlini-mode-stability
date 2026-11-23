@@ -1,0 +1,22 @@
+{
+ "archive_sha256": "1919eb718e2d547cbe32cc02602ab2fae40a24e7daebec2c439db07627d30d7a",
+ "claim": "results/extremal/PREREG.md: Z, the extremal zero mode, and its Darboux partner",
+ "control": "td-zid",
+ "n": "4",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "a188aba",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.002,
+  "utc_start": "2026-10-26T17:58:11+00:00"
+ },
+ "verdict": "REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'"
+}

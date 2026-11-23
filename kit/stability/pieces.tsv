@@ -1,0 +1,19 @@
+# The paper kit's pieces (kit/stability/README.md). Columns: part, piece (its output folder), the command that re-runs
+# it, its registered record folder, the regular expression of its cited jobs (the certificates Theorem 1 uses; the
+# other jobs are its controls and drills), and "p3" where the design_rule exception applies (canon.py).
+# part	piece	command	record	cited	p3
+A1	onset	kit/onset/run.sh	results/onset/runs/record	main	-
+A1	p3	kit/stability/run.sh (its seven tiers)	results/p3/runs/record	T3	p3
+A1	a1	kit/a1/run.sh	results/a1/runs/record	main	-
+A2	a2-elementary	kit/a2/run_elementary.sh	results/a2/elementary/runs/record	none	-
+A2	a2-s	kit/a2/run_s.sh	results/a2/s/runs/record	none	-
+A2	a2-s-check	kit/a2/run_s_check.sh	results/a2/s/check-runs/record	(none)	-
+HD	hd-elementary	kit/hd/run_elementary.sh	results/hd/elementary/runs/record	main	-
+HD	hd-s	kit/hd/run_s.sh	results/hd/s/runs/record	[0-9]+-[0-9]+	-
+HD	hd-s-check	kit/hd/run_s_check.sh	results/hd/s/check-runs/record	(none)	-
+HDX	hdx-elementary	kit/hdx/run_elementary.sh	results/hdx/elementary/runs/record	none	-
+HDX	hdx-s	kit/hdx/run_s.sh	results/hdx/s/runs/record	[0-9]+-[0-9]+-none	-
+HDX	hdx-s-gate	kit/hdx/run_s.sh --gate	results/hdx/s/runs/record-gate	(none)	-
+HDX	hdx-critical	kit/hdx/run_critical.sh	results/hdx/critical/runs/record	D[0-9]+l[0-9]+/none	-
+HDX	hdx-critical-a1	kit/hdx/run_critical_a1.sh	results/hdx/critical/runs/record-a1	(none)	-
+Z	extremal	kit/extremal/run.sh	results/extremal/runs/record	zero_mode-([2-9]|N)-none	-

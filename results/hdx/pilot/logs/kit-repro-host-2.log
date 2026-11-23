@@ -1,0 +1,4 @@
+main: VALID (least degrees 7,3: 12, 8,3: 16, 8,4: 12, 9,4: 12, 9,5: 12, 10,4: 20, 10,5: 12, 10,6: 12, 11,5: 16, 11,6: 12, 11,7: 12)
+gate-a2: VALID: qualifies at degree 12; against A2-PILOT's record: IDENTICAL
+KIT PASS
+exit=0

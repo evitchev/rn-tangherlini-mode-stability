@@ -1,0 +1,35 @@
+D=7 l=2 none: VERIFIED
+D=7 l=3 none: VERIFIED
+D=8 l=2 none: VERIFIED
+D=8 l=3 none: VERIFIED
+D=8 l=4 none: VERIFIED
+D=9 l=2 none: VERIFIED
+D=9 l=3 none: VERIFIED
+D=9 l=4 none: VERIFIED
+D=9 l=5 none: VERIFIED
+D=10 l=2 none: VERIFIED
+D=10 l=3 none: VERIFIED
+D=10 l=4 none: VERIFIED
+D=10 l=5 none: VERIFIED
+D=11 l=2 none: VERIFIED
+D=11 l=3 none: VERIFIED
+D=11 l=4 none: VERIFIED
+D=11 l=5 none: VERIFIED
+D=11 l=6 none: VERIFIED
+D=7 l=2 td-coeff: REJECT: E0n
+D=7 l=2 td-horizon: REJECT: td-horizon
+D=7 l=2 nc-bound: REJECT: nc-bound (b)
+D=8 l=2 td-coeff: REJECT: E0n
+D=8 l=2 td-horizon: REJECT: td-horizon
+D=8 l=2 nc-bound: REJECT: nc-bound (b)
+D=9 l=2 td-coeff: REJECT: E0n
+D=9 l=2 td-horizon: REJECT: td-horizon
+D=9 l=2 nc-bound: REJECT: nc-bound (b)
+D=10 l=2 td-coeff: REJECT: E0n
+D=10 l=2 td-horizon: REJECT: td-horizon
+D=10 l=2 nc-bound: REJECT: nc-bound (b)
+D=11 l=2 td-coeff: REJECT: E0n
+D=11 l=2 td-horizon: REJECT: td-horizon
+D=11 l=2 nc-bound: REJECT: nc-bound (b)
+D=7 l=2 td-verifier: REJECT: KAT
+KIT PASS

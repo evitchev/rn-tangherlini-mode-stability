@@ -1,0 +1,25 @@
+BHModesA1.lean:160:13: error(lean.unknownIdentifier): Unknown constant `HasDerivAt.add`
+BHModesA1.lean:151:105: error: unsolved goals
+M r : ℝ
+hr : r ≠ 0
+h3 : HasDerivAt (fun r => r ^ 3) (3 * r ^ 2) r
+h6 : HasDerivAt (fun r => r ^ 6) (6 * r ^ 5) r
+hr3 : r ^ 3 ≠ 0
+hr6 : r ^ 6 ≠ 0
+hA : HasDerivAt (fun r => 2 * M / r ^ 3) ((0 * r ^ 3 - 2 * M * (3 * r ^ 2)) / (r ^ 3) ^ 2) r
+hB : HasDerivAt (fun r => M ^ 2 / r ^ 6) ((0 * r ^ 6 - M ^ 2 * (6 * r ^ 5)) / (r ^ 6) ^ 2) r
+⊢ HasDerivAt (fun r => 1 - 2 * M / r ^ 3 + M ^ 2 / r ^ 6) (6 * M / r ^ 4 - 6 * M ^ 2 / r ^ 7) r
+BHModesA1.lean:176:13: error(lean.unknownIdentifier): Unknown constant `HasDerivAt.sub`
+BHModesA1.lean:167:108: error: unsolved goals
+M r : ℝ
+hr : r ≠ 0
+h4 : HasDerivAt (fun r => r ^ 4) (4 * r ^ 3) r
+h7 : HasDerivAt (fun r => r ^ 7) (7 * r ^ 6) r
+hr4 : r ^ 4 ≠ 0
+hr7 : r ^ 7 ≠ 0
+hA : HasDerivAt (fun r => 6 * M / r ^ 4) ((0 * r ^ 4 - 6 * M * (4 * r ^ 3)) / (r ^ 4) ^ 2) r
+hB : HasDerivAt (fun r => 6 * M ^ 2 / r ^ 7) ((0 * r ^ 7 - 6 * M ^ 2 * (7 * r ^ 6)) / (r ^ 7) ^ 2) r
+⊢ HasDerivAt (fun r => 6 * M / r ^ 4 - 6 * M ^ 2 / r ^ 7) (-24 * M / r ^ 5 + 42 * M ^ 2 / r ^ 8) r
+Command exited with non-zero status 1
+WALL 6.04 s PEAK 1469544 KB
+exit 1

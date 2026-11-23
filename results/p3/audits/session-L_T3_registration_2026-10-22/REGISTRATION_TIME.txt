@@ -1,0 +1,3 @@
+REGISTRATION.md sha256 1224713c339f41741cc4b8c3a3ca25d75c9cebb700fca9617d10a74f18550ea2
+written and hashed 2026-10-22T23:48:25Z (UTC), before any run of the item (c) option B re-run
+status: registered, not started; the run waits for the operator's ruling (bh-modes lead, third message, section 4)

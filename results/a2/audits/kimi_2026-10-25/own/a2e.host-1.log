@@ -1,0 +1,10 @@
+gate: U_-(x_H) at q=1 == 64 l (l-3) (l+3)^2 (l+4)^2  identically in ell: OK
+ell=3: POSITIVE {'splitting': 'exact', 'K>0': True, 'G>0': True, 'mu_lo': '11/100'}
+ell=4: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '103/1000'}
+ell=5: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '49/500'}
+ell=6: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '47/500'}
+ell=7: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '91/1000'}
+ell=8: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '89/1000'}
+ell=9: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '87/1000'}
+ell=10: POSITIVE {'strict': True, 'nodes': 1, 'mu_lo': '43/500'}
+A2-E: ALL OK

@@ -1,0 +1,14 @@
+T1_rule1: POSITIVE  {'nodes': 3, 'min_bernstein_coeff': '4478333705584421399589314638958369852981332706351898290911/23120120837076854221327405423150304104746496921423577088'}
+T1_rule2: POSITIVE  {'nodes': 3, 'min_bernstein_coeff': '53484199183954685054812463345658311958747671000777982187857941/1656524834127245896607484603620228915551301299743001394806784'}
+G1_rule2: POSITIVE  {'nodes': 5, 'min_bernstein_coeff': '37055305475378325436005226246011969395931500339/981232788735347418227571603996527906263138304'}
+T2_rule1_box0 mu in [97/600,103/600]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box0 mu in [3/25,13/100]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box1 mu in [13/100,7/50]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box2 mu in [7/50,3/20]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box3 mu in [3/20,4/25]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box4 mu in [4/25,17/100]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box5 mu in [17/100,9/50]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box6 mu in [9/50,19/100]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T3_rule1_box7 mu in [19/100,1/5]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+T2_rule2_box0 mu in [97/600,103/600]: POSITIVE  Den_exps=[0, 3, 1] {'nodes': 3}
+ALL CERTIFICATES: POSITIVE

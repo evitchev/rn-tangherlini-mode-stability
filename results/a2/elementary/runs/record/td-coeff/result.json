@@ -1,0 +1,257 @@
+{
+ "archive_sha256": "6971234840077323f9559568f9de376db835be022c3ad244ea822fa93e26b93a",
+ "checks": {
+  "E l=10": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '9388431360', 'max_bernstein_Den': '1182680912709/12500000000', 'U_lower_bound': '4346496000000000000/43802996767', 'U_lower_bound_approx': 99228279.35997596}",
+   "ok": true
+  },
+  "E l=3": {
+   "detail": "l=3: the splitting fails: {'F(1, mu) divisible by mu': False, 'F(1 - s, mu) - F(1, mu) divisible by s': True, 'F(1 - s, mu) = mu K + s G': False, 'F(1, 0)': '2744'}",
+   "ok": false
+  },
+  "E l=4": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '32118784', 'max_bernstein_Den': '11150011011643/200000000000', 'U_lower_bound': '6423756800000000000/11150011011643', 'U_lower_bound_approx': 576121.1171264515}",
+   "ok": true
+  },
+  "E l=5": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '149310864', 'max_bernstein_Den': '97130390463/1562500000', 'U_lower_bound': '320025000000000/133237847', 'U_lower_bound_approx': 2401907.6201373925}",
+   "ok": true
+  },
+  "E l=6": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '17920000', 'max_bernstein_Den': '171359687181/62500000000', 'U_lower_bound': '1120000000000000000/171359687181', 'U_lower_bound_approx': 6535959.643862978}",
+   "ok": true
+  },
+  "E l=7": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '1103984640', 'max_bernstein_Den': '7496798004383/100000000000', 'U_lower_bound': '110398464000000000000/7496798004383', 'U_lower_bound_approx': 14726082.246774634}",
+   "ok": true
+  },
+  "E l=8": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '2438553600', 'max_bernstein_Den': '16302200172687/200000000000', 'U_lower_bound': '2007040000000000000/67087243509', 'U_lower_bound_approx': 29916864.89147148}",
+   "ok": true
+  },
+  "E l=9": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '4949401600', 'max_bernstein_Den': '137427108821/1562500000', 'U_lower_bound': '7733440000000000000/137427108821', 'U_lower_bound_approx': 56273031.32799565}",
+   "ok": true
+  },
+  "E0": {
+   "detail": "S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: -delta*m**2*x**2 - m*x**2, 0",
+   "ok": false
+  },
+  "H": {
+   "detail": "H_- = m + 10 x + 10 m delta x: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  }
+ },
+ "claim": "results/a2/elementary/PREREG.md (A2-E: l = 3..10)",
+ "control": "td-coeff",
+ "parts": [
+  {
+   "ell": 3,
+   "failure": "l=3: the splitting fails: {'F(1, mu) divisible by mu': False, 'F(1 - s, mu) - F(1, mu) divisible by s': True, 'F(1 - s, mu) = mu K + s G': False, 'F(1, 0)': '2744'}"
+  },
+  {
+   "Den": "5*(mu + 1)**3*(3*mu + 8)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "6423756800000000000/11150011011643",
+    "U_lower_bound_approx": 576121.1171264515,
+    "max_bernstein_Den": "11150011011643/200000000000",
+    "min_bernstein_F": "32118784"
+   },
+   "ell": 4,
+   "m": 24,
+   "mu_lo": "103/1000",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900005079034008,
+   "q_at_mu_lo_squared": "63226555957929/64510244957929"
+  },
+  {
+   "Den": "5*(mu + 1)**3*(4*mu + 9)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "320025000000000/133237847",
+    "U_lower_bound_approx": 2401907.6201373925,
+    "max_bernstein_Den": "97130390463/1562500000",
+    "min_bernstein_F": "149310864"
+   },
+   "ell": 5,
+   "m": 36,
+   "mu_lo": "49/500",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900161602760024,
+   "q_at_mu_lo_squared": "312772999176/319113139801"
+  },
+  {
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "1120000000000000000/171359687181",
+    "U_lower_bound_approx": 6535959.643862978,
+    "max_bernstein_Den": "171359687181/62500000000",
+    "min_bernstein_F": "17920000"
+   },
+   "ell": 6,
+   "m": 50,
+   "mu_lo": "47/500",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900977280959307,
+   "q_at_mu_lo_squared": "27471514409/28023764409"
+  },
+  {
+   "Den": "5*(mu + 1)**3*(6*mu + 11)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "110398464000000000000/7496798004383",
+    "U_lower_bound_approx": 14726082.246774634,
+    "max_bernstein_Den": "7496798004383/100000000000",
+    "min_bernstein_F": "1103984640"
+   },
+   "ell": 7,
+   "m": 66,
+   "mu_lo": "91/1000",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901509410357423,
+   "q_at_mu_lo_squared": "29925587924649/30523890174649"
+  },
+  {
+   "Den": "5*(mu + 1)**3*(7*mu + 12)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "2007040000000000000/67087243509",
+    "U_lower_bound_approx": 29916864.89147148,
+    "max_bernstein_Den": "16302200172687/200000000000",
+    "min_bernstein_F": "2438553600"
+   },
+   "ell": 8,
+   "m": 84,
+   "mu_lo": "89/1000",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901134962804157,
+   "q_at_mu_lo_squared": "142474321369809/145333802369809"
+  },
+  {
+   "Den": "5*(mu + 1)**3*(8*mu + 13)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "7733440000000000000/137427108821",
+    "U_lower_bound_approx": 56273031.32799565,
+    "max_bernstein_Den": "137427108821/1562500000",
+    "min_bernstein_F": "4949401600"
+   },
+   "ell": 9,
+   "m": 104,
+   "mu_lo": "87/1000",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901674898858085,
+   "q_at_mu_lo_squared": "2613126399136/2665281539761"
+  },
+  {
+   "Den": "5*(mu + 1)**3*(9*mu + 14)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "4346496000000000000/43802996767",
+    "U_lower_bound_approx": 99228279.35997596,
+    "max_bernstein_Den": "1182680912709/12500000000",
+    "min_bernstein_F": "9388431360"
+   },
+   "ell": 10,
+   "m": 126,
+   "mu_lo": "43/500",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.990064048395034,
+   "q_at_mu_lo_squared": "12122233672881/12366763922881"
+  }
+ ],
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "e422d74",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "qmax": "99/100",
+ "timing": {
+  "l=10": 0.67,
+  "l=3": 0.7,
+  "l=4": 0.62,
+  "l=5": 0.65,
+  "l=6": 0.6,
+  "l=7": 0.66,
+  "l=8": 0.65,
+  "l=9": 0.65,
+  "t_total_s": 5.21,
+  "utc_start": "2026-10-24T03:35:50+00:00"
+ },
+ "verdict": "REJECT: E0, E l=3"
+}

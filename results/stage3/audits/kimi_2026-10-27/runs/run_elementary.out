@@ -1,0 +1,8 @@
+none: VERIFIED
+nc-band: REJECT: E D=7 l=3, E D=11 l=7
+nc-strict: REJECT: E D=7 l=4, E D=11 l=8
+nc-bump: REJECT: E D=7 l=5, E D=11 l=9
+td-coeff: REJECT: E0n, EXT, A2E4, E D=7 l=4, E D=8 l=5, E D=9 l=6, E D=10 l=7, E D=11 l=8
+td-verifier: REJECT: KAT
+td-mulo: REJECT: MEET
+KIT PASS

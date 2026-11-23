@@ -1,0 +1,2 @@
+# file	sha256	origin
+BHModesLemmaU.lean	112e1cb901d0384c66044b9102392ce57633f41983a90bd15e7890d213eae85f	new (session-L, 2026-10-23): hand-written from bh-modes results/a1/RESULT.md Part II (BHM-052) and TARGET.md's U_-; Pos derived from U_- by hand and checked by oracle/check_lemmaU.py

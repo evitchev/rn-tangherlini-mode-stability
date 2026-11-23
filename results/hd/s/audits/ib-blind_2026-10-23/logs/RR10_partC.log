@@ -1,0 +1,36 @@
+2026-10-23T16:22:09Z
+host-2
+ 12:22:09 up 8 days, 20:22,  0 users,  load average: 1.50, 1.35, 0.84
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          95           0          27         121
+Swap:            49           0          49
+START 2026-10-23T16:22:09Z mode C
+   C9: Lemma 2 identity symbolic: True ; concrete instance: True
+   C9: N(1) = -784*(2*p1 - 9)*(2*p1 + 7) ; roots in P(1): [-7/2, 9/2]
+GUARD tamper=None {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True, 'C8': True, 'C9': True, 'C10': True} -> PASS
+GATE {'load1': 1.5, 'nproc': 16, 'mem_available_gb': 121.45, 'requested': 8, 'w': 8, 'rule': 'w <= min(8, nproc-2-ceil(load1)); MemAvailable >= 16 GB + 2 GB*w', 'ok': True}
+BERNSTEIN SELF-TEST True pos leaves 16 neg failure {'corner': ('5/16', '1/2'), 'value': '-163/288000'}
+pieces built in 0.2s; deg_z(UD)=16 deg_mu(UD)=8 deg_z(G)=8 deg_mu(G)=6
+cell [1237/10000, 4267/32000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [4267/32000, 11439/80000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [11439/80000, 24421/160000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [24421/160000, 6491/40000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [6491/40000, 27507/160000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [27507/160000, 581/3200] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [581/3200, 30593/160000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [30593/160000, 4017/20000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [4017/20000, 33679/160000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  5s
+cell [33679/160000, 17611/80000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [17611/80000, 7353/32000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [7353/32000, 9577/40000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [9577/40000, 39851/160000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [39851/160000, 20697/80000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [20697/80000, 42937/160000] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+cell [42937/160000, 139/500] depth 0: CERTIFIED  attempts=[(24, 0.02, 0.0, True, 2)]  8s
+Part C coverage: {'certified_cells': 16, 'covers_region': True, 'region': ['1237/10000', '139/500']}
+TP1 (band, first certified cell): True
+END 2026-10-23T16:22:33Z
+EXIT=0
+2026-10-23T16:22:33Z
+host-2

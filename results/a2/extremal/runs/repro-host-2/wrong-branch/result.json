@@ -1,0 +1,60 @@
+{
+ "checks": {
+  "E0": {
+   "detail": "S5 (5.63b),(5.62b) at n=4 minus TARGET.md forms: U 0, H 0",
+   "ok": true
+  },
+  "E1": {
+   "detail": "m - (l-1)(l+4), 25+4m-(2l+3)^2, delta - 1/(5(l+4)): [0, 0, (-2*ell - 3)/(5*ell**2 + 15*ell - 20)]",
+   "ok": false
+  },
+  "E2": {
+   "detail": "f - (1-x/2)^2, f(1), lim (r-1)^2/f - 1/9: [0, 0, 0]",
+   "ok": true
+  },
+  "E3": {
+   "detail": "c(l) = (ell + 3)*(ell + 6)/9; c - claimed = 4*ell/3 + 2",
+   "ok": false
+  },
+  "E4": {
+   "detail": "c + 1/4 - (2l-3)^2/36 = 4*ell/3 + 2",
+   "ok": false
+  },
+  "E5": {
+   "detail": "p analytic at 1, (r-1)^2 V/f^2 analytic at 1 for l >= 2, p(1) = 2, q(1) = c, indicial roots (l-3)/3 and -l/3: [True, True, True, True, False]; p(1) = 2, q(1) = ell**2/9 + ell + 2",
+   "ok": false
+  },
+  "flint": {
+   "detail": "l=2: delta = -1/5 != 1/(5(l+4))",
+   "ok": false
+  }
+ },
+ "claim": "TARGET_A2.md section 3, checks E0-E5",
+ "control": "wrong-branch",
+ "ell_max": 1000,
+ "facts": {
+  "H_minus_at_horizon": "ell*(ell - 1)",
+  "c": "(ell + 3)*(ell + 6)/9",
+  "delta_q1": "-1/(5*ell - 5)",
+  "indicial_roots": [
+   "ell/3 - 1",
+   "-ell/3"
+  ],
+  "margin": "(2*ell + 9)**2/36"
+ },
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "8a19e06",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.119
+ },
+ "verdict": "REJECT: E1, E3, E4, E5, flint"
+}

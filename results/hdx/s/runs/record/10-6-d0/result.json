@@ -1,0 +1,147 @@
+{
+ "D": 10,
+ "THROAT": {
+  "T(zeta, 0) - pencil limit": "-43800096875085824*zeta**2 - 16983711033196544*zeta - 1646380151177216",
+  "information": "T(zeta, 0) = 64 (n-1)^2 H(2)^2 L(0) [(c - a - a^2)(eps_d(0) zeta + eps_n'(0))^2 + (a^2 - a) eps_n'(0)^2]"
+ },
+ "archive_sha256": "99e8a5e2066aaae06939e5f82d5160d83c173bf5e3f1585734aea130578d8c65",
+ "bernstein_leaves": {
+  "L": 1,
+  "POS-C": 1,
+  "POS-O": 1,
+  "POS-O'": 1,
+  "POS-T": 1,
+  "eps_d": 1
+ },
+ "checks": {
+  "COVER": {
+   "detail": "ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]",
+   "ok": true
+  },
+  "DESIGN": {
+   "detail": "pilot record sealed; degree 12",
+   "ok": true
+  },
+  "DIV-C": {
+   "detail": "NL(z, z sigma) divisible by z^2",
+   "ok": true
+  },
+  "DIV-T": {
+   "detail": "NL(mu zeta, mu) divisible by mu^2",
+   "ok": true
+  },
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "G-RES": {
+   "detail": "N polynomial in z: True; H(2) = (ell + 7)*(ell + 8); N(0) - 64 (n-1)^2 H(2)^2 (c - a(a+1)) = 0 (n = 8)",
+   "ok": true
+  },
+  "H": {
+   "detail": "every coefficient of H_- > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "L": {
+   "detail": "L = Ud Hd^2 fd > 0 on [0, 1/8]",
+   "ok": true
+  },
+  "PARAM": {
+   "detail": "s^2 = 1 + 4 m q^2/81, q(0) = 1, q(1/8)^2 = 788697/811801 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]",
+   "ok": true
+  },
+  "POS-C": {
+   "detail": "at (0, 0); POS-C: sign*p = 0 <= 0 at (t, mu) = (0, 0)  (a counterexample)",
+   "ok": false
+  },
+  "POS-O": {
+   "detail": "> 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 7340931340727627385927860675507205780434467459460062376933639353/11692013098647223345629478661730264157247460343808",
+   "ok": true
+  },
+  "POS-O'": {
+   "detail": "> 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 900568759918442365466447786390446702514338914205332456463934712441576039/87879424295413530693701051924907329825432976222496483180544",
+   "ok": true
+  },
+  "POS-T": {
+   "detail": "> 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7408710680297472",
+   "ok": true
+  },
+  "S": {
+   "detail": "eps_n = 19*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0",
+   "ok": true
+  }
+ },
+ "claim": "HD-X-S (HD-X-1's S-certificate), band D,l = 10,6, q in [q(1/8), 1]",
+ "control": "d0",
+ "degrees": {
+  "C": [
+   70,
+   18
+  ],
+  "NL": [
+   54,
+   18
+  ],
+  "T": [
+   54,
+   70
+  ]
+ },
+ "design": {
+  "a": "-2/7",
+  "degree": 12,
+  "p0": {
+   "(0,)": "12010661663729490237/4611686018427387904",
+   "(1,)": "3164232538068147651/2305843009213693952",
+   "(10,)": "24971478540104727/274877906944",
+   "(11,)": "-3561636094455467/274877906944",
+   "(12,)": "-19754227717/33554432",
+   "(2,)": "10728392130714475299/144115188075855872",
+   "(3,)": "-62318856800652277389/72057594037927936",
+   "(4,)": "204807258961311067663/18014398509481984",
+   "(5,)": "-577617399245073867227/9007199254740992",
+   "(6,)": "215435475663286441661/1125899906842624",
+   "(7,)": "-191268771206593629363/562949953421312",
+   "(8,)": "26250763897180665541/70368744177664",
+   "(9,)": "-8738860216753368173/35184372088832"
+  }
+ },
+ "ell": 6,
+ "eps": {
+  "den": "35*mu**2 + 133*mu + 98",
+  "num": "19*mu"
+ },
+ "min_bernstein": {
+  "L": "537824",
+  "POS-O": "7340931340727627385927860675507205780434467459460062376933639353/11692013098647223345629478661730264157247460343808",
+  "POS-O'": "900568759918442365466447786390446702514338914205332456463934712441576039/87879424295413530693701051924907329825432976222496483180544",
+  "POS-T": "7408710680297472",
+  "eps_d": "98"
+ },
+ "n": 8,
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "bf23bfc",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "POS-C": 0.1,
+  "POS-O": 0.1,
+  "POS-O'": 0.1,
+  "POS-T": 0.3,
+  "build_s": 2.0,
+  "t_total_s": 6.7,
+  "utc_start": "2026-10-26T18:28:07+00:00"
+ },
+ "verdict": "REJECT: POS-C"
+}

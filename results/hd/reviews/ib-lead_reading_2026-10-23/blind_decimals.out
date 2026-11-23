@@ -1,0 +1,11 @@
+mu=1237/10000 (q top) q^2 = 482351496417168561/492144578017168561  q = 0.990000611118724 (floor)
+mu=2780/10000 (blind split) q^2 = 2821360801041/3130496801041  q = 0.949341971366875 (floor)
+mu=2817/10000 (q bottom) q^2 = 450385526985669121/501172656585669121  q = 0.947978589867229 (floor)
+blind E2 lower 0.94797859 (lower end: inward iff >= exact): inward True
+blind E2 upper 0.99000061: inward True
+blind E0 lower 0.947979: inward True
+blind E0 upper 0.949342: inward False
+blind C lower 0.949342: inward True
+blind C upper 0.990001: inward False
+bh-modes S(7,2) lower 0.94798: inward True
+bh-modes S(7,2) upper 0.99000: inward True

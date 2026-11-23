@@ -1,0 +1,1743 @@
+{
+ "A2E4": [
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(2*mu + 7)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "275106444444/390625",
+    "min_bernstein_K": "12192768"
+   },
+   "ell": 3,
+   "m": 14,
+   "mu_lo": "11/100",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.990017951916537,
+   "q_at_mu_lo_squared": "134331349/137053849",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(3*mu + 8)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "802816",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "917504000000000000/1592858715949",
+    "U_lower_bound_approx": 576010.9109572632,
+    "max_bernstein_Den": "11150011011643/1000000000000",
+    "min_bernstein_F": "6422528"
+   },
+   "ell": 4,
+   "m": 24,
+   "mu_lo": "103/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900005079034008,
+   "q_at_mu_lo_squared": "63226555957929/64510244957929"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(4*mu + 9)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "3317760",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "320000000000000/133237847",
+    "U_lower_bound_approx": 2401719.9857635046,
+    "max_bernstein_Den": "97130390463/7812500000",
+    "min_bernstein_F": "29859840"
+   },
+   "ell": 5,
+   "m": 36,
+   "mu_lo": "49/500",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900161602760024,
+   "q_at_mu_lo_squared": "312772999176/319113139801"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "9331200",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "1120000000000000000/171359687181",
+    "U_lower_bound_approx": 6535959.643862978,
+    "max_bernstein_Den": "171359687181/62500000000",
+    "min_bernstein_F": "17920000"
+   },
+   "ell": 6,
+   "m": 50,
+   "mu_lo": "47/500",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900977280959307,
+   "q_at_mu_lo_squared": "27471514409/28023764409"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(6*mu + 11)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "21683200",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "110398464000000000000/7496798004383",
+    "U_lower_bound_approx": 14726082.246774634,
+    "max_bernstein_Den": "7496798004383/500000000000",
+    "min_bernstein_F": "220796928"
+   },
+   "ell": 7,
+   "m": 66,
+   "mu_lo": "91/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901509410357423,
+   "q_at_mu_lo_squared": "29925587924649/30523890174649"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(7*mu + 12)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "44605440",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "2007040000000000000/67087243509",
+    "U_lower_bound_approx": 29916864.89147148,
+    "max_bernstein_Den": "16302200172687/1000000000000",
+    "min_bernstein_F": "487710720"
+   },
+   "ell": 8,
+   "m": 84,
+   "mu_lo": "89/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901134962804157,
+   "q_at_mu_lo_squared": "142474321369809/145333802369809"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(8*mu + 13)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "84105216",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "7733440000000000000/137427108821",
+    "U_lower_bound_approx": 56273031.32799565,
+    "max_bernstein_Den": "137427108821/7812500000",
+    "min_bernstein_F": "989880320"
+   },
+   "ell": 9,
+   "m": 104,
+   "mu_lo": "87/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901674898858085,
+   "q_at_mu_lo_squared": "2613126399136/2665281539761"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(9*mu + 14)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "148395520",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "4346496000000000000/43802996767",
+    "U_lower_bound_approx": 99228279.35997596,
+    "max_bernstein_Den": "1182680912709/62500000000",
+    "min_bernstein_F": "1877686272"
+   },
+   "ell": 10,
+   "m": 126,
+   "mu_lo": "43/500",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.990064048395034,
+   "q_at_mu_lo_squared": "12122233672881/12366763922881"
+  }
+ ],
+ "MEET": {
+  "D=10 l=10": {
+   "HD-E mu_lo": "59/625",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "667/10000"
+  },
+  "D=10 l=11": {
+   "HD-E mu_lo": "58/625",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "131/2000"
+  },
+  "D=10 l=12": {
+   "HD-E mu_lo": "457/5000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "129/2000"
+  },
+  "D=10 l=13": {
+   "HD-E mu_lo": "901/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "637/10000"
+  },
+  "D=10 l=7": {
+   "HD-E mu_lo": "1011/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "357/5000"
+  },
+  "D=10 l=8": {
+   "HD-E mu_lo": "197/2000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "87/1250"
+  },
+  "D=10 l=9": {
+   "HD-E mu_lo": "963/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "17/250"
+  },
+  "D=11 l=10": {
+   "HD-E mu_lo": "961/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "679/10000"
+  },
+  "D=11 l=11": {
+   "HD-E mu_lo": "59/625",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "667/10000"
+  },
+  "D=11 l=12": {
+   "HD-E mu_lo": "929/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "41/625"
+  },
+  "D=11 l=13": {
+   "HD-E mu_lo": "229/2500",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "647/10000"
+  },
+  "D=11 l=14": {
+   "HD-E mu_lo": "181/2000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "639/10000"
+  },
+  "D=11 l=8": {
+   "HD-E mu_lo": "1003/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "177/2500"
+  },
+  "D=11 l=9": {
+   "HD-E mu_lo": "49/500",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "173/2500"
+  },
+  "D=7 l=10": {
+   "HD-E mu_lo": "177/2000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "1/16"
+  },
+  "D=7 l=4": {
+   "HD-E mu_lo": "1061/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "3/40"
+  },
+  "D=7 l=5": {
+   "HD-E mu_lo": "1011/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "357/5000"
+  },
+  "D=7 l=6": {
+   "HD-E mu_lo": "487/5000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "43/625"
+  },
+  "D=7 l=7": {
+   "HD-E mu_lo": "59/625",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "667/10000"
+  },
+  "D=7 l=8": {
+   "HD-E mu_lo": "921/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "13/200"
+  },
+  "D=7 l=9": {
+   "HD-E mu_lo": "901/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "637/10000"
+  },
+  "D=8 l=10": {
+   "HD-E mu_lo": "907/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "8/125"
+  },
+  "D=8 l=5": {
+   "HD-E mu_lo": "519/5000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "733/10000"
+  },
+  "D=8 l=6": {
+   "HD-E mu_lo": "999/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "353/5000"
+  },
+  "D=8 l=7": {
+   "HD-E mu_lo": "969/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "171/2500"
+  },
+  "D=8 l=8": {
+   "HD-E mu_lo": "59/625",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "667/10000"
+  },
+  "D=8 l=9": {
+   "HD-E mu_lo": "231/2500",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "163/2500"
+  },
+  "D=9 l=10": {
+   "HD-E mu_lo": "463/5000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "327/5000"
+  },
+  "D=9 l=11": {
+   "HD-E mu_lo": "911/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "643/10000"
+  },
+  "D=9 l=6": {
+   "HD-E mu_lo": "511/5000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "361/5000"
+  },
+  "D=9 l=7": {
+   "HD-E mu_lo": "991/10000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "7/100"
+  },
+  "D=9 l=8": {
+   "HD-E mu_lo": "483/5000",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "341/5000"
+  },
+  "D=9 l=9": {
+   "HD-E mu_lo": "59/625",
+   "equal": false,
+   "meets": false,
+   "mu_lo": "667/10000"
+  }
+ },
+ "archive_sha256": "6db58904a6b9b821e67fdf8a43d7d439221af73cdf87b4b3074c9775693bb4f5",
+ "checks": {
+  "A2E4": {
+   "detail": "A2-E record SHA-256 matches: True; l = 3..10 identical field by field: {3: True, 4: True, 5: True, 6: True, 7: True, 8: True, 9: True, 10: True}",
+   "ok": true
+  },
+  "E D=10 l=10": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '359562240', 'max_bernstein_Den': '25084435074372321/10000000000000000', 'U_lower_bound': '1198540800000000000000000/8361478358124107', 'U_lower_bound_approx': 143340776.43524414}",
+   "ok": true
+  },
+  "E D=10 l=11": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '6258041856', 'max_bernstein_Den': '38041128591721/1600000000000', 'U_lower_bound': '10012866969600000000000/38041128591721', 'U_lower_bound_approx': 263211617.0123073}",
+   "ok": true
+  },
+  "E D=10 l=12": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '11089920000', 'max_bernstein_Den': '399693047185691/16000000000000', 'U_lower_bound': '177438720000000000000000/399693047185691', 'U_lower_bound_approx': 443937469.6392074}",
+   "ok": true
+  },
+  "E D=10 l=13": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '6164121600', 'max_bernstein_Den': '21828451628998861/2500000000000000', 'U_lower_bound': '2201472000000000000000000/3118350232714123', 'U_lower_bound_approx': 705973298.6066487}",
+   "ok": true
+  },
+  "E D=10 l=7": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_K': '1106380800', 'min_bernstein_G': '145929831334452621099/610351562500'}",
+   "ok": true
+  },
+  "E D=10 l=8": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '471859200', 'max_bernstein_Den': '49255092729577/2441406250000', 'U_lower_bound': '1152000000000000000000/49255092729577', 'U_lower_bound_approx': 23388444.44623774}",
+   "ok": true
+  },
+  "E D=10 l=9": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '1448902656', 'max_bernstein_Den': '41741919459/1953125000', 'U_lower_bound': '18496000000000000/272823003', 'U_lower_bound_approx': 67794869.92158063}",
+   "ok": true
+  },
+  "E D=11 l=10": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '2844564480', 'max_bernstein_Den': '238832658975173129/10000000000000000', 'U_lower_bound': '28445644800000000000000000/238832658975173129', 'U_lower_bound_approx': 119102826.73257409}",
+   "ok": true
+  },
+  "E D=11 l=11": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '609945600', 'max_bernstein_Den': '25084435074372321/10000000000000000', 'U_lower_bound': '2033152000000000000000000/8361478358124107', 'U_lower_bound_approx': 243157000.82205757}",
+   "ok": true
+  },
+  "E D=11 l=12": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '11379916800', 'max_bernstein_Den': '4010463026496/152587890625', 'U_lower_bound': '334960937500000000/773623269', 'U_lower_bound_approx': 432976813.0332698}",
+   "ok": true
+  },
+  "E D=11 l=13": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '9767197440', 'max_bernstein_Den': '68723750453819643/5000000000000000', 'U_lower_bound': '8518400000000000000000/11987397602271', 'U_lower_bound_approx': 710612952.2546409}",
+   "ok": true
+  },
+  "E D=11 l=14": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '31658339328', 'max_bernstein_Den': '286971802852287533/10000000000000000', 'U_lower_bound': '316583393280000000000000000/286971802852287533', 'U_lower_bound_approx': 1103186411.1156397}",
+   "ok": true
+  },
+  "E D=11 l=8": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_K': '8182038528', 'min_bernstein_G': '863426718103404554087/457763671875'}",
+   "ok": true
+  },
+  "E D=11 l=9": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '485409024', 'max_bernstein_Den': '55366247734083/4882812500000', 'U_lower_bound': '361250000000000000/8438690403', 'U_lower_bound_approx': 42808775.14733491}",
+   "ok": true
+  },
+  "E D=7 l=10": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '835434000', 'max_bernstein_Den': '407779/65536', 'U_lower_bound': '54751002624000/407779', 'U_lower_bound_approx': 134266361.4948293}",
+   "ok": true
+  },
+  "E D=7 l=4": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_K': '26542080', 'min_bernstein_G': '72543847779/20000'}",
+   "ok": true
+  },
+  "E D=7 l=5": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '12960000', 'max_bernstein_Den': '1976535336305101/312500000000000', 'U_lower_bound': '4050000000000000000000/1976535336305101', 'U_lower_bound_approx': 2049040.0174534677}",
+   "ok": true
+  },
+  "E D=7 l=6": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '102220800', 'max_bernstein_Den': '422674082176/30517578125', 'U_lower_bound': '24371337890625000/3302141267', 'U_lower_bound_approx': 7380464.952902028}",
+   "ok": true
+  },
+  "E D=7 l=7": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '46835712', 'max_bernstein_Den': '25084435074372321/10000000000000000', 'U_lower_bound': '156119040000000000000000/8361478358124107', 'U_lower_bound_approx': 18671224.550657716}",
+   "ok": true
+  },
+  "E D=7 l=8": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '647921664', 'max_bernstein_Den': '26004739527/1600000000', 'U_lower_bound': '8860467200000000/222262731', 'U_lower_bound_approx': 39864835.45907658}",
+   "ok": true
+  },
+  "E D=7 l=9": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '667779840', 'max_bernstein_Den': '21828451628998861/2500000000000000', 'U_lower_bound': '238492800000000000000000/3118350232714123', 'U_lower_bound_approx': 76480440.68238693}",
+   "ok": true
+  },
+  "E D=8 l=10": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '2949120000', 'max_bernstein_Den': '4874663864/244140625', 'U_lower_bound': '90000000000000000/609332983', 'U_lower_bound_approx': 147702491.92304105}",
+   "ok": true
+  },
+  "E D=8 l=5": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_K': '348480000', 'min_bernstein_G': '3664138263137075687/61035156250'}",
+   "ok": true
+  },
+  "E D=8 l=6": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '80289792', 'max_bernstein_Den': '1894803470781881/125000000000000', 'U_lower_bound': '912384000000000000000/172254860980171', 'U_lower_bound_approx': 5296709.740487547}",
+   "ok": true
+  },
+  "E D=8 l=7": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '283465728', 'max_bernstein_Den': '319428313909493/19531250000000', 'U_lower_bound': '5536440000000000000000/319428313909493', 'U_lower_bound_approx': 17332339.55449766}",
+   "ok": true
+  },
+  "E D=8 l=8": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '101756928', 'max_bernstein_Den': '25084435074372321/10000000000000000', 'U_lower_bound': '339189760000000000000000/8361478358124107', 'U_lower_bound_approx': 40565764.267085545}",
+   "ok": true
+  },
+  "E D=8 l=9": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '1524096000', 'max_bernstein_Den': '183201912844147/9765625000000', 'U_lower_bound': '14883750000000000000000/183201912844147', 'U_lower_bound_approx': 81242328.58126247}",
+   "ok": true
+  },
+  "E D=9 l=10": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '3219783680', 'max_bernstein_Den': '13293806926559369/625000000000000', 'U_lower_bound': '2012364800000000000000000/13293806926559369', 'U_lower_bound_approx': 151376111.5320207}",
+   "ok": true
+  },
+  "E D=9 l=11": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '2966388480', 'max_bernstein_Den': '22475428790011601/2000000000000000', 'U_lower_bound': '5932776960000000000000000/22475428790011601', 'U_lower_bound_approx': 263967242.42416278}",
+   "ok": true
+  },
+  "E D=9 l=6": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_K': '1177473024', 'min_bernstein_G': '18160105653305552421/78125000000'}",
+   "ok": true
+  },
+  "E D=9 l=7": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '103876864', 'max_bernstein_Den': '883256003/100000000', 'U_lower_bound': '1483955200000000/126179429', 'U_lower_bound_approx': 11760674.554962521}",
+   "ok": true
+  },
+  "E D=9 l=8": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '677376000', 'max_bernstein_Den': '11790595626676727/625000000000000', 'U_lower_bound': '8640000000000000000000/240624400544423', 'U_lower_bound_approx': 35906582.958551295}",
+   "ok": true
+  },
+  "E D=9 l=9": {
+   "detail": "U_- >= 0 on [0, x_H] for q in [q(mu_lo), 1]: {'min_bernstein_F': '199065600', 'max_bernstein_Den': '25084435074372321/10000000000000000', 'U_lower_bound': '663552000000000000000000/8361478358124107', 'U_lower_bound_approx': 79358215.32747081}",
+   "ok": true
+  },
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "EXT": {
+   "detail": "at q = 1, symbolic in l: {4: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 5: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 6: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 7: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 8: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 9: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}}",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- = m + n(n+1)x/2 + n(n+1) m delta x/2, n = 4..9: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "MEET": {
+   "detail": "HD-E record SHA-256 matches: True; l0 = {5: 10, 6: 10, 7: 11, 8: 13, 9: 14}; failures: [\"D=7 l=4: mu_lo = 3/40, HD-E's 1061/10000\", \"D=7 l=5: mu_lo = 357/5000, HD-E's 1011/10000\", \"D=7 l=6: mu_lo = 43/625, HD-E's 487/5000\", \"D=7 l=7: mu_lo = 667/10000, HD-E's 59/625\", \"D=7 l=8: mu_lo = 13/200, HD-E's 921/10000\", \"D=7 l=9: mu_lo = 637/10000, HD-E's 901/10000\", \"D=7 l=10: mu_lo = 1/16, HD-E's 177/2000\", \"D=8 l=5: mu_lo = 733/10000, HD-E's 519/5000\", \"D=8 l=6: mu_lo = 353/5000, HD-E's 999/10000\", \"D=8 l=7: mu_lo = 171/2500, HD-E's 969/10000\", \"D=8 l=8: mu_lo = 667/10000, HD-E's 59/625\", \"D=8 l=9: mu_lo = 163/2500, HD-E's 231/2500\"]",
+   "ok": false
+  },
+  "PARAM4": {
+   "detail": "param_n(4, l) = onset.param(l), l = 2..5: [True, True, True, True]",
+   "ok": true
+  }
+ },
+ "claim": {
+  "D=10": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ],
+  "D=11": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "D=7": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "D=8": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "D=9": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ]
+ },
+ "control": "td-mulo",
+ "grid": {
+  "4": 1000,
+  "5": 10000,
+  "6": 10000,
+  "7": 10000,
+  "8": 10000,
+  "9": 10000
+ },
+ "l0": {
+  "5": 10,
+  "6": 10,
+  "7": 11,
+  "8": 13,
+  "9": 14
+ },
+ "parts": [
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(mu + 3)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "72543847779/20000",
+    "min_bernstein_K": "26542080"
+   },
+   "ell": 4,
+   "m": 27,
+   "mu_lo": "3/40",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950062285203571,
+   "q_at_mu_lo_squared": "2544009/2569609",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(2*mu + 5)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "2592000",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "4050000000000000000000/1976535336305101",
+    "U_lower_bound_approx": 2049040.0174534677,
+    "max_bernstein_Den": "1976535336305101/312500000000000",
+    "min_bernstein_F": "12960000"
+   },
+   "ell": 5,
+   "m": 40,
+   "mu_lo": "357/5000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950118718634791,
+   "q_at_mu_lo_squared": "3883166111997601/3922197368247601"
+  },
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(5*mu + 11)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "9292800",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "24371337890625000/3302141267",
+    "U_lower_bound_approx": 7380464.952902028,
+    "max_bernstein_Den": "422674082176/30517578125",
+    "min_bernstein_F": "102220800"
+   },
+   "ell": 6,
+   "m": 55,
+   "mu_lo": "43/625",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950017107832941,
+   "q_at_mu_lo_squared": "11473605909/11589168409"
+  },
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "23417856",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "156119040000000000000000/8361478358124107",
+    "U_lower_bound_approx": 18671224.550657716,
+    "max_bernstein_Den": "25084435074372321/10000000000000000",
+    "min_bernstein_F": "46835712"
+   },
+   "ell": 7,
+   "m": 72,
+   "mu_lo": "667/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950047149367524,
+   "q_at_mu_lo_squared": "4419750380691369/4464239280691369"
+  },
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(7*mu + 13)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "49840128",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "8860467200000000/222262731",
+    "U_lower_bound_approx": 39864835.45907658,
+    "max_bernstein_Den": "26004739527/1600000000",
+    "min_bernstein_F": "647921664"
+   },
+   "ell": 8,
+   "m": 91,
+   "mu_lo": "13/200",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.995010223666519,
+   "q_at_mu_lo_squared": "1591288281/1607288281"
+  },
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(4*mu + 7)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "95397120",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "238492800000000000000000/3118350232714123",
+    "U_lower_bound_approx": 76480440.68238693,
+    "max_bernstein_Den": "21828451628998861/2500000000000000",
+    "min_bernstein_F": "667779840"
+   },
+   "ell": 9,
+   "m": 112,
+   "mu_lo": "637/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950006508946191,
+   "q_at_mu_lo_squared": "5137514082009/5189270332009"
+  },
+  {
+   "D": 7,
+   "Den": "(mu + 1)**3*(3*mu + 5)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "169344000",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "54751002624000/407779",
+    "U_lower_bound_approx": 134266361.4948293,
+    "max_bernstein_Den": "407779/65536",
+    "min_bernstein_F": "835434000"
+   },
+   "ell": 10,
+   "m": 135,
+   "mu_lo": "1/16",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 5,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950109098490115,
+   "q_at_mu_lo_squared": "1629705/1646089"
+  },
+  {
+   "D": 8,
+   "Den": "(mu + 1)**3*(4*mu + 11)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "3664138263137075687/61035156250",
+    "min_bernstein_K": "348480000"
+   },
+   "ell": 5,
+   "m": 44,
+   "mu_lo": "733/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 6,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950115651465454,
+   "q_at_mu_lo_squared": "8351692774802169/8435644181052169",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 8,
+   "Den": "(mu + 1)**3*(5*mu + 12)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "6690816",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "912384000000000000000/172254860980171",
+    "U_lower_bound_approx": 5296709.740487547,
+    "max_bernstein_Den": "1894803470781881/125000000000000",
+    "min_bernstein_F": "80289792"
+   },
+   "ell": 6,
+   "m": 60,
+   "mu_lo": "353/5000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 6,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.995006576605481,
+   "q_at_mu_lo_squared": "3578956606402881/3614968607402881"
+  },
+  {
+   "D": 8,
+   "Den": "(mu + 1)**3*(6*mu + 13)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "21805056",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "5536440000000000000000/319428313909493",
+    "U_lower_bound_approx": 17332339.55449766,
+    "max_bernstein_Den": "319428313909493/19531250000000",
+    "min_bernstein_F": "283465728"
+   },
+   "ell": 7,
+   "m": 78,
+   "mu_lo": "171/2500",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 6,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.995012147483812,
+   "q_at_mu_lo_squared": "1641032062512229/1657525814074729"
+  },
+  {
+   "D": 8,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "50878464",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "339189760000000000000000/8361478358124107",
+    "U_lower_bound_approx": 40565764.267085545,
+    "max_bernstein_Den": "25084435074372321/10000000000000000",
+    "min_bernstein_F": "101756928"
+   },
+   "ell": 8,
+   "m": 98,
+   "mu_lo": "667/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 6,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950047149367524,
+   "q_at_mu_lo_squared": "4419750380691369/4464239280691369"
+  },
+  {
+   "D": 8,
+   "Den": "(mu + 1)**3*(8*mu + 15)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "101606400",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "14883750000000000000000/183201912844147",
+    "U_lower_bound_approx": 81242328.58126247,
+    "max_bernstein_Den": "183201912844147/9765625000000",
+    "min_bernstein_F": "1524096000"
+   },
+   "ell": 9,
+   "m": 120,
+   "mu_lo": "163/2500",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 6,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950128135890901,
+   "q_at_mu_lo_squared": "546319838881419/551810073647044"
+  },
+  {
+   "D": 8,
+   "Den": "(mu + 1)**3*(9*mu + 16)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "184320000",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "90000000000000000/609332983",
+    "U_lower_bound_approx": 147702491.92304105,
+    "max_bernstein_Den": "4874663864/244140625",
+    "min_bernstein_F": "2949120000"
+   },
+   "ell": 10,
+   "m": 144,
+   "mu_lo": "8/125",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 6,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950105131280466,
+   "q_at_mu_lo_squared": "971302059/981067684"
+  },
+  {
+   "D": 9,
+   "Den": "(mu + 1)**3*(5*mu + 13)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "18160105653305552421/78125000000",
+    "min_bernstein_K": "1177473024"
+   },
+   "ell": 6,
+   "m": 65,
+   "mu_lo": "361/5000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 7,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950106063748743,
+   "q_at_mu_lo_squared": "466637189951449/471328745951449",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 9,
+   "Den": "(mu + 1)**3*(3*mu + 7)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "14839552",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "1483955200000000/126179429",
+    "U_lower_bound_approx": 11760674.554962521,
+    "max_bernstein_Den": "883256003/100000000",
+    "min_bernstein_F": "103876864"
+   },
+   "ell": 7,
+   "m": 84,
+   "mu_lo": "7/100",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 7,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950084763807141,
+   "q_at_mu_lo_squared": "99420441/100420441"
+  },
+  {
+   "D": 9,
+   "Den": "(mu + 1)**3*(7*mu + 15)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "45158400",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "8640000000000000000000/240624400544423",
+    "U_lower_bound_approx": 35906582.958551295,
+    "max_bernstein_Den": "11790595626676727/625000000000000",
+    "min_bernstein_F": "677376000"
+   },
+   "ell": 8,
+   "m": 105,
+   "mu_lo": "341/5000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 7,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950065123783061,
+   "q_at_mu_lo_squared": "139829137692277089/141236137792277089"
+  },
+  {
+   "D": 9,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "99532800",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "663552000000000000000000/8361478358124107",
+    "U_lower_bound_approx": 79358215.32747081,
+    "max_bernstein_Den": "25084435074372321/10000000000000000",
+    "min_bernstein_F": "199065600"
+   },
+   "ell": 9,
+   "m": 128,
+   "mu_lo": "667/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 7,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950047149367524,
+   "q_at_mu_lo_squared": "4419750380691369/4464239280691369"
+  },
+  {
+   "D": 9,
+   "Den": "(mu + 1)**3*(9*mu + 17)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "189399040",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "2012364800000000000000000/13293806926559369",
+    "U_lower_bound_approx": 151376111.5320207,
+    "max_bernstein_Den": "13293806926559369/625000000000000",
+    "min_bernstein_F": "3219783680"
+   },
+   "ell": 10,
+   "m": 153,
+   "mu_lo": "327/5000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 7,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.995007763298044,
+   "q_at_mu_lo_squared": "179636832888694321/181443932988694321"
+  },
+  {
+   "D": 9,
+   "Den": "(mu + 1)**3*(5*mu + 9)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "329598720",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "5932776960000000000000000/22475428790011601",
+    "U_lower_bound_approx": 263967242.42416278,
+    "max_bernstein_Den": "22475428790011601/2000000000000000",
+    "min_bernstein_F": "2966388480"
+   },
+   "ell": 11,
+   "m": 180,
+   "mu_lo": "643/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 7,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950082192597076,
+   "q_at_mu_lo_squared": "32224868564075601/32549012580075601"
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(2*mu + 5)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "145929831334452621099/610351562500",
+    "min_bernstein_K": "1106380800"
+   },
+   "ell": 7,
+   "m": 90,
+   "mu_lo": "357/5000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950118718634791,
+   "q_at_mu_lo_squared": "3883166111997601/3922197368247601",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(7*mu + 16)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "29491200",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "1152000000000000000000/49255092729577",
+    "U_lower_bound_approx": 23388444.44623774,
+    "max_bernstein_Den": "49255092729577/2441406250000",
+    "min_bernstein_F": "471859200"
+   },
+   "ell": 8,
+   "m": 112,
+   "mu_lo": "87/1250",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950036642127664,
+   "q_at_mu_lo_squared": "621395705635789/627651957198289"
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(8*mu + 17)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "85229568",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "18496000000000000/272823003",
+    "U_lower_bound_approx": 67794869.92158063,
+    "max_bernstein_Den": "41741919459/1953125000",
+    "min_bernstein_F": "1448902656"
+   },
+   "ell": 9,
+   "m": 136,
+   "mu_lo": "17/250",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950092353147956,
+   "q_at_mu_lo_squared": "971051499/980817124"
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "179781120",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "1198540800000000000000000/8361478358124107",
+    "U_lower_bound_approx": 143340776.43524414,
+    "max_bernstein_Den": "25084435074372321/10000000000000000",
+    "min_bernstein_F": "359562240"
+   },
+   "ell": 10,
+   "m": 162,
+   "mu_lo": "667/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950047149367524,
+   "q_at_mu_lo_squared": "4419750380691369/4464239280691369"
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(10*mu + 19)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "329370624",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "10012866969600000000000/38041128591721",
+    "U_lower_bound_approx": 263211617.0123073,
+    "max_bernstein_Den": "38041128591721/1600000000000",
+    "min_bernstein_F": "6258041856"
+   },
+   "ell": 11,
+   "m": 190,
+   "mu_lo": "131/2000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.995012686755857,
+   "q_at_mu_lo_squared": "57443845659921/58021141699921"
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(11*mu + 20)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "554496000",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "177438720000000000000000/399693047185691",
+    "U_lower_bound_approx": 443937469.6392074,
+    "max_bernstein_Den": "399693047185691/16000000000000",
+    "min_bernstein_F": "11089920000"
+   },
+   "ell": 12,
+   "m": 220,
+   "mu_lo": "129/2000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950128555628792,
+   "q_at_mu_lo_squared": "6365353663668601/6429321667668601"
+  },
+  {
+   "D": 10,
+   "Den": "(mu + 1)**3*(4*mu + 7)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "880588800",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "2201472000000000000000000/3118350232714123",
+    "U_lower_bound_approx": 705973298.6066487,
+    "max_bernstein_Den": "21828451628998861/2500000000000000",
+    "min_bernstein_F": "6164121600"
+   },
+   "ell": 13,
+   "m": 252,
+   "mu_lo": "637/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 8,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950006508946191,
+   "q_at_mu_lo_squared": "5137514082009/5189270332009"
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(7*mu + 17)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "863426718103404554087/457763671875",
+    "min_bernstein_K": "8182038528"
+   },
+   "ell": 8,
+   "m": 119,
+   "mu_lo": "177/2500",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950128260158763,
+   "q_at_mu_lo_squared": "11222928081305809/11335712481305809",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(4*mu + 9)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "53934336",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "361250000000000000/8438690403",
+    "U_lower_bound_approx": 42808775.14733491,
+    "max_bernstein_Den": "55366247734083/4882812500000",
+    "min_bernstein_F": "485409024"
+   },
+   "ell": 9,
+   "m": 144,
+   "mu_lo": "173/2500",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950132056369286,
+   "q_at_mu_lo_squared": "1163436529464/1175127545089"
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(9*mu + 19)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "149713920",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "28445644800000000000000000/238832658975173129",
+    "U_lower_bound_approx": 119102826.73257409,
+    "max_bernstein_Den": "238832658975173129/10000000000000000",
+    "min_bernstein_F": "2844564480"
+   },
+   "ell": 10,
+   "m": 171,
+   "mu_lo": "679/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.995002992128727,
+   "q_at_mu_lo_squared": "3589639205063098161/3625784819463098161"
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "304972800",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "2033152000000000000000000/8361478358124107",
+    "U_lower_bound_approx": 243157000.82205757,
+    "max_bernstein_Den": "25084435074372321/10000000000000000",
+    "min_bernstein_F": "609945600"
+   },
+   "ell": 11,
+   "m": 200,
+   "mu_lo": "667/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950047149367524,
+   "q_at_mu_lo_squared": "4419750380691369/4464239280691369"
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(11*mu + 21)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "541900800",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "334960937500000000/773623269",
+    "U_lower_bound_approx": 432976813.0332698,
+    "max_bernstein_Den": "4010463026496/152587890625",
+    "min_bernstein_F": "11379916800"
+   },
+   "ell": 12,
+   "m": 231,
+   "mu_lo": "41/625",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950138261407391,
+   "q_at_mu_lo_squared": "261416287701/264042850201"
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(6*mu + 11)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "887927040",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "8518400000000000000000/11987397602271",
+    "U_lower_bound_approx": 710612952.2546409,
+    "max_bernstein_Den": "68723750453819643/5000000000000000",
+    "min_bernstein_F": "9767197440"
+   },
+   "ell": 13,
+   "m": 264,
+   "mu_lo": "647/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950112161826792,
+   "q_at_mu_lo_squared": "300858536776453929/303882986801453929"
+  },
+  {
+   "D": 11,
+   "Den": "(mu + 1)**3*(13*mu + 23)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "1376449536",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "316583393280000000000000000/286971802852287533",
+    "U_lower_bound_approx": 1103186411.1156397,
+    "max_bernstein_Den": "286971802852287533/10000000000000000",
+    "min_bernstein_F": "31658339328"
+   },
+   "ell": 14,
+   "m": 299,
+   "mu_lo": "639/10000",
+   "mu_lo_rule": "largest k/10000 with w(k/10000)^2 <= 1 - (199/200)^2",
+   "n": 9,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9950088121025626,
+   "q_at_mu_lo_squared": "5261527370900597929/5314445772500597929"
+  }
+ ],
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "qmax": "99/100",
+ "timing": {
+  "A2E4": 5.12,
+  "E D=10 l=10": 0.58,
+  "E D=10 l=11": 0.69,
+  "E D=10 l=12": 0.69,
+  "E D=10 l=13": 0.67,
+  "E D=10 l=7": 0.66,
+  "E D=10 l=8": 0.69,
+  "E D=10 l=9": 0.72,
+  "E D=11 l=10": 0.69,
+  "E D=11 l=11": 0.58,
+  "E D=11 l=12": 0.73,
+  "E D=11 l=13": 0.69,
+  "E D=11 l=14": 0.68,
+  "E D=11 l=8": 0.71,
+  "E D=11 l=9": 0.68,
+  "E D=7 l=10": 0.68,
+  "E D=7 l=4": 0.67,
+  "E D=7 l=5": 0.7,
+  "E D=7 l=6": 0.69,
+  "E D=7 l=7": 0.65,
+  "E D=7 l=8": 0.69,
+  "E D=7 l=9": 0.69,
+  "E D=8 l=10": 0.71,
+  "E D=8 l=5": 0.74,
+  "E D=8 l=6": 0.68,
+  "E D=8 l=7": 0.68,
+  "E D=8 l=8": 0.58,
+  "E D=8 l=9": 0.69,
+  "E D=9 l=10": 0.72,
+  "E D=9 l=11": 0.69,
+  "E D=9 l=6": 0.71,
+  "E D=9 l=7": 0.68,
+  "E D=9 l=8": 0.69,
+  "E D=9 l=9": 0.58,
+  "EXT": 0.87,
+  "MEET": 0.48,
+  "t_total_s": 28.97,
+  "utc_start": "2026-11-18T18:19:32+00:00"
+ },
+ "verdict": "REJECT: MEET"
+}

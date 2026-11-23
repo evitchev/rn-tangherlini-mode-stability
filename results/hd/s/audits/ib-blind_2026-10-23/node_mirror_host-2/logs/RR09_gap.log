@@ -1,0 +1,59 @@
+2026-10-23T16:21:54Z
+host-2
+ 12:21:54 up 8 days, 20:21,  0 users,  load average: 1.93, 1.42, 0.85
+16
+              total        used        free      shared  buff/cache   available
+Mem:            125           2          95           0          27         121
+Swap:            49           0          49
+START 2026-10-23T16:21:54Z
+{
+ "n_points": 85,
+ "q_min": "237/250",
+ "q_max": "99/100",
+ "E1": {
+  "1.5": true,
+  "2": true,
+  "3": true,
+  "5": true,
+  "10": true,
+  "30": true,
+  "100": true
+ },
+ "point_failures": [],
+ "rho1_star": "1.5",
+ "gap": {
+  "psi": {
+   "all_ok": true,
+   "n_cells": 84,
+   "worst": {
+    "q_lo": "1979/2000",
+    "q_hi": "99/100",
+    "min": 0.8912713650626362,
+    "bound": 7.151581148564667e-05,
+    "ok": true,
+    "margin_ratio": 12462.57780688842
+   },
+   "failing": [],
+   "min_value": 0.8912713650626362
+  },
+  "dpsi": {
+   "all_ok": true,
+   "n_cells": 84,
+   "worst": {
+    "q_lo": "1979/2000",
+    "q_hi": "99/100",
+    "min": 0.008118950333459336,
+    "bound": 2.9734887860576543e-05,
+    "ok": true,
+    "margin_ratio": 273.04459231620973
+   },
+   "failing": [],
+   "min_value": 0.008118950333459336
+  }
+ },
+ "part_N_pass": true
+}
+END 2026-10-23T16:21:54Z
+EXIT=0
+2026-10-23T16:21:54Z
+host-2

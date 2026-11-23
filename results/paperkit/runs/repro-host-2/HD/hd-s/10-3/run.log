@@ -1,0 +1,27 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PILOT: PASS  the pilot record is VALID and DESIGN equals its designs at q_max: True
+H: PASS  H_- has positive coefficients, so H_- >= m > 0
+coverage: PASS  {"mu_a": "299/2500", "mu_b": "8301/10000", "q(mu_a)^2": "1164187484726301/1187794936288801", "q(mu_b)^2": "91914991536373201/383045380761373201", "contiguous": true, "q(mu_a) >= q_max": true, "q(mu_b) <= q_lo or mu_b = 1": true, "w increase
+box 0 mu in [299/2500, 329/2500]: PASS  N > 0 (with the fallback pieces, if any)
+box 1 mu in [329/2500, 181/1250]: PASS  N > 0 (with the fallback pieces, if any)
+box 2 mu in [181/1250, 1593/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 3 mu in [1593/10000, 1753/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 4 mu in [1753/10000, 1929/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 5 mu in [1929/10000, 1061/5000]: PASS  N > 0 (with the fallback pieces, if any)
+box 6 mu in [1061/5000, 467/2000]: PASS  N > 0 (with the fallback pieces, if any)
+box 7 mu in [467/2000, 2569/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 8 mu in [2569/10000, 1413/5000]: PASS  N > 0 (with the fallback pieces, if any)
+box 9 mu in [1413/5000, 3109/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 10 mu in [3109/10000, 171/500]: PASS  N > 0 (with the fallback pieces, if any)
+box 11 mu in [171/500, 1881/5000]: PASS  N > 0 (with the fallback pieces, if any)
+box 12 mu in [1881/5000, 4139/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 13 mu in [4139/10000, 4553/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 14 mu in [4553/10000, 5009/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 15 mu in [5009/10000, 551/1000]: PASS  N > 0 (with the fallback pieces, if any)
+box 16 mu in [551/1000, 6061/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 17 mu in [6061/10000, 1667/2500]: PASS  N > 0 (with the fallback pieces, if any)
+box 18 mu in [1667/2500, 1467/2000]: PASS  N > 0 (with the fallback pieces, if any)
+box 19 mu in [1467/2000, 8069/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 20 mu in [8069/10000, 8301/10000]: PASS  N > 0 (with the fallback pieces, if any)
+VERIFIED

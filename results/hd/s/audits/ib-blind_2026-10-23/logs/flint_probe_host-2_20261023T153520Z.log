@@ -1,0 +1,4 @@
+{'fmpz': True, 'fmpq': True, 'fmpz_poly': True, 'fmpq_poly': True, 'fmpz_mpoly': True, 'fmpq_mpoly': True, 'fmpz_mpoly_ctx': True, 'fmpq_mpoly_ctx': True, 'arb': True, 'acb': True, 'arb_poly': True, 'acb_poly': True, 'arb_series': True, 'acb_series': True, 'arb_mat': True, 'ctx': True}
+acb.integral: True
+fmpq_poly roots/complex_roots: True True sturm? ['complex_roots', 'real_roots', 'roots']
+int_0^1 t^2 = [0.33333333333333333333333333333333333333 +/- 9.74e-39]

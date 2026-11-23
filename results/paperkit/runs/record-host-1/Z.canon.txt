@@ -1,0 +1,21 @@
+MATCH  Z extremal zero_mode-2-none (cited)  a9532ceed85c31c9
+MATCH  Z extremal zero_mode-3-none (cited)  7bdf5b545db1798e
+MATCH  Z extremal zero_mode-4-nc-exp (control)  fb9758c7679e27c3
+MATCH  Z extremal zero_mode-4-nc-nu (control)  5e1557c1576adc30
+MATCH  Z extremal zero_mode-4-none (cited)  32ee55113433d3f0
+MATCH  Z extremal zero_mode-4-td-U (control)  66f125ebfac36155
+MATCH  Z extremal zero_mode-4-td-preg (control)  7abb7a7f99068be5
+MATCH  Z extremal zero_mode-4-td-zid (control)  884747c7c7d9c194
+MATCH  Z extremal zero_mode-5-none (cited)  ee70109be4deaa00
+MATCH  Z extremal zero_mode-6-none (cited)  5821e651b42f92d7
+MATCH  Z extremal zero_mode-7-none (cited)  c9053b9c697fe203
+MATCH  Z extremal zero_mode-8-none (cited)  74b1971704c02b36
+MATCH  Z extremal zero_mode-9-nc-exp (control)  e694e300bfd23a1c
+MATCH  Z extremal zero_mode-9-nc-nu (control)  e516ea320fbaf12c
+MATCH  Z extremal zero_mode-9-none (cited)  435147312cc5d9d6
+MATCH  Z extremal zero_mode-9-td-U (control)  6749de1663b0be52
+MATCH  Z extremal zero_mode-9-td-preg (control)  c5984b0e49145141
+MATCH  Z extremal zero_mode-9-td-zid (control)  1f41b5a34980b9b9
+MATCH  Z extremal zero_mode-N-none (cited)  327e2f36d11f4e7a
+part Z: cited 9/9 MATCH; controls 10/10 MATCH (information); run.log 19/19 byte-identical (information)
+canon compare Z: PASS

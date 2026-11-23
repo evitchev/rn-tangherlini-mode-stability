@@ -1,0 +1,35 @@
+EXT: H_-(x_H) = (l+n)(l+n-1), U_-(x_H) = 64 l (l-n+1) H_-(x_H)^2, symbolic in (ell, n): OK
+D=7 l=4: POSITIVE {'split': True, 'K>0': True, 'G>0': True, 'mu_lo': '1061/10000'}
+D=7 l=5: POSITIVE {'strict': True, 'mu_lo': '1011/10000', 'nodes': 1}
+D=7 l=6: POSITIVE {'strict': True, 'mu_lo': '487/5000', 'nodes': 1}
+D=7 l=7: POSITIVE {'strict': True, 'mu_lo': '59/625', 'nodes': 1}
+D=7 l=8: POSITIVE {'strict': True, 'mu_lo': '921/10000', 'nodes': 1}
+D=7 l=9: POSITIVE {'strict': True, 'mu_lo': '901/10000', 'nodes': 1}
+D=7 l=10: POSITIVE {'strict': True, 'mu_lo': '177/2000', 'nodes': 1}
+D=8 l=5: POSITIVE {'split': True, 'K>0': True, 'G>0': True, 'mu_lo': '519/5000'}
+D=8 l=6: POSITIVE {'strict': True, 'mu_lo': '999/10000', 'nodes': 1}
+D=8 l=7: POSITIVE {'strict': True, 'mu_lo': '969/10000', 'nodes': 1}
+D=8 l=8: POSITIVE {'strict': True, 'mu_lo': '59/625', 'nodes': 1}
+D=8 l=9: POSITIVE {'strict': True, 'mu_lo': '231/2500', 'nodes': 1}
+D=8 l=10: POSITIVE {'strict': True, 'mu_lo': '907/10000', 'nodes': 1}
+D=9 l=6: POSITIVE {'split': True, 'K>0': True, 'G>0': True, 'mu_lo': '511/5000'}
+D=9 l=7: POSITIVE {'strict': True, 'mu_lo': '991/10000', 'nodes': 1}
+D=9 l=8: POSITIVE {'strict': True, 'mu_lo': '483/5000', 'nodes': 1}
+D=9 l=9: POSITIVE {'strict': True, 'mu_lo': '59/625', 'nodes': 1}
+D=9 l=10: POSITIVE {'strict': True, 'mu_lo': '463/5000', 'nodes': 1}
+D=9 l=11: POSITIVE {'strict': True, 'mu_lo': '911/10000', 'nodes': 1}
+D=10 l=7: POSITIVE {'split': True, 'K>0': True, 'G>0': True, 'mu_lo': '1011/10000'}
+D=10 l=8: POSITIVE {'strict': True, 'mu_lo': '197/2000', 'nodes': 1}
+D=10 l=9: POSITIVE {'strict': True, 'mu_lo': '963/10000', 'nodes': 1}
+D=10 l=10: POSITIVE {'strict': True, 'mu_lo': '59/625', 'nodes': 1}
+D=10 l=11: POSITIVE {'strict': True, 'mu_lo': '58/625', 'nodes': 1}
+D=10 l=12: POSITIVE {'strict': True, 'mu_lo': '457/5000', 'nodes': 1}
+D=10 l=13: POSITIVE {'strict': True, 'mu_lo': '901/10000', 'nodes': 1}
+D=11 l=8: POSITIVE {'split': True, 'K>0': True, 'G>0': True, 'mu_lo': '1003/10000'}
+D=11 l=9: POSITIVE {'strict': True, 'mu_lo': '49/500', 'nodes': 1}
+D=11 l=10: POSITIVE {'strict': True, 'mu_lo': '961/10000', 'nodes': 1}
+D=11 l=11: POSITIVE {'strict': True, 'mu_lo': '59/625', 'nodes': 1}
+D=11 l=12: POSITIVE {'strict': True, 'mu_lo': '929/10000', 'nodes': 1}
+D=11 l=13: POSITIVE {'strict': True, 'mu_lo': '229/2500', 'nodes': 1}
+D=11 l=14: POSITIVE {'strict': True, 'mu_lo': '181/2000', 'nodes': 1}
+HD-X-E: ALL OK

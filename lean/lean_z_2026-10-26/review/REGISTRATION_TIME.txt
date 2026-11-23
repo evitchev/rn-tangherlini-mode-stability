@@ -1,0 +1,2 @@
+Z_MUTATION_REGISTRATION.md sha256 c645d0c2967d07f018a87b82a6b4736113fa99f665bdafb912b32d32862cd690
+written and hashed 2026-10-26T18:33:01Z (UTC), before any mutation run of BHModesZ.lean

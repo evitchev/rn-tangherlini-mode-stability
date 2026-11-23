@@ -1,0 +1,3 @@
+MISSING  A1 onset main (cited)
+part A1: cited 0/1 MATCH; controls 0/0 MATCH (information); run.log 0/0 byte-identical (information)
+canon compare A1: FAIL

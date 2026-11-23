@@ -1,0 +1,6 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+H: PASS  every coefficient of H_- > 0
+PARAM: PASS  s^2 = 1 + 4 m q^2/100, q(0) = 1, q(1/8)^2 = 609/625 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]
+DESIGN: FAIL  DESIGN: the pilot record's SHA-256 a95b583b883bc62545ed3fbfeb2595700c365db414e2441c6375c897fabfaa80 is not the sealed one
+REJECT: DESIGN

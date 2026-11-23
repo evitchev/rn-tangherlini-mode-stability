@@ -1,0 +1,3 @@
+#### D2  2026-10-24T04:09:39Z
+REJECT: exception PolynomialError: 1/mu contains an element of the set of generators.
+exit 1

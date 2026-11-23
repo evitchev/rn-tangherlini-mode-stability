@@ -1,0 +1,49 @@
+bh-modes Z Lean layer (BHM-126): build and audit, started 20261026T183327Z
+lean: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+
+== 1. sources
+ok   BHModesZ.lean 05e9c5321197b3ae1bd89de6e281e3bd363fa70952efe3b2f914b5c570e9d083
+scan for sorry / admit / axiom / native_decide / implemented_by / extern (informational):
+  (no occurrence)
+
+== 2. compile
+BHModesZ: exit=0 seconds=4 errors=0 warnings=0 sorry=0
+
+== 3. axioms
+theorem headers: 9; #print axioms entries: 9; exit=0; axioms outside {propext, Classical.choice, Quot.sound}: none
+  'BHModes.Z.gate_q1' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.gate_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.g_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.deriv_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.z_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner_n4' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner_ends' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Z.partner_no_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== 4. checker negative controls (false proofs; each must be rejected)
+NC1_two_plus_two: exit=1 errors=4  (theorem bogus : (2:ℝ) + 2 = 5 := by norm_num)
+NC2_false_margin: exit=1 errors=3  (theorem bogus (l : ℝ) : l * (l - 3) / 9 + 1 / 4 = (2 * l + 3) ^ 2 / 36 := by ring)
+
+== 5. mutations (registration: Z_MUTATION_REGISTRATION.md sha256 c645d0c2967d07f018a87b82a6b4736113fa99f665bdafb912b32d32862cd690, logged 2026-10-26T18:33:36Z, before the first run)
+{"id": "ZM1", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 3, "failing_decls": ["partner", "partner_ends", "z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 58, "pass": true}
+{"id": "ZM2", "file": "BHModesZ.lean", "expected_decl": "g_hasDerivAt", "exit": 1, "errors": 3, "failing_decls": ["g_hasDerivAt", "partner", "z_id"], "first_error": [97, "Tactic `rfl` failed: The left-hand side"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 62, "pass": true}
+{"id": "ZM3", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 1, "failing_decls": ["z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 65, "pass": true}
+{"id": "ZM4", "file": "BHModesZ.lean", "expected_decl": "gate_q1", "exit": 1, "errors": 3, "failing_decls": ["deriv_g", "gate_H", "gate_q1"], "first_error": [76, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 53, "pass": true}
+{"id": "ZM5", "file": "BHModesZ.lean", "expected_decl": "gate_q1", "exit": 1, "errors": 3, "failing_decls": ["deriv_g", "gate_H", "gate_q1"], "first_error": [76, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 50, "pass": true}
+{"id": "ZM6", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 1, "failing_decls": ["z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 112, "pass": true}
+{"id": "ZM7", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 1, "failing_decls": ["z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 112, "pass": true}
+{"id": "ZM8", "file": "BHModesZ.lean", "expected_decl": "partner", "exit": 1, "errors": 2, "failing_decls": ["partner", "partner_no_pole"], "first_error": [126, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 124, "pass": true}
+{"id": "ZM9", "file": "BHModesZ.lean", "error_text": {"partner_n4": "unsolved goals"}, "error_text_found": true, "expected_decl": "partner", "exit": 1, "errors": 3, "failing_decls": ["partner", "partner_ends", "partner_n4"], "first_error": [126, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 70, "pass": true}
+{"id": "ZM10", "file": "BHModesZ.lean", "expected_decl": "gate_H", "exit": 1, "errors": 2, "failing_decls": ["deriv_g", "gate_H"], "first_error": [81, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 81, "pass": true}
+{"id": "ZM11", "file": "BHModesZ.lean", "expected_decl": "gate_q1", "exit": 1, "errors": 1, "failing_decls": ["gate_q1"], "first_error": [76, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 75, "pass": true}
+{"id": "ZM12", "file": "BHModesZ.lean", "expected_decl": "partner", "exit": 1, "errors": 3, "failing_decls": ["partner", "partner_no_pole"], "first_error": [127, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 124, "pass": true}
+{"id": "ZM13", "file": "BHModesZ.lean", "expected_decl": "g_hasDerivAt", "exit": 1, "errors": 2, "failing_decls": ["deriv_g", "g_hasDerivAt"], "first_error": [88, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 88, "pass": true}
+{"id": "ZM14", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 1, "failing_decls": ["z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 65, "pass": true}
+{"id": "ZM15", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 1, "failing_decls": ["z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 65, "pass": true}
+{"id": "ZM16", "file": "BHModesZ.lean", "expected_decl": "z_id", "exit": 1, "errors": 1, "failing_decls": ["z_id"], "first_error": [112, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 65, "pass": true}
+{"id": "ZM17", "file": "BHModesZ.lean", "expected_decl": "partner_no_pole", "exit": 1, "errors": 1, "failing_decls": ["partner_no_pole"], "first_error": [161, "Type mismatch"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 147, "pass": true}
+mutations failing as required: 17 / 17
+
+BHModesZ: ALL CHECKS AS REQUIRED
+finished 20261026T183632Z

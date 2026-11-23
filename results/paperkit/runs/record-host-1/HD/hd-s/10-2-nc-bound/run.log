@@ -1,0 +1,8 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PILOT: PASS  the pilot record is VALID and DESIGN equals its designs at q_max: True
+H: PASS  H_- has positive coefficients, so H_- >= m > 0
+coverage: PASS  {"mu_a": "321/2500", "mu_b": "1", "q(mu_a)^2": "3841215986197681/3919140742447681", "q(mu_b)^2": "0", "contiguous": true, "q(mu_a) >= q_max": true, "q(mu_b) <= q_lo or mu_b = 1": true, "w increases on [0, 1]": true}
+nc-bound (a): PASS  Q[phi0] = [-1.765967528e-6 +/- 2.95e-16]
+nc-bound (b): FAIL  nc-bound on the bump: sign*p = -196731606567089132564672701694159040148548209558881039171482389833246939196194585661266395867023061977816633134352872639695836737785865149865763340430188607659536032976289/850705917302346158658436518579420528
+REJECT: nc-bound (b)

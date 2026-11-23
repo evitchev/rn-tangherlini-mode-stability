@@ -1,0 +1,199 @@
+{
+ "C0": "16099776/5",
+ "archive_sha256": "6db58904a6b9b821e67fdf8a43d7d439221af73cdf87b4b3074c9775693bb4f5",
+ "band": {
+  "D": 11,
+  "k": 8,
+  "l": 3,
+  "n": 9
+ },
+ "band_arg": "11,3",
+ "bernstein_leaves": {
+  "L": 1,
+  "POS-C": 1,
+  "POS-O": 1,
+  "POS-O'": 1,
+  "POS-T": 1,
+  "R": 1,
+  "delta denominator": 1,
+  "delta numerator": 1,
+  "eps_d": 1,
+  "eps_n/mu": 1,
+  "w' denominator": 1,
+  "w' numerator": 1
+ },
+ "charts": {
+  "MU1": "1/8",
+  "MUT": "1/32",
+  "SIG1": "1/8",
+  "Z1": "1/4",
+  "ZT": "8"
+ },
+ "checks": {
+  "CORNER": {
+   "detail": "K(0, sigma) = 436224074711040*sigma + 1709286170296320; minus sigma T(1/sigma, 0): 0",
+   "ok": true
+  },
+  "COVER": {
+   "detail": "ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]",
+   "ok": true
+  },
+  "DIV-C": {
+   "detail": "NL(z, z sigma) divisible by z^2 sigma",
+   "ok": true
+  },
+  "DIV-O": {
+   "detail": "NL divisible by mu",
+   "ok": true
+  },
+  "DIV-T": {
+   "detail": "NL(mu zeta, mu) divisible by mu^2",
+   "ok": true
+  },
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "FIRST": {
+   "detail": "M(0, 0) = 0; M_z(0, 0) = 1709286170296320; K(0, 0) = 1709286170296320; C0 eps_d(0)^2 R(0)^2 L(0) = 1709286170296320 (C0 = 16099776/5)",
+   "ok": true
+  },
+  "H": {
+   "detail": "every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]",
+   "ok": true
+  },
+  "INF": {
+   "detail": "NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "L": {
+   "detail": "L = Ud Hd^2 fd > 0 on [0, MU1]",
+   "ok": true
+  },
+  "PARAM": {
+   "detail": "identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 2961/3025 <= (99/100)^2: True; w increasing on [0, 1]: True",
+   "ok": true
+  },
+  "POS-C": {
+   "detail": "> 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 154284599896296147521855119696741875/37778931862957161709568",
+   "ok": true
+  },
+  "POS-O": {
+   "detail": "> 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 125708449515577306983297655024288666185/163356101375426767232172032",
+   "ok": true
+  },
+  "POS-O'": {
+   "detail": "> 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 927132456455518465763756383389810229912473588617397534375/713623846352979940529142984724747568191373312",
+   "ok": true
+  },
+  "POS-T": {
+   "detail": "> 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 927132456455518465763756383389810229912473588617397534375/22300745198530623141535718272648361505980416",
+   "ok": true
+  },
+  "R": {
+   "detail": "R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]",
+   "ok": true
+  },
+  "S": {
+   "detail": "eps_n = 147*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 80*mu**2 + 560*mu + 480 > 0 on [0, MU1]",
+   "ok": true
+  },
+  "THROAT": {
+   "detail": "T(zeta, 0) = 1709286170296320*zeta + 436224074711040; minus the pencil limit: 0",
+   "ok": true
+  },
+  "XN": {
+   "detail": "27 points, seed 9003; mismatches at []",
+   "ok": true
+  },
+  "Z0": {
+   "detail": "NL(z, 0) = 0 identically",
+   "ok": true
+  }
+ },
+ "claim": "results/hdx/critical/PREREG.md (HD-X-2: the critical bands, q in [q(MU1), 1))",
+ "control": "none",
+ "degrees": {
+  "K": [
+   60,
+   13
+  ],
+  "M": [
+   48,
+   13
+  ],
+  "NL": [
+   48,
+   14
+  ],
+  "T": [
+   48,
+   60
+  ]
+ },
+ "design": {
+  "a": "-3/8",
+  "c": "1/4",
+  "ehat": "21/80",
+  "nu": "13/2",
+  "nu_design": "13/2",
+  "window": [
+   "1/8",
+   "2/5"
+  ]
+ },
+ "eps": {
+  "den": "80*mu**2 + 560*mu + 480",
+  "num": "147*mu"
+ },
+ "max_depth": 40,
+ "min_bernstein": {
+  "L": "36",
+  "POS-C": "154284599896296147521855119696741875/37778931862957161709568",
+  "POS-O": "125708449515577306983297655024288666185/163356101375426767232172032",
+  "POS-O'": "927132456455518465763756383389810229912473588617397534375/713623846352979940529142984724747568191373312",
+  "POS-T": "927132456455518465763756383389810229912473588617397534375/22300745198530623141535718272648361505980416",
+  "R": "1",
+  "delta denominator": "120",
+  "delta numerator": "63/64",
+  "eps_d": "480",
+  "eps_n/mu": "147",
+  "w' denominator": "36",
+  "w' numerator": "35"
+ },
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "q(MU1)^2": "2961/3025",
+ "q(MU1)_approx": 0.9893649353027484,
+ "throat_data": {
+  "H2": "132",
+  "L0": "36",
+  "R0": "8",
+  "ed0": "480",
+  "wp0": "7/6"
+ },
+ "timing": {
+  "POS-C": 0.04,
+  "POS-O": 0.03,
+  "POS-O'": 0.03,
+  "POS-T": 0.16,
+  "XN_s": 0.41,
+  "build_s": 0.32,
+  "t_total_s": 1.45,
+  "utc_start": "2026-11-18T18:22:16+00:00"
+ },
+ "verdict": "VERIFIED"
+}

@@ -1,0 +1,157 @@
+{
+ "band": "D=11 l=4",
+ "boxes": [
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1149/10000",
+    "79/625"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "79/625",
+    "1391/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1391/10000",
+    "1531/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "1531/10000",
+    "337/2000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "337/2000",
+    "927/5000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "927/5000",
+    "51/250"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "51/250",
+    "561/2500"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "561/2500",
+    "2469/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "2469/10000",
+    "679/2500"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "679/2500",
+    "747/2500"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "747/2500",
+    "3287/10000"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "3287/10000",
+    "226/625"
+   ],
+   "of": 8,
+   "variable": "z"
+  },
+  {
+   "agree": 8,
+   "degree": 28,
+   "mu": [
+    "226/625",
+    "1853/5000"
+   ],
+   "of": 8,
+   "variable": "z"
+  }
+ ],
+ "checks": {
+  "SEAL": true,
+  "X2": true
+ },
+ "claim": "results/hd/s/PREREG_ADDENDUM_1.md, X2",
+ "control": "none",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "10f1795",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "record_sha256": "2ea1cd8b8e1188f2f71b3ef9b4652abab52a04e0497e492c38df84f35f5d1266",
+ "timing": {
+  "t_total_s": 15.22
+ },
+ "verdict": "VERIFIED"
+}

@@ -1,0 +1,100 @@
+{
+ "workspace": "[session-R-runs]/hds_2026-10-23 (node copy: <node>:[session-R-runs]/hds_2026-10-23)",
+ "brief_sha256": "1339b7fbd0c0761e055e375501bbb857485fc728c40c5c2b2bf2e0e19a8703dd",
+ "phase": "1 (transcription + PREREG); no run of record yet",
+ "runs": [
+  {
+   "id": "P1-01",
+   "purpose": "environment probe (hostname, uptime, nproc, free, df ~, venv versions)",
+   "kind": "spot check (not of record)",
+   "hosts": ["host-1", "host-2"],
+   "start_utc": "2026-10-23T15:27:39Z",
+   "command": "ssh -o BatchMode=yes <host> 'hostname; uptime; nproc; free -g; df -h ~; ls -d [venv] && [venv]/bin/python3 -I -c \"import sys,flint,sympy,mpmath; print(versions)\"; ls -d [session-R-runs]'",
+   "caps": "ssh timeout 60 s; no ulimit (version print only)",
+   "exit": "2 (expected: [session-R-runs] did not exist yet on the nodes)",
+   "log": null,
+   "note": "output displayed but not tee'd to logs/ (a slip); repeated with a log as P1-07"
+  },
+  {
+   "id": "P1-02",
+   "purpose": "transcription checks C1-C9 + tamper drills (first version of the script)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:32:27Z",
+   "end_utc": "2026-10-23T15:32:28Z",
+   "command": "ulimit -v 8000000; timeout 1200 nice -n 19 [venv]/bin/python3 -I code/check_transcription.py",
+   "code_sha256": {"code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+                   "code/check_transcription.py (v1; byte-exact copy restored at code/archive/check_transcription_v1_9ca152c8.py)": "9ca152c82e47937e51f16d568a62d2c2a4eb42f6fe6706e90234d52795c576e7"},
+   "exit": 0,
+   "result": "ALL_PASS",
+   "log": "logs/check_transcription_20261023T153226Z.log",
+   "log_sha256": "ee2244733c0542e5e776187888f17efa2e3ccdddfa354f8949c58b5a58839bf7"
+  },
+  {
+   "id": "P1-03",
+   "purpose": "python-flint 0.9.0 feature probe (fmpq_mpoly, acb.integral, ...)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:35:20Z",
+   "command": "ssh host-2 '[venv]/bin/python3 -I -c <feature probe>'",
+   "caps": "ssh timeout 120 s; no ulimit (feature probe only)",
+   "exit": 0,
+   "log": "logs/flint_probe_host-2_20261023T153520Z.log",
+   "log_sha256": "3eaba9413fadac0c57b68459db8102db7d95dfc285fd0d4627ae4494ad785d5f"
+  },
+  {
+   "id": "P1-04",
+   "purpose": "extremal inverse-square coefficient kappa(n,l) from the transcription (observation)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:35:42Z",
+   "end_utc": "2026-10-23T15:35:42Z",
+   "command": "ulimit -v 8000000; timeout 600 nice -n 19 [venv]/bin/python3 -I code/extremal_kappa.py",
+   "code_sha256": {"code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+                   "code/extremal_kappa.py": "ca821a5aa6aae8567793ae537c60f3479716aafd838ca753fbc94b05d67b38e9"},
+   "exit": 0,
+   "result": "kappa(n,l) = l(l-n+1)/(n-1)^2",
+   "log": "logs/extremal_kappa_20261023T153541Z.log",
+   "log_sha256": "3e4b8a562c32bb83a5c24a4e4ca952e53c8f2a55a33b7b13a030d8759a4ec11f"
+  },
+  {
+   "id": "P1-05",
+   "purpose": "transcription checks C1-C10 + tamper drills (reference run quoted in TRANSCRIPTION.md and PREREG.md)",
+   "kind": "spot check (not of record)",
+   "host": "host-2",
+   "start_utc": "2026-10-23T15:36:12Z",
+   "end_utc": "2026-10-23T15:36:14Z",
+   "command": "ulimit -v 8000000; timeout 1200 nice -n 19 [venv]/bin/python3 -I code/check_transcription.py",
+   "code_sha256": {"code/ki_s5.py": "b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b",
+                   "code/check_transcription.py": "30333817d35e4bea9a6f548e09624c62679d34f7fa8bac42947d87738c587cd4"},
+   "exit": 0,
+   "result": "ALL_PASS (C1-C10; tampers T1-T4 each caught)",
+   "log": "logs/check_transcription_20261023T153612Z.log",
+   "log_sha256": "12b0ef81b1149621845b285b2f4c57831762ff2467a2e7f5adf689dc940745f4"
+  },
+  {
+   "id": "P1-06",
+   "purpose": "exact band edges in mu_T (Fraction arithmetic)",
+   "kind": "spot check (not of record)",
+   "host": "host-0",
+   "start_utc": "2026-10-23T15:39:21Z",
+   "command": "ulimit -v 8000000; timeout 60 python3 -I -c <band-edge arithmetic>  (system Python 3.8.10, stdlib only)",
+   "exit": 0,
+   "result": "mu_lo = 1237/10000 (q = 0.990000611), mu_hi = 2817/10000 (q = 0.947978590)",
+   "log": "logs/band_edges_host-0_20261023T153921Z.log",
+   "log_sha256": "ede220d19251d2b7d6acd16c210a25a50d7c6260b035edbd3f4fa7cde686c3fc"
+  },
+  {
+   "id": "P1-07",
+   "purpose": "environment probe repeated with a log",
+   "kind": "spot check (not of record)",
+   "hosts": ["host-1", "host-2"],
+   "start_utc": "2026-10-23T15:43:33Z",
+   "command": "ssh -o BatchMode=yes <host> 'date -u; hostname; uptime; nproc; free -g; df -h ~; [venv]/bin/python3 -I -c <versions>'",
+   "caps": "ssh timeout 60 s; no ulimit (version print only)",
+   "exit": 0,
+   "log": "logs/env_probe_host-1_host-2_20261023T154333Z.log",
+   "log_sha256": "27a612c7b8ffd0659256b4e8961f30c9789f97e7f601c8795c4e2836606ccc26"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+dev: helper self-tests
+  half_left = affine1d(0, 1, 2): True
+  half_right = affine1d(1, 1, 2): True
+  scaled Bernstein form reproduces p at 3 points: True
+  t_to_z(fhat) at a point = fhat(t(z)): True
+dev: known-answer gates
+  F transcription = Lean Fp: True
+  KA1 25 Bernstein coefficients = Lean B1: True
+  KA1 minimum: 731962/9
+  KA1 search verdict: VERIFIED
+  KA2 25 Bernstein coefficients = Lean B2: True
+  KA2 minimum: 179096
+  KA2 search verdict: VERIFIED
+  KA3 REJECT: True
+  KA3 detail: {'verdict': 'REJECT', 'z': '1/4', 's': '1/2', 'depth': '3', 'nodes': '4', 'leaves': '0'}
+  KA4 VERIFIED: True
+  KA4 detail: {'verdict': 'VERIFIED', 'leaves': '10', 'nodes': '19', 'max_depth': '5', 'min_ratio': '0.04565868263473054'}
+  KNOWN-ANSWER GATES: PASS
+dev: a synthetic P of degree (28, 4) on [3/25, 13/100] (not T3 data)
+  synthetic [3/25, 13/100] deg [68, 12]: X1 True, X2 40/40, X3 True/True; search REJECT (0 leaves, 1 nodes, max depth 0, min ratio -); 10.3 s
+      NP-A c = 4: REJECT at (z, mu) = (0, 3/25), depth 0; witness N ~ -53249.69920697383
+      NP-B: REJECT at (z, mu) = (0, 3/25), depth 0, N = -14293856732478501357765513/1196268651020288000000
+      DR1 corner-only: on P REJECT, on NP-A REJECT; DR2 (tampered F): X1 False, X2 equal at 0/40
+exit 0

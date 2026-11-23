@@ -1,0 +1,158 @@
+[
+ {
+  "id": "ZM1",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "def nu (n ℓ : ℝ) : ℝ := ℓ + n / 2 - 1",
+  "new": "def nu (n ℓ : ℝ) : ℝ := ℓ + n / 2 + 1",
+  "note": "ν = ℓ + n/2 + 1",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM2",
+  "file": "BHModesZ.lean",
+  "decl": "g_hasDerivAt",
+  "old": "+ n * (n - 1) * Y / ((ℓ - 1) + n * Y)",
+  "new": "+ n * (n + 1) * Y / ((ℓ - 1) + n * Y)",
+  "note": "g's last term with n(n + 1)",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM3",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "/ (64 * Hm n (mm n ℓ)",
+  "new": "/ (63 * Hm n (mm n ℓ)",
+  "note": "W = U₋/(63H₋²)",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM4",
+  "file": "BHModesZ.lean",
+  "decl": "gate_q1",
+  "old": "def δ1 (n ℓ : ℝ) : ℝ := 1 / ((n + 1) * (ℓ + n))",
+  "new": "def δ1 (n ℓ : ℝ) : ℝ := 1 / ((n + 2) * (ℓ + n))",
+  "note": "δ₁ = 1/((n + 2)(ℓ + n))",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM5",
+  "file": "BHModesZ.lean",
+  "decl": "gate_q1",
+  "old": "def mm (n ℓ : ℝ) : ℝ := (ℓ - 1) * (ℓ + n)",
+  "new": "def mm (n ℓ : ℝ) : ℝ := (ℓ - 1) * (ℓ + n - 1)",
+  "note": "m = (ℓ − 1)(ℓ + n − 1)",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM6",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "g n ℓ Y ^ 2 - g n ℓ Y - (n - 1)",
+  "new": "g n ℓ Y ^ 2 + g n ℓ Y - (n - 1)",
+  "note": "Z-id with g² + g in the bracket",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM7",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "- (n - 1) * Y * deriv (g n ℓ) Y) = W n ℓ Y",
+  "new": "- (n - 2) * Y * deriv (g n ℓ) Y) = W n ℓ Y",
+  "note": "Z-id with (n − 2)Y ∂_Y g",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM8",
+  "file": "BHModesZ.lean",
+  "decl": "partner",
+  "old": "theorem partner (n ℓ Y : ℝ) (hY : 1 - Y ≠ 0) (hP : (ℓ - 1) + n * Y ≠ 0) :\n    (1 - Y) ^ 2 * (g n ℓ Y ^ 2 + g n ℓ Y + (n - 1) * Y * deriv",
+  "new": "theorem partner (n ℓ Y : ℝ) (hY : 1 - Y ≠ 0) (hP : (ℓ - 1) + n * Y ≠ 0) :\n    (1 - Y) ^ 2 * (g n ℓ Y ^ 2 + g n ℓ Y - (n - 1) * Y * deriv",
+  "note": "partner with −(n − 1)Y ∂_Y g",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM9",
+  "file": "BHModesZ.lean",
+  "decl": "partner",
+  "old": "ℓ ^ 2 - 3 * ℓ + 2)",
+  "new": "ℓ ^ 2 - 3 * ℓ + 3)",
+  "note": "Ũ's constant term + 1",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)",
+  "error_text": {
+   "partner_n4": "unsolved goals"
+  }
+ },
+ {
+  "id": "ZM10",
+  "file": "BHModesZ.lean",
+  "decl": "gate_H",
+  "old": "= (ℓ + n) * ((ℓ - 1) + n * Y) := by",
+  "new": "= (ℓ + n) * (ℓ + n * Y) := by",
+  "note": "H₋(2Y) = (ℓ + n)(ℓ + nY)",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM11",
+  "file": "BHModesZ.lean",
+  "decl": "gate_q1",
+  "old": "theorem gate_q1 (n ℓ : ℝ) (h1 : n + 1 ≠ 0) (h2 : ℓ + n ≠ 0) :",
+  "new": "theorem gate_q1 (n ℓ : ℝ) (h1 : n + 1 ≠ 0) (h2 : ℓ + n ≠ 1) :",
+  "note": "gate_q1 assuming ℓ + n ≠ 1",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM12",
+  "file": "BHModesZ.lean",
+  "decl": "partner",
+  "old": "theorem partner (n ℓ Y : ℝ) (hY : 1 - Y ≠ 0) (hP : (ℓ - 1) + n * Y ≠ 0) :",
+  "new": "theorem partner (n ℓ Y : ℝ) (hY : 1 - Y ≠ 0) (hP : (ℓ - 1) + n * Y ≠ 1) :",
+  "note": "partner assuming (ℓ − 1) + nY ≠ 1",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM13",
+  "file": "BHModesZ.lean",
+  "decl": "g_hasDerivAt",
+  "old": "HasDerivAt (g n ℓ) (-ℓ / (1 - Y) ^ 2",
+  "new": "HasDerivAt (g n ℓ) (ℓ / (1 - Y) ^ 2",
+  "note": "∂_Y g stated with +ℓ/(1 − Y)²",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM14",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "Um n 1 (mm n ℓ) (δ1 n ℓ) (2 * Y) 0",
+  "new": "Um n 1 (mm n ℓ) (δ1 n ℓ) Y 0",
+  "note": "W with U₋ at x = Y",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM15",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "Um n 1 (mm n ℓ)",
+  "new": "Um n 0 (mm n ℓ)",
+  "note": "W with U₋ at K = 0",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM16",
+  "file": "BHModesZ.lean",
+  "decl": "z_id",
+  "old": "(2 * Y) 0 / (64",
+  "new": "(2 * Y) 1 / (64",
+  "note": "W with U₋ at y = 1",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ },
+ {
+  "id": "ZM17",
+  "file": "BHModesZ.lean",
+  "decl": "partner_no_pole",
+  "old": "(nhds (Ut n ℓ Y₀))",
+  "new": "(nhds (Ut n ℓ Y₀ + 1))",
+  "note": "P-reg with limit Ũ(Y₀) + 1",
+  "origin": "bh-modes Z Lean layer, BHM-126 (session-L, 2026-10-26)"
+ }
+]

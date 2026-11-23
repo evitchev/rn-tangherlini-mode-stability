@@ -1,0 +1,71 @@
+bh-modes p3 Lean layer (item (a)): build and audit, started 20261123T050009Z
+lean: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+
+== 1. sources
+ok   BHModesP3.lean f2cc9f8e14f024347a0feb91830189d826a20426514f08358cb0b7cb2f3746d1
+scan for sorry / admit / axiom / native_decide / implemented_by / extern (informational):
+  (no occurrence)
+
+== 2. compile
+BHModesP3: exit=0 seconds=6 errors=0 warnings=0 sorry=0
+
+== 3. axioms
+theorem headers: 33; #print axioms entries: 33; exit=0; axioms outside {propext, Classical.choice, Quot.sound}: none
+  'BHModes.P3.sdef_identity_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.sdef_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.form_nonneg_of_sdef' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.one_sub_zc' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.zc_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.f_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.beta_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.ansatz_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.Srho_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.zc_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.prop3' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.N_at_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.N_eps_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.rho_fprime' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.xH_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.xH_eq_twoM' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.x6_zc' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.F6_zc_TARGET' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.Vrho_D6' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.F6_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.F6_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.F6_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.H6_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.prop3_D6' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.N_at_infinity_D6' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.N_at_infinity_ell2' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.N_at_horizon_D6' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.prop3_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.prop3_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.Pzeta_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.Pzeta'_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.prop3_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.P3.pole_not_differentiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== 4. checker negative controls (false proofs; each must be rejected)
+NC1_two_plus_two: exit=1 errors=4  (theorem bogus : (2:ℝ) + 2 = 5 := by norm_num)
+NC2_false_margin: exit=1 errors=3  (theorem bogus (l : ℝ) : l * (l - 3) / 9 + 1 / 4 = (2 * l + 3) ^ 2 / 36 := by ring)
+
+== 5. mutations (registration: P3_MUTATION_REGISTRATION.md sha256 700b203e7853007244c5634c2047586e916605639d2e42dde7af0d3681439c0f, logged 2026-11-23T05:00:35Z, before the first run)
+{"id": "P3M1", "file": "BHModesP3.lean", "error_text": {"ansatz_identity": "unsolved goals"}, "error_text_found": true, "expected_decl": "ansatz_identity", "exit": 1, "errors": 4, "failing_decls": ["N_at_horizon", "N_at_infinity_D6", "N_eps_shift", "ansatz_identity"], "first_error": [182, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 174, "pass": true}
+{"id": "P3M2", "file": "BHModesP3.lean", "expected_decl": "sdef_identity", "exit": 1, "errors": 2, "failing_decls": ["form_nonneg_of_sdef", "sdef_identity"], "first_error": [90, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 90, "pass": true}
+{"id": "P3M3", "file": "BHModesP3.lean", "expected_decl": "beta_hasDerivAt", "exit": 1, "errors": 2, "failing_decls": ["Srho_hasDerivAt", "beta_hasDerivAt"], "first_error": [170, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 166, "pass": true}
+{"id": "P3M4", "file": "BHModesP3.lean", "expected_decl": "zc_hasDerivAt", "exit": 1, "errors": 4, "failing_decls": ["beta_hasDerivAt", "f_hasDerivAt", "zc_hasDerivAt"], "first_error": [153, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 153, "pass": true}
+{"id": "P3M5", "file": "BHModesP3.lean", "error_text": {"N_at_infinity_D6": "unsolved goals"}, "error_text_found": true, "expected_decl": "N_at_infinity_D6", "exit": 1, "errors": 2, "failing_decls": ["N_at_infinity_D6", "N_at_infinity_ell2"], "first_error": [372, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 372, "pass": true}
+{"id": "P3M6", "file": "BHModesP3.lean", "expected_decl": "N_at_infinity_ell2", "exit": 1, "errors": 1, "failing_decls": ["N_at_infinity_ell2"], "first_error": [384, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 377, "pass": true}
+{"id": "P3M7", "file": "BHModesP3.lean", "error_text": {"F6_hasDerivAt": "unsolved goals"}, "error_text_found": true, "expected_decl": "F6_hasDerivAt", "exit": 1, "errors": 1, "failing_decls": ["F6_hasDerivAt"], "first_error": [307, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 279, "pass": true}
+{"id": "P3M8", "file": "BHModesP3.lean", "expected_decl": "prop3", "exit": 1, "errors": 2, "failing_decls": ["prop3", "prop3_D6"], "first_error": [246, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 214, "pass": true}
+{"id": "P3M9", "file": "BHModesP3.lean", "expected_decl": "prop3", "exit": 1, "errors": 3, "failing_decls": ["Vrho_D6", "prop3", "prop3_Ioo"], "first_error": [242, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 187, "pass": true}
+{"id": "P3M10", "file": "BHModesP3.lean", "expected_decl": "prop3_Ioo", "exit": 1, "errors": 3, "failing_decls": ["prop3_Ioo"], "first_error": [420, "Type mismatch"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 404, "pass": true}
+{"id": "P3M11", "file": "BHModesP3.lean", "expected_decl": "prop3_Ioo", "exit": 1, "errors": 2, "failing_decls": ["prop3_Ioo", "prop3_zeta"], "first_error": [421, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 405, "pass": true}
+{"id": "P3M12", "file": "BHModesP3.lean", "expected_decl": "Pzeta_hasDerivAt", "exit": 1, "errors": 2, "failing_decls": ["Pzeta_hasDerivAt"], "first_error": [477, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 466, "pass": true}
+{"id": "P3M13", "file": "BHModesP3.lean", "error_text": {"prop3_zeta": "linarith failed to find a contradiction"}, "error_text_found": true, "expected_decl": "prop3_zeta", "exit": 1, "errors": 2, "failing_decls": ["prop3_zeta"], "first_error": [503, "Application type mismatch: The argument"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 492, "pass": true}
+{"id": "P3M14", "file": "BHModesP3.lean", "error_text": {"prop3_near": "linarith failed to find a contradiction"}, "error_text_found": true, "expected_decl": "prop3_near", "exit": 1, "errors": 2, "failing_decls": ["prop3_near"], "first_error": [458, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 449, "pass": true}
+{"id": "P3M15", "file": "BHModesP3.lean", "expected_decl": "pole_not_differentiable", "exit": 1, "errors": 1, "failing_decls": ["pole_not_differentiable"], "first_error": [511, "Tactic `rewrite` failed: Did not find an occurrence of the pattern"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 508, "pass": true}
+mutations failing as required: 15 / 15
+
+BHModesP3: ALL CHECKS AS REQUIRED
+finished 20261123T050208Z

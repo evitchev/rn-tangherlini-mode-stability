@@ -1,0 +1,47 @@
+{
+ "archive_sha256": "6971234840077323f9559568f9de376db835be022c3ad244ea822fa93e26b93a",
+ "checks": {
+  "E l=2": {
+   "detail": "F: sign*p = -691200 <= 0 at (t, mu) = (1, 0)  (a counterexample)",
+   "ok": false
+  },
+  "E0": {
+   "detail": "S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- = m + 10 x + 10 m delta x: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  }
+ },
+ "claim": "results/a2/elementary/PREREG.md (A2-E: l = 3..10)",
+ "control": "nc-ell2",
+ "parts": [
+  {
+   "ell": 2,
+   "failure": "F: sign*p = -691200 <= 0 at (t, mu) = (1, 0)  (a counterexample)"
+  }
+ ],
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "e422d74",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "qmax": "99/100",
+ "timing": {
+  "l=2": 0.66,
+  "t_total_s": 0.67,
+  "utc_start": "2026-10-24T03:36:08+00:00"
+ },
+ "verdict": "REJECT: E l=2"
+}

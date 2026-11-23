@@ -1,0 +1,4 @@
+libc++abi: libc++abi: terminatingterminating
+
+libc++abi: timeout: the monitored command dumped core
+exit 134

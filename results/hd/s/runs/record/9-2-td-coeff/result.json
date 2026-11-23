@@ -1,0 +1,159 @@
+{
+ "D": 9,
+ "band": "D=9 l=2",
+ "boxes_registered": [
+  [
+   "1271/10000",
+   "1399/10000"
+  ],
+  [
+   "1399/10000",
+   "1539/10000"
+  ],
+  [
+   "1539/10000",
+   "1693/10000"
+  ],
+  [
+   "1693/10000",
+   "1863/10000"
+  ],
+  [
+   "1863/10000",
+   "41/200"
+  ],
+  [
+   "41/200",
+   "451/2000"
+  ],
+  [
+   "451/2000",
+   "2481/10000"
+  ],
+  [
+   "2481/10000",
+   "273/1000"
+  ],
+  [
+   "273/1000",
+   "3003/10000"
+  ],
+  [
+   "3003/10000",
+   "413/1250"
+  ],
+  [
+   "413/1250",
+   "727/2000"
+  ],
+  [
+   "727/2000",
+   "3999/10000"
+  ],
+  [
+   "3999/10000",
+   "4399/10000"
+  ],
+  [
+   "4399/10000",
+   "4839/10000"
+  ],
+  [
+   "4839/10000",
+   "5323/10000"
+  ],
+  [
+   "5323/10000",
+   "366/625"
+  ],
+  [
+   "366/625",
+   "3221/5000"
+  ],
+  [
+   "3221/5000",
+   "7087/10000"
+  ],
+  [
+   "7087/10000",
+   "1949/2500"
+  ],
+  [
+   "1949/2500",
+   "536/625"
+  ],
+  [
+   "536/625",
+   "4717/5000"
+  ],
+  [
+   "4717/5000",
+   "1"
+  ]
+ ],
+ "checks": {
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [False, False, False, False, False, False, False, False, False, False, False]",
+   "ok": false
+  },
+  "H": {
+   "detail": "H_- has positive coefficients, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "PILOT": {
+   "detail": "the pilot record is VALID and DESIGN equals its designs at q_max: True",
+   "ok": true
+  },
+  "coverage": {
+   "detail": "{\"mu_a\": \"1271/10000\", \"mu_b\": \"1\", \"q(mu_a)^2\": \"796755993449624481/812910403449624481\", \"q(mu_b)^2\": \"0\", \"contiguous\": true, \"q(mu_a) >= q_max\": true, \"q(mu_b) <= q_lo or mu_b = 1\": true, \"w increases on [0, 1]\": true}",
+   "ok": true
+  }
+ },
+ "claim": "results/hd/s/PREREG.md, HD-S",
+ "claim_q": {
+  "exact": "[sqrt(0), sqrt(796755993449624481/812910403449624481)]",
+  "inward": [
+   "0.00000",
+   "0.99001"
+  ]
+ },
+ "control": "td-coeff",
+ "coverage": {
+  "contiguous": true,
+  "mu_a": "1271/10000",
+  "mu_b": "1",
+  "q(mu_a) >= q_max": true,
+  "q(mu_a)^2": "796755993449624481/812910403449624481",
+  "q(mu_b) <= q_lo or mu_b = 1": true,
+  "q(mu_b)^2": "0",
+  "w increases on [0, 1]": true
+ },
+ "design": [
+  "1/50",
+  "z",
+  "28"
+ ],
+ "kind": "from 0+",
+ "l": 2,
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0aa2673",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "q_lo": "0",
+ "q_max": "99/100",
+ "timing": {
+  "t_total_s": 0.06
+ },
+ "verdict": "REJECT: E0n"
+}

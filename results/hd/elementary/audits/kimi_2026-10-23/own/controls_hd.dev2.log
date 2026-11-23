@@ -1,0 +1,12 @@
+(a) D=7 l=2 q<=951/1000: F(1,mu_lo=1367/5000) = -4937563735773837/122070312500  (<0: True); verdict: REJECT (correct); info={'reason': 'non-positive value at Bernstein node', 'z': '1', 'mu': '1367/5000', 'value': '-4937563735773837/122070312500'}
+(b) D=10 l=3 q<=99/200: verdict REJECT (correct); info={'reason': 'non-positive value at Bernstein node', 'z': '1/2', 'mu': '1653/2000', 'value': '-6078885677633951/62500000000'}; corner F(1,mu_lo)=364090466450079993/3125000000; F(1/2,mu_lo)=-97262.171
+(c) planted bump D=7 l=4: F(1/2,mu_lo)=-109338770.39; verdict REJECT (correct); info={'reason': 'negative value', 'z': '1/2', 'mu': '11061/20000', 'value': '-54960987859429443214043907/160000000000000000'}
+PASS KAT1 p=-1 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '-1'}
+PASS KAT2 p=z-1/2 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '0'}
+PASS KAT3 p=z(1-z) strict must REJECT  {'reason': 'non-positive value at Bernstein node', 'z': '0', 'value': '0'}
+PASS KAT4 p=1+z+z^2 must PASS  {'nodes': 1, 'min_bernstein_coeff': '1'}
+PASS KAT5 tampered verifier accepts p=-1 (must be caught here)  {'nodes': 1, 'min_bernstein_coeff': '-1'}
+PASS KAT6 substitute_1d coefficients exact  {0: '11/4', 1: '0', 2: '1/4'}
+PASS KAT7 substitute_2d coefficients exact  {(0, 0): '1/2', (0, 1): '1/4', (1, 0): '1', (1, 1): '1/2', (2, 0): '1/2', (2, 1): '1/4'}
+PASS KAT8 non-unit box rejection at corner  {0: '-1/8', 1: '1/4'}
+CONTROLS: ALL OK

@@ -1,0 +1,2 @@
+P3_MUTATION_REGISTRATION.md sha256 ad90732fc0245e5a4f9ac86ba12b037819e8ccd9383aadc55286fb06bec09aa2
+written and hashed 2026-10-23T17:50:47Z (UTC), before any mutation run of the v3 file

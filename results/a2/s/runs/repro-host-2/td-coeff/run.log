@@ -1,0 +1,16 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0: FAIL  S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: -delta*m**2*x**2 - m*x**2, 0
+H: PASS  every coefficient of H_- > 0
+PARAM: PASS  s^2 = 1 + 4 m q^2/25, q(0) = 1, q(1/8)^2 = 2961/3025 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]
+DESIGN: PASS  pilot record sealed; degree 12
+G-RES: PASS  N polynomial in z: True; H(2) = (ell + 3)*(ell + 4); N(0) - 576 H(2)^2 (c - a(a+1)) = 0
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, 1/8]
+S: PASS  eps_n = 7*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 9074593269675572197737945623846400133109211696046024617/6551509701269746991391237389054354049518427701248
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 62213370092041076093490880495493307546636351114095603645022099/21041882133373434910662460157942721798515109431544381440
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 2642020416
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4423937516819615108281595470327575066741972077871/27222589353675077077069968594541456916480
+REJECT: E0

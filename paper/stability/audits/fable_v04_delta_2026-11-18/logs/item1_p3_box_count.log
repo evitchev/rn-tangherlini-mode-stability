@@ -1,0 +1,247 @@
+# item1_p3_box_count.log  2026-11-18 12:38:05 EST  how p3's and hd/s's code count 'Bernstein boxes' (code/, read only)
+code/hd:
+devtest_pilot.py
+devtest.py
+devtest_scheck.py
+devtest_s.py
+elementary.py
+__init__.py
+pilot.py
+scert.py
+scheck.py
+
+code/p3:
+__init__.py
+scert.py
+--- p3: lines that build the 'N > 0' / 'L > 0' counts
+code/p3/scert.py:12:            S5 (5.63b)); N > 0 by exact Bernstein enclosures (onset.bernstein, python-flint fmpq).
+code/p3/scert.py:209:    """N > 0 on [0, 1] x mbox (mbox = (a, b); a = b for a point), via N L > 0 and L > 0."""
+code/p3/scert.py:217:    prove_sign(Lp, (fmpq(0), fmpq(1), a, b), 1, 30, stats, label + ": L > 0")
+code/p3/scert.py:220:        prove_sign(p2, (z0, z1, a, b), 1, 40, stats, label + ": N > 0")
+code/p3/scert.py:297:        rec["boxes"] = stats
+code/p3/scert.py:318:        rec["boxes"] = stats
+code/p3/scert.py:320:    boxes = ([(Fraction(97, 600), Fraction(103, 600))] if tier == "T2"
+code/p3/scert.py:322:    rec["boxes_mu"] = []
+code/p3/scert.py:323:    for (ma, mb) in boxes:
+code/p3/scert.py:329:        rec["boxes_mu"].append({"mu": [str(ma), str(mb)], "t_design_s": round(td, 2),
+code/p3/scert.py:356:    for k in ("deg_z", "deg_mu", "boxes", "t_design_s", "t_verify_s", "NC-P1"):
+code/p3/scert.py:359:    for bx in r.get("boxes_mu", []):
+--- hd: same
+code/hd/devtest.py:21:          {k: r[k] for k in ("mu_lo", "covers", "F_degrees", "bernstein_leaves")})
+code/hd/scert.py:15:            bisection (onset.bernstein.prove_sign).  N > 0 on [0, 1] proves A_{l,q} >= 0 for every q of the box
+code/hd/scert.py:18:            then bisected in mu, at most BISECT times; the band is REJECT if a box fails after the last step.
+code/hd/scert.py:192:    verify(poly2(E.L), (fmpq(0), fmpq(1), a, b), 1, 30, stats, label + ": L > 0")
+code/hd/scert.py:194:    verify(poly2(nl), (fmpq(0), fmpq(1), a, b), 1, MAX_DEPTH, stats, label + ": N > 0")
+code/hd/scert.py:395:            checks[key] = (True, "N > 0 (with the fallback pieces, if any)")
+code/hd/pilot.py:22:    PG1   the recorded rule-2 certificates T1 and G1 (BHM-025; N > 0 proved exactly): sigma > 0 under this evaluator
+code/hd/pilot.py:24:    NC-H  T1's pilot design plus c (1 - z), which raises P(0) to 1/10 above the horizon bound W(0)/f_z(0) and leaves
+code/hd/elementary.py:16:Den > 0 on [mu_lo, 1] and F > 0 on [0, 1] x [mu_lo, 1] by exact Bernstein bisection.
+code/hd/elementary.py:159:    rec.update({"bernstein_leaves": stats["F"], "U_lower_bound": str(lower)})
+--- onset/bernstein.py: prove_sign and its stats counter (what p3's and hd's counts mean)
+69:def prove_sign(p, box, sign, max_depth, stats, label, minrec=None):
+71:    a leaf at max_depth is still undecided or a corner value has the wrong sign.  If a dict
+73:    accepted leaves: a certified lower bound of sign * p on the box."""
+76:        (t0, t1, m0, m1), depth = stack.pop()
+79:        stats[label] = stats.get(label, 0) + 1
+88:        if depth >= max_depth:
+89:            raise CertificateError(f"{label}: undecided at depth {depth} on box {(t0, t1, m0, m1)}")
+93:            stack += [((t0, tm, m0, m1), depth + 1), ((tm, t1, m0, m1), depth + 1)]
+96:            stack += [((t0, t1, m0, mm_), depth + 1), ((t0, t1, mm_, m1), depth + 1)]
+--- the function body of prove_sign
+69: def prove_sign(p, box, sign, max_depth, stats, label, minrec=None):
+70:     """Prove sign * p > 0 on the closed box by adaptive bisection; raise CertificateError if
+71:     a leaf at max_depth is still undecided or a corner value has the wrong sign.  If a dict
+72:     minrec is given, minrec[label] is the least Bernstein coefficient of sign * p over the
+73:     accepted leaves: a certified lower bound of sign * p on the box."""
+74:     stack = [(box, 0)]
+75:     while stack:
+76:         (t0, t1, m0, m1), depth = stack.pop()
+77:         b = p.bernstein(t0, t1, m0, m1)
+78:         lo = min(sign * c for row in b for c in row)
+79:         stats[label] = stats.get(label, 0) + 1
+80:         if lo > 0:
+81:             if minrec is not None:
+82:                 minrec[label] = lo if label not in minrec else min(minrec[label], lo)
+83:             continue
+84:         for (tt, mm) in ((t0, m0), (t0, m1), (t1, m0), (t1, m1)):
+85:             if sign * p.value(tt, mm) <= 0:
+86:                 raise CertificateError(f"{label}: sign*p = {sign * p.value(tt, mm)} <= 0 at "
+87:                                        f"(t, mu) = ({tt}, {mm})  (a counterexample)")
+88:         if depth >= max_depth:
+89:             raise CertificateError(f"{label}: undecided at depth {depth} on box {(t0, t1, m0, m1)}")
+90:         # bisect the side whose Bernstein coefficients vary more (never a variable p lacks)
+91:         if p.dm == 0 or (p.dt > 0 and (t1 - t0) * p.dt >= (m1 - m0) * p.dm):
+92:             tm = (t0 + t1) / 2
+93:             stack += [((t0, tm, m0, m1), depth + 1), ((tm, t1, m0, m1), depth + 1)]
+94:         else:
+95:             mm_ = (m0 + m1) / 2
+96:             stack += [((t0, t1, m0, mm_), depth + 1), ((t0, t1, mm_, m1), depth + 1)]
+97:     return True
+60	        for k in range(dt + 1):                      # for each t-Bernstein index, the mu-polynomial
+61	            row = [cols[j][k] for j in range(dm + 1)]
+62	            out.append(_to_bernstein(_affine(row, m0, m1 - m0, dm), dm))
+63	        return out
+64	
+65	    def value(self, t, mu):
+66	        return sum((c * fmpq(t) ** i * fmpq(mu) ** j for (i, j), c in self.terms.items()), fmpq(0))
+67	
+68	
+69	def prove_sign(p, box, sign, max_depth, stats, label, minrec=None):
+70	    """Prove sign * p > 0 on the closed box by adaptive bisection; raise CertificateError if
+71	    a leaf at max_depth is still undecided or a corner value has the wrong sign.  If a dict
+72	    minrec is given, minrec[label] is the least Bernstein coefficient of sign * p over the
+73	    accepted leaves: a certified lower bound of sign * p on the box."""
+74	    stack = [(box, 0)]
+75	    while stack:
+76	        (t0, t1, m0, m1), depth = stack.pop()
+77	        b = p.bernstein(t0, t1, m0, m1)
+78	        lo = min(sign * c for row in b for c in row)
+79	        stats[label] = stats.get(label, 0) + 1
+80	        if lo > 0:
+81	            if minrec is not None:
+82	                minrec[label] = lo if label not in minrec else min(minrec[label], lo)
+83	            continue
+84	        for (tt, mm) in ((t0, m0), (t0, m1), (t1, m0), (t1, m1)):
+85	            if sign * p.value(tt, mm) <= 0:
+86	                raise CertificateError(f"{label}: sign*p = {sign * p.value(tt, mm)} <= 0 at "
+87	                                       f"(t, mu) = ({tt}, {mm})  (a counterexample)")
+88	        if depth >= max_depth:
+89	            raise CertificateError(f"{label}: undecided at depth {depth} on box {(t0, t1, m0, m1)}")
+90	        # bisect the side whose Bernstein coefficients vary more (never a variable p lacks)
+91	        if p.dm == 0 or (p.dt > 0 and (t1 - t0) * p.dt >= (m1 - m0) * p.dm):
+92	            tm = (t0 + t1) / 2
+93	            stack += [((t0, tm, m0, m1), depth + 1), ((tm, t1, m0, m1), depth + 1)]
+94	        else:
+95	            mm_ = (m0 + m1) / 2
+96	            stack += [((t0, t1, m0, mm_), depth + 1), ((t0, t1, mm_, m1), depth + 1)]
+97	    return True
+--- code/p3/scert.py l.200-226 (how T3's 'N > 0' count is produced)
+200	    return sp.expand(Un * Hd**2 * fd - 64 * Hn**2 * Ud * (br + extra * fd)), sp.expand(Ud * Hd**2 * fd)
+201	
+202	
+203	def poly2_of(expr):
+204	    p = sp.Poly(expr, z, mu)
+205	    return Poly2({(i, j): Q(c) for (i, j), c in p.terms()})
+206	
+207	
+208	def verify(S, P, mbox, stats, label, pieces=None, extra=0):
+209	    """N > 0 on [0, 1] x mbox (mbox = (a, b); a = b for a point), via N L > 0 and L > 0."""
+210	    a, b = (Q(v) for v in mbox)
+211	    point = mbox[0] == mbox[1]
+212	    pp = parts(S, mbox[0] if point and S["n"] == 4 else None)
+213	    if point and S["n"] == 4:
+214	        P = P.subs(mu, R(mbox[0]))
+215	    NL, L = N_times_L(pp, P, extra)
+216	    Lp = poly2_of(L)
+217	    prove_sign(Lp, (fmpq(0), fmpq(1), a, b), 1, 30, stats, label + ": L > 0")
+218	    p2 = poly2_of(NL)
+219	    for (z0, z1) in (pieces or [(fmpq(0), fmpq(1))]):
+220	        prove_sign(p2, (z0, z1, a, b), 1, 40, stats, label + ": N > 0")
+221	    return {"deg_z": p2.dt, "deg_mu": p2.dm}
+222	
+223	
+224	def poly_coeffs(P):
+225	    return {str(k): str(v) for k, v in sp.Poly(P, z, mu).as_dict().items()}
+226	
+--- code/hd/scert.py: def verify and l.180-200
+190:def verify_box(E, Phat, s, e, box, verify, stats, label, extra=None):
+180	        out = self.A0 * s2e - self.HU * br
+181	        if extra is not None:
+182	            out = out - self.HU * self.fd * extra * s2e
+183	        return out
+184	
+185	
+186	def poly2(p):
+187	    return Poly2({(i, j): Q(c) for (i, j), c in p.terms()})
+188	
+189	
+190	def verify_box(E, Phat, s, e, box, verify, stats, label, extra=None):
+191	    a, b = (Q(t) for t in box)
+192	    verify(poly2(E.L), (fmpq(0), fmpq(1), a, b), 1, 30, stats, label + ": L > 0")
+193	    nl = E.NL(Phat, s, e, extra)
+194	    verify(poly2(nl), (fmpq(0), fmpq(1), a, b), 1, MAX_DEPTH, stats, label + ": N > 0")
+195	    return {"deg_z": nl.degree(z), "deg_mu": nl.degree(mu)}
+196	
+197	
+198	# ---------------------------------------------------------------- design (untrusted, floats)
+199	def design_box(n, ell, box, var, deg, eps, funcs=None):
+200	    """Phat (exact Poly in z, mu), s, e, delta_b, and the planning record of the box.  funcs: synthetic (U, H) floats."""
+190	def verify_box(E, Phat, s, e, box, verify, stats, label, extra=None):
+191	    a, b = (Q(t) for t in box)
+192	    verify(poly2(E.L), (fmpq(0), fmpq(1), a, b), 1, 30, stats, label + ": L > 0")
+193	    nl = E.NL(Phat, s, e, extra)
+194	    verify(poly2(nl), (fmpq(0), fmpq(1), a, b), 1, MAX_DEPTH, stats, label + ": N > 0")
+195	    return {"deg_z": nl.degree(z), "deg_mu": nl.degree(mu)}
+196	
+197	
+198	# ---------------------------------------------------------------- design (untrusted, floats)
+199	def design_box(n, ell, box, var, deg, eps, funcs=None):
+200	    """Phat (exact Poly in z, mu), s, e, delta_b, and the planning record of the box.  funcs: synthetic (U, H) floats."""
+201	    ma, mb = box
+202	    mid = (ma + mb) / 2
+203	    dt = 2 * float(w_exact(n, ell, mid)) / (1 + float(w_exact(n, ell, mid)))
+204	    delta_b = Fraction(dt).limit_denominator(1000) if var == "zeta" else None
+--- code/hd/elementary.py l.140-160
+140	    if not covers:
+141	        raise CertificateError(f"n={n} l={ell}: [mu_lo, 1] = [{mu_lo}, 1] reaches only q^2 = {q2_lo} < {q_hi ** 2}")
+142	
+143	    expr = U.subs({m: P["m"], d: P["delta"]}).subs(x, t * P["xH"])
+144	    num, den = sp.fraction(sp.cancel(sp.together(expr)))
+145	    if den.has(t):
+146	        raise CertificateError(f"n={n} l={ell}: denominator depends on t")
+147	    sg = 1 if sp.Poly(den, mu).eval(sp.Rational(1, 2)) > 0 else -1
+148	    F, Den = sp.expand(sg * num), sp.expand(sg * den)
+149	    if sp.cancel(F / Den - expr) != 0:
+150	        raise CertificateError(f"n={n} l={ell}: F/Den differs from U_-")
+151	    Fp = sp.Poly(F, t, mu)
+152	    rec.update({"F_degrees": [Fp.degree(t), Fp.degree(mu)], "Den": str(sp.factor(Den))})
+153	    positive_mu(verify, Den, mu_lo, 1, stats, minrec, "Den")
+154	    F2 = Poly2({(i, j): Q(c) for (i, j), c in Fp.terms()})
+155	    verify(F2, (fmpq(0), fmpq(1), Q(mu_lo), fmpq(1)), 1, MAX_DEPTH, stats, "F", minrec)
+156	    den2 = Poly2({(0, j): Q(c) for (j,), c in sp.Poly(Den, mu).terms()})
+157	    den_max = max(c for row in den2.bernstein(fmpq(0), fmpq(1), Q(mu_lo), fmpq(1)) for c in row)
+158	    lower = minrec["F"] / den_max
+159	    rec.update({"bernstein_leaves": stats["F"], "U_lower_bound": str(lower)})
+160	    return rec
+--- code/hdx: calls of prove_sign / verify and the bernstein_leaves field
+code/hdx/gate.py:8:       degrees, bernstein_leaves, min_bernstein (every chart's least Bernstein coefficient), THROAT's value, verdict,
+code/hdx/gate.py:17:S_FIELDS = ("design", "eps", "degrees", "bernstein_leaves", "min_bernstein", "verdict")
+code/hdx/elementary.py:43:from a1.p1 import MAX_DEPTH, kats, plain, positive_mu, tampered_prove_sign
+code/hdx/elementary.py:46:from onset.bernstein import Poly2, Q, prove_sign
+code/hdx/elementary.py:62:            "bernstein_leaves", "splitting")
+code/hdx/elementary.py:155:    rec["bernstein_leaves"] = stats
+code/hdx/elementary.py:228:    verify = tampered_prove_sign if control == "td-verifier" else prove_sign
+code/hdx/devtest_critical.py:35:from a1.p1 import kats, tampered_prove_sign
+code/hdx/devtest_critical.py:39:from onset.bernstein import prove_sign
+code/hdx/devtest_critical.py:170:    ok, _ = kats(prove_sign)
+code/hdx/devtest_critical.py:172:    ok, _ = kats(tampered_prove_sign)
+code/hdx/devtest_critical.py:257:        checks, rec, timing, b, ch, mu1, sig1, dz = C.gates(n, ell, "none", ROOT, None, prove_sign, {}, {})
+code/hdx/devtest_critical.py:264:            verify = tampered_prove_sign if control == "td-verifier" else prove_sign
+code/hdx/devtest_critical.py:268:        checks, rec, timing, b, ch, mu1, sig1, dz = C.gates(n, ell, "nc-bound", ROOT, None, prove_sign, {}, {})
+code/hdx/devtest_critical.py:269:        certified, info, plant = C.nc_bound_a(prove_sign, b, {}, {})
+code/hdx/devtest_critical.py:282:        verify = tampered_prove_sign if control == "td-verifier" else prove_sign
+code/hdx/scert.py:60:from a1.p1 import kats, plain, tampered_prove_sign
+code/hdx/scert.py:66:from onset.bernstein import Poly2, Q, prove_sign
+code/hdx/scert.py:198:    verify = tampered_prove_sign if control == "td-verifier" else prove_sign
+code/hdx/scert.py:313:    rec["bernstein_leaves"] = stats
+--- code/a2 and code/a1: same
+code/a1/p1.py:11:bisection (onset.bernstein.prove_sign).
+code/a1/p1.py:41:from onset.bernstein import Poly2, Q, prove_sign
+code/a1/p1.py:51:def tampered_prove_sign(p, box, sign, max_depth, stats, label, minrec=None):
+code/a1/p1.py:52:    """TD-A1c: prove_sign with its acceptance test lo > 0 lowered to lo > -1.  Otherwise identical."""
+code/a1/p1.py:60:            if minrec is not None:                           # recorded as prove_sign does (addendum 1)
+code/a1/p1.py:163:    rec.update({"bernstein_leaves": stats, "min_bernstein_F": str(minrec["F"]),
+code/a1/p1.py:205:    verify = tampered_prove_sign if control == "td-verifier" else prove_sign
+code/a1/devtest.py:9:from a1.p1 import kats, part1, part2, tampered_prove_sign
+code/a1/devtest.py:11:from onset.bernstein import prove_sign
+code/a1/devtest.py:15:    print("KATs, real verifier:", kats(prove_sign))
+code/a1/devtest.py:16:    print("KATs, tampered verifier (KAT2 must fail):", kats(tampered_prove_sign))
+code/a1/devtest.py:18:    ok, rec = part1(prove_sign, 3, u1, sp.Rational(99, 100), False)
+--- T3 record: result keys and any 'pieces' / 'extra' fields
+["EPS","boxes_mu","tier"]
+[]
+--- hd/s records: any fallback/pieces fields
+[]
+[]
+--- accepted-leaf conversion (examined = 2*leaves - 1 per root box): T3 3->2 per mu-box (16 of 24 examined); E2 (7,3)->(4,2): 29 examined -> 21 accepted; HD-S 919 examined over 231 roots -> (919+231)/2 = 575 accepted; HD-X-S O chart 3->2, 5->3
+HD-S accepted leaves: 575 ; E2 accepted: 21 ; T3 accepted: 16

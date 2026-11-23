@@ -1,0 +1,35 @@
+ok   1. lines 36-174 are lean_z's lines 25-163: sha256 db0d9ea14a33f02c...
+ok   1. lines 180-239 are p3 v5's lines 86-145: sha256 1e4354ce068c108d...
+ok   1. the file ends with the namespace: 773 lines
+ok   1. the theorems are the expected 46, in order: 46 theorems
+ok   2. fr_S5 holds identically
+ok   2. Vr_S5 holds identically
+ok   2. dg is ∂_Y g
+ok   3. Yr_hasDerivAt: the stated derivative is the derivative (n symbolic; n = 2..9)
+ok   3. fr_hasDerivAt: the stated derivative is the derivative (n symbolic; n = 2..9)
+ok   3. wr_hasDerivAt: the stated derivative is the derivative (n symbolic; n = 2..9)
+ok   4. riccati_plus holds identically (n symbolic; n = 2..9)
+ok   4. riccati_minus holds identically (n symbolic; n = 2..9)
+ok   4. V_eq holds identically (n symbolic; n = 2..9)
+ok   4. Vt_eq holds identically (n symbolic; n = 2..9)
+ok   5. log_u0_hasDerivAt: d(log u₀)/dρ = g/ρ (n symbolic; n = 2..9)
+ok   5. information: Vr − Vtr is not 0
+ok   6. information: r*(2) = 0, r* increases, r* ≥ ρ − 2, r* ≤ (1 − 1/(ρ − 1))/(n − 1)² (n = 2, 4, 9)
+ok   6. information: R(t) inverts r* and dR/dt = f(R) at t = −1000..1000 (n = 2, 4, 9): 4.14e-27
+ok   6. information: the S-deformation identity for a bump at n = 4, ℓ = 2, both sides > 0: 1.21984534828 vs 1.21984534828
+ok   7. ZD1: the mutated tortoise_q1 is false: r* maps (2, ∞) onto ℝ
+ok   7. ZD2: the mutated tortoise_q1 is false: r* decreasing
+ok   7. ZD3: the mutated tort_hasDerivAt is false: dr*/dρ = 2/f
+ok   7. ZD4: the mutated Rt_hasDerivAt is false: dR/dr* = 1/f(R)
+ok   7. ZD5: the mutated riccati_plus is false: w′ taken as dw/dρ, without f
+ok   7. ZD6: the mutated riccati_minus is false: (c)'s bracket with g² − g
+ok   7. ZD7: the mutated V_eq is false: V = w² − w′
+ok   7. ZD8: the mutated log_u0_hasDerivAt is false: d(log u₀)/dρ = gρ
+ok   7. ZD9: the mutated log_u0_hasDerivAt is false: u₀'s throat exponent ℓ/(n + 1)
+ok   7. ZD10: the mutated zero_mode is false: U″ = Ṽ U
+ok   7. ZD11: the mutated A_nonneg is false: A_{ℓ,1} − 1 ≥ 0
+ok   7. ZD12: the mutated Vr_S5 is false: V = f W/ρ³
+ok   7. ZD13: the mutated tort_le is false: r*'s bound with (n − 1) for (n − 1)²
+ok   7. ZD14: the mutated one_sub_Yr_le is false: Bernoulli with n − 2
+ok   7. ZD15: the mutated wr_hasDerivAt is false: dg with +ℓ/(1 − Y)²
+ALL ZD CHECKS HOLD (34/34)

@@ -1,0 +1,21 @@
+n=4 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=5 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=6 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=7 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=8 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=9 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=N none: VERIFIED
+n=2 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=3 none: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=4 nc-nu: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=4 nc-exp: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=4 td-U: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=4 td-zid: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=4 td-preg: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=9 nc-nu: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=9 nc-exp: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=9 td-U: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=9 td-zid: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+n=9 td-preg: REJECT: exception TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+KIT FAIL
+exit=1

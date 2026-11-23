@@ -1,0 +1,97 @@
+{
+ "archive_sha256": "6db58904a6b9b821e67fdf8a43d7d439221af73cdf87b4b3074c9775693bb4f5",
+ "checks": {
+  "H": {
+   "detail": "H_-(2Y) - (l + n) h = 0",
+   "ok": true
+  },
+  "P-asym": {
+   "detail": "not computed: Z-id failed",
+   "ok": false
+  },
+  "P-reg": {
+   "detail": "not computed: Z-id failed",
+   "ok": false
+  },
+  "Z-id": {
+   "detail": "identity residual nonzero: -(ell - 1)**2/(9*Y + ell - 1)**2",
+   "ok": false
+  },
+  "Z-inf": {
+   "detail": "W(0) - nu (nu + 1) = 1",
+   "ok": false
+  },
+  "Z-pos": {
+   "detail": "h at l = 2 + t: 9*Y + t + 1",
+   "ok": true
+  },
+  "Z-thr": {
+   "detail": "alpha (alpha - 1) (n-1)^2 - W(1) = -(ell - 1)**2/(ell + 8)**2; W(1) = (ell**4 + 8*ell**3 - 63*ell**2 - 514*ell + 1)/(ell + 8)**2",
+   "ok": false
+  },
+  "q1": {
+   "detail": "(n+1)^2 delta (1 + m delta) = 1; 1 + 2 m delta - (2l+n-1)/(n+1) = 0",
+   "ok": true
+  }
+ },
+ "claim": "results/extremal/PREREG.md: Z, the extremal zero mode, and its Darboux partner",
+ "control": "td-U",
+ "facts": {
+  "W": "-(18225*Y**4 + 4050*Y**3*ell - 17172*Y**3 - 35*Y**2*ell**2 - 4934*Y**2*ell + 2134*Y**2 - 8*Y*ell**3 + 294*Y*ell**2 + 2838*Y*ell - 3124*Y - 4*ell**4 - 24*ell**3 - 7*ell**2 + 102*ell - 67)/(4*(9*Y + ell - 1)**2)",
+  "throat_classification": {
+   "l=2": {
+    "2l<=n-1": true,
+    "alpha": "1/4",
+    "alpha_minus": "1/4",
+    "throat_principal": true
+   },
+   "l=3": {
+    "2l<=n-1": true,
+    "alpha": "3/8",
+    "alpha_minus": "3/8",
+    "throat_principal": true
+   },
+   "l=4": {
+    "2l<=n-1": true,
+    "alpha": "1/2",
+    "alpha_minus": "1/2",
+    "throat_principal": true
+   },
+   "l=5": {
+    "2l<=n-1": false,
+    "alpha": "5/8",
+    "alpha_minus": "3/8",
+    "throat_principal": false
+   },
+   "l=6": {
+    "2l<=n-1": false,
+    "alpha": "3/4",
+    "alpha_minus": "1/4",
+    "throat_principal": false
+   },
+   "l=7": {
+    "2l<=n-1": false,
+    "alpha": "7/8",
+    "alpha_minus": "1/8",
+    "throat_principal": false
+   }
+  }
+ },
+ "n": "9",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "0879f27",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.234,
+  "utc_start": "2026-11-18T18:22:30+00:00"
+ },
+ "verdict": "REJECT: Z-inf, Z-thr, Z-id, P-reg, P-asym"
+}

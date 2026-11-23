@@ -1,0 +1,2078 @@
+{
+ "host": "host-1",
+ "checks": [
+  {
+   "check": "D6: T3 lower < O2's q_* interval lower end",
+   "left": "21576/22801",
+   "relation": "<",
+   "right": "98250975923453282775110181479556452646592956062313618033845655646418970166348500804929933389/103767370865121456550439496271466377049577792779941907454834080211019555978294827145696167025",
+   "ok": true,
+   "source": "onset result.json q_star_squared_interval; p3/PREREG.md:42"
+  },
+  {
+   "check": "D6: T3 lower < O2's q_* interval upper end",
+   "left": "21576/22801",
+   "relation": "<",
+   "right": "2845287787581430822862476616601416214540084821278877924107620690877898388205588728188152536/3005039189656387103201290413774755488913110662792930961814927099700040745960805537430390561",
+   "ok": true,
+   "source": "onset result.json q_star_squared_interval"
+  },
+  {
+   "check": "D6: A2-S lower < T3 upper",
+   "left": "2961/3025",
+   "relation": "<",
+   "right": "31416/32041",
+   "ok": true,
+   "source": "a2/s/PREREG.md:10; p3/PREREG.md:42"
+  },
+  {
+   "check": "D6: A2-S q(1/8)^2 <= (99/100)^2",
+   "left": "2961/3025",
+   "relation": "<=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a2/s/PREREG.md:10,56"
+  },
+  {
+   "check": "D6: T3 lower is q(1/5)^2",
+   "left": "21576/22801",
+   "relation": "==",
+   "right": "21576/22801",
+   "ok": true,
+   "source": "p3 result.json last mu-box (q decreases with mu)"
+  },
+  {
+   "check": "D6: T3 upper is q(3/25)^2",
+   "left": "31416/32041",
+   "relation": "==",
+   "right": "31416/32041",
+   "ok": true,
+   "source": "p3 result.json first mu-box (q decreases with mu)"
+  },
+  {
+   "check": "D6: T3 has eight certified mu-boxes",
+   "left": "8",
+   "relation": "==",
+   "right": "8",
+   "ok": true,
+   "source": "p3/RESULT.md:18"
+  },
+  {
+   "check": "D6: rule-2 G1 is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "p3/rule2/record/G1/result.json"
+  },
+  {
+   "check": "D6 l=3: P1 and A2-E use the same mu_lo",
+   "left": "11/100",
+   "relation": "==",
+   "right": "11/100",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=3: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "134331349/137053849",
+   "relation": "==",
+   "right": "134331349/137053849",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=3: q(mu_lo)^2 >= (99/100)^2",
+   "left": "134331349/137053849",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=4: P1 and A2-E use the same mu_lo",
+   "left": "103/1000",
+   "relation": "==",
+   "right": "103/1000",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=4: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "63226555957929/64510244957929",
+   "relation": "==",
+   "right": "63226555957929/64510244957929",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=4: q(mu_lo)^2 >= (99/100)^2",
+   "left": "63226555957929/64510244957929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=5: P1 and A2-E use the same mu_lo",
+   "left": "49/500",
+   "relation": "==",
+   "right": "49/500",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=5: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "312772999176/319113139801",
+   "relation": "==",
+   "right": "312772999176/319113139801",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=5: q(mu_lo)^2 >= (99/100)^2",
+   "left": "312772999176/319113139801",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=6: P1 and A2-E use the same mu_lo",
+   "left": "47/500",
+   "relation": "==",
+   "right": "47/500",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=6: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "27471514409/28023764409",
+   "relation": "==",
+   "right": "27471514409/28023764409",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=6: q(mu_lo)^2 >= (99/100)^2",
+   "left": "27471514409/28023764409",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=7: P1 and A2-E use the same mu_lo",
+   "left": "91/1000",
+   "relation": "==",
+   "right": "91/1000",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=7: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "29925587924649/30523890174649",
+   "relation": "==",
+   "right": "29925587924649/30523890174649",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=7: q(mu_lo)^2 >= (99/100)^2",
+   "left": "29925587924649/30523890174649",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=8: P1 and A2-E use the same mu_lo",
+   "left": "89/1000",
+   "relation": "==",
+   "right": "89/1000",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=8: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "142474321369809/145333802369809",
+   "relation": "==",
+   "right": "142474321369809/145333802369809",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=8: q(mu_lo)^2 >= (99/100)^2",
+   "left": "142474321369809/145333802369809",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=9: P1 and A2-E use the same mu_lo",
+   "left": "87/1000",
+   "relation": "==",
+   "right": "87/1000",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=9: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "2613126399136/2665281539761",
+   "relation": "==",
+   "right": "2613126399136/2665281539761",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=9: q(mu_lo)^2 >= (99/100)^2",
+   "left": "2613126399136/2665281539761",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6 l=10: P1 and A2-E use the same mu_lo",
+   "left": "43/500",
+   "relation": "==",
+   "right": "43/500",
+   "ok": true,
+   "source": "a1 result.json part1.mu_lo; a2/elementary result.json parts.mu_lo"
+  },
+  {
+   "check": "D6 l=10: P1 and A2-E have the same q(mu_lo)^2",
+   "left": "12122233672881/12366763922881",
+   "relation": "==",
+   "right": "12122233672881/12366763922881",
+   "ok": true,
+   "source": "a1/a2 result.json q_at_mu_lo_squared"
+  },
+  {
+   "check": "D6 l=10: q(mu_lo)^2 >= (99/100)^2",
+   "left": "12122233672881/12366763922881",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "a1/PREREG.md:40-42; a2/elementary/PREREG.md:13,26"
+  },
+  {
+   "check": "D6: Lemma U's bound is positive",
+   "left": "959747/17496",
+   "relation": ">",
+   "right": "0",
+   "ok": true,
+   "source": "a1/RESULT.md:33-41"
+  },
+  {
+   "check": "D7 l=4: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "88875546247769841/90676699847769841",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=4: E1 ell is in the elementary partition",
+   "left": "4",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=4: E1 ell is at most E3's l0",
+   "left": "4",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=5: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1260408306251809/1285961331251809",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=5: E1 ell is in the elementary partition",
+   "left": "5",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=5: E1 ell is at most E3's l0",
+   "left": "5",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=6: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "2990429575134561/3051144839134561",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=6: E1 ell is in the elementary partition",
+   "left": "6",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=6: E1 ell is at most E3's l0",
+   "left": "6",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=7: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "67062761304/68422526929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=7: E1 ell is in the elementary partition",
+   "left": "7",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=7: E1 ell is at most E3's l0",
+   "left": "7",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=8: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1671543602326909969/1705473242326909969",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=8: E1 ell is in the elementary partition",
+   "left": "8",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=8: E1 ell is at most E3's l0",
+   "left": "8",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=9: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "250379048467881/255452804717881",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=9: E1 ell is in the elementary partition",
+   "left": "9",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=9: E1 ell is at most E3's l0",
+   "left": "9",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=10: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "395748089556169/403768313556169",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D7 l=10: E1 ell is in the elementary partition",
+   "left": "10",
+   "relation": ">=",
+   "right": "4",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D7 l=10: E1 ell is at most E3's l0",
+   "left": "10",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8 l=5: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "4668974966285821/4763672192848321",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D8 l=5: E1 ell is in the elementary partition",
+   "left": "5",
+   "relation": ">=",
+   "right": "5",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D8 l=5: E1 ell is at most E3's l0",
+   "left": "5",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8 l=6: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "21886331153401/22329887153401",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D8 l=6: E1 ell is in the elementary partition",
+   "left": "6",
+   "relation": ">=",
+   "right": "5",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D8 l=6: E1 ell is at most E3's l0",
+   "left": "6",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8 l=7: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "417695759704835689/426169882729835689",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D8 l=7: E1 ell is in the elementary partition",
+   "left": "7",
+   "relation": ">=",
+   "right": "5",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D8 l=7: E1 ell is at most E3's l0",
+   "left": "7",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8 l=8: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "67062761304/68422526929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D8 l=8: E1 ell is in the elementary partition",
+   "left": "8",
+   "relation": ">=",
+   "right": "5",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D8 l=8: E1 ell is at most E3's l0",
+   "left": "8",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8 l=9: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "60367093243851/61592265509476",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D8 l=9: E1 ell is in the elementary partition",
+   "left": "9",
+   "relation": ">=",
+   "right": "5",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D8 l=9: E1 ell is at most E3's l0",
+   "left": "9",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8 l=10: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "2532331545561553281/2583747108061553281",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D8 l=10: E1 ell is in the elementary partition",
+   "left": "10",
+   "relation": ">=",
+   "right": "5",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D8 l=10: E1 ell is at most E3's l0",
+   "left": "10",
+   "relation": "<=",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9 l=6: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "463823412241849/473223768241849",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D9 l=6: E1 ell is in the elementary partition",
+   "left": "6",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D9 l=6: E1 ell is at most E3's l0",
+   "left": "6",
+   "relation": "<=",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9 l=7: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "484312610547815049/494133420547815049",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D9 l=7: E1 ell is in the elementary partition",
+   "left": "7",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D9 l=7: E1 ell is at most E3's l0",
+   "left": "7",
+   "relation": "<=",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9 l=8: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "15447737457124281/15761381557124281",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D9 l=8: E1 ell is in the elementary partition",
+   "left": "8",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D9 l=8: E1 ell is at most E3's l0",
+   "left": "8",
+   "relation": "<=",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9 l=9: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "67062761304/68422526929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D9 l=9: E1 ell is in the elementary partition",
+   "left": "9",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D9 l=9: E1 ell is at most E3's l0",
+   "left": "9",
+   "relation": "<=",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9 l=10: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1057075793074089/1078512693074089",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D9 l=10: E1 ell is in the elementary partition",
+   "left": "10",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D9 l=10: E1 ell is at most E3's l0",
+   "left": "10",
+   "relation": "<=",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9 l=11: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "32048802264866241/32699460328866241",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D9 l=11: E1 ell is in the elementary partition",
+   "left": "11",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D9 l=11: E1 ell is at most E3's l0",
+   "left": "11",
+   "relation": "<=",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=6: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1580398467335649/1612456711335649",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=6: E1 ell is in the elementary partition",
+   "left": "6",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=6: E1 ell is at most E3's l0",
+   "left": "6",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=7: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1260408306251809/1285961331251809",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=7: E1 ell is in the elementary partition",
+   "left": "7",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=7: E1 ell is at most E3's l0",
+   "left": "7",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=8: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "4048726820785569/4130846664785569",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=8: E1 ell is in the elementary partition",
+   "left": "8",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=8: E1 ell is at most E3's l0",
+   "left": "8",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=9: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "44645608049199661/45551241838262161",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=9: E1 ell is in the elementary partition",
+   "left": "9",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=9: E1 ell is at most E3's l0",
+   "left": "9",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=10: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "67062761304/68422526929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=10: E1 ell is in the elementary partition",
+   "left": "10",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=10: E1 ell is at most E3's l0",
+   "left": "10",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=11: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "2179183094109/2223388156609",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=11: E1 ell is in the elementary partition",
+   "left": "11",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=11: E1 ell is at most E3's l0",
+   "left": "11",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=12: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "247285019541480921/252302616766480921",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=12: E1 ell is in the elementary partition",
+   "left": "12",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=12: E1 ell is at most E3's l0",
+   "left": "12",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10 l=13: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "250379048467881/255452804717881",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D10 l=13: E1 ell is in the elementary partition",
+   "left": "13",
+   "relation": ">=",
+   "right": "6",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D10 l=13: E1 ell is at most E3's l0",
+   "left": "13",
+   "relation": "<=",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=7: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "63226555957929/64510244957929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=7: E1 ell is in the elementary partition",
+   "left": "7",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=7: E1 ell is at most E3's l0",
+   "left": "7",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=8: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1098057088216569/1120335488216569",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=8: E1 ell is in the elementary partition",
+   "left": "8",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=8: E1 ell is at most E3's l0",
+   "left": "8",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=9: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "312772999176/319113139801",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=9: E1 ell is in the elementary partition",
+   "left": "9",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=9: E1 ell is at most E3's l0",
+   "left": "9",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=10: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "3569249455974032721/3641653502374032721",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=10: E1 ell is in the elementary partition",
+   "left": "10",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=10: E1 ell is at most E3's l0",
+   "left": "10",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=11: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "67062761304/68422526929",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=11: E1 ell is in the elementary partition",
+   "left": "11",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=11: E1 ell is at most E3's l0",
+   "left": "11",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=12: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "4361587221411889401/4449962619811889401",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=12: E1 ell is in the elementary partition",
+   "left": "12",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=12: E1 ell is at most E3's l0",
+   "left": "12",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=13: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "1168800942713829/1192481331776329",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=13: E1 ell is in the elementary partition",
+   "left": "13",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=13: E1 ell is at most E3's l0",
+   "left": "13",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11 l=14: E1 q(mu_lo)^2 >= (99/100)^2",
+   "left": "930301408094161/949171744094161",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17,45-46"
+  },
+  {
+   "check": "D11 l=14: E1 ell is in the elementary partition",
+   "left": "14",
+   "relation": ">=",
+   "right": "7",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:15-17"
+  },
+  {
+   "check": "D11 l=14: E1 ell is at most E3's l0",
+   "left": "14",
+   "relation": "<=",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7 l=2: E2 q_hi is registered q_split",
+   "left": "237/250",
+   "relation": "==",
+   "right": "237/250",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D7 l=2: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "6872766153201/7647166153201",
+   "relation": ">=",
+   "right": "56169/62500",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D7 l=3: E2 q_hi is registered q_split",
+   "left": "977/1000",
+   "relation": "==",
+   "right": "977/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D7 l=3: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "9686945043370161/10148120668370161",
+   "relation": ">=",
+   "right": "954529/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D8 l=3: E2 q_hi is registered q_split",
+   "left": "118/125",
+   "relation": "==",
+   "right": "118/125",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D8 l=3: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "45546003396576/51106756912201",
+   "relation": ">=",
+   "right": "13924/15625",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D8 l=4: E2 q_hi is registered q_split",
+   "left": "983/1000",
+   "relation": "==",
+   "right": "983/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D8 l=4: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "36170777841/37431027841",
+   "relation": ">=",
+   "right": "966289/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D9 l=3: E2 q_hi is registered q_split",
+   "left": "921/1000",
+   "relation": "==",
+   "right": "921/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D9 l=3: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "24612731484910569/29013727084910569",
+   "relation": ">=",
+   "right": "848241/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D9 l=4: E2 q_hi is registered q_split",
+   "left": "119/125",
+   "relation": "==",
+   "right": "119/125",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D9 l=4: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "4424493504621369/4881811729621369",
+   "relation": ">=",
+   "right": "14161/15625",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D9 l=5: E2 q_hi is registered q_split",
+   "left": "987/1000",
+   "relation": "==",
+   "right": "987/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D9 l=5: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "88535629683843441/90882063283843441",
+   "relation": ">=",
+   "right": "974169/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D10 l=3: E2 q_hi is registered q_split",
+   "left": "49/100",
+   "relation": "==",
+   "right": "49/100",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D10 l=3: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "919645821/3830248321",
+   "relation": ">=",
+   "right": "2401/10000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D10 l=4: E2 q_hi is registered q_split",
+   "left": "23/25",
+   "relation": "==",
+   "right": "23/25",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D10 l=4: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "2174750600176/2569291615801",
+   "relation": ">=",
+   "right": "529/625",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D10 l=5: E2 q_hi is registered q_split",
+   "left": "961/1000",
+   "relation": "==",
+   "right": "961/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D10 l=5: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "24494910640101/26521974702601",
+   "relation": ">=",
+   "right": "923521/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D11 l=4: E2 q_hi is registered q_split",
+   "left": "897/1000",
+   "relation": "==",
+   "right": "897/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D11 l=4: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "13702767677521/17029743677521",
+   "relation": ">=",
+   "right": "804609/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D11 l=5: E2 q_hi is registered q_split",
+   "left": "929/1000",
+   "relation": "==",
+   "right": "929/1000",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D11 l=5: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "111052634543953201/128663251568953201",
+   "relation": ">=",
+   "right": "863041/1000000",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D11 l=6: E2 q_hi is registered q_split",
+   "left": "121/125",
+   "relation": "==",
+   "right": "121/125",
+   "ok": true,
+   "source": "hd/elementary/PREREG.md:21-27"
+  },
+  {
+   "check": "D11 l=6: E2 q(mu_lo)^2 >= q_split^2",
+   "left": "82385946456/87917587081",
+   "relation": ">=",
+   "right": "14641/15625",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:45 and PREREG.md:45-46"
+  },
+  {
+   "check": "D7: E3's l0 is registered",
+   "left": "10",
+   "relation": "==",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D7: E3's uniform bound is positive",
+   "left": "399917/10368",
+   "relation": ">",
+   "right": "0",
+   "ok": true,
+   "source": "hd/elementary/RESULT_ADDENDUM_1.md:23-29"
+  },
+  {
+   "check": "D8: E3's l0 is registered",
+   "left": "10",
+   "relation": "==",
+   "right": "10",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D8: E3's uniform bound is positive",
+   "left": "1481614528/62748517",
+   "relation": ">",
+   "right": "0",
+   "ok": true,
+   "source": "hd/elementary/RESULT_ADDENDUM_1.md:23-29"
+  },
+  {
+   "check": "D9: E3's l0 is registered",
+   "left": "11",
+   "relation": "==",
+   "right": "11",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D9: E3's uniform bound is positive",
+   "left": "17257/2401",
+   "relation": ">",
+   "right": "0",
+   "ok": true,
+   "source": "hd/elementary/RESULT_ADDENDUM_1.md:23-29"
+  },
+  {
+   "check": "D10: E3's l0 is registered",
+   "left": "13",
+   "relation": "==",
+   "right": "13",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D10: E3's uniform bound is positive",
+   "left": "79325/16384",
+   "relation": ">",
+   "right": "0",
+   "ok": true,
+   "source": "hd/elementary/RESULT_ADDENDUM_1.md:23-29"
+  },
+  {
+   "check": "D11: E3's l0 is registered",
+   "left": "14",
+   "relation": "==",
+   "right": "14",
+   "ok": true,
+   "source": "hd/elementary/RESULT.md:14-20 and E3.l0"
+  },
+  {
+   "check": "D11: E3's uniform bound is positive",
+   "left": "19870/6561",
+   "relation": ">",
+   "right": "0",
+   "ok": true,
+   "source": "hd/elementary/RESULT_ADDENDUM_1.md:23-29"
+  },
+  {
+   "check": "D7 l=2: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "450385526985669121/501172656585669121",
+   "relation": "<=",
+   "right": "56169/62500",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D7 l=2: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "482351496417168561/492144578017168561",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D7 l=2: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D7 l=2: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D7 l=3: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "154985298094511521/162372700594511521",
+   "relation": "<=",
+   "right": "954529/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D7 l=3: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "616496957997921/629010864247921",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D7 l=3: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D7 l=3: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D8 l=2: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "0",
+   "relation": "<=",
+   "right": "0",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D8 l=2: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "17083021501189/17429648063689",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D8 l=2: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D8 l=2: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D8 l=2: the from-0+ box ends at mu=1 and verifies",
+   "left": "1",
+   "relation": "==",
+   "right": "1",
+   "ok": true,
+   "source": "hd/s result.json last box and PREREG.md:77"
+  },
+  {
+   "check": "D8 l=2: the from-0+ box verifies",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json last box verified"
+  },
+  {
+   "check": "D8 l=3: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "3684836513121/4135077513121",
+   "relation": "<=",
+   "right": "13924/15625",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D8 l=3: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "199657162856145201/203706576081145201",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D8 l=3: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D8 l=3: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D8 l=4: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "978026969107944729/1012152142007944729",
+   "relation": "<=",
+   "right": "966289/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D8 l=4: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "3765525061221/3841839123721",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D8 l=4: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D8 l=4: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D9 l=2: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "0",
+   "relation": "<=",
+   "right": "0",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D9 l=2: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "796755993449624481/812910403449624481",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D9 l=2: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D9 l=2: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D9 l=2: the from-0+ box ends at mu=1 and verifies",
+   "left": "1",
+   "relation": "==",
+   "right": "1",
+   "ok": true,
+   "source": "hd/s result.json last box and PREREG.md:77"
+  },
+  {
+   "check": "D9 l=2: the from-0+ box verifies",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json last box verified"
+  },
+  {
+   "check": "D9 l=3: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "13843592400702961/16320645300702961",
+   "relation": "<=",
+   "right": "848241/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D9 l=3: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "1711069078242249/1745761178242249",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D9 l=3: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D9 l=3: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D9 l=4: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "1812171689673769/1999642553673769",
+   "relation": "<=",
+   "right": "14161/15625",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D9 l=4: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "291488937834369/297405994084369",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D9 l=4: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D9 l=4: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D9 l=5: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "38425874043609/39445974043609",
+   "relation": "<=",
+   "right": "974169/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D9 l=5: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "88875546247769841/90676699847769841",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D9 l=5: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D9 l=5: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D10 l=2: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "0",
+   "relation": "<=",
+   "right": "0",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D10 l=2: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "3841215986197681/3919140742447681",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D10 l=2: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D10 l=2: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D10 l=2: the from-0+ box ends at mu=1 and verifies",
+   "left": "1",
+   "relation": "==",
+   "right": "1",
+   "ok": true,
+   "source": "hd/s result.json last box and PREREG.md:77"
+  },
+  {
+   "check": "D10 l=2: the from-0+ box verifies",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json last box verified"
+  },
+  {
+   "check": "D10 l=3: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "91914991536373201/383045380761373201",
+   "relation": "<=",
+   "right": "2401/10000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D10 l=3: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "1164187484726301/1187794936288801",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D10 l=3: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D10 l=3: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D10 l=3: HD-S starts strictly below q_split=0.490",
+   "left": "91914991536373201/383045380761373201",
+   "relation": "<",
+   "right": "2401/10000",
+   "ok": true,
+   "source": "hd/s result.json coverage.q(mu_b)^2; hd/s/RESULT.md:50-51"
+  },
+  {
+   "check": "D10 l=4: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "142513652343129921/168386374843129921",
+   "relation": "<=",
+   "right": "529/625",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D10 l=4: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "616496957997921/629010864247921",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D10 l=4: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D10 l=4: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D10 l=5: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "949834170649/1028514420649",
+   "relation": "<=",
+   "right": "923521/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D10 l=5: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "6517045060605261/6649208824667761",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D10 l=5: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D10 l=5: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D11 l=2: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "0",
+   "relation": "<=",
+   "right": "0",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D11 l=2: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "211474330206729/215767514206729",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D11 l=2: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D11 l=2: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D11 l=2: the from-0+ box ends at mu=1 and verifies",
+   "left": "1",
+   "relation": "==",
+   "right": "1",
+   "ok": true,
+   "source": "hd/s result.json last box and PREREG.md:77"
+  },
+  {
+   "check": "D11 l=2: the from-0+ box verifies",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json last box verified"
+  },
+  {
+   "check": "D11 l=3: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "0",
+   "relation": "<=",
+   "right": "0",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D11 l=3: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "153891955293609/157016011543609",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D11 l=3: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D11 l=3: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D11 l=3: the from-0+ box ends at mu=1 and verifies",
+   "left": "1",
+   "relation": "==",
+   "right": "1",
+   "ok": true,
+   "source": "hd/s result.json last box and PREREG.md:77"
+  },
+  {
+   "check": "D11 l=3: the from-0+ box verifies",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json last box verified"
+  },
+  {
+   "check": "D11 l=4: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "90451546986883929/112426644586883929",
+   "relation": "<=",
+   "right": "804609/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D11 l=4: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "1666516108576123609/1700313254176123609",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D11 l=4: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D11 l=4: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D11 l=5: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "1974131929/2287421929",
+   "relation": "<=",
+   "right": "863041/1000000",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D11 l=5: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "134331349/137053849",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D11 l=5: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D11 l=5: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "D11 l=6: HD-S q(mu_b)^2 <= E2 q_split^2",
+   "left": "15357181301769/16389437301769",
+   "relation": "<=",
+   "right": "14641/15625",
+   "ok": true,
+   "source": "hd/s result.json coverage and hd/elementary E2 q_hi"
+  },
+  {
+   "check": "D11 l=6: HD-S q(mu_a)^2 >= (99/100)^2",
+   "left": "88875546247769841/90676699847769841",
+   "relation": ">=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "hd/s/PREREG.md:32-37 and result.json coverage"
+  },
+  {
+   "check": "D11 l=6: HD-S boxes are contiguous",
+   "left": "True",
+   "relation": "==",
+   "right": "True",
+   "ok": true,
+   "source": "hd/s result.json coverage.contiguous"
+  },
+  {
+   "check": "D11 l=6: HD-S coverage is VERIFIED",
+   "left": "VERIFIED",
+   "relation": "==",
+   "right": "VERIFIED",
+   "ok": true,
+   "source": "hd/s result.json verdict"
+  },
+  {
+   "check": "HD-X-S q(1/8)^2 <= (99/100)^2",
+   "left": "2961/3025",
+   "relation": "<=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "frozen draft:378"
+  },
+  {
+   "check": "HD-X-2's largest q(MU1)^2 <= (99/100)^2",
+   "left": "46562824/47513449",
+   "relation": "<=",
+   "right": "9801/10000",
+   "ok": true,
+   "source": "frozen draft:379-380"
+  }
+ ],
+ "all_ok": true
+}

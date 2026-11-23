@@ -1,0 +1,587 @@
+{
+ "A2E4": [
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(2*mu + 7)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "0",
+   "bernstein_leaves": {
+    "Den": 1,
+    "G": 1,
+    "K": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "min_bernstein_G": "275106444444/390625",
+    "min_bernstein_K": "12192768"
+   },
+   "ell": 3,
+   "m": 14,
+   "mu_lo": "11/100",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "split",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.990017951916537,
+   "q_at_mu_lo_squared": "134331349/137053849",
+   "splitting": {
+    "F(1 - s, mu) - F(1, mu) divisible by s": true,
+    "F(1 - s, mu) = mu K + s G": true,
+    "F(1, 0)": "0",
+    "F(1, mu) divisible by mu": true
+   }
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(3*mu + 8)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "802816",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "917504000000000000/1592858715949",
+    "U_lower_bound_approx": 576010.9109572632,
+    "max_bernstein_Den": "11150011011643/1000000000000",
+    "min_bernstein_F": "6422528"
+   },
+   "ell": 4,
+   "m": 24,
+   "mu_lo": "103/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900005079034008,
+   "q_at_mu_lo_squared": "63226555957929/64510244957929"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(4*mu + 9)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "3317760",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "320000000000000/133237847",
+    "U_lower_bound_approx": 2401719.9857635046,
+    "max_bernstein_Den": "97130390463/7812500000",
+    "min_bernstein_F": "29859840"
+   },
+   "ell": 5,
+   "m": 36,
+   "mu_lo": "49/500",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900161602760024,
+   "q_at_mu_lo_squared": "312772999176/319113139801"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(mu + 2)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "9331200",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "1120000000000000000/171359687181",
+    "U_lower_bound_approx": 6535959.643862978,
+    "max_bernstein_Den": "171359687181/62500000000",
+    "min_bernstein_F": "17920000"
+   },
+   "ell": 6,
+   "m": 50,
+   "mu_lo": "47/500",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9900977280959307,
+   "q_at_mu_lo_squared": "27471514409/28023764409"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(6*mu + 11)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "21683200",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "110398464000000000000/7496798004383",
+    "U_lower_bound_approx": 14726082.246774634,
+    "max_bernstein_Den": "7496798004383/500000000000",
+    "min_bernstein_F": "220796928"
+   },
+   "ell": 7,
+   "m": 66,
+   "mu_lo": "91/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901509410357423,
+   "q_at_mu_lo_squared": "29925587924649/30523890174649"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(7*mu + 12)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "44605440",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "2007040000000000000/67087243509",
+    "U_lower_bound_approx": 29916864.89147148,
+    "max_bernstein_Den": "16302200172687/1000000000000",
+    "min_bernstein_F": "487710720"
+   },
+   "ell": 8,
+   "m": 84,
+   "mu_lo": "89/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901134962804157,
+   "q_at_mu_lo_squared": "142474321369809/145333802369809"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(8*mu + 13)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "84105216",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "7733440000000000000/137427108821",
+    "U_lower_bound_approx": 56273031.32799565,
+    "max_bernstein_Den": "137427108821/7812500000",
+    "min_bernstein_F": "989880320"
+   },
+   "ell": 9,
+   "m": 104,
+   "mu_lo": "87/1000",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.9901674898858085,
+   "q_at_mu_lo_squared": "2613126399136/2665281539761"
+  },
+  {
+   "D": 6,
+   "Den": "(mu + 1)**3*(9*mu + 14)",
+   "F_degrees": [
+    4,
+    4
+   ],
+   "U(t=1, mu=0)": "148395520",
+   "bernstein_leaves": {
+    "Den": 1,
+    "F": 1,
+    "w' denominator": 1,
+    "w' numerator": 1
+   },
+   "bound": {
+    "U_lower_bound": "4346496000000000000/43802996767",
+    "U_lower_bound_approx": 99228279.35997596,
+    "max_bernstein_Den": "1182680912709/62500000000",
+    "min_bernstein_F": "1877686272"
+   },
+   "ell": 10,
+   "m": 126,
+   "mu_lo": "43/500",
+   "mu_lo_rule": "largest k/1000 with w(k/1000)^2 <= 1 - (99/100)^2",
+   "n": 4,
+   "path": "strict",
+   "q(0) = 1": true,
+   "q_at_mu_lo_approx": 0.990064048395034,
+   "q_at_mu_lo_squared": "12122233672881/12366763922881"
+  }
+ ],
+ "MEET": {
+  "D=10 l=10": {
+   "HD-E mu_lo": "59/625",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "59/625"
+  },
+  "D=10 l=11": {
+   "HD-E mu_lo": "58/625",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "58/625"
+  },
+  "D=10 l=12": {
+   "HD-E mu_lo": "457/5000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "457/5000"
+  },
+  "D=10 l=13": {
+   "HD-E mu_lo": "901/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "901/10000"
+  },
+  "D=10 l=7": {
+   "HD-E mu_lo": "1011/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "1011/10000"
+  },
+  "D=10 l=8": {
+   "HD-E mu_lo": "197/2000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "197/2000"
+  },
+  "D=10 l=9": {
+   "HD-E mu_lo": "963/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "963/10000"
+  },
+  "D=11 l=10": {
+   "HD-E mu_lo": "961/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "961/10000"
+  },
+  "D=11 l=11": {
+   "HD-E mu_lo": "59/625",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "59/625"
+  },
+  "D=11 l=12": {
+   "HD-E mu_lo": "929/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "929/10000"
+  },
+  "D=11 l=13": {
+   "HD-E mu_lo": "229/2500",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "229/2500"
+  },
+  "D=11 l=14": {
+   "HD-E mu_lo": "181/2000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "181/2000"
+  },
+  "D=11 l=8": {
+   "HD-E mu_lo": "1003/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "1003/10000"
+  },
+  "D=11 l=9": {
+   "HD-E mu_lo": "49/500",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "49/500"
+  },
+  "D=7 l=10": {
+   "HD-E mu_lo": "177/2000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "177/2000"
+  },
+  "D=7 l=4": {
+   "HD-E mu_lo": "1061/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "1061/10000"
+  },
+  "D=7 l=5": {
+   "HD-E mu_lo": "1011/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "1011/10000"
+  },
+  "D=7 l=6": {
+   "HD-E mu_lo": "487/5000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "487/5000"
+  },
+  "D=7 l=7": {
+   "HD-E mu_lo": "59/625",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "59/625"
+  },
+  "D=7 l=8": {
+   "HD-E mu_lo": "921/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "921/10000"
+  },
+  "D=7 l=9": {
+   "HD-E mu_lo": "901/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "901/10000"
+  },
+  "D=8 l=10": {
+   "HD-E mu_lo": "907/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "907/10000"
+  },
+  "D=8 l=5": {
+   "HD-E mu_lo": "519/5000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "519/5000"
+  },
+  "D=8 l=6": {
+   "HD-E mu_lo": "999/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "999/10000"
+  },
+  "D=8 l=7": {
+   "HD-E mu_lo": "969/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "969/10000"
+  },
+  "D=8 l=8": {
+   "HD-E mu_lo": "59/625",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "59/625"
+  },
+  "D=8 l=9": {
+   "HD-E mu_lo": "231/2500",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "231/2500"
+  },
+  "D=9 l=10": {
+   "HD-E mu_lo": "463/5000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "463/5000"
+  },
+  "D=9 l=11": {
+   "HD-E mu_lo": "911/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "911/10000"
+  },
+  "D=9 l=6": {
+   "HD-E mu_lo": "511/5000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "511/5000"
+  },
+  "D=9 l=7": {
+   "HD-E mu_lo": "991/10000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "991/10000"
+  },
+  "D=9 l=8": {
+   "HD-E mu_lo": "483/5000",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "483/5000"
+  },
+  "D=9 l=9": {
+   "HD-E mu_lo": "59/625",
+   "equal": true,
+   "meets": true,
+   "mu_lo": "59/625"
+  }
+ },
+ "archive_sha256": "53e25088d611512af48f0817ae20d484f27bc2db547291dff14fdf1c1773cecd",
+ "checks": {
+  "A2E4": {
+   "detail": "A2-E record SHA-256 matches: True; l = 3..10 identical field by field: {3: True, 4: True, 5: True, 6: True, 7: True, 8: True, 9: True, 10: True}",
+   "ok": true
+  },
+  "E D=11 l=8": {
+   "detail": "F: sign*p = 0 <= 0 at (t, mu) = (1, 0)  (a counterexample)",
+   "ok": false
+  },
+  "E D=7 l=4": {
+   "detail": "F: sign*p = 0 <= 0 at (t, mu) = (1, 0)  (a counterexample)",
+   "ok": false
+  },
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "EXT": {
+   "detail": "at q = 1, symbolic in l: {4: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 5: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 6: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 7: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 8: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}, 9: {'H_-(x_H)': True, 'U_-(x_H)': True, 'param at q = 1': True}}",
+   "ok": true
+  },
+  "H": {
+   "detail": "H_- = m + n(n+1)x/2 + n(n+1) m delta x/2, n = 4..9: every coefficient > 0, so H_- >= m > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "MEET": {
+   "detail": "HD-E record SHA-256 matches: True; l0 = {5: 10, 6: 10, 7: 11, 8: 13, 9: 14}; failures: []",
+   "ok": true
+  },
+  "PARAM4": {
+   "detail": "param_n(4, l) = onset.param(l), l = 2..5: [True, True, True, True]",
+   "ok": true
+  }
+ },
+ "claim": {
+  "D=10": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ],
+  "D=11": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "D=7": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "D=8": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "D=9": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ]
+ },
+ "control": "nc-strict",
+ "grid": {
+  "4": 1000,
+  "5": 10000,
+  "6": 10000,
+  "7": 10000,
+  "8": 10000,
+  "9": 10000
+ },
+ "l0": {
+  "5": 10,
+  "6": 10,
+  "7": 11,
+  "8": 13,
+  "9": 14
+ },
+ "parts": [
+  {
+   "D": 7,
+   "ell": 4,
+   "failure": "F: sign*p = 0 <= 0 at (t, mu) = (1, 0)  (a counterexample)",
+   "n": 5,
+   "path": "strict"
+  },
+  {
+   "D": 11,
+   "ell": 8,
+   "failure": "F: sign*p = 0 <= 0 at (t, mu) = (1, 0)  (a counterexample)",
+   "n": 9,
+   "path": "strict"
+  }
+ ],
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "8679d8b",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "qmax": "99/100",
+ "timing": {
+  "A2E4": 5.3,
+  "E D=11 l=8": 0.72,
+  "E D=7 l=4": 0.67,
+  "EXT": 0.87,
+  "MEET": 0.49,
+  "t_total_s": 8.16,
+  "utc_start": "2026-10-26T18:06:53+00:00"
+ },
+ "verdict": "REJECT: E D=7 l=4, E D=11 l=8"
+}

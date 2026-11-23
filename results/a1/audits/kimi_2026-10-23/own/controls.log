@@ -1,0 +1,10 @@
+control (a): ell=2, mu_lo=121/1000, F(1, mu_lo) = -26545422643219/97656250 < 0: True
+control (a): verifier verdict: REJECT (correct) {'reason': 'non-positive value at Bernstein node', 'z': '1', 'mu': '121/1000', 'value': '-26545422643219/97656250'}
+control (b): ell=3 with planted bump, F(1/2, mu_lo) = -96465930.3429 (<0: True)
+control (b): verifier verdict: REJECT (correct) {'reason': 'negative value', 'z': '1/2', 'mu': '111/200', 'value': '-1862379516477959/6250000'}
+PASS KAT1 p=-1 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '-1'}
+PASS KAT2 p=z-1/2 must REJECT  {'reason': 'negative value', 'z': '1/2', 'value': '0'}
+PASS KAT3 p=z(1-z) strict must REJECT  {'reason': 'non-positive value at Bernstein node', 'z': '0', 'value': '0'}
+PASS KAT4 p=1+z+z^2 must PASS  {'nodes': 1, 'min_bernstein_coeff': '1'}
+PASS KAT5 tampered verifier accepts p=-1 (must be caught here)  {'nodes': 1, 'min_bernstein_coeff': '-1'}
+CONTROLS: ALL OK

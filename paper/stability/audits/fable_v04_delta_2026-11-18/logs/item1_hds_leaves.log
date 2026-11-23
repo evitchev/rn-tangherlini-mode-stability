@@ -1,0 +1,19 @@
+{"band":"7-D=7 l=2","nboxes":9,"N_leaves":27,"L_leaves":9}
+{"band":"7-D=7 l=3","nboxes":5,"N_leaves":17,"L_leaves":5}
+{"band":"8-D=8 l=2","nboxes":22,"N_leaves":84,"L_leaves":22}
+{"band":"8-D=8 l=3","nboxes":10,"N_leaves":30,"L_leaves":10}
+{"band":"8-D=8 l=4","nboxes":3,"N_leaves":11,"L_leaves":3}
+{"band":"9-D=9 l=2","nboxes":22,"N_leaves":80,"L_leaves":22}
+{"band":"9-D=9 l=3","nboxes":11,"N_leaves":33,"L_leaves":11}
+{"band":"9-D=9 l=4","nboxes":9,"N_leaves":27,"L_leaves":9}
+{"band":"9-D=9 l=5","nboxes":2,"N_leaves":10,"L_leaves":2}
+{"band":"10-D=10 l=2","nboxes":22,"N_leaves":100,"L_leaves":22}
+{"band":"10-D=10 l=3","nboxes":21,"N_leaves":63,"L_leaves":21}
+{"band":"10-D=10 l=4","nboxes":11,"N_leaves":63,"L_leaves":11}
+{"band":"10-D=10 l=5","nboxes":8,"N_leaves":24,"L_leaves":8}
+{"band":"11-D=11 l=2","nboxes":22,"N_leaves":174,"L_leaves":22}
+{"band":"11-D=11 l=3","nboxes":23,"N_leaves":75,"L_leaves":23}
+{"band":"11-D=11 l=4","nboxes":13,"N_leaves":39,"L_leaves":13}
+{"band":"11-D=11 l=5","nboxes":11,"N_leaves":39,"L_leaves":11}
+{"band":"11-D=11 l=6","nboxes":7,"N_leaves":23,"L_leaves":7}
+{"boxes":231,"N_leaves":919}

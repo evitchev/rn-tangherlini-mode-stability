@@ -1,0 +1,2 @@
+LEMMAU_MUTATION_REGISTRATION.md sha256 b4f9104abe79c8eefe4826aaad38423f6561eb9803495cdeb34014616809f526
+written and hashed 2026-10-23T13:03:00Z (UTC), before any mutation run

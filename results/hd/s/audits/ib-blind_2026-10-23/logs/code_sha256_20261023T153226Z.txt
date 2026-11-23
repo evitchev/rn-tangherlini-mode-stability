@@ -1,0 +1,2 @@
+b2585fb00ba70a3bbe50e55ce1ca22dc8811799252d521b5fbebfc934b6d311b  code/ki_s5.py
+9ca152c82e47937e51f16d568a62d2c2a4eb42f6fe6706e90234d52795c576e7  code/check_transcription.py

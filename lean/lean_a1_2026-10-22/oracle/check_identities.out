@@ -1,0 +1,18 @@
+1 H- specialisation: True
+1 U- specialisation: True
+2 f = 1 - x + q^2 x^2/4: True
+2 f(x_H) = 0: True
+2 r_H^3 = 2M/x_H = M(1+sqrt(1-q^2)): True
+3 m = l(l+3) - 4 = (l-1)(l+4): True
+4 (5.58)+(5.60) <=> (1+2m delta)^2 = 1+4mq^2/25: True
+4 ... <=> (5.65) (times -4m/(25 M^2)): True
+5 the delta >= 0 root has 1+2m delta = sqrt(1+4mq^2/25): True
+6 q = 1: roots of the delta equation: True
+6 delta = 1/(5(l+4)) solves it: True
+7 q = 1: f = (1 - M/r^3)^2: True
+7 kappa r_H^2 = 9: True
+7 c = U-(2)/(576 H-(2)^2) = l(l-3)/9: True
+8 c + 1/4 = (2l-3)^2/36: True
+9 NC: tampered U- fails check 1: True
+9 NC: tampered delta fails check 7: True
+ALL IDENTITIES HOLD

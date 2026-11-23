@@ -1,0 +1,16 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+H: PASS  every coefficient of H_- > 0
+PARAM: PASS  s^2 = 1 + 4 m q^2/100, q(0) = 1, q(1/8)^2 = 257481/265225 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]
+DESIGN: PASS  pilot record sealed; degree 12
+G-RES: PASS  N polynomial in z: True; H(2) = (ell + 8)*(ell + 9); N(0) - 64 (n-1)^2 H(2)^2 (c - a(a+1)) = 0 (n = 9)
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, 1/8]
+S: PASS  eps_n = 11*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 530722433291921809545831096974488180773600710923467815489175/1461501637330902918203684832716283019655932542976
+POS-O': FAIL  at (1/16, 1/32); POS-O': sign*p = -389650740786517059823968173183537592227852872315821185246983847034290537596126912852875911277328135980615075657573441/57337465399751787790270522382552173519914124729207028093439720984673071902212120201750463827753142163865600 <= 0 at (t, mu) = (1/16, 1/32)  (a coun
+POS-T: FAIL  at (8, 0); POS-T: sign*p = -252168417312768 <= 0 at (t, mu) = (8, 0)  (a counterexample)
+POS-C: FAIL  at (0, 0); POS-C: sign*p = -3826815860736 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: POS-O', POS-T, POS-C

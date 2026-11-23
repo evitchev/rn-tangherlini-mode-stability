@@ -1,0 +1,35 @@
+ok   1. lines 1-681 are the v3 build's: prefix sha256 92aaa876c73781ab...
+ok   1. the v4 section starts at line 682
+ok   1. the file ends with the namespace: 900 lines
+ok   2. scert.py g_res: N is a polynomial in z
+ok   2. scert.py g_res: N(0) - 576 H(2)^2 (l(l - 3)/9 - a(a + 1)) = 0: 0
+ok   2. scert.py g_res: H(2) = (l + 3)(l + 4): (ell + 3)*(ell + 4)
+ok   3. the file's Um and Hm are potentials.py's U_TARGET and H_TARGET
+ok   3. mEll and dEll are scert.py's (l - 1)(l + 4) and 1/(5(l + 4)): (ell - 1)*(ell + 4); 1/(5*ell + 20)
+ok   3. m = l(l + n - 1) - n at n = 4
+ok   3. S5 (5.58) at n = 4, q = 1: (1 + 2 m delta)^2 = 1 + 4 m q^2/25, and 1 + 2 m delta = (2l + 3)/5
+ok   3. Pres = a/z + b0 + b1 z and Pres' = d/dz Pres
+ok   3. D6_extremal's right sides are x6, F6 and F6' at q = 1, and F6' = dF6/dz: x_H(1) = 2; ['2 * (1 - z) ^ 3', '(1 - (1 - z) ^ 3) ^ 2', '6 * (1 - z) ^ 2 * (1 - (1 - z) ^ 3)']
+ok   3. N from the file's own definitions is a polynomial in z, with g_res's value at 0: 576 * Hm (mEll ℓ) (dEll ℓ) 2 ^ 2 * (ℓ * (ℓ - 3) / 9 - a * (a + 1))
+ok   3. g_res's and g_res_tendsto's N is prop3_D6's Nz at q = 1, m = mEll l, delta = dEll l, P = Pres: Nz (U6 1 (mEll ℓ) (dEll ℓ)) (H6 1 (mEll ℓ) (dEll ℓ)) (F6 1) (F6' 1) (Pres a b0 b1) (Pres' a b1)
+ok   4. apparent.py chandrasekhar: V_S- = W^2 + W_* - kappa^2/(4 beta^2)
+ok   4. apparent.py chandrasekhar: Regge-Wheeler = W^2 - W_* - kappa^2/(4 beta^2)
+ok   4. the file's f4, W4, VKI4 and VRW4 are apparent.py's f, W, V_S- and Regge-Wheeler
+ok   4. W4_deriv's right side is dW4/dr
+ok   4. darboux_KI's statement, from the file's definitions, holds identically: W4 m M r ^ 2 + f4 M r * deriv (W4 m M) r - (m * (m + 2)) ^ 2 / (4 * (6 * M) ^ 2)=VKI4 m M r
+ok   4. darboux_RW's statement, from the file's definitions, holds identically: W4 m M r ^ 2 - f4 M r * deriv (W4 m M) r - (m * (m + 2)) ^ 2 / (4 * (6 * M) ^ 2)=VRW4 m M r
+ok   4. H_- (n = 2, delta = 0) at x = 2M/r is (m r + 6M)/r, zero at r0 = -6M/m
+ok   4. the Darboux partner W^2 - W_* - kappa^2/(4 beta^2) has denominator a power of r (as the job checks: m r + 6M does not divide it): r**4
+ok   4. V_S- itself has a double pole at r0 (m = 4, M = 1: (r - r0)^2 V_S- -> 2 f(r0)^2 = 2(1 + m/3)^2 = 98/9): 98/9
+ok   5. P3M25, P3M26: N(0) differs from 575 H(2)^2 (...) and from 576 H(2)^2 (l(l - 3)/9 - a(a - 1))
+ok   5. P3M27 (delta = 1/(4(l + 4))), P3M31 (m = (l - 1)(l + 5)): mEll_dEll_S5, H2_ell and U2_ell become false
+ok   5. P3M28 (P = a/z^2 + b0 + b1 z, P' unchanged): N is no longer a polynomial in z; nor with P' = dP/dz: denominator z**2
+ok   5. P3M29 (f and f_z at q = 1/2, U and H at q = 1): N has a pole at z = 0 (at l = 2, a = 1, b0 = b1 = 0)
+ok   5. P3M30: at l = -4 (Lean: dEll = 1/0 = 0, mEll = 0) p(0) = 204800 - 230400 a(a + 1), not g_res's value: 512000
+ok   5. P3M32 (beta = 5M in W), P3M33 (kappa = m(m + 1) in W): both Darboux identities become false
+ok   5. P3M32: W4_deriv's stated derivative is not d/dr of 5M F + kappa/(2 beta)
+ok   5. P3M34 (Regge-Wheeler with m + 1): darboux_RW becomes false
+ok   5. P3M35 (sign swapped): W^2 - W_* - kappa^2/(4 beta^2) is not V_S-
+ok   5. P3M36: Regge-Wheeler is not analytic at r = 0 (m = 4, M = 1: r^4 V -> 12 M^2 = 12): 12
+ok   5. P3M37: H_- at r = -3M/m is -m, not 0
+ALL P3 V4 CHECKS HOLD (34/34)

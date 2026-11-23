@@ -1,0 +1,9 @@
+(1) Lemma 2: rho^2 V-tilde / f = rho^2 W - [(1-z) f_z P + f(-P + (1-z) P_z + P^2)] for generic f(rho), P(z) (symbolic): True
+(2) f = (1 - x/x_H)(1 - x/x_-): True; kappa^3 = x_H/x_- = (1-w)/(1+w): True; f(z=0) = 0 and f_z(0) = 3(1 - kappa^3) (> 0 iff w > 0 iff q < 1): True
+(3) parametrisation: s^2 = 1 + 4 m q^2/25 identically in (l, mu): True; at l = 2: w(0) = 0, w(1) = 1, s(1) = 1, s(0) = 7/5, w increasing and s decreasing on [0, 1] (so delta >= 0, q decreasing from 1 to 0): False
+(4) N(1) = 64 m^2 (m + 6 - P(1)^2 + P(1)) given f(1) = 1, (1-z) f_z -> 0, U(0) = 64 m^3 + 384 m^2, H(0) = m: True; for m = 6 positive iff -3 < P(1) < 4: True; N(0) = U(x_H) - 64 H(x_H)^2 f_z(0) P(0) since f(0) = 0 (immediate)
+(5) remark: N(P_true - eps) - N(P_true) = 64 H^2 eps [(1-z) f_z + f(2 P_true - 1 - eps)] (symbolic), and rho f' = (1-z) f_z: True
+(6) N_times_L: N L = Un Hd^2 fd - 64 Hn^2 Ud br: True; with extra E: N' L = ... - 64 Hn^2 Ud (br + E fd): True
+(7) Bernstein conversion b_k = sum C(k,i)/C(d,i) a_i after the affine map (1-D, 20 random polynomials; reconstruction, enclosure, corners): True; tensor-product 2-D version (10 random): True
+==== p3 spot checks FAIL: ['parametrisation']
+== exit status 1

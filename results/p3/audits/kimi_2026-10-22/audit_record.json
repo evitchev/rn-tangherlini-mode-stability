@@ -1,0 +1,109 @@
+{
+ "audit": "bh-modes p3 S-certificates (BHM-023 rule 1: T1, T2, T3; BHM-025 rule 2: G1, T1, T2)",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-22",
+ "brief_sha256": "3c828902dcd2d518f9eecd82b45f352446bddc5240c4024f2445d66e40700ee1",
+ "commits": {
+  "rule1": "782fc5614fdd0ab009ba9a89a78a84f7b7cddccc",
+  "rule2": "094591c105e606c7c58d887ec22e7240bcbc8d25"
+ },
+ "inputs": {
+  "D6": {
+   "n": 4,
+   "ell": 2,
+   "m": 6,
+   "mu_param": "w=7mu/(6+mu^2), delta=(1-mu^2)/(5(6+mu^2)), x_H=2(6+mu^2)/((mu+1)(mu+6))"
+  },
+  "G1": {
+   "n": 8,
+   "ell": 2,
+   "m": 10,
+   "delta": 0,
+   "x_H": 1,
+   "f": "1-(1-z)^7"
+  },
+  "T1_mu": "1/6",
+  "T2_box": [
+   "97/600",
+   "103/600"
+  ],
+  "T3_boxes": "8 boxes covering [3/25, 1/5] (contiguous, checked)"
+ },
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0",
+  "gmpy2": "2.3.1",
+  "mpmath": "1.3.0"
+ },
+ "verdicts": {
+  "transcription_vs_KI": "PASS (symbolic identity at n=4; rendered PDF page 25)",
+  "N_identity": "PASS (abstract f(z), P(z); own CAS)",
+  "T1_rule1": {
+   "verdict": "POSITIVE",
+   "deg_z": 68,
+   "nodes": 3
+  },
+  "T1_rule2": {
+   "verdict": "POSITIVE",
+   "deg_z": 68,
+   "nodes": 3
+  },
+  "G1_rule2": {
+   "verdict": "POSITIVE",
+   "deg_z": 77,
+   "nodes": 7
+  },
+  "T2_rule1": {
+   "verdict": "POSITIVE",
+   "deg": [
+    68,
+    12
+   ],
+   "Den": "(mu+1)^3 (mu+6)",
+   "nodes": 3
+  },
+  "T3_rule1": {
+   "verdict": "POSITIVE (all 8 boxes)",
+   "deg": [
+    68,
+    12
+   ],
+   "Den": "(mu+1)^3 (mu+6)",
+   "nodes": "3 each"
+  },
+  "T2_rule2": {
+   "verdict": "POSITIVE",
+   "deg": [
+    68,
+    12
+   ],
+   "Den": "(mu+1)^3 (mu+6)",
+   "nodes": 3
+  },
+  "controls": {
+   "a_P0_above_horizon_bound": "REJECT (N(0) = -68044288/3515)",
+   "b_U_coeff_7680_to_7681": "REJECT (transcription check)",
+   "c_KATs_and_tampered_verifier": "all as required"
+  },
+  "pencil_audit_METHOD_md": "SOUND (Lemma 1, Lemma 2, Proposition 3, remarks)",
+  "reproduction": {
+   "kit_run_782fc56": "KIT FAIL as registered (G1 rule-1 REJECT; T1/T2/T3 VERIFIED; controls as registered)",
+   "kit_run_rule2_094591c": "KIT PASS (G1, T1 VERIFIED; TD-P2 REJECT; T2 VERIFIED)",
+   "certificate_polynomials": "byte-identical to records for all six"
+  },
+  "overall": "ALL SIX CERTIFICATES VALID"
+ },
+ "self_corrections": [
+  "G1 m: 14 -> 10 (KI (5.39) m = k^2 - nK; caught via horizon-value inconsistency)",
+  "rf route (1-z)f_z coefficient -3 -> -3/2 (caught by my rf-vs-sympy crosscheck)",
+  "degree scan cap 70 truncated G1's true degree 77 (caught by hand-computed degree bound)"
+ ],
+ "timing": {
+  "kit1_s": 64,
+  "kit2_s": 13,
+  "own_verification_s": 22
+ },
+ "host": "host-0"
+}

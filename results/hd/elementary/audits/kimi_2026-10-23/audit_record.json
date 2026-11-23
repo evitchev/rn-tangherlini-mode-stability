@@ -1,0 +1,52 @@
+{
+ "audit": "bh-modes HD-E (BHM-063): E1, E2 (13 bands), E3 = Lemma U(n), D = 7..11",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-23",
+ "brief_sha256": "999576eb7dfe64713ad0ea2972de84d032b44128904cb04d5cb867bd6494307c",
+ "code_commit_reproduced": "6fe9689",
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0"
+ },
+ "hosts": {
+  "own_suite": "host-1",
+  "kit_reproduction": "host-2",
+  "development_spot_checks": "host-0"
+ },
+ "verdicts": {
+  "E1": "PASS, all D (35 (D,l) checks, l_el..l0)",
+  "E2": "PASS, all 13 bands to their q_split",
+  "E3_lemma_Un": {
+   "l0": {
+    "5": 10,
+    "6": 10,
+    "7": 11,
+    "8": 13,
+    "9": 14
+   },
+   "corner_bounds": {
+    "5": "399917/10368",
+    "6": "1481614528/62748517",
+    "7": "17257/2401",
+    "8": "79325/16384",
+    "9": "19870/6561"
+   },
+   "matches_record_l0": true
+  },
+  "pencil_steps_abcd": "all SOUND",
+  "controls": {
+   "a_horizon_past_onset": "REJECT, F(1,1367/5000) = -4937563735773837/122070312500",
+   "b_interior_past_onset": "REJECT, F(1/2,1653/2000) = -6078885677633951/62500000000",
+   "c_planted_bump": "REJECT at t=1/2",
+   "d_verifier_tamper": "caught by KAT1-8"
+  },
+  "reproduction_host-2": {
+   "exit": 0,
+   "result": "KIT PASS; substantively identical to record"
+  },
+  "verifier_defect": "substitute_1d/2d power bug (h**j for h**k) found by control (b); fixed; KAT6-8 added; all earlier audits re-verified, no verdict changed",
+  "overall": "HD-E STANDS (certified, independently verified)"
+ }
+}

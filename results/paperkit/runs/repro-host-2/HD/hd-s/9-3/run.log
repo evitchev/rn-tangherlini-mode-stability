@@ -1,0 +1,17 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PILOT: PASS  the pilot record is VALID and DESIGN equals its designs at q_max: True
+H: PASS  H_- has positive coefficients, so H_- >= m > 0
+coverage: PASS  {"mu_a": "589/5000", "mu_b": "1659/5000", "q(mu_a)^2": "1711069078242249/1745761178242249", "q(mu_b)^2": "13843592400702961/16320645300702961", "contiguous": true, "q(mu_a) >= q_max": true, "q(mu_b) <= q_lo or mu_b = 1": true, "w increases 
+box 0 mu in [589/5000, 81/625]: PASS  N > 0 (with the fallback pieces, if any)
+box 1 mu in [81/625, 713/5000]: PASS  N > 0 (with the fallback pieces, if any)
+box 2 mu in [713/5000, 1569/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 3 mu in [1569/10000, 863/5000]: PASS  N > 0 (with the fallback pieces, if any)
+box 4 mu in [863/5000, 1899/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 5 mu in [1899/10000, 2089/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 6 mu in [2089/10000, 1149/5000]: PASS  N > 0 (with the fallback pieces, if any)
+box 7 mu in [1149/5000, 158/625]: PASS  N > 0 (with the fallback pieces, if any)
+box 8 mu in [158/625, 2781/10000]: PASS  N > 0 (with the fallback pieces, if any)
+box 9 mu in [2781/10000, 153/500]: PASS  N > 0 (with the fallback pieces, if any)
+box 10 mu in [153/500, 1659/5000]: PASS  N > 0 (with the fallback pieces, if any)
+VERIFIED

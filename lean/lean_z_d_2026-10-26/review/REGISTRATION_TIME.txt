@@ -1,0 +1,2 @@
+ZD_MUTATION_REGISTRATION.md sha256 0f12a18af9a7a03a01c04fe75f98429688606cdde179c7f26224ea8198b4ad6d
+written and hashed 2026-10-26T19:06:12Z (UTC), before any mutation run of BHModesZd.lean

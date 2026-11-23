@@ -1,0 +1,27 @@
+MATCH  A1 onset main (cited)  9e9a86077802aadc
+MATCH  A1 onset nc-o1 (control)  9dc67ce81d061ce7
+MATCH  A1 onset nc-o2 (control)  1b4b03cd2a839097
+MATCH  A1 onset pc-o1 (control)  94abd126e2ba4f68
+MATCH  A1 onset td-o1 (control)  8067bd56c7f7b01f
+MATCH  A1 onset td-o2 (control)  57afc7656b6e5966
+MATCH  A1 p3 G1 (control)  617fc456bad405d0
+MATCH  A1 p3 NC-P1 (control)  f126b7b37b6cc877
+  (information) run.log differs from the record's: A1 p3 NC-P1 (control)
+MATCH  A1 p3 T1 (control)  b70867fb60d3ac77
+  (information) run.log differs from the record's: A1 p3 T1 (control)
+MATCH  A1 p3 T2 (control)  8c1024fb3720469c
+  (information) run.log differs from the record's: A1 p3 T2 (control)
+MATCH  A1 p3 T3 (cited)  1c9ab556fd7ea0a7
+  (information) run.log differs from the record's: A1 p3 T3 (cited)
+MATCH  A1 p3 TD-P1 (control)  9a549c6fd41fe967
+MATCH  A1 p3 TD-P2 (control)  7d2d9ac39a988df6
+MATCH  A1 a1 main (cited)  3c8a7dd1a227de1a
+MATCH  A1 a1 nc-bump (control)  00f58edb170e0bbc
+MATCH  A1 a1 nc-coverage (control)  a0181bc5fc79aae5
+MATCH  A1 a1 nc-ell2 (control)  e5ebced0955d1dce
+MATCH  A1 a1 nc-uniform (control)  a4a08d0e958e82ff
+MATCH  A1 a1 td-coeff (control)  6255a716c0dc83bd
+MATCH  A1 a1 td-split (control)  662e4c181e5e3fca
+MATCH  A1 a1 td-verifier (control)  9dd848322a50e796
+part A1: cited 3/3 MATCH; controls 18/18 MATCH (information); run.log 17/21 byte-identical (information)
+canon compare A1: PASS

@@ -1,0 +1,41 @@
+{
+ "audit": "bh-modes extremal checks E0-E5 (BHM-010)",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-22",
+ "brief_sha256": "6591db1e5f6a4e85df418224f06c8bef9cb24deb7f74cbd9a87d81b3ba9852b4",
+ "code_commit_reproduced": "8a19e06",
+ "inputs": {
+  "D": 6,
+  "q": 1,
+  "M": 1,
+  "m": "(l-1)(l+4)"
+ },
+ "tool_versions": {
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0"
+ },
+ "verdicts": {
+  "E0": "PASS (symbolic identity in (x, m, delta) vs KI (5.62b)/(5.63b) at n=4)",
+  "E1": "PASS (25+4m = (2l+3)^2; 1+2m delta = (2l+3)/5)",
+  "E2": "PASS ((r-1)^2/f = r^6/(r^2+r+1)^2, value 1/9 at r=1)",
+  "E3": "PASS (c(l) = l(l-3)/9 identically)",
+  "E4": "PASS (c + 1/4 = (2l-3)^2/36)",
+  "E5": "PASS (regular singular; exponents (l-3)/3 and -l/3 from s^2 + s - c = 0)",
+  "controls": {
+   "wrong_branch": "REJECT (c = (l+3)(l+6)/9)",
+   "tamper_U": "REJECT (E3 fails)"
+  },
+  "reproduction": {
+   "exit": 0,
+   "result": "KIT PASS; main result.json substantively identical to record"
+  },
+  "overall": "BHM-010 STANDS"
+ },
+ "timing": {
+  "own_checks_s": 5,
+  "kit_run_s": 3
+ },
+ "host": "host-0"
+}

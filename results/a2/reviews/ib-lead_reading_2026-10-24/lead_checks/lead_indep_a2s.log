@@ -1,0 +1,20 @@
+design: a = -2/5, degree 12, 13 Chebyshev coefficients, beta0 = 0.16000000000000228
+
+(1) identity, as polynomials in z
+  mu = 0: q^2 = 1; eps = 0; degree 38; mine - theirs == 0: True  (0.3 s)
+  mu = 1/64: q^2 = 12323025/12327121; eps = 64/10725; degree 38; mine - theirs == 0: True  (0.4 s)
+  mu = 1/8: q^2 = 2961/3025; eps = 8/189; degree 38; mine - theirs == 0: True  (0.4 s)
+
+(1') identity at 30 rational points (z, mu)
+  30 points, mismatches: 0
+
+(2) Sturm: real roots of N (z + eps)^2 on the closed interval [0, 1], and the sign at z = 1/2
+  mu =         0: q^2 = 1.000000000000; polynomial N of degree 36; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 305.521  (1.4 s)
+  mu = 1/1000000: q^2 = 0.999999999999; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 4.52976e-08  (5.1 s)
+  mu =   1/10000: q^2 = 0.999999986389; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 0.000452847  (4.2 s)
+  mu =    1/1000: q^2 = 0.999998638889; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 0.0451667  (3.4 s)
+  mu =     1/100: q^2 = 0.999863893426; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 4.40017  (3.1 s)
+  mu =      1/32: q^2 = 0.998671222511; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 39.3924  (2.9 s)
+  mu =      1/16: q^2 = 0.994690075936; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 120.814  (2.7 s)
+  mu =      1/10: q^2 = 0.986434146085; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 178.543  (2.6 s)
+  mu =       1/8: q^2 = 0.978842975207; polynomial N (z + eps)^2 of degree 38; roots in [0, 1]: 0; sign at 1/2: 1; min on a 201-point grid (float, info) 215.724  (2.2 s)

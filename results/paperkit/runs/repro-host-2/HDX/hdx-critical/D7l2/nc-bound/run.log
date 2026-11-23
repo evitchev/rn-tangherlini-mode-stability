@@ -1,0 +1,24 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 14869757952*zeta + 5310627840; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 5310627840*sigma + 14869757952; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 14869757952; K(0, 0) = 14869757952; C0 eps_d(0)^2 R(0)^2 L(0) = 14869757952 (C0 = 387072)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 14443623636484441/973733888
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 470664141809773462425939734265599940234375/2596148429267413814265248164610048
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 5310627840
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 634922894544672728225/1099511627776
+nc-bound (a): PASS  Q[b] certified < 0 on the planted potential: True; {'mu_c': '1/64', 'U(z = 0)': '-1998461101056/4932265', 'support': ['21/1000', '837/10000'], 'z_U lower bound': '51/487', 'K': '301062550', 'I1_float': 2.9006107115157844e-12, 'Q_b': '[-2.900610727e-12 +/- 1.90e-23]', 'refusal': 'nc-bound on the plan
+nc-bound (b): FAIL  the certificate on the planted potential: refused True
+REJECT: nc-bound (b)

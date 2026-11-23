@@ -1,0 +1,20 @@
+D l | exact q_lo..q_hi (float) | JSON inward | RESULT.md | inward ok | cover ok | mu_lo(HD-E) <= mu_b
+7 2 | 0.947978590..0.990000611 | ['0.94798', '0.99000'] | [0.94798, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (9 boxes) verified True | 176/625 <= 2817/10000: True
+7 3 | 0.976986909..0.990002738 | ['0.97699', '0.99000'] | [0.97699, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (5 boxes) verified True | 859/5000 <= 1719/10000: True
+8 2 | 0.000000000..0.990006474 | ['0.00000', '0.99000'] | [0, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (22 boxes) verified True | n/a (from 0+)
+8 3 | 0.943989763..0.990010779 | ['0.94399', '0.99001'] | [0.94399, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (10 boxes) verified True | 343/1250 <= 549/2000: True
+8 4 | 0.982997733..0.990018212 | ['0.98300', '0.99001'] | [0.98300, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (3 boxes) verified True | 71/500 <= 1421/10000: True
+9 2 | 0.000000000..0.990013983 | ['0.00000', '0.99001'] | [0, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (22 boxes) verified True | n/a (from 0+)
+9 3 | 0.920991748..0.990014045 | ['0.92100', '0.99001'] | [0.92100, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (11 boxes) verified True | 3317/10000 <= 1659/5000: True
+9 4 | 0.951970489..0.990002247 | ['0.95198', '0.99000'] | [0.95198, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (9 boxes) verified True | 611/2500 <= 489/2000: True
+9 5 | 0.986984961..0.990018451 | ['0.98699', '0.99001'] | [0.98699, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (2 boxes) verified True | 1211/10000 <= 303/2500: True
+10 2 | 0.000000000..0.990008524 | ['0.00000', '0.99000'] | [0, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (22 boxes) verified True | n/a (from 0+)
+10 3 | 0.489855582..0.990012615 | ['0.48986', '0.99001'] | [0.48986, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (21 boxes) verified True | 83/100 <= 8301/10000: True
+10 4 | 0.919972322..0.990002738 | ['0.91998', '0.99000'] | [0.91998, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (11 boxes) verified True | 201/625 <= 3217/10000: True
+10 5 | 0.960989632..0.990011811 | ['0.96099', '0.99001'] | [0.96099, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (8 boxes) verified True | 134/625 <= 429/2000: True
+11 2 | 0.000000000..0.990001380 | ['0.00000', '0.99000'] | [0, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (22 boxes) verified True | n/a (from 0+)
+11 3 | 0.000000000..0.990001809 | ['0.00000', '0.99000'] | [0, 0.99000] | json True res True | recomp True claim True qmax True lo True contig True (23 boxes) verified True | n/a (from 0+)
+11 4 | 0.896960617..0.990011610 | ['0.89697', '0.99001'] | [0.89697, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (13 boxes) verified True | 741/2000 <= 1853/5000: True
+11 5 | 0.928998358..0.990017952 | ['0.92900', '0.99001'] | [0.92900, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (11 boxes) verified True | 2949/10000 <= 59/200: True
+11 6 | 0.967996382..0.990018451 | ['0.96800', '0.99001'] | [0.96800, 0.99001] | json True res True | recomp True claim True qmax True lo True contig True (7 boxes) verified True | 119/625 <= 381/2000: True
+ALL OK

@@ -1,0 +1,10 @@
+7-2: VERIFIED  deg=(24, 10) q(MU1)^2=0.979683 POS={'O': True, "O'": True, 'T': True, 'C': True}
+8-2: VERIFIED  deg=(30, 10) q(MU1)^2=0.978701 POS={'O': True, "O'": True, 'T': True, 'C': True}
+9-2: VERIFIED  deg=(36, 10) q(MU1)^2=0.979214 POS={'O': True, "O'": True, 'T': True, 'C': True}
+9-3: VERIFIED  deg=(36, 10) q(MU1)^2=0.979383 POS={'O': True, "O'": True, 'T': True, 'C': True}
+10-2: VERIFIED  deg=(42, 10) q(MU1)^2=0.979620 POS={'O': True, "O'": True, 'T': True, 'C': True}
+10-3: VERIFIED  deg=(42, 10) q(MU1)^2=0.979993 POS={'O': True, "O'": True, 'T': True, 'C': True}
+11-2: VERIFIED  deg=(48, 10) q(MU1)^2=0.979949 POS={'O': True, "O'": True, 'T': True, 'C': True}
+11-3: VERIFIED  deg=(48, 10) q(MU1)^2=0.978843 POS={'O': True, "O'": True, 'T': True, 'C': True}
+11-4: VERIFIED  deg=(48, 10) q(MU1)^2=0.978331 POS={'O': True, "O'": True, 'T': True, 'C': True}
+HD-X-2: ALL BANDS VERIFIED

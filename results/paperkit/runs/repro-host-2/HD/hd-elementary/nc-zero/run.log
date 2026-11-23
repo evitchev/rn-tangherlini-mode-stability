@@ -1,0 +1,6 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM4: PASS  param_n(4, l) = onset.param(l), l = 2..5: [True, True, True, True]
+H: PASS  H_- = m + n(n+1)x/2 + n(n+1) m delta x/2: every coefficient > 0, so H_- >= m > 0
+NC D=8 l=2 q<=1/10: FAIL  F: sign*p = -4518574272331731/10000000000 <= 0 at (t, mu) = (1/2, 1987/2000)  (a counterexample)
+REJECT: NC D=8 l=2 q<=1/10

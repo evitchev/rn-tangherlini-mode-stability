@@ -1,0 +1,19 @@
+4|none|answer
+5|none|answer
+6|none|answer
+7|none|answer
+8|none|answer
+9|none|answer
+N|none|answer
+2|none|answer
+3|none|answer
+4|nc-nu|=REJECT: Z-inf, Z-id, P-reg, P-asym
+4|nc-exp|=REJECT: Z-thr, Z-id, P-reg, P-asym
+4|td-U|=REJECT: Z-inf, Z-thr, Z-id, P-reg, P-asym
+4|td-zid|=REJECT: Z-id, P-reg, P-asym
+4|td-preg|=REJECT: P-reg, P-asym
+9|nc-nu|=REJECT: Z-inf, Z-id, P-reg, P-asym
+9|nc-exp|=REJECT: Z-thr, Z-id, P-reg, P-asym
+9|td-U|=REJECT: Z-inf, Z-thr, Z-id, P-reg, P-asym
+9|td-zid|=REJECT: Z-id, P-reg, P-asym
+9|td-preg|=REJECT: P-reg, P-asym

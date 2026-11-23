@@ -1,0 +1,11 @@
+Den exps: (0, 3, 1)  Den(mu) = {0: Fraction(6, 1), 1: Fraction(19, 1), 2: Fraction(21, 1), 3: Fraction(9, 1), 4: Fraction(1, 1)}
+O5 Den > 0 on [0,1]: True {'nodes': 1, 'min_bernstein_coeff': '6'}
+R1 F>0 on [0,15/16]x[mu_lo,1]: True {'nodes': 1}
+R2 F>0 on [15/16,1]x[21/100,1]: True {'nodes': 1}
+R3 -F_t>0 on [15/16,1]x[mu_lo,21/100]: True {'nodes': 1}
+O3: sturm count 1, g(0) = -691200  => g<0 on [0, mu_*) follows: True
+O4: b(mu) = 4*(4*mu - 3)/(mu + 1)  == (16 mu - 12)/(mu + 1): True
+O4: w(3/4) = 4/5 = 4/5 ? True  so q = 3/5 at mu = 3/4; b>0 iff mu>3/4 iff q<3/5 (w increasing)
+O5: w' numerator 7(6-mu^2) > 0 on [0,1]: True
+control (moved onset): roots in [mu_lo+1e-6, mu_hi+1e-6] = 0 -> REJECT
+O2-O5 + controls: ALL OK

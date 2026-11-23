@@ -1,0 +1,87 @@
+bh-modes onset Lean layer (item (b)): build and audit, started 20261022T192146Z
+lean: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+
+== 1. sources
+ok   BHModesOnset.lean b71e0ed8579ed7ad510a64e4efb64cb75e48cac2fea4feb20154609f09e8a7da
+scan for sorry / admit / axiom / native_decide / implemented_by / extern (informational):
+  (no occurrence)
+
+== 2. compile
+BHModesOnset: exit=0 seconds=52 errors=0 warnings=0 sorry=0
+
+== 3. axioms
+theorem headers: 54; #print axioms entries: 54; exit=0; axioms outside {propext, Classical.choice, Quot.sound}: none
+  'BHModes.Onset.B1_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.B2_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.B3_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.A_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O5_s_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O5_s_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O5_delta_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.w_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.w_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.w_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.w_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.w_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.q2p_strictAntiOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O5_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O5_xH' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.param_U' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.param_of_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.delta_of_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.g_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_lo' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_hi' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_root_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_root_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_root_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.q2_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_root_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.qstar_sq_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.qstar_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.B1_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.B2_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.B3_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.box1' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.box2' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.box3' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.F_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.lo_gt_sixth' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.hi_lt_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O2_mu' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O3_mu' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O2' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O3' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O4_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O4_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.O4' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.cubic_den_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_no_rat_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_no_rat_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.p_irreducible' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.Onset.C_irreducible' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== 4. checker negative controls (false proofs; each must be rejected)
+NC1_two_plus_two: exit=1 errors=4  (theorem bogus : (2:ℝ) + 2 = 5 := by norm_num)
+NC2_false_margin: exit=1 errors=3  (theorem bogus (l : ℝ) : l * (l - 3) / 9 + 1 / 4 = (2 * l + 3) ^ 2 / 36 := by ring)
+
+== 5. mutations (registration: ONSET_MUTATION_REGISTRATION.md sha256 905cdc96f90400b36fc02217980411f3be24aa072cd9bf5d665d5809db69f382, logged 2026-10-22T19:22:55Z, before the first run)
+{"id": "ONM1", "file": "BHModesOnset.lean", "expected_decl": "param_U", "exit": 1, "errors": 1, "failing_decls": ["param_U"], "first_error": [343, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 59, "pass": true}
+{"id": "ONM2", "file": "BHModesOnset.lean", "expected_decl": "B1_split", "exit": 1, "errors": 2, "failing_decls": ["B1_split", "box1"], "first_error": [180, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 129, "pass": true}
+{"id": "ONM3", "file": "BHModesOnset.lean", "expected_decl": "box3", "exit": 1, "errors": 2, "failing_decls": ["O2_mu", "box3"], "first_error": [489, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 485, "pass": true}
+{"id": "ONM4", "file": "BHModesOnset.lean", "error_text": {"g_factor": "unsolved goals"}, "error_text_found": true, "expected_decl": "g_factor", "exit": 1, "errors": 1, "failing_decls": ["g_factor"], "first_error": [372, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 372, "pass": true}
+{"id": "ONM5", "file": "BHModesOnset.lean", "expected_decl": "p_lo", "exit": 1, "errors": 3, "failing_decls": ["p_lo", "p_root_bounds", "p_root_exists"], "first_error": [381, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 381, "pass": true}
+{"id": "ONM6", "file": "BHModesOnset.lean", "error_text": {"C_pos": "linarith failed to find a contradiction"}, "error_text_found": true, "expected_decl": "C_pos", "exit": 1, "errors": 3, "failing_decls": ["C_pos", "C_root_unique"], "first_error": [419, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 416, "pass": true}
+{"id": "ONM7", "file": "BHModesOnset.lean", "expected_decl": "O4_bracket", "exit": 1, "errors": 2, "failing_decls": ["O4", "O4_bracket"], "first_error": [590, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 590, "pass": true}
+{"id": "ONM8", "file": "BHModesOnset.lean", "expected_decl": "param_of_q", "exit": 1, "errors": 8, "failing_decls": ["O2", "O3", "O4", "param_of_q"], "first_error": [352, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 352, "pass": true}
+{"id": "ONM9", "file": "BHModesOnset.lean", "expected_decl": "param_U", "exit": 1, "errors": 4, "failing_decls": ["box1", "box2", "g_factor", "param_U"], "first_error": [343, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 91, "pass": true}
+{"id": "ONM10", "file": "BHModesOnset.lean", "expected_decl": "C_relation", "exit": 1, "errors": 1, "failing_decls": ["C_relation"], "first_error": [403, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 403, "pass": true}
+mutations failing as required: 10 / 10
+
+BHModesOnset: ALL CHECKS AS REQUIRED
+finished 20261022T193135Z

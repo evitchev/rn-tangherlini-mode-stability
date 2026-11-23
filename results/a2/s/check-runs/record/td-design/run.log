@@ -1,0 +1,6 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0: PASS  S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0
+H: PASS  every coefficient of H_- > 0
+PARAM: PASS  s^2 = 1 + 4 m q^2/25, q(0) = 1, q(1/8)^2 = 2961/3025 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]
+DESIGN: FAIL  DESIGN: the pilot record's SHA-256 26501fe6f55dfd465aceca0a1be6cd4c6ed811909353c0217fc56b9402703cee is not the sealed one
+REJECT: DESIGN

@@ -1,0 +1,11 @@
+E0: PASS  S5 (5.63b) at n = 4 minus TARGET.md's U_-: 0
+O5: PASS  s^2 = 1 + 4mq^2/25, w increasing, Den > 0 on [0,1], q(1) = 0, q(0) = 1: [True, True, True, True, True]
+O1: PASS  g(0) = -3352104113901869512299228551013347315888947200 < 0 < g(1) = 80615997779561903441915826218658559751721523566203247788032; roots of g in [0,1]: 1; isolating interval width 5.9e-46; q_* in prediction True; one irreducible factor vanishing there: True; Arb isolation agrees: True; minimal polynomial of q_*^2 found: True
+O3: PASS  g < 0 on [0, mu_*) and > 0 on (mu_*, 1]: one simple root in [0, 1] and the end signs (O1)
+O2: PASS  F > 0 on [0, 1 - tau] x [mu_lo, 1] and on [1 - tau, 1] x [mu_c, 1]; dF/dt < 0 on [1 - tau, 1] x [mu_lo, mu_c] (tau = 1/8, mu_c = mu_hi + 1/64); so U_- >= 0 on the exterior for q <= q_*, = 0 only at (q_*, x_H). Bernstein boxes: {'O2 far from the horizon': 1, 'O2 near the horizon, mu >= mu_c': 1, 'O2 corner: dF/dt < 0': 1}
+O4: PASS  (6.24) bracket at the horizon vanishes only at mu = 3/4 (q = 3/5), > 0 for q < 3/5, < 0 for q > 3/5: [True, True, True, True, True]
+q_star_decimal: ['0.973056436723622598181546252320768965119704171', '0.973056436723622598181546252320768965119704171']
+mu_star_interval: ['8255446105654784081910/41498748827268959882941', '8169915968067266099041/41068803110044191801738']
+minimal_poly_mu: 10*mu**3 - 11*mu**2 + 228*mu - 45
+minimal_poly_q2: 3025*Y**3 - 31521*Y**2 + 99792*Y - 68796
+VERIFIED

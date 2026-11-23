@@ -1,0 +1,24 @@
+S	draft_line	authors_match	title_match	version_or_doi	date
+S37	459	yes	yes	draft doi 10.5281/zenodo.24146363 = CONCEPT DOI (version DOI is 10.5281/zenodo.24146364)	record publication_date 2026-11-11
+S38	461	yes	yes	cited v2 = latest v2	SOURCES date 19 Oct 2026 = v2 date: yes
+S39	463	yes	yes	cited v3 = latest v3	SOURCES date 3 Nov 2026 = v3 date: yes
+S40	465	yes	yes	cited v1 = latest v1	SOURCES date 27 Sep 2026 = v1 date: yes
+S41	466	yes	yes	cited v2 = latest v2	SOURCES date 3 Aug 2026 = v2 date: yes
+S42	467	yes	yes	cited v1 = latest v1	SOURCES date 24 Oct 2026 = v1 date: yes
+S43	469	yes	yes	cited v1 = latest v1	SOURCES date 16 Nov 2026 = v1 date: yes
+S44	471	yes	yes	cited v1 = latest v1	SOURCES date 15 Sep 2025 = v1 date: yes
+S45	473	yes	yes	cited v1 = latest v1	SOURCES date 20 Oct 2026 = v1 date: yes
+S46	475	yes	yes	cited v1 = latest v1	SOURCES date 12 Nov 2026 = v1 date: yes
+S47	477	yes	yes	cited v1 = latest v1	SOURCES date 5 Nov 2026 = v1 date: yes
+S48	479	yes	yes	cited v2 = latest v2	SOURCES date 18 May 2011 = v2 date: yes
+S49	481	yes	NO	cited v2 = latest v2	SOURCES date 25 Nov 2021 = v2 date: yes
+S50	483	yes	yes	cited v1 = latest v1	SOURCES date 13 Sep 2018 = v1 date: yes
+S51	485	yes	yes	cited v2 = latest v2	SOURCES date 17 May 2016 = v2 date: yes
+S52	486	yes	yes	cited v2 = latest v2	SOURCES date 10 Mar 2016 = v2 date: yes
+S53	488	yes	yes	cited v3 = latest v3	SOURCES date 25 Jan 2019 = v3 date: yes
+S54	490	yes	yes	cited v2 = latest v2	SOURCES date 7 Jun 2021 = v2 date: yes
+S55	491	yes	yes	cited v1 = latest v1	SOURCES date 7 Oct 2019 = v1 date: yes
+S56	493	yes	yes	cited v3 = latest v3	SOURCES date 18 Dec 2014 = v3 date: yes
+S57	495	yes	yes	cited v1 = latest v1	SOURCES date 16 Mar 2012 = v1 date: yes
+S58	496	yes	yes	draft doi 10.5281/zenodo.24285821 = version DOI	record publication_date 2026-11-16
+S59	498	yes	yes	draft doi 10.5281/zenodo.24288754 = version DOI	record publication_date 2026-11-16

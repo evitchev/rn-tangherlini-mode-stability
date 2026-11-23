@@ -1,0 +1,42 @@
+== (1) zeta-design bracket
+e = 1: s^(2e)*bracket - code_br = 0
+e = 2: s^(2e)*bracket - code_br = 0
+e = 20: s^(2e)*bracket - code_br = 0
+e = 24: s^(2e)*bracket - code_br = 0
+
+== (2) HD-S records
+records: 34
+10-2             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 22, attempts 22, all verified True, degrees [32], G-S6 (the box with Q = 0): True
+10-2-nc-bound    nc-bound     REJECT: nc-bound (b)                                         repro-equal True log-equal True plan-equal None | K 266104, Q [-1.765967528e-6 +/- 2.95e-16], (a) True, rejected True
+10-2-td-coeff    td-coeff     REJECT: E0n                                                  repro-equal True log-equal True plan-equal None | 
+10-2-td-horizon  td-horizon   REJECT: td-horizon                                           repro-equal True log-equal True plan-equal None | 
+10-3             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 21, attempts 21, all verified True, degrees [28]
+10-4             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 11, attempts 11, all verified True, degrees [24]
+10-5             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 8, attempts 8, all verified True, degrees [24], delta_b in [188/729, 278/645] (min 0.2579)
+11-2             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 22, attempts 22, all verified True, degrees [32], G-S6 (the box with Q = 0): True
+11-2-nc-bound    nc-bound     REJECT: nc-bound (b)                                         repro-equal True log-equal True plan-equal None | K 304036, Q [-2.017701931e-6 +/- 4.23e-16], (a) True, rejected True
+11-2-td-coeff    td-coeff     REJECT: E0n                                                  repro-equal True log-equal True plan-equal None | 
+11-2-td-horizon  td-horizon   REJECT: td-horizon                                           repro-equal True log-equal True plan-equal None | 
+11-3             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 23, attempts 23, all verified True, degrees [32], G-S6 (the box with Q = 0): True
+11-4             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 13, attempts 13, all verified True, degrees [28]
+11-5             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 11, attempts 11, all verified True, degrees [28]
+11-6             none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 7, attempts 7, all verified True, degrees [24], delta_b in [239/927, 324/811] (min 0.2578)
+7-2              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 9, attempts 9, all verified True, degrees [20]
+7-2-nc-bound     nc-bound     REJECT: nc-bound (b)                                         repro-equal True log-equal True plan-equal None | K 174912, Q [-1.160787096e-6 +/- 5.05e-17], (a) True, rejected True
+7-2-td-coeff     td-coeff     REJECT: E0n                                                  repro-equal True log-equal True plan-equal None | 
+7-2-td-horizon   td-horizon   REJECT: td-horizon                                           repro-equal True log-equal True plan-equal None | 
+7-2-td-verifier  td-verifier  REJECT: KAT                                                  repro-equal True log-equal True plan-equal None | 
+7-3              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 5, attempts 5, all verified True, degrees [16]
+8-2              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 22, attempts 22, all verified True, degrees [24], G-S6 (the box with Q = 0): True
+8-2-nc-bound     nc-bound     REJECT: nc-bound (b)                                         repro-equal True log-equal True plan-equal None | K 201776, Q [-1.339062413e-6 +/- 2.51e-16], (a) True, rejected True
+8-2-td-coeff     td-coeff     REJECT: E0n                                                  repro-equal True log-equal True plan-equal None | 
+8-2-td-horizon   td-horizon   REJECT: td-horizon                                           repro-equal True log-equal True plan-equal None | 
+8-3              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 10, attempts 10, all verified True, degrees [20]
+8-4              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 3, attempts 3, all verified True, degrees [20]
+9-2              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 22, attempts 22, all verified True, degrees [28], G-S6 (the box with Q = 0): True
+9-2-nc-bound     nc-bound     REJECT: nc-bound (b)                                         repro-equal True log-equal True plan-equal None | K 231801, Q [-1.538323313e-6 +/- 2.52e-16], (a) True, rejected True
+9-2-td-coeff     td-coeff     REJECT: E0n                                                  repro-equal True log-equal True plan-equal None | 
+9-2-td-horizon   td-horizon   REJECT: td-horizon                                           repro-equal True log-equal True plan-equal None | 
+9-3              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 11, attempts 11, all verified True, degrees [24]
+9-4              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 9, attempts 9, all verified True, degrees [24]
+9-5              none         VERIFIED                                                     repro-equal False log-equal True plan-equal True | boxes 2, attempts 2, all verified True, degrees [20], delta_b in [239/927, 3/11] (min 0.2578)

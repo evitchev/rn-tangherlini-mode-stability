@@ -1,0 +1,43 @@
+{
+ "archive_sha256": "74c7259c0f4ba1071da56f95789febbf50cd4e1433d6466c0b335bec779b17f2",
+ "checks": {
+  "DESIGN": {
+   "detail": "DESIGN: the pilot record's SHA-256 26501fe6f55dfd465aceca0a1be6cd4c6ed811909353c0217fc56b9402703cee is not the sealed one",
+   "ok": false
+  },
+  "E0": {
+   "detail": "S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0",
+   "ok": true
+  },
+  "H": {
+   "detail": "every coefficient of H_- > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "PARAM": {
+   "detail": "s^2 = 1 + 4 m q^2/25, q(0) = 1, q(1/8)^2 = 2961/3025 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]",
+   "ok": true
+  }
+ },
+ "claim": "results/a2/s/PREREG.md (A2-S: l = 2, q in [q(1/8), 1])",
+ "control": "td-design",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "669e774",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.1,
+  "utc_start": "2026-10-24T04:29:04+00:00"
+ },
+ "verdict": "REJECT: DESIGN"
+}

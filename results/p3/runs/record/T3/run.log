@@ -1,0 +1,9 @@
+mu ['3/25', '13/100']: deg (68, 16), Bernstein {'T3 mu in [3/25, 13/100]: L > 0': 1, 'T3 mu in [3/25, 13/100]: N > 0': 3}, design 1.06 s, verify 3.25 s
+mu ['13/100', '7/50']: deg (68, 16), Bernstein {'T3 mu in [13/100, 7/50]: L > 0': 1, 'T3 mu in [13/100, 7/50]: N > 0': 3}, design 0.84 s, verify 3.13 s
+mu ['7/50', '3/20']: deg (68, 16), Bernstein {'T3 mu in [7/50, 3/20]: L > 0': 1, 'T3 mu in [7/50, 3/20]: N > 0': 3}, design 0.85 s, verify 3.18 s
+mu ['3/20', '4/25']: deg (68, 16), Bernstein {'T3 mu in [3/20, 4/25]: L > 0': 1, 'T3 mu in [3/20, 4/25]: N > 0': 3}, design 0.85 s, verify 3.15 s
+mu ['4/25', '17/100']: deg (68, 16), Bernstein {'T3 mu in [4/25, 17/100]: L > 0': 1, 'T3 mu in [4/25, 17/100]: N > 0': 3}, design 0.85 s, verify 3.19 s
+mu ['17/100', '9/50']: deg (68, 16), Bernstein {'T3 mu in [17/100, 9/50]: L > 0': 1, 'T3 mu in [17/100, 9/50]: N > 0': 3}, design 0.85 s, verify 3.2 s
+mu ['9/50', '19/100']: deg (68, 16), Bernstein {'T3 mu in [9/50, 19/100]: L > 0': 1, 'T3 mu in [9/50, 19/100]: N > 0': 3}, design 0.85 s, verify 3.19 s
+mu ['19/100', '1/5']: deg (68, 16), Bernstein {'T3 mu in [19/100, 1/5]: L > 0': 1, 'T3 mu in [19/100, 1/5]: N > 0': 3}, design 0.84 s, verify 3.16 s
+VERIFIED

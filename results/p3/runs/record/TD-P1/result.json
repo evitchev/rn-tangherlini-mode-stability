@@ -1,0 +1,19 @@
+{
+ "claim": "results/p3/PREREG.md",
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "782fc56",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "tier": "TD-P1",
+ "timing": {
+  "t_total_s": 0.01
+ },
+ "verdict": "REJECT: E0: TARGET.md's U_- differs from S5 (5.63b) at n = 4"
+}

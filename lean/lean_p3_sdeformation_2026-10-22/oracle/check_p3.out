@@ -1,0 +1,14 @@
+1 Lemma 1 pointwise: True
+2 Lemma 1 integrated (lhs 2.8758066987348240108, rhs 2.8758066987348240108): True
+3 Lemma 2 (sympy chain rule): True
+4 F6' = dF6/dz: True
+4 F6(0) = 0: True
+4 F6(1 - 1/rho) = TARGET f: True
+4 N(1) = 64 m^2 (m + 6 - P1^2 + P1): True
+4 m = 6: roots of N(1) are -3, 4: True
+5 N(0) when f(0) = 0: True
+5 eps-shift: True
+5 rho f' = (1 - z) f_z: True
+6 NC: N with 63 fails check 3: True
+6 NC: F6' with 2 fails check 4: True
+ALL P3 CHECKS HOLD

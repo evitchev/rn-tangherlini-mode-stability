@@ -1,0 +1,18 @@
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0: PASS  S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0
+H: PASS  every coefficient of H_- > 0
+PARAM: PASS  s^2 = 1 + 4 m q^2/25, q(0) = 1, q(1/8)^2 = 2961/3025 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]
+DESIGN: PASS  pilot record sealed; degree 12
+G-RES: PASS  N polynomial in z: True; H(2) = (ell + 3)*(ell + 4); N(0) - 576 H(2)^2 (c - a(a+1)) = 0
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, 1/8]
+S: PASS  eps_n = 7*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 1814822195207563649368716359082041961268261520572051029/6551509701269746991391237389054354049518427701248
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 62191389006991868643213502039041495233011472316230383388458899/105209410666867174553312300789713608992575547157721907200
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 528353280
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4415799716758467737673330703413908481889074613551/136112946768375385385349842972707284582400
+nc-bound (a): PASS  Q[b] certified < 0: True; {'K': '3403781', 'I1_float': 2.757418086649238e-09, 'Q_b': '[-2.757418575e-9 +/- 3.79e-19]', 'message': 'nc-bound on the bump: sign*p = -146413915697981821964189919717202342561655379127136318963606312409/239452428260295134118491722992235809940427987841187840000 <= 0 at (t, 
+nc-bound (b): FAIL  the certificate on the planted potential: rejected True
+REJECT: nc-bound (b)

@@ -1,0 +1,4 @@
+#### D3  2026-10-24T04:09:39Z
+G-RES comparison, untampered (= g_res): poly in z True; diff = 0; gate PASS
+G-RES comparison, tampered U + x^4: poly in z True; diff = 16; gate FAIL
+exit 0

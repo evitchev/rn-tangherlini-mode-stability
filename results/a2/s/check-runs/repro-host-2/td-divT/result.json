@@ -1,0 +1,139 @@
+{
+ "THROAT": {
+  "T(zeta, 0) - pencil limit": "not run",
+  "information": "T(zeta, 0) = 576 H(2)^2 L(0) [(c - a - a^2)(18 zeta + 7)^2 + 49 (a^2 - a)] at l = 2"
+ },
+ "archive_sha256": "74c7259c0f4ba1071da56f95789febbf50cd4e1433d6466c0b335bec779b17f2",
+ "bernstein_leaves": {
+  "L": 1,
+  "POS-C": 1,
+  "POS-O": 1,
+  "POS-O'": 1,
+  "eps_d": 1
+ },
+ "checks": {
+  "COVER": {
+   "detail": "ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]",
+   "ok": true
+  },
+  "DESIGN": {
+   "detail": "pilot record sealed; degree 12",
+   "ok": true
+  },
+  "DIV-C": {
+   "detail": "NL(z, z sigma) divisible by z^2",
+   "ok": true
+  },
+  "DIV-T": {
+   "detail": "NL(mu zeta, mu) divisible by mu^3 (td-divT)",
+   "ok": false
+  },
+  "E0": {
+   "detail": "S5 (5.63b), (5.62b) at n = 4 minus TARGET.md's U_-, H_-: 0, 0",
+   "ok": true
+  },
+  "G-RES": {
+   "detail": "N polynomial in z: True; H(2) = (ell + 3)*(ell + 4); N(0) - 576 H(2)^2 (c - a(a+1)) = 0",
+   "ok": true
+  },
+  "H": {
+   "detail": "every coefficient of H_- > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "L": {
+   "detail": "L = Ud Hd^2 fd > 0 on [0, 1/8]",
+   "ok": true
+  },
+  "PARAM": {
+   "detail": "s^2 = 1 + 4 m q^2/25, q(0) = 1, q(1/8)^2 = 2961/3025 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]",
+   "ok": true
+  },
+  "POS-C": {
+   "detail": "> 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4415799716758467737673330703413908481889074613551/136112946768375385385349842972707284582400",
+   "ok": true
+  },
+  "POS-O": {
+   "detail": "> 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 1814822195207563649368716359082041961268261520572051029/6551509701269746991391237389054354049518427701248",
+   "ok": true
+  },
+  "POS-O'": {
+   "detail": "> 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 62191389006991868643213502039041495233011472316230383388458899/105209410666867174553312300789713608992575547157721907200",
+   "ok": true
+  },
+  "POS-T": {
+   "detail": "not run: the chart's division failed",
+   "ok": false
+  },
+  "S": {
+   "detail": "eps_n = 7*mu >= 0 (zero only at mu = 0), eps_d > 0 on [0, 1/8]; so S > 0 for z > 0",
+   "ok": true
+  }
+ },
+ "claim": "results/a2/s/PREREG.md (A2-S: l = 2, q in [q(1/8), 1])",
+ "control": "td-divT",
+ "degrees": {
+  "C": [
+   48,
+   12
+  ],
+  "NL": [
+   38,
+   12
+  ],
+  "T": null
+ },
+ "design": {
+  "a": "-2/5",
+  "degree": 12,
+  "p0": {
+   "(0,)": "11372435746414652853/9223372036854775808",
+   "(1,)": "1380029650601174169/576460752303423488",
+   "(10,)": "-1771982500584985217/8796093022208",
+   "(11,)": "33076795357602815/549755813888",
+   "(12,)": "-8199635529123157/1099511627776",
+   "(2,)": "-55609193576284886197/576460752303423488",
+   "(3,)": "47713214002629649209/36028797018963968",
+   "(4,)": "-740418231632372615881/72057594037927936",
+   "(5,)": "111046832626599041415/2251799813685248",
+   "(6,)": "-344748795835274289401/2251799813685248",
+   "(7,)": "5525393516283827745/17592186044416",
+   "(8,)": "-59883937398951807781/140737488355328",
+   "(9,)": "3280887960069897837/8796093022208"
+  }
+ },
+ "eps": {
+  "den": "3*mu**2 + 21*mu + 18",
+  "num": "7*mu"
+ },
+ "min_bernstein": {
+  "L": "36",
+  "POS-C": "4415799716758467737673330703413908481889074613551/136112946768375385385349842972707284582400",
+  "POS-O": "1814822195207563649368716359082041961268261520572051029/6551509701269746991391237389054354049518427701248",
+  "POS-O'": "62191389006991868643213502039041495233011472316230383388458899/105209410666867174553312300789713608992575547157721907200",
+  "eps_d": "18"
+ },
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "669e774",
+  "gmpy2": "2.3.2",
+  "host": "host-2",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "POS-C": 0.1,
+  "POS-O": 0.0,
+  "POS-O'": 0.0,
+  "build_s": 1.2,
+  "t_total_s": 1.4,
+  "utc_start": "2026-10-24T04:29:22+00:00"
+ },
+ "verdict": "REJECT: DIV-T, POS-T"
+}

@@ -1,0 +1,46 @@
+{
+ "D": 7,
+ "archive_sha256": "99e8a5e2066aaae06939e5f82d5160d83c173bf5e3f1585734aea130578d8c65",
+ "checks": {
+  "DESIGN": {
+   "detail": "DESIGN: the pilot record's SHA-256 a95b583b883bc62545ed3fbfeb2595700c365db414e2441c6375c897fabfaa80 is not the sealed one",
+   "ok": false
+  },
+  "E0n": {
+   "detail": "Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]",
+   "ok": true
+  },
+  "H": {
+   "detail": "every coefficient of H_- > 0",
+   "ok": true
+  },
+  "KAT": {
+   "detail": "{'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}",
+   "ok": true
+  },
+  "PARAM": {
+   "detail": "s^2 = 1 + 4 m q^2/36, q(0) = 1, q(1/8)^2 = 64449/66049 <= (99/100)^2, w increasing on [0, 1]: [True, True, True, True]",
+   "ok": true
+  }
+ },
+ "claim": "HD-X-S (HD-X-1's S-certificate), band D,l = 7,3, q in [q(1/8), 1]",
+ "control": "td-design",
+ "ell": 3,
+ "n": 5,
+ "provenance": {
+  "FLINT": "3.6.0",
+  "git_commit": "bf23bfc",
+  "gmpy2": "2.3.2",
+  "host": "host-1",
+  "mpmath": "1.3.0",
+  "platform": "Linux-5.4.0-74-generic-x86_64-with-glibc2.31",
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0"
+ },
+ "timing": {
+  "t_total_s": 0.1,
+  "utc_start": "2026-10-26T18:27:04+00:00"
+ },
+ "verdict": "REJECT: DESIGN"
+}

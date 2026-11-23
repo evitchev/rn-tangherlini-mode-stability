@@ -1,0 +1,8 @@
+Operator ruling, given to session-L in session on 2026-10-23 (recorded 2026-10-23T04:38:40Z UTC)
+
+Question (session-L): item (c), option B: does this independent re-run count as the CHARTER e5 second party
+(e5 names only Kimi and the session-R lead's blind subagent; session-L is not blind to the record's VERIFIED verdict)?
+Answer (operator): "Run now, as second party".
+
+Registration: ../p3_T3_rerun_registration_2026-10-22/REGISTRATION.md, sha256 1224713c339f41741cc4b8c3a3ca25d75c9cebb700fca9617d10a74f18550ea2
+(archived by the bh-modes lead as BHM-044).

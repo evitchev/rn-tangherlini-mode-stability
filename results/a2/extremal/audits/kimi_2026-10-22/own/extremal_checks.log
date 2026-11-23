@@ -1,0 +1,15 @@
+E0: KI (5.62b)/(5.63b) at n=4 == TARGET.md (symbolic in x, m, delta): PASS
+E1: 25+4m = (2l+3)^2; 1+2m*delta = (2l+3)/5 > 0; s^2 = 1+4m/25: PASS
+E2: f = (1 - r^-3)^2: True ; f(1) = 0
+E2: (r-1)^2/f = r**6 / (r**2 + r + 1)**2  value at r=1: 1/9
+E2: PASS
+E3: c(ell) = ell*(ell - 3)/9  claimed: ell*(ell - 3)/9  equal: True
+E4: c + 1/4 = (2l-3)^2/36: PASS
+E5: (r-1) f'/f = 6/(r*(r**2 + r + 1))  -> at r=1: 2
+E5: (r-1)^2 V/f^2 = rational function, regular at r=1; value there: ell*(ell - 3)/9  == c(ell): True
+E5: indicial exponents: [-ell/3, ell/3 - 1]
+E5: PASS
+E0-E5: ALL PASS (my own CAS, identities in ell)
+control (a): negative branch gives c = (ell + 3)*(ell + 6)/9  == l(l-3)/9 ? False -> REJECT expected
+control (b): perturbed U_- gives c == l(l-3)/9 ? False -> REJECT expected
+CONTROLS: ALL OK

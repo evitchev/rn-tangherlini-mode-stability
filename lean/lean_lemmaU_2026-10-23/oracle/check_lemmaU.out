@@ -1,0 +1,14 @@
+8 smallest U_-/m^3 - 959747/17496 on the grid: 9.182054
+1 Lean Um = TARGET U_-: True
+2 split eps^6 U_-(1/eps^2, kappa eps, x) = Pos - Neg: True
+3 Pos coefficients > 0 (6 terms): True
+3 Neg coefficients > 0 (9 terms): True
+3 Pos(0, 0, 0) = 64: True
+4 Neg = RESULT.md nine monomials: True
+5 kappa: (1+2md)^2 - (1+4mq^2/25) = 4m(d + m d^2 - q^2/25): True
+6 Neg(1/12, 1/5, 2) = 159997/17496: True
+6 64 - Neg(1/12, 1/5, 2) = 959747/17496: True
+6 1/12 >= 150^(-1/2), i.e. 144 <= 150: True
+7 NC-A1d: 64 - Neg(1/2, 1/5, 2) = -33488: True
+8 sanity grid: U_-/m^3 - 959747/17496 >= 0 (125 points): True
+ALL LEMMA U CHECKS HOLD

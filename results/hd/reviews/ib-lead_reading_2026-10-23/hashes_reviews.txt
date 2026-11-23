@@ -1,0 +1,5 @@
+5a949ed1fcf4076eb2ba8f99abf63d491fe72e5765c3d3f4f674a1c4dac5a8f1  [deliveries]/ib-blind_hd-s_2026-10-23/VERDICT.md
+7addc5911fdda10724a222558d26421dc05e8b016b12eb650e9d9f38ddfb1b87  [deliveries]/ib-blind_hd-s_2026-10-23/PREREG.md
+23f926e19f289b371346de2428faac68920a9d00ebbfa5b1d720ca6557c0ee80  [deliveries]/ib-blind_hd-s_2026-10-23/TRANSCRIPTION.md
+5a3d5aa62096aa59b9c96a7fa54378b06734ac2c99619cc3bc0ce4d444dccfc7  [deliveries]/ib-blind_hd-s_2026-10-23/SHA256SUMS
+ada053a6301eac703f5b21edf3c558edad973c484f167c17b080cc7016a1a691  [deliveries]/ib-lead_a1_reading_2026-10-23/READING.md

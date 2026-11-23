@@ -1,0 +1,12 @@
+7-3: VERIFIED a=-7/20 deg=(42, 8) q(mu1)^2=0.975776 POS={'O': True, "O'": True, 'T': True, 'C': True}
+8-3: VERIFIED a=-11/25 deg=(54, 8) q(mu1)^2=0.976820 POS={'O': True, "O'": True, 'T': True, 'C': True}
+8-4: VERIFIED a=-8/25 deg=(46, 8) q(mu1)^2=0.973840 POS={'O': True, "O'": True, 'T': True, 'C': True}
+9-4: VERIFIED a=-2/5 deg=(50, 8) q(mu1)^2=0.974904 POS={'O': True, "O'": True, 'T': True, 'C': True}
+9-5: VERIFIED a=-3/10 deg=(50, 8) q(mu1)^2=0.972509 POS={'O': True, "O'": True, 'T': True, 'C': True}
+10-4: VERIFIED a=-16/35 deg=(70, 8) q(mu1)^2=0.975776 POS={'O': True, "O'": True, 'T': True, 'C': True}
+10-5: VERIFIED a=-13/35 deg=(54, 8) q(mu1)^2=0.973535 POS={'O': True, "O'": True, 'T': True, 'C': True}
+10-6: VERIFIED a=-2/7 deg=(54, 8) q(mu1)^2=0.971540 POS={'O': True, "O'": True, 'T': True, 'C': True}
+11-5: VERIFIED a=-17/40 deg=(66, 8) q(mu1)^2=0.974400 POS={'O': True, "O'": True, 'T': True, 'C': True}
+11-6: VERIFIED a=-7/20 deg=(58, 8) q(mu1)^2=0.972509 POS={'O': True, "O'": True, 'T': True, 'C': True}
+11-7: VERIFIED a=-11/40 deg=(58, 8) q(mu1)^2=0.970802 POS={'O': True, "O'": True, 'T': True, 'C': True}
+HD-X-S: ALL BANDS VERIFIED

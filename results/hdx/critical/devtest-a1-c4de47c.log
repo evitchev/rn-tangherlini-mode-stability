@@ -1,0 +1,1184 @@
+ok   kitcheck: exact: 
+ok   kitcheck: prefix: 
+ok   kitcheck: required and allowed: 
+ok   kitcheck: required only: 
+ok   the verifier passes the KATs: 
+ok   the tampered verifier fails the KATs: 
+ok   the sealed kit's registered forms equal BHM-143's (SPECS without addendum 1): []
+ok   addendum 1's kit has every registered form: []
+ok   CONTROLS = BHM-143's 14, then addendum 1's 6: ('none', 'nc-ehat-low', 'd0-corner', 'nc-ehat-high', 'd0-throat', 'nc-Q0', 'nc-Qneg', 'td-nu', 'd6', 'nc-bound', 'td-coeff', 'td-verifier', 'td-cover', 'td-div', 'td-param', 'td-H', 'td-R', 'td-L', 'td-S', 'td-XN')
+ok   td-XN's term: its chart images are mu z^2 (1 - z), mu^2 zeta^2 (1 - mu zeta), sigma z^2 (1 - z): 
+ok   td-XN's term: non-negative Bernstein coefficients on every chart box, for every MU1: {'O, MU1 = 3/25': True, "O', MU1 = 3/25": True, 'T, MU1 = 3/25': True, 'C, MU1 = 3/25': True, 'O, MU1 = 1/8': True, "O', MU1 = 1/8": True, 'T, MU1 = 1/8': True, 'C, MU1 = 1/8': True, 'O, MU1 = 13/100': True, "O', MU1 = 13/100": True, 'T, MU1 = 13/100': True, 'C, MU1 = 13/100': True}
+ok   parse_band '7,2' -> (5, 2) as ints: 
+ok   parse_band '7,3' refused: refused
+ok   parse_band '12,2' refused: refused
+ok   parse_band '7' refused: refused
+ok   parse_band 'x,2' refused: refused
+ok   parse_band '11,5' refused: refused
+ok   the typed synthetic UH refuses a str n: TypeError
+ok   the critical set: 9 bands, each with 2l <= n - 1: [(5, 2), (6, 2), (7, 2), (7, 3), (8, 2), (8, 3), (9, 2), (9, 3), (9, 4)]
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+VERIFIED
+ok   synthetic 7,2 none: VERIFIED: VERIFIED (0.9 s)
+ok   synthetic 7,2 none: the record has every registered check: ['CORNER', 'COVER', 'DIV-C', 'DIV-O', 'DIV-T', 'E0n', 'FIRST', 'H', 'INF', 'KAT', 'L', 'PARAM', 'POS-C', 'POS-O', "POS-O'", 'POS-T', 'R', 'S', 'THROAT', 'XN', 'Z0']
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 7961448561/8130448561 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 10*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 30*mu + 27 > 0 on [0, MU1]
+R: PASS  R = -z**5 + 6*z**4 - 15*z**3 + 20*z**2 - 15*z + 6 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 297538935552000*zeta + 110199605760000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 110199605760000*sigma + 297538935552000; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 297538935552000; K(0, 0) = 297538935552000; C0 eps_d(0)^2 R(0)^2 L(0) = 297538935552000 (C0 = 12000)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 7002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '13/100']; least Bernstein coefficient 256669917419966541531563704177629/47161695297823834112
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '13/100']; least Bernstein coefficient 105542850589840568134377736875/18014398509481984
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 110199605760000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 1036653958940794444696633709598531/36893488147419103232
+VERIFIED
+ok   synthetic 9,2 none: VERIFIED: VERIFIED (1.2 s)
+ok   synthetic 9,2 none: the record has every registered check: ['CORNER', 'COVER', 'DIV-C', 'DIV-O', 'DIV-T', 'E0n', 'FIRST', 'H', 'INF', 'KAT', 'L', 'PARAM', 'POS-C', 'POS-O', "POS-O'", 'POS-T', 'R', 'S', 'THROAT', 'XN', 'Z0']
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+VERIFIED
+ok   synthetic 11,4 none: VERIFIED: VERIFIED (1.6 s)
+ok   synthetic 11,4 none: the record has every registered check: ['CORNER', 'COVER', 'DIV-C', 'DIV-O', 'DIV-T', 'E0n', 'FIRST', 'H', 'INF', 'KAT', 'L', 'PARAM', 'POS-C', 'POS-O', "POS-O'", 'POS-T', 'R', 'S', 'THROAT', 'XN', 'Z0']
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 8*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 5*mu**2 + 40*mu + 35 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 124350829166592 - 68004359700480*zeta; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 124350829166592*sigma - 68004359700480; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = -68004359700480; K(0, 0) = -68004359700480; C0 eps_d(0)^2 R(0)^2 L(0) = -68004359700480 (C0 = -114688/45)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -42107089927790483119085625/4398046511104 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -34296052442446398231542995570385945785672165032890625/2722258935367507707706996859454145691648 <= 0 at (t, mu) = (1/4, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -419684048437248 <= 0 at (t, mu) = (8, 0)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = -68004359700480 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: POS-O, POS-O', POS-T, POS-C
+ok   synthetic 7,2 nc-ehat-low: +POS-C|POS-O,POS-O',POS-T: REJECT: POS-O, POS-O', POS-T, POS-C (0.8 s)
+ok   synthetic 7,2 nc-ehat-low: non-POS failures []: []
+ok   synthetic 7,2 nc-ehat-low: the verdict lists its failures in the registered order: REJECT: POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 2*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 5828945117184; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 5828945117184*sigma; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 0; K(0, 0) = 0; C0 eps_d(0)^2 R(0)^2 L(0) = 0 (C0 = 0)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -944674600702833806713425/4398046511104 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -771682387662709313960192629272788428178267748515625/2722258935367507707706996859454145691648 <= 0 at (t, mu) = (1/4, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -771682387662709313960192629272788428178267748515625/85070591730234615865843651857942052864 <= 0 at (t, mu) = (8, 1/32)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = 0 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: POS-O, POS-O', POS-T, POS-C
+ok   synthetic 7,2 d0-corner: +POS-C|POS-O,POS-O',POS-T: REJECT: POS-O, POS-O', POS-T, POS-C (0.8 s)
+ok   synthetic 7,2 d0-corner: non-POS failures []: []
+ok   synthetic 7,2 d0-corner: the verdict lists its failures in the registered order: REJECT: POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 9*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 47603051790336*zeta - 4371708837888; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 47603051790336 - 4371708837888*sigma; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 47603051790336; K(0, 0) = 47603051790336; C0 eps_d(0)^2 R(0)^2 L(0) = 47603051790336 (C0 = 401408/9)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 128649820047829983/307648
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 113144751208926460206178875/562949953421312
+POS-T: FAIL  POS-T: sign*p = -4371708837888 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11998482836450912759161575/1099511627776
+REJECT: POS-T
+ok   synthetic 7,2 nc-ehat-high: +POS-T|POS-O,POS-O',POS-C: REJECT: POS-T (0.8 s)
+ok   synthetic 7,2 nc-ehat-high: non-POS failures []: []
+ok   synthetic 7,2 nc-ehat-high: the verdict lists its failures in the registered order: REJECT: POS-T
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 8*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 40802615820288*zeta; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 40802615820288; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 40802615820288; K(0, 0) = 40802615820288; C0 eps_d(0)^2 R(0)^2 L(0) = 40802615820288 (C0 = 114688/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 34891851604851271359/83680256
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 645076970901140372483625/2199023255552
+POS-T: FAIL  POS-T: sign*p = 0 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 10149460345428948964036575/1099511627776
+REJECT: POS-T
+ok   synthetic 7,2 d0-throat: +POS-T|POS-O,POS-O',POS-C: REJECT: POS-T (0.8 s)
+ok   synthetic 7,2 d0-throat: non-POS failures []: []
+ok   synthetic 7,2 d0-throat: the verdict lists its failures in the registered order: REJECT: POS-T
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 0 > 0 and 2 nu + 1 - c MU1 > 0: False
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  POS-O: sign*p = 0 <= 0 at (t, mu) = (1, 0)  (a counterexample)
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224418125616791488918284375/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 533979707287357220631525/137438953472
+REJECT: INF, POS-O
+ok   synthetic 7,2 nc-Q0: +INF,POS-O|POS-O',POS-T,POS-C: REJECT: INF, POS-O (0.7 s)
+ok   synthetic 7,2 nc-Q0: non-POS failures ['INF']: ['INF']
+ok   synthetic 7,2 nc-Q0: the verdict lists its failures in the registered order: REJECT: INF, POS-O
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = -1/4 > 0 and 2 nu + 1 - c MU1 > 0: False
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -418386197376 <= 0 at (t, mu) = (1, 0)  (a counterexample)
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224561575205063906457346875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 3941282444234657951442825/1099511627776
+REJECT: INF, POS-O
+ok   synthetic 7,2 nc-Qneg: +INF,POS-O|POS-O',POS-T,POS-C: REJECT: INF, POS-O (0.8 s)
+ok   synthetic 7,2 nc-Qneg: non-POS failures ['INF']: ['INF']
+ok   synthetic 7,2 nc-Qneg: the verdict lists its failures in the registered order: REJECT: INF, POS-O
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: FAIL  NL(z, 0) = 0 identically
+DIV-O: FAIL  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: FAIL  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): False; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  not run: the chart's division failed
+POS-O': FAIL  not run: the chart's division failed
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: FAIL  not run: the chart's division failed
+REJECT: Z0, DIV-O, DIV-C, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+ok   synthetic 7,2 td-nu: +Z0,DIV-O,DIV-C,CORNER,FIRST,INF,POS-O,POS-O',POS-C|POS-T: REJECT: Z0, DIV-O, DIV-C, CORNER, FIRST, INF, POS-O, POS-O', POS-C (0.7 s)
+ok   synthetic 7,2 td-nu: non-POS failures ['Z0', 'DIV-O', 'DIV-C', 'CORNER', 'FIRST', 'INF']: ['CORNER', 'DIV-C', 'DIV-O', 'FIRST', 'INF', 'Z0']
+ok   synthetic 7,2 td-nu: the verdict lists its failures in the registered order: REJECT: Z0, DIV-O, DIV-C, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -4265893786828116122055009417011051249234331649001242756355383300605117010234725/6376330159619673413350505582409733206808101479330121970475859968 <= 0 at (t, mu) = (1/4, 1/8)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -4265893786828116122055009417011051249234331649001242756355383300605117010234725/6376330159619673413350505582409733206808101479330121970475859968 <= 0 at (t, mu) = (1/4, 1/8)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -18627157520925966993422780740973544475762809198171878908909810587523980809765625/51010641276957387306804044659277865654464811834640975763806879744 <= 0 at (t, mu) = (2, 1/32)  (a counterexample)
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: POS-O, POS-O', POS-T
+ok   synthetic 7,2 d6: +POS-T|POS-O,POS-O',POS-C: REJECT: POS-O, POS-O', POS-T (0.9 s)
+ok   synthetic 7,2 d6: non-POS failures []: []
+ok   synthetic 7,2 d6: the verdict lists its failures in the registered order: REJECT: POS-O, POS-O', POS-T
+ok   synthetic 7,2 d6: K6 recorded: {'K6': '1429455454960625366154101212885511083649216106202345238052867126468532053984375/3113442460751793658862551553911002542386768300454161118396416', 'T(2, MU
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+nc-bound (a): PASS  Q[b] certified < 0 on the planted potential: True; {'mu_c': '1/64', 'U(z = 0)': '-2142842386246238408704/100454163921671625', 'support': ['51/2000', '1019/10000'], 'z_U lower bound': '141/1106', 'K': '123009867', 'I1_float': 1.5470640299337157e-11, 'Q_b': '[-1.547064049e-11 +/- 4.89e-21]', 'refusal'
+nc-bound (b): FAIL  the certificate on the planted potential: refused True
+REJECT: nc-bound (b)
+ok   synthetic 7,2 nc-bound: =REJECT: nc-bound (b): REJECT: nc-bound (b) (2.8 s)
+ok   synthetic 7,2 nc-bound: non-POS failures []: []
+ok   synthetic 7,2 nc-bound: the verdict lists its failures in the registered order: REJECT: nc-bound (b)
+ok   synthetic 7,2 nc-bound: support inside U_- < 0, Q[b] certified < 0: support ['51/2000', '1019/10000'], K 123009867, Q_b [-1.547064049e-11 +/- 4.89e-21]
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: FAIL  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [False, False, False, False, False, False, False, False, False, False, False]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: FAIL  NL(z, 0) = 0 identically
+DIV-O: FAIL  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: FAIL  NL(z, z sigma) divisible by z^2 sigma
+THROAT: FAIL  T(zeta, 0) = 4183861973760*zeta**2 + 26378253586944*zeta + 9420804852480; minus the pencil limit: 4183861973760*zeta**2 + 5976945676800*zeta + 2134623456000
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): False; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: FAIL  not run: the chart's division failed
+POS-O': FAIL  not run: the chart's division failed
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 9420804852480
+POS-C: FAIL  not run: the chart's division failed
+REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+ok   synthetic 7,2 td-coeff: +E0n,Z0,DIV-O,DIV-C,THROAT,CORNER,FIRST,INF,POS-O,POS-O',POS-C|POS-T: REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C (0.8 s)
+ok   synthetic 7,2 td-coeff: non-POS failures ['E0n', 'Z0', 'DIV-O', 'DIV-C', 'THROAT', 'CORNER', 'FIRST', 'INF']: ['CORNER', 'DIV-C', 'DIV-O', 'E0n', 'FIRST', 'INF', 'THROAT', 'Z0']
+ok   synthetic 7,2 td-coeff: the verdict lists its failures in the registered order: REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+KAT: FAIL  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': False, 'KAT3 t(1-t)+mu (zero at a corner) rejected': False, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: KAT
+ok   synthetic 7,2 td-verifier: =REJECT: KAT: REJECT: KAT (0.7 s)
+ok   synthetic 7,2 td-verifier: non-POS failures ['KAT']: ['KAT']
+ok   synthetic 7,2 td-verifier: the verdict lists its failures in the registered order: REJECT: KAT
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: FAIL  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [False, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/16']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: COVER
+ok   synthetic 7,2 td-cover: =REJECT: COVER: REJECT: COVER (0.7 s)
+ok   synthetic 7,2 td-cover: non-POS failures ['COVER']: ['COVER']
+ok   synthetic 7,2 td-cover: the verdict lists its failures in the registered order: REJECT: COVER
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: FAIL  NL(mu zeta, mu) divisible by mu^3
+DIV-C: FAIL  NL(z, z sigma) divisible by z^3 sigma
+THROAT: FAIL  not run: the T chart's division failed
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: FAIL  not run: the chart's division failed
+POS-C: FAIL  not run: the chart's division failed
+REJECT: DIV-T, DIV-C, THROAT, CORNER, FIRST, POS-T, POS-C
+ok   synthetic 7,2 td-div: +DIV-T,DIV-C,THROAT,CORNER,FIRST,POS-T,POS-C|POS-O,POS-O': REJECT: DIV-T, DIV-C, THROAT, CORNER, FIRST, POS-T, POS-C (0.7 s)
+ok   synthetic 7,2 td-div: non-POS failures ['DIV-T', 'DIV-C', 'THROAT', 'CORNER', 'FIRST']: ['CORNER', 'DIV-C', 'DIV-T', 'FIRST', 'THROAT']
+ok   synthetic 7,2 td-div: the verdict lists its failures in the registered order: REJECT: DIV-T, DIV-C, THROAT, CORNER, FIRST, POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: FAIL  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [False, True, True, False, False]; q(MU1)^2 = 196417/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: PARAM
+ok   synthetic 7,2 td-param: =REJECT: PARAM: REJECT: PARAM (0.7 s)
+ok   synthetic 7,2 td-param: non-POS failures ['PARAM']: ['PARAM']
+ok   synthetic 7,2 td-param: the verdict lists its failures in the registered order: REJECT: PARAM
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: FAIL  every coefficient of H in (x, delta, m) > 0: False; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: H
+ok   synthetic 7,2 td-H: =REJECT: H: REJECT: H (0.7 s)
+ok   synthetic 7,2 td-H: non-POS failures ['H']: ['H']
+ok   synthetic 7,2 td-H: the verdict lists its failures in the registered order: REJECT: H
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: FAIL  R: sign*p = -4 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: R
+ok   synthetic 7,2 td-R: =REJECT: R: REJECT: R (0.8 s)
+ok   synthetic 7,2 td-R: non-POS failures ['R']: ['R']
+ok   synthetic 7,2 td-R: the verdict lists its failures in the registered order: REJECT: R
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: FAIL  L: sign*p = -1361367 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: L
+ok   synthetic 7,2 td-L: =REJECT: L: REJECT: L (0.7 s)
+ok   synthetic 7,2 td-L: non-POS failures ['L']: ['L']
+ok   synthetic 7,2 td-L: the verdict lists its failures in the registered order: REJECT: L
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: FAIL  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, False]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: FAIL  eps_n/mu: sign*p = -5 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: FAIL  T(zeta, 0) = -47603051790336*zeta - 31573452718080; minus the pencil limit: -68004359700480*zeta - 38859634114560
+CORNER: PASS  K(0, sigma) = -31573452718080*sigma - 47603051790336; minus sigma T(1/sigma, 0): 0
+FIRST: FAIL  M(0, 0) = 0; M_z(0, 0) = -47603051790336; K(0, 0) = -47603051790336; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: FAIL  27 points, seed 5002; mismatches at [['4189/10000', '623/80000'], ['69/10000', '197/1600'], ['1553/2500', '7367/80000'], ['881/2000', '1737/80000'], ['231/250', '31/800']]
+POS-O: FAIL  POS-O: sign*p = -13887832037856580372588425/4398046511104 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -627815878309641110652028125/562949953421312 <= 0 at (t, mu) = (0, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -31573452718080 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = -47603051790336 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C
+ok   synthetic 7,2 td-S: +PARAM,S,THROAT,FIRST,XN|POS-O,POS-O',POS-T,POS-C: REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C (0.8 s)
+ok   synthetic 7,2 td-S: non-POS failures ['PARAM', 'S', 'THROAT', 'FIRST', 'XN']: ['FIRST', 'PARAM', 'S', 'THROAT', 'XN']
+ok   synthetic 7,2 td-S: the verdict lists its failures in the registered order: REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: FAIL  27 points, seed 5002; mismatches at [['4189/10000', '623/80000'], ['69/10000', '197/1600'], ['1553/2500', '7367/80000'], ['881/2000', '1737/80000'], ['231/250', '31/800']]
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: XN
+ok   synthetic 7,2 td-XN: =REJECT: XN: REJECT: XN (0.7 s)
+ok   synthetic 7,2 td-XN: non-POS failures ['XN']: ['XN']
+ok   synthetic 7,2 td-XN: the verdict lists its failures in the registered order: REJECT: XN
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 6*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 15*mu**2 + 80*mu + 65 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 5369001659282227200 - 13685690504052736000*zeta; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 5369001659282227200*sigma - 13685690504052736000; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = -13685690504052736000; K(0, 0) = -13685690504052736000; C0 eps_d(0)^2 R(0)^2 L(0) = -13685690504052736000 (C0 = -27262976/125)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -271442937186440229902985212939089357743421875/618970019642690137449562112 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -443974820521531726041274946542315419254822706959726433895165417113421875/766247770432944429179173513575154591809369561091801088 <= 0 at (t, mu) = (1/4, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -104116522373139660800 <= 0 at (t, mu) = (8, 0)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = -13685690504052736000 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: POS-O, POS-O', POS-T, POS-C
+ok   synthetic 11,4 nc-ehat-low: +POS-C|POS-O,POS-O',POS-T: REJECT: POS-O, POS-O', POS-T, POS-C (1.4 s)
+ok   synthetic 11,4 nc-ehat-low: non-POS failures []: []
+ok   synthetic 11,4 nc-ehat-low: the verdict lists its failures in the registered order: REJECT: POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 2*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 315823627016601600; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 315823627016601600*sigma; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 0; K(0, 0) = 0; C0 eps_d(0)^2 R(0)^2 L(0) = 0 (C0 = 0)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -6231617008367364468763406696092788437236875/618970019642690137449562112 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -10267806359517313781091645006314945996248390593963127108506789538936875/766247770432944429179173513575154591809369561091801088 <= 0 at (t, mu) = (1/4, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -10267806359517313781091645006314945996248390593963127108506789538936875/23945242826029513411849172299223580994042798784118784 <= 0 at (t, mu) = (8, 1/32)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = 0 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: POS-O, POS-O', POS-T, POS-C
+ok   synthetic 11,4 d0-corner: +POS-C|POS-O,POS-O',POS-T: REJECT: POS-O, POS-O', POS-T, POS-C (1.3 s)
+ok   synthetic 11,4 d0-corner: non-POS failures []: []
+ok   synthetic 11,4 d0-corner: the verdict lists its failures in the registered order: REJECT: POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 10*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 5474276201621094400*zeta - 526372711694336000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 5474276201621094400 - 526372711694336000*sigma; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 5474276201621094400; K(0, 0) = 5474276201621094400; C0 eps_d(0)^2 R(0)^2 L(0) = 5474276201621094400 (C0 = 54525952/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 3295877711040243046065382814918052008304795/216582757857309462880059392
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 5314510251529684822310797125/549755813888
+POS-T: FAIL  POS-T: sign*p = -526372711694336000 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 40029387782535082804796611518615070287763125/154742504910672534362390528
+REJECT: POS-T
+ok   synthetic 11,4 nc-ehat-high: +POS-T|POS-O,POS-O',POS-C: REJECT: POS-T (1.3 s)
+ok   synthetic 11,4 nc-ehat-high: non-POS failures []: []
+ok   synthetic 11,4 nc-ehat-high: the verdict lists its failures in the registered order: REJECT: POS-T
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 8*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 4105707151215820800*zeta; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 4105707151215820800; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 4105707151215820800; K(0, 0) = 4105707151215820800; C0 eps_d(0)^2 R(0)^2 L(0) = 4105707151215820800 (C0 = 40894464/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 1442417609156851781580359467533581952668505/96541287959856417471463424
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 675491256234500827137011325/34359738368
+POS-T: FAIL  POS-T: sign*p = 0 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 28464136584809470986406606964938105606513125/154742504910672534362390528
+REJECT: POS-T
+ok   synthetic 11,4 d0-throat: +POS-T|POS-O,POS-O',POS-C: REJECT: POS-T (1.3 s)
+ok   synthetic 11,4 d0-throat: non-POS failures []: []
+ok   synthetic 11,4 d0-throat: the verdict lists its failures in the registered order: REJECT: POS-T
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 0 > 0 and 2 nu + 1 - c MU1 > 0: False
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  POS-O: sign*p = 0 <= 0 at (t, mu) = (1, 0)  (a counterexample)
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 57253922624370579344986221054220121492058057526739644265064770625/5846006549323611672814739330865132078623730171904
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 57253922624370579344986221054220121492058057526739644265064770625/182687704666362864775460604089535377456991567872
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 653245872303834801105018517660214207210625/19342813113834066795298816
+REJECT: INF, POS-O
+ok   synthetic 11,4 nc-Q0: +INF,POS-O|POS-O',POS-T,POS-C: REJECT: INF, POS-O (1.2 s)
+ok   synthetic 11,4 nc-Q0: non-POS failures ['INF']: ['INF']
+ok   synthetic 11,4 nc-Q0: the verdict lists its failures in the registered order: REJECT: INF, POS-O
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = -1/4 > 0 and 2 nu + 1 - c MU1 > 0: False
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -664325831359696441141303851859231269268125/618970019642690137449562112 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -3687616570850111579770852098664142720288129123090071300516641358936875/766247770432944429179173513575154591809369561091801088 <= 0 at (t, mu) = (1/4, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -3687616570850111579770852098664142720288129123090071300516641358936875/23945242826029513411849172299223580994042798784118784 <= 0 at (t, mu) = (8, 1/32)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = -664325831359696441141303851859231269268125/154742504910672534362390528 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+REJECT: INF, POS-O, POS-O', POS-T, POS-C
+ok   synthetic 11,4 nc-Qneg: +INF,POS-O|POS-O',POS-T,POS-C: REJECT: INF, POS-O, POS-O', POS-T, POS-C (1.3 s)
+ok   synthetic 11,4 nc-Qneg: non-POS failures ['INF']: ['INF']
+ok   synthetic 11,4 nc-Qneg: the verdict lists its failures in the registered order: REJECT: INF, POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: FAIL  NL(z, 0) = 0 identically
+DIV-O: FAIL  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: FAIL  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): False; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  not run: the chart's division failed
+POS-O': FAIL  not run: the chart's division failed
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 4371796724521346672803107902545775594168608743943372789383469205023125/23945242826029513411849172299223580994042798784118784
+POS-C: FAIL  not run: the chart's division failed
+REJECT: Z0, DIV-O, DIV-C, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+ok   synthetic 11,4 td-nu: +Z0,DIV-O,DIV-C,CORNER,FIRST,INF,POS-O,POS-O',POS-C|POS-T: REJECT: Z0, DIV-O, DIV-C, CORNER, FIRST, INF, POS-O, POS-O', POS-C (1.0 s)
+ok   synthetic 11,4 td-nu: non-POS failures ['Z0', 'DIV-O', 'DIV-C', 'CORNER', 'FIRST', 'INF']: ['CORNER', 'DIV-C', 'DIV-O', 'FIRST', 'INF', 'Z0']
+ok   synthetic 11,4 td-nu: the verdict lists its failures in the registered order: REJECT: Z0, DIV-O, DIV-C, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  POS-O: sign*p = -851326466478298058760462279715173171891421822738721454938481301578192565468554508121970677984935061885098700923077149327551671153516123/15787028816592267168580454085172680748148880050911005942430088482496455073165859472921329664000000000000000000000000 <= 0 at (t, mu) = (1/4, 3/25) 
+POS-O': FAIL  POS-O': sign*p = -851326466478298058760462279715173171891421822738721454938481301578192565468554508121970677984935061885098700923077149327551671153516123/15787028816592267168580454085172680748148880050911005942430088482496455073165859472921329664000000000000000000000000 <= 0 at (t, mu) = (1/4, 3/25)
+POS-T: FAIL  POS-T: sign*p = -2322117264605678049020539603480156696229031981888100322687848175380532017135836592922148014753638938077881712169567706875/67804772468273369655547569040646262325948252357689585529198888798708542975180653619928908487714668544 <= 0 at (t, mu) = (2, 1/32)  (a counterexample)
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: POS-O, POS-O', POS-T
+ok   synthetic 11,4 d6: +POS-T|POS-O,POS-O',POS-C: REJECT: POS-O, POS-O', POS-T (1.8 s)
+ok   synthetic 11,4 d6: non-POS failures []: []
+ok   synthetic 11,4 d6: the verdict lists its failures in the registered order: REJECT: POS-O, POS-O', POS-T
+ok   synthetic 11,4 d6: K6 recorded: {'K6': '173585424992150372732723274710409734568914429484781823715337836950240293025082181151632437895678546988458759423095703125/4138474882096763284640354555703
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+nc-bound (a): PASS  Q[b] certified < 0 on the planted potential: True; {'mu_c': '1/64', 'U(z = 0)': '-89385645746713597837312/51346710253515625', 'support': ['33/2500', '131/2500'], 'z_U lower bound': '65/991', 'K': '7437329173', 'I1_float': 1.5976827847238912e-13, 'Q_b': '[-1.597682786e-13 +/- 4.42e-23]', 'refusal': '
+nc-bound (b): FAIL  the certificate on the planted potential: refused True
+REJECT: nc-bound (b)
+ok   synthetic 11,4 nc-bound: =REJECT: nc-bound (b): REJECT: nc-bound (b) (4.4 s)
+ok   synthetic 11,4 nc-bound: non-POS failures []: []
+ok   synthetic 11,4 nc-bound: the verdict lists its failures in the registered order: REJECT: nc-bound (b)
+ok   synthetic 11,4 nc-bound: support inside U_- < 0, Q[b] certified < 0: support ['33/2500', '131/2500'], K 7437329173, Q_b [-1.597682786e-13 +/- 4.42e-23]
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: FAIL  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [False, False, False, False, False, False, False, False, False, False, False]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: FAIL  NL(z, 0) = 0 identically
+DIV-O: FAIL  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: FAIL  NL(z, z sigma) divisible by z^2 sigma
+THROAT: FAIL  T(zeta, 0) = 549737247496320000*zeta**2 + 2475728381374310400*zeta + 476101611802752000; minus the pencil limit: 549737247496320000*zeta**2 + 422874805766400000*zeta + 81322078032000000
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: FAIL  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): False; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: FAIL  not run: the chart's division failed
+POS-O': FAIL  not run: the chart's division failed
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 476101611802752000
+POS-C: FAIL  not run: the chart's division failed
+REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+ok   synthetic 11,4 td-coeff: +E0n,Z0,DIV-O,DIV-C,THROAT,CORNER,FIRST,INF,POS-O,POS-O',POS-C|POS-T: REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C (1.2 s)
+ok   synthetic 11,4 td-coeff: non-POS failures ['E0n', 'Z0', 'DIV-O', 'DIV-C', 'THROAT', 'CORNER', 'FIRST', 'INF']: ['CORNER', 'DIV-C', 'DIV-O', 'E0n', 'FIRST', 'INF', 'THROAT', 'Z0']
+ok   synthetic 11,4 td-coeff: the verdict lists its failures in the registered order: REJECT: E0n, Z0, DIV-O, DIV-C, THROAT, CORNER, FIRST, INF, POS-O, POS-O', POS-C
+KAT: FAIL  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': False, 'KAT3 t(1-t)+mu (zero at a corner) rejected': False, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: KAT
+ok   synthetic 11,4 td-verifier: =REJECT: KAT: REJECT: KAT (1.3 s)
+ok   synthetic 11,4 td-verifier: non-POS failures ['KAT']: ['KAT']
+ok   synthetic 11,4 td-verifier: the verdict lists its failures in the registered order: REJECT: KAT
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: FAIL  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [False, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/16']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: COVER
+ok   synthetic 11,4 td-cover: =REJECT: COVER: REJECT: COVER (1.2 s)
+ok   synthetic 11,4 td-cover: non-POS failures ['COVER']: ['COVER']
+ok   synthetic 11,4 td-cover: the verdict lists its failures in the registered order: REJECT: COVER
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: FAIL  NL(mu zeta, mu) divisible by mu^3
+DIV-C: FAIL  NL(z, z sigma) divisible by z^3 sigma
+THROAT: FAIL  not run: the T chart's division failed
+CORNER: FAIL  not run: a chart's division failed
+FIRST: FAIL  not run: a chart's division failed
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: FAIL  not run: the chart's division failed
+POS-C: FAIL  not run: the chart's division failed
+REJECT: DIV-T, DIV-C, THROAT, CORNER, FIRST, POS-T, POS-C
+ok   synthetic 11,4 td-div: +DIV-T,DIV-C,THROAT,CORNER,FIRST,POS-T,POS-C|POS-O,POS-O': REJECT: DIV-T, DIV-C, THROAT, CORNER, FIRST, POS-T, POS-C (1.0 s)
+ok   synthetic 11,4 td-div: non-POS failures ['DIV-T', 'DIV-C', 'THROAT', 'CORNER', 'FIRST']: ['CORNER', 'DIV-C', 'DIV-T', 'FIRST', 'THROAT']
+ok   synthetic 11,4 td-div: the verdict lists its failures in the registered order: REJECT: DIV-T, DIV-C, THROAT, CORNER, FIRST, POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: FAIL  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [False, True, True, False, False]; q(MU1)^2 = 64829479/66455104 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: PARAM
+ok   synthetic 11,4 td-param: =REJECT: PARAM: REJECT: PARAM (1.3 s)
+ok   synthetic 11,4 td-param: non-POS failures ['PARAM']: ['PARAM']
+ok   synthetic 11,4 td-param: the verdict lists its failures in the registered order: REJECT: PARAM
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: FAIL  every coefficient of H in (x, delta, m) > 0: False; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: H
+ok   synthetic 11,4 td-H: =REJECT: H: REJECT: H (1.2 s)
+ok   synthetic 11,4 td-H: non-POS failures ['H']: ['H']
+ok   synthetic 11,4 td-H: the verdict lists its failures in the registered order: REJECT: H
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: FAIL  R: sign*p = -8 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: R
+ok   synthetic 11,4 td-R: =REJECT: R: REJECT: R (1.2 s)
+ok   synthetic 11,4 td-R: non-POS failures ['R']: ['R']
+ok   synthetic 11,4 td-R: the verdict lists its failures in the registered order: REJECT: R
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: FAIL  L: sign*p = -232058125 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 9004; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: L
+ok   synthetic 11,4 td-L: =REJECT: L: REJECT: L (1.3 s)
+ok   synthetic 11,4 td-L: non-POS failures ['L']: ['L']
+ok   synthetic 11,4 td-L: the verdict lists its failures in the registered order: REJECT: L
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: FAIL  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, False]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: FAIL  eps_n/mu: sign*p = -5 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: FAIL  T(zeta, 0) = -4789991676418457600*zeta - 1710711313006592000; minus the pencil limit: -6842845252026368000*zeta - 2105490846777344000
+CORNER: PASS  K(0, sigma) = -1710711313006592000*sigma - 4789991676418457600; minus sigma T(1/sigma, 0): 0
+FIRST: FAIL  M(0, 0) = 0; M_z(0, 0) = -4789991676418457600; K(0, 0) = -4789991676418457600; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: FAIL  27 points, seed 9004; mismatches at [['7469/10000', '4623/50000'], ['1491/2000', '633/250000'], ['4899/10000', '6027/62500'], ['1317/10000', '441/125000'], ['951/10000', '291/62500']]
+POS-O: FAIL  POS-O: sign*p = -46709996200407005833128422633962164821611875/618970019642690137449562112 <= 0 at (t, mu) = (1/4, 0)  (a counterexample)
+POS-O': FAIL  POS-O': sign*p = -133558743600464345451063034875/2199023255552 <= 0 at (t, mu) = (0, 1/32)  (a counterexample)
+POS-T: FAIL  POS-T: sign*p = -1710711313006592000 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+POS-C: FAIL  POS-C: sign*p = -4789991676418457600 <= 0 at (t, mu) = (0, 0)  (a counterexample)
+REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C
+ok   synthetic 11,4 td-S: +PARAM,S,THROAT,FIRST,XN|POS-O,POS-O',POS-T,POS-C: REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C (1.3 s)
+ok   synthetic 11,4 td-S: non-POS failures ['PARAM', 'S', 'THROAT', 'FIRST', 'XN']: ['FIRST', 'PARAM', 'S', 'THROAT', 'XN']
+ok   synthetic 11,4 td-S: the verdict lists its failures in the registered order: REJECT: PARAM, S, THROAT, FIRST, XN, POS-O, POS-O', POS-T, POS-C
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 1015861/1038361 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = 3*mu**2 + 16*mu + 13 > 0 on [0, MU1]
+R: PASS  R = -z**7 + 8*z**6 - 28*z**5 + 56*z**4 - 70*z**3 + 56*z**2 - 28*z + 8 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: PASS  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [True, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 2052853575607910400*zeta + 394779533770752000; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 394779533770752000*sigma + 2052853575607910400; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 2052853575607910400; K(0, 0) = 2052853575607910400; C0 eps_d(0)^2 R(0)^2 L(0) = 2052853575607910400 (C0 = 20447232/25)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: FAIL  27 points, seed 9004; mismatches at [['7469/10000', '4623/50000'], ['1491/2000', '633/250000'], ['4899/10000', '6027/62500'], ['1317/10000', '441/125000'], ['951/10000', '291/62500']]
+POS-O: PASS  > 0 on ['1/4', '1', '0', '3/25']; least Bernstein coefficient 670309939704569364547078077237210614984125125/57501347684150222065724555264
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '3/25']; least Bernstein coefficient 51605594868861028246768741125/2199023255552
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 394779533770752000
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/8']; least Bernstein coefficient 11116259788221053258821600134422658584638125/154742504910672534362390528
+REJECT: XN
+ok   synthetic 11,4 td-XN: =REJECT: XN: REJECT: XN (1.3 s)
+ok   synthetic 11,4 td-XN: non-POS failures ['XN']: ['XN']
+ok   synthetic 11,4 td-XN: the verdict lists its failures in the registered order: REJECT: XN
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: FAIL  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [False, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/16']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: COVER
+ok   record 0: keys: ['C0', 'archive_sha256', 'band', 'band_arg', 'bernstein_leaves', 'charts', 'checks', 'claim', 'control', 'degrees', 'design', 'eps', 'max_depth', 'min_bernstein', 'provenance', 'q(MU1)^2', 'q(MU1)_approx', 'throat_data', 'timing', 'verdict']
+KAT: PASS  {'KAT1 -1 rejected': True, 'KAT2 (t-1/2)^2+(mu-1/2)^2-1/100 rejected': True, 'KAT3 t(1-t)+mu (zero at a corner) rejected': True, 'KAT4 (t-1/2)^2+(mu-1/2)^2+1/100 accepted': True, 'KAT5 Q refuses floats, keeps exact inputs': True}
+E0n: PASS  Kimi's build.py SHA-256 matches: True; n = 2..12 identical: [True, True, True, True, True, True, True, True, True, True, True]
+PARAM: PASS  identities (s^2, q(0) = 1, x_H(0) = 2, delta(0), eps): [True, True, True, True, True]; q(MU1)^2 = 197505/201601 <= (99/100)^2: True; w increasing on [0, 1]: True
+H: PASS  every coefficient of H in (x, delta, m) > 0: True; delta > 0 on [0, MU1]
+S: PASS  eps_n = 5*mu, eps_n(0) = 0: True; eps_n/mu > 0 and eps_d = mu**2 + 8*mu + 7 > 0 on [0, MU1]
+R: PASS  R = -z**3 + 4*z**2 - 6*z + 4 > 0 on [0, 1]
+L: PASS  L = Ud Hd^2 fd > 0 on [0, MU1]
+COVER: FAIL  ZT SIG1 >= 1, ZT MUT <= Z1, Z1 SIG1 <= MU1, 0 < MUT < MU1, 0 < Z1 < 1: [False, True, True, True, True]
+Z0: PASS  NL(z, 0) = 0 identically
+DIV-O: PASS  NL divisible by mu
+DIV-T: PASS  NL(mu zeta, mu) divisible by mu^2
+DIV-C: PASS  NL(z, z sigma) divisible by z^2 sigma
+THROAT: PASS  T(zeta, 0) = 20401307910144*zeta + 7286181396480; minus the pencil limit: 0
+CORNER: PASS  K(0, sigma) = 7286181396480*sigma + 20401307910144; minus sigma T(1/sigma, 0): 0
+FIRST: PASS  M(0, 0) = 0; M_z(0, 0) = 20401307910144; K(0, 0) = 20401307910144; C0 eps_d(0)^2 R(0)^2 L(0) = 20401307910144 (C0 = 57344/3)
+INF: PASS  NL(1, mu) = 64 m^2 ((2 nu + 1) c mu - c^2 mu^2) S(1, mu)^2 L(mu): True; R(1) = 1; c = 1/4 > 0 and 2 nu + 1 - c MU1 > 0: True
+XN: PASS  27 points, seed 5002; mismatches at []
+POS-O: PASS  > 0 on ['1/4', '1', '0', '1/8']; least Bernstein coefficient 182724983348608158363171/498551750656
+POS-O': PASS  > 0 on ['0', '1/4', '1/32', '1/8']; least Bernstein coefficient 224274676028519071379221875/562949953421312
+POS-T: PASS  > 0 on ['0', '8', '0', '1/32']; least Bernstein coefficient 7286181396480
+POS-C: PASS  > 0 on ['0', '1/4', '0', '1/16']; least Bernstein coefficient 4602392872363057578661575/1099511627776
+REJECT: COVER
+ok   record 1: keys: ['C0', 'archive_sha256', 'band', 'band_arg', 'bernstein_leaves', 'charts', 'checks', 'claim', 'control', 'degrees', 'design', 'eps', 'max_depth', 'min_bernstein', 'provenance', 'q(MU1)^2', 'q(MU1)_approx', 'throat_data', 'timing', 'verdict']
+ok   compare_runs on two synthetic records: IDENTICAL after masking
+REJECT: exception CertificateError: --band '7,3': (D, l) = (7, 3) is not in HD-X's critical set
+ok   main with a non-critical band: REJECT, record written: REJECT: exception CertificateError: --band '7,3': (D, l) = (7, 3) is not in HD-X's critical set
+ok   real D=7 l=2 none: every gate before the POS charts passes: []; degrees {'NL': [24, 14], 'M': [24, 13], 'T': [24, 36], 'K': [36, 13]} (0.8 s)
+ok   real D=8 l=2 none: every gate before the POS charts passes: []; degrees {'NL': [30, 14], 'M': [30, 13], 'T': [30, 42], 'K': [42, 13]} (0.9 s)
+ok   real D=9 l=2 none: every gate before the POS charts passes: []; degrees {'NL': [36, 14], 'M': [36, 13], 'T': [36, 48], 'K': [48, 13]} (0.9 s)
+ok   real D=9 l=3 none: every gate before the POS charts passes: []; degrees {'NL': [36, 14], 'M': [36, 13], 'T': [36, 48], 'K': [48, 13]} (0.9 s)
+ok   real D=10 l=2 none: every gate before the POS charts passes: []; degrees {'NL': [42, 14], 'M': [42, 13], 'T': [42, 54], 'K': [54, 13]} (1.1 s)
+ok   real D=10 l=3 none: every gate before the POS charts passes: []; degrees {'NL': [42, 14], 'M': [42, 13], 'T': [42, 54], 'K': [54, 13]} (1.0 s)
+ok   real D=11 l=2 none: every gate before the POS charts passes: []; degrees {'NL': [48, 14], 'M': [48, 13], 'T': [48, 60], 'K': [60, 13]} (1.1 s)
+ok   real D=11 l=3 none: every gate before the POS charts passes: []; degrees {'NL': [48, 14], 'M': [48, 13], 'T': [48, 60], 'K': [60, 13]} (1.1 s)
+ok   real D=11 l=4 none: every gate before the POS charts passes: []; degrees {'NL': [48, 14], 'M': [48, 13], 'T': [48, 60], 'K': [60, 13]} (1.2 s)
+ok   real D=7 l=2 nc-ehat-low: non-POS failures []: []
+ok   real D=7 l=2 d0-corner: non-POS failures []: []
+ok   real D=7 l=2 nc-ehat-high: non-POS failures []: []
+ok   real D=7 l=2 d0-throat: non-POS failures []: []
+ok   real D=7 l=2 nc-Q0: non-POS failures ['INF']: ['INF']
+ok   real D=7 l=2 nc-Qneg: non-POS failures ['INF']: ['INF']
+ok   real D=7 l=2 td-nu: non-POS failures ['Z0', 'DIV-O', 'DIV-C', 'CORNER', 'FIRST', 'INF']: ['Z0', 'DIV-O', 'DIV-C', 'CORNER', 'FIRST', 'INF']
+ok   real D=7 l=2 d6: non-POS failures []: []
+ok   real D=7 l=2 nc-bound: non-POS failures []: []
+ok   real D=7 l=2 td-coeff: non-POS failures ['E0n', 'Z0', 'DIV-O', 'DIV-C', 'THROAT', 'CORNER', 'FIRST', 'INF']: ['E0n', 'Z0', 'DIV-O', 'DIV-C', 'THROAT', 'CORNER', 'FIRST', 'INF']
+ok   real D=7 l=2 td-verifier: non-POS failures ['KAT']: ['KAT']
+ok   real D=7 l=2 td-cover: non-POS failures ['COVER']: ['COVER']
+ok   real D=7 l=2 td-div: non-POS failures ['DIV-T', 'DIV-C', 'THROAT', 'CORNER', 'FIRST']: ['DIV-T', 'DIV-C', 'THROAT', 'CORNER', 'FIRST']
+ok   real D=7 l=2 td-param: non-POS failures ['PARAM']: ['PARAM']
+ok   real D=7 l=2 td-H: non-POS failures ['H']: ['H']
+ok   real D=7 l=2 td-R: non-POS failures ['R']: ['R']
+ok   real D=7 l=2 td-L: non-POS failures ['L']: ['L']
+ok   real D=7 l=2 td-S: non-POS failures ['PARAM', 'S', 'THROAT', 'FIRST', 'XN']: ['PARAM', 'S', 'THROAT', 'FIRST', 'XN']
+ok   real D=7 l=2 td-XN: non-POS failures ['XN']: ['XN']
+ok   real D=7 l=2 nc-bound (a): support inside U_- < 0, Q[b] certified < 0: support ['21/1000', '837/10000'], K 301062550, I1 2.901e-12, Q_b [-2.900610727e-12 +/- 1.90e-23]
+ok   real D=11 l=4 nc-ehat-low: non-POS failures []: []
+ok   real D=11 l=4 d0-corner: non-POS failures []: []
+ok   real D=11 l=4 nc-ehat-high: non-POS failures []: []
+ok   real D=11 l=4 d0-throat: non-POS failures []: []
+ok   real D=11 l=4 nc-Q0: non-POS failures ['INF']: ['INF']
+ok   real D=11 l=4 nc-Qneg: non-POS failures ['INF']: ['INF']
+ok   real D=11 l=4 td-nu: non-POS failures ['Z0', 'DIV-O', 'DIV-C', 'CORNER', 'FIRST', 'INF']: ['Z0', 'DIV-O', 'DIV-C', 'CORNER', 'FIRST', 'INF']
+ok   real D=11 l=4 d6: non-POS failures []: []
+ok   real D=11 l=4 nc-bound: non-POS failures []: []
+ok   real D=11 l=4 td-coeff: non-POS failures ['E0n', 'Z0', 'DIV-O', 'DIV-C', 'THROAT', 'CORNER', 'FIRST', 'INF']: ['E0n', 'Z0', 'DIV-O', 'DIV-C', 'THROAT', 'CORNER', 'FIRST', 'INF']
+ok   real D=11 l=4 td-verifier: non-POS failures ['KAT']: ['KAT']
+ok   real D=11 l=4 td-cover: non-POS failures ['COVER']: ['COVER']
+ok   real D=11 l=4 td-div: non-POS failures ['DIV-T', 'DIV-C', 'THROAT', 'CORNER', 'FIRST']: ['DIV-T', 'DIV-C', 'THROAT', 'CORNER', 'FIRST']
+ok   real D=11 l=4 td-param: non-POS failures ['PARAM']: ['PARAM']
+ok   real D=11 l=4 td-H: non-POS failures ['H']: ['H']
+ok   real D=11 l=4 td-R: non-POS failures ['R']: ['R']
+ok   real D=11 l=4 td-L: non-POS failures ['L']: ['L']
+ok   real D=11 l=4 td-S: non-POS failures ['PARAM', 'S', 'THROAT', 'FIRST', 'XN']: ['PARAM', 'S', 'THROAT', 'FIRST', 'XN']
+ok   real D=11 l=4 td-XN: non-POS failures ['XN']: ['XN']
+ok   real D=11 l=4 nc-bound (a): support inside U_- < 0, Q[b] certified < 0: support ['257/10000', '41/400'], K 346269974, I1 4.661e-11, Q_b [-4.660852684e-11 +/- 8.10e-22]
+ok   (a) without POS: D=7 l=2 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=8 l=2 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=9 l=2 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=9 l=3 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=10 l=2 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=10 l=3 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=2 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=3 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 none: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 nc-ehat-low: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 d0-corner: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 nc-ehat-high: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 d0-throat: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 nc-Q0: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 nc-Qneg: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 td-nu: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 d6: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 nc-bound: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 td-coeff: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 td-verifier: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 td-cover: gates() equals BHM-144's record: []
+ok   (a) without POS: D=7 l=2 td-div: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 nc-ehat-low: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 d0-corner: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 nc-ehat-high: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 d0-throat: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 nc-Q0: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 nc-Qneg: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 td-nu: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 d6: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 nc-bound: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 td-coeff: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 td-verifier: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 td-cover: gates() equals BHM-144's record: []
+ok   (a) without POS: D=11 l=4 td-div: gates() equals BHM-144's record: []
+231/231 as expected in 121 s
+DEVTEST PASS

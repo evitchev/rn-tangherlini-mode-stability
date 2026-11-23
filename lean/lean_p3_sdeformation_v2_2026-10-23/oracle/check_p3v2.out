@@ -1,0 +1,19 @@
+ok   1. lines 1-392 are the first build's: prefix sha256 70d14327b29fd5f2...
+ok   1. the new section starts at line 393
+ok   1. the file ends with the namespace: 521 lines
+ok   2. prop3_Ioo has prop3's binders, in order: U H F F' P P' R hF hP hF' hP' hU hHc hR hR1 hf hH hN φ φ' hφ hφ' hc
+ok   2. only hP and hP' differ: hP : ∀ z, HasDerivAt P (P' z) z  ->  ∀ z, 0 < z → z < 1 → HasDerivAt P (P' z) z; hP' : Continuous P'  ->  ContinuousOn P' (Set.Ioo 0 1)
+ok   2. identical conclusions: 0 ≤ ∫ t, (‖φ' t‖ ^ 2 + Vrho U H F (R t) * ‖φ t‖ ^ 2)
+ok   3. prop3_near adds exactly (a b), ha, hb: a b : ℝ, ha : a < 0, hb : 1 < b
+ok   3. only hP and hP' differ from prop3_Ioo: hP : ∀ z, a < z → z < b → HasDerivAt P (P' z) z; hP' : ContinuousOn P' (Set.Ioo a b)
+ok   3. identical conclusions
+ok   4. prop3_zeta keeps every binder of prop3_Ioo that does not name P, P' or zeta data: prop3_Ioo only: ["U H F F' P P' R", 'hP', "hP'", 'hN']; prop3_zeta only: ["U H F F' Ph Ph' R", 'δ', 'd', 'hδ', 'hPh', "hPh'", 'hN']
+ok   4. its hN is prop3_Ioo's with P, P' := Pzeta, Pzeta': ∀ z, 0 < z → z < 1 → 0 ≤ Nz U H F F' (Pzeta Ph δ d) (Pzeta' Ph Ph' δ d) z
+ok   4. identical conclusions
+     parsed Pzeta  := Ph z / (z + δ) ^ d
+     parsed Pzeta' := (Ph' z * (z + δ) - d * Ph z) / (z + δ) ^ (d + 1)
+ok   5. Pzeta' is d/dz Pzeta for d = 0..12
+ok   6. the same for symbolic d: (dP - Pzeta') (z + delta)^(d+1) = 0
+ok   7. control: the P3M12 variant is not the derivative, for every d = 0..12: (Ph' z * (z + δ) - (d + 1) * Ph z) / (z + δ) ^ (d + 1)
+ok   8. 1/(z + delta) -> +oo as z -> -delta from above: oo
+ALL P3 V2 CHECKS HOLD (16/16)

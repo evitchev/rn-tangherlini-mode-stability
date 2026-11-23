@@ -1,0 +1,4 @@
+E0: PASS  S5 (5.63b) at n = 4 minus TARGET.md's U_-: 0
+O5: PASS  s^2 = 1 + 4mq^2/25, w increasing, Den > 0 on [0,1], q(1) = 0, q(0) = 1: [True, True, True, True, True]
+PC-O1: PASS  l = 3: U_- > 0 on the exterior for q <= q(1/30)^(1/2) = 0.999082; boxes {'PC-O1': 1}
+VERIFIED

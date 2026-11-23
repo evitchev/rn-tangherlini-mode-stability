@@ -1,0 +1,88 @@
+{
+ "audit": "bh-modes A1 for ell >= 3 (BHM-052): P1 and Lemma U",
+ "auditor": "Kimi (second auditor for machine results)",
+ "date": "2026-10-23",
+ "brief_sha256": "fae7c88aec67ae2895f2f33342ce12e7bf45c790a1dc8079c26af2fd8162f72e",
+ "code_commit_reproduced": "3625bf0",
+ "inputs": {
+  "D": 6,
+  "ell_range_part1": "3..10",
+  "q_range": "[0, 99/100]",
+  "lemma_U_range": "ell >= 11, q in [0,1], x in [0,2]"
+ },
+ "tool_versions": {
+  "python": "3.12.8",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "sympy": "1.14.0"
+ },
+ "hosts": {
+  "own_suite": "host-1 (nice -n 19, [venv])",
+  "kit_reproduction": "host-2 (nice -n 19)",
+  "development_spot_checks": "host-0",
+  "cross_host_artifacts": "built/ byte-identical host-0 vs host-1"
+ },
+ "verdicts": {
+  "transcription": "PASS (p3 audit's own KI transcription, BHM-036)",
+  "part1_per_ell": {
+   "3": {
+    "mu_lo": "11/100",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "4": {
+    "mu_lo": "103/1000",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "5": {
+    "mu_lo": "49/500",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "6": {
+    "mu_lo": "47/500",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "7": {
+    "mu_lo": "91/1000",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "8": {
+    "mu_lo": "89/1000",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "9": {
+    "mu_lo": "87/1000",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   },
+   "10": {
+    "mu_lo": "43/500",
+    "Den": "B(mu)(mu+1)^3 > 0",
+    "F>0": "1 box"
+   }
+  },
+  "lemma_U": {
+   "P_terms": 15,
+   "Pos(0,0,0)": 64,
+   "Neg(1/12,1/5,2)": "159997/17496",
+   "64-Neg": "959747/17496 > 0",
+   "pencil_steps_abcd": "all SOUND"
+  },
+  "controls": {
+   "a_ell2": "REJECT, exact counterexample F(1, 121/1000) = -26545422643219/97656250",
+   "b_bump": "REJECT, counterexample at t=1/2",
+   "c_verifier_tamper": "caught by KATs"
+  },
+  "reproduction_host-2": {
+   "exit": 0,
+   "result": "KIT PASS: main VERIFIED; nc-ell2, nc-bump, nc-coverage, nc-uniform, td-coeff, td-split, td-verifier all REJECT",
+   "reconciliation": "main result.json substantively identical to runs/record; Part II term-for-term match with my derivation"
+  },
+  "overall": "P1 AND LEMMA U STAND (certified, independently verified)"
+ }
+}
