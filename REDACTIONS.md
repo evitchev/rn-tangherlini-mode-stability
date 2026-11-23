@@ -1,6 +1,6 @@
 # Redactions of this public copy
 
-This repository is a curated copy of the project's own, made from its commit `53d2c82315c1` by
+This repository is a curated copy of the project's own, made from its commit `2117bb7a37cb` by
 `paper/stability/snapshot/assemble3.sh` of that commit. Some passages of the project's records mention unrelated
 unpublished work of the project, the author's other projects, a private working account, or the computers and
 folders the work was done in. Here they are replaced by neutral words:
@@ -38,11 +38,11 @@ further changes:
   record changed here (the HD-S check runs and the design-tamper tests), so a new run's test records differ
   from the stored ones in that hash; the package reports test records as information only.
 
-The reproduction package is run on this copy itself before its release (`results/pubkit2/PREREG.md`).
+The reproduction package was run on this copy itself (`results/pubkit2/`).
 
 ## Changed files
 
-`REDACTIONS.tsv` lists the 2456 changed files, each with the SHA-256 of its original and of its copy
+`REDACTIONS.tsv` lists the 2464 changed files, each with the SHA-256 of its original and of its copy
 here, and the number of replacements of each kind. SHA-256 values quoted inside the records themselves, for
 example in check notes and audit manifests, are those of the originals.
 
@@ -118,6 +118,9 @@ example in check notes and audit manifests, are those of the originals.
 - `results/paperkit/runs/lean-host-2`
 - `results/paperkit/runs/record-host-1`
 - `results/paperkit/runs/repro-host-2`
+- `results/pubkit2/runs/k1-host-1`
+- `results/pubkit2/runs/k2-host-2`
+- `results/pubkit2/runs/k3-host-2`
 - `results/pubkit/runs/k1-host-1`
 - `results/pubkit/runs/k2-host-2`
 - `results/pubkit/runs/k3-host-2`
@@ -169,6 +172,7 @@ a file that is not published is left as it was.
 - `results/p3/audits/kimi_2026-10-22/SHA256SUMS`
 - `results/p3/audits/session-L_T3_registration_2026-10-22/SHA256SUMS`
 - `results/p3/audits/session-L_T3_rerun_2026-10-23/SHA256SUMS`
+- `results/pubkit2/runs/SHA256SUMS`
 - `results/pubkit/runs/SHA256SUMS`
 - `results/stage3/audits/fable_2026-10-26/SHA256SUMS`
 - `results/stage3/audits/kimi_2026-10-27/SHA256SUMS`

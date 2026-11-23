@@ -1,0 +1,84 @@
+K2 on host-2, start 2026-11-23T17:42:39Z
+commit 8d9e971eadeac994c6260ecd44c659fd3e0f8f67, author Evgueniy Vitchev <evgueniy.vitchev@rutgers.edu>, committer Evgueniy Vitchev <evgueniy.vitchev@rutgers.edu>
+SHA256SUMS OK
+gmpy2==2.3.2
+mpmath==1.3.0
+python-flint==0.9.0
+sympy==1.14.0
+paper kit: part all, commit 8d9e971, archive unknown, host host-2, python 3.12.8, start 2026-11-23T17:42:40Z
+=== selftest (the kit's own controls KC1-KC6), start 2026-11-23T17:42:40Z
+   KC1-expected-tampered: exit 1, expected non-zero with 'RECORD ALTERED': as required
+   KC2-value-changed: exit 1, expected non-zero with 'MISMATCH': as required
+   KC3-masked-fields-only: exit 0, expected 0 with 'MATCH': as required
+   KC4-job-missing: exit 1, expected non-zero with 'MISSING': as required
+   KC5-p3-design-rule-1: exit 0, expected 0 with 'MATCH': as required
+   KC6-p3-design-rule-2: exit 1, expected non-zero with 'MISMATCH': as required
+   KC6b-design-rule-outside-p3: exit 1, expected non-zero with 'MISMATCH': as required
+   canon selftest: ALL CONTROLS AS REQUIRED
+selftest: KIT PASS
+=== part A1, start 2026-11-23T17:42:40Z
+== A1 onset: kit/onset/run.sh 
+   exit 0, KIT PASS
+== A1 p3: the seven tiers of p3.scert (design rule 1), each against its record's verdict line
+   T1: exit 0, VERIFIED (as its record)
+   G1: exit 1, REJECT: G1: N > 0: sign*p = -91611446723164375610330156810731703766386070956724917/3741444191567111470601433171753684530 (as its record)
+   NC-P1: exit 0, VERIFIED (as its record)
+   TD-P1: exit 1, REJECT: E0: TARGET.md's U_- differs from S5 (5.63b) at n = 4 (as its record)
+   TD-P2: exit 1, REJECT: TD-P2: N > 0: sign*p = -778752/185 <= 0 at (t, mu) = (0, 1/6)  (a counterexample) (as its record)
+   T2: exit 0, VERIFIED (as its record)
+   T3: exit 0, VERIFIED (as its record)
+   KIT PASS
+== A1 a1: kit/a1/run.sh 
+   exit 0, KIT PASS
+   part A1: cited 3/3 MATCH; controls 18/18 MATCH (information); run.log 17/21 byte-identical (information)
+   canon compare A1: PASS
+=== part A1, end 2026-11-23T17:47:00Z
+A1: KIT PASS
+=== part A2, start 2026-11-23T17:47:00Z
+== A2 a2-elementary: kit/a2/run_elementary.sh 
+   exit 0, KIT PASS
+== A2 a2-s: kit/a2/run_s.sh 
+   exit 0, KIT PASS
+== A2 a2-s-check: kit/a2/run_s_check.sh 
+   exit 0, KIT PASS
+   part A2: cited 2/2 MATCH; controls 20/25 MATCH (information); run.log 22/27 byte-identical (information)
+   canon compare A2: PASS
+=== part A2, end 2026-11-23T17:47:17Z
+A2: KIT PASS
+=== part HD, start 2026-11-23T17:47:17Z
+== HD hd-elementary: kit/hd/run_elementary.sh 
+   exit 0, KIT PASS
+== HD hd-s: kit/hd/run_s.sh 
+   exit 0, KIT PASS
+== HD hd-s-check: kit/hd/run_s_check.sh 
+   exit 0, KIT PASS
+   part HD: cited 19/19 MATCH; controls 30/50 MATCH (information); run.log 69/69 byte-identical (information)
+   canon compare HD: PASS
+=== part HD, end 2026-11-23T17:51:46Z
+HD: KIT PASS
+=== part HDX, start 2026-11-23T17:51:46Z
+== HDX hdx-elementary: kit/hdx/run_elementary.sh 
+   exit 0, KIT PASS
+== HDX hdx-s: kit/hdx/run_s.sh 
+   exit 0, KIT PASS
+== HDX hdx-s-gate: kit/hdx/run_s.sh --gate
+   exit 0, KIT PASS
+== HDX hdx-critical: kit/hdx/run_critical.sh 
+   exit 0, KIT PASS
+== HDX hdx-critical-a1: kit/hdx/run_critical_a1.sh 
+   exit 0, KIT PASS
+   part HDX: cited 21/21 MATCH; controls 256/267 MATCH (information); run.log 277/288 byte-identical (information)
+   canon compare HDX: PASS
+=== part HDX, end 2026-11-23T17:55:10Z
+HDX: KIT PASS
+=== part Z, start 2026-11-23T17:55:10Z
+== Z extremal: kit/extremal/run.sh 
+   exit 0, KIT PASS
+   part Z: cited 9/9 MATCH; controls 10/10 MATCH (information); run.log 19/19 byte-identical (information)
+   canon compare Z: PASS
+=== part Z, end 2026-11-23T17:55:12Z
+Z: KIT PASS
+end 2026-11-23T17:55:12Z
+all: KIT PASS
+EXIT 0
+K2 end 2026-11-23T17:55:12Z

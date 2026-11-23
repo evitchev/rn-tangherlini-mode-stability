@@ -1,0 +1,48 @@
+bh-modes A1 Lean layer: build and audit, started 20261123T180822Z
+lean: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+
+== 1. sources
+ok   BHModesA1.lean fd05630c24d45c4765482f1145735afaa89723055b18a5feaffdc34e7a4f1bae
+scan for sorry / admit / axiom / native_decide / implemented_by / extern (informational):
+  (no occurrence)
+
+== 2. compile
+BHModesA1: exit=0 seconds=4 errors=0 warnings=0 sorry=0
+
+== 3. axioms
+theorem headers: 17; #print axioms entries: 17; exit=0; axioms outside {propext, Classical.choice, Quot.sound}: none
+  'BHModes.KI_Hm_n4' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.KI_Um_n4' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.m_of_ell' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.f_in_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.f_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.f_pos_exterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.delta_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.delta_relation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.s_param' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.delta_extremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.f_extremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.f_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.f'_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.kappa_extremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.c_extremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.BF_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'BHModes.nonvacuity_ell_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== 4. checker negative controls (false proofs; each must be rejected)
+NC1_two_plus_two: exit=1 errors=4  (theorem bogus : (2:ℝ) + 2 = 5 := by norm_num)
+NC2_false_margin: exit=1 errors=3  (theorem bogus (l : ℝ) : l * (l - 3) / 9 + 1 / 4 = (2 * l + 3) ^ 2 / 36 := by ring)
+
+== 5. mutations (registration: A1_MUTATION_REGISTRATION.md sha256 ad8582b48d1f65b0de2268ddd4dbf19c73e94292daf015d08e68ed4a3b2189c1, logged 2026-11-23T18:08:31Z, before the first run)
+{"id": "A1M1", "file": "BHModesA1.lean", "error_text": {"KI_Um_n4": "unsolved goals"}, "error_text_found": true, "expected_decl": "KI_Um_n4", "exit": 1, "errors": 1, "failing_decls": ["KI_Um_n4"], "first_error": [59, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 44, "pass": true}
+{"id": "A1M2", "file": "BHModesA1.lean", "error_text": {"KI_Um_n4": "unsolved goals"}, "error_text_found": true, "expected_decl": "KI_Um_n4", "exit": 1, "errors": 2, "failing_decls": ["KI_Um_n4", "c_extremal"], "first_error": [59, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 52, "pass": true}
+{"id": "A1M3", "file": "BHModesA1.lean", "expected_decl": "delta_extremal", "exit": 1, "errors": 1, "failing_decls": ["delta_extremal"], "first_error": [144, "linarith failed to find a contradiction"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 131, "pass": true}
+{"id": "A1M4", "file": "BHModesA1.lean", "expected_decl": "kappa_extremal", "exit": 1, "errors": 1, "failing_decls": ["kappa_extremal"], "first_error": [184, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 184, "pass": true}
+{"id": "A1M5", "file": "BHModesA1.lean", "error_text": {"BF_margin": "unsolved goals"}, "error_text_found": true, "expected_decl": "BF_margin", "exit": 1, "errors": 1, "failing_decls": ["BF_margin"], "first_error": [204, "unsolved goals"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 204, "pass": true}
+{"id": "A1M6", "file": "BHModesA1.lean", "error_text": {"f_horizon": "ring failed, ring expressions not equal"}, "error_text_found": true, "expected_decl": "f_horizon", "exit": 1, "errors": 1, "failing_decls": ["f_horizon"], "first_error": [78, "ring failed, ring expressions not equal"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 74, "pass": true}
+{"id": "A1M7", "file": "BHModesA1.lean", "error_text": {"delta_relation": "ring failed, ring expressions not equal"}, "error_text_found": true, "expected_decl": "delta_relation", "exit": 1, "errors": 1, "failing_decls": ["delta_relation"], "first_error": [101, "ring failed, ring expressions not equal"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 97, "pass": true}
+{"id": "A1M8", "file": "BHModesA1.lean", "error_text": {"s_param": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"}, "error_text_found": true, "expected_decl": "s_param", "exit": 1, "errors": 1, "failing_decls": ["s_param"], "first_error": [123, "Tactic `rewrite` failed: Did not find an occurrence of the pattern"], "broken_mutation": false, "error_before_mutation": false, "mutation_line": 122, "pass": true}
+mutations failing as required: 8 / 8
+
+BHModesA1: ALL CHECKS AS REQUIRED
+finished 20261123T180905Z

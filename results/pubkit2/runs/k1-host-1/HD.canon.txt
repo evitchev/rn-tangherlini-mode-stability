@@ -1,0 +1,71 @@
+MATCH  HD hd-elementary main (cited)  584a67f3c684e007
+MATCH  HD hd-elementary nc-coverage (control)  561d31680984f102
+MATCH  HD hd-elementary nc-onset-h (control)  eaf9c4dc57e876ab
+MATCH  HD hd-elementary nc-onset-i (control)  f994b58d6ce7bfb3
+MATCH  HD hd-elementary nc-uniform (control)  0f17afccf91d271e
+MATCH  HD hd-elementary nc-zero (control)  67b16692b60767a0
+MATCH  HD hd-elementary td-coeff (control)  3d984d35fff7fc17
+MATCH  HD hd-elementary td-param (control)  2d3aeee44b37c8ba
+MATCH  HD hd-elementary td-verifier (control)  22ef7f0a692e8e5b
+MATCH  HD hd-s 10-2 (cited)  bb4f4596c9c21755
+MATCH  HD hd-s 10-2-nc-bound (control)  4b13cae37f71bbc7
+MATCH  HD hd-s 10-2-td-coeff (control)  ef8ef8d8898d7bd3
+MATCH  HD hd-s 10-2-td-horizon (control)  3182be4af5a40d54
+MATCH  HD hd-s 10-3 (cited)  9ef23c3e7f85ff15
+MATCH  HD hd-s 10-4 (cited)  627ad961e3cf3830
+MATCH  HD hd-s 10-5 (cited)  8ef0613d70c99ae6
+MATCH  HD hd-s 11-2 (cited)  5be19534a09351b4
+MATCH  HD hd-s 11-2-nc-bound (control)  61c6d9a98af6090c
+MATCH  HD hd-s 11-2-td-coeff (control)  2dca8d296b4b3a52
+MATCH  HD hd-s 11-2-td-horizon (control)  18887831126690ab
+MATCH  HD hd-s 11-3 (cited)  b86ba6ba6acf2dfc
+MATCH  HD hd-s 11-4 (cited)  c4c4c854eac02924
+MATCH  HD hd-s 11-5 (cited)  32c0f98c702d508e
+MATCH  HD hd-s 11-6 (cited)  ba0638bcd2ab4b1a
+MATCH  HD hd-s 7-2 (cited)  e595f069b6da6f38
+MATCH  HD hd-s 7-2-nc-bound (control)  6c418a6c332a1873
+MATCH  HD hd-s 7-2-td-coeff (control)  f734a83447a94fa8
+MATCH  HD hd-s 7-2-td-horizon (control)  fcb4900fcca8cca9
+MATCH  HD hd-s 7-2-td-verifier (control)  adf32d136b26368f
+MATCH  HD hd-s 7-3 (cited)  7c37c3af44432de5
+MATCH  HD hd-s 8-2 (cited)  1e3d1598201233fa
+MATCH  HD hd-s 8-2-nc-bound (control)  6ca3bc97af4fc17e
+MATCH  HD hd-s 8-2-td-coeff (control)  18a1b93d6dc7e824
+MATCH  HD hd-s 8-2-td-horizon (control)  f206cdb0f5828d20
+MATCH  HD hd-s 8-3 (cited)  16fcf58d1345a762
+MATCH  HD hd-s 8-4 (cited)  a7781389a05affaa
+MATCH  HD hd-s 9-2 (cited)  d8e028d96c2108a4
+MATCH  HD hd-s 9-2-nc-bound (control)  61bfc217a48002bb
+MATCH  HD hd-s 9-2-td-coeff (control)  fd1ed516b27dd884
+MATCH  HD hd-s 9-2-td-horizon (control)  f5b56b5e84fac89c
+MATCH  HD hd-s 9-3 (cited)  98b11c14fbae4be7
+MATCH  HD hd-s 9-4 (cited)  ce739b790ed7fdec
+MATCH  HD hd-s 9-5 (cited)  e9d162b318aa6e79
+MATCH  HD hd-s-check scert-10-5-nc-bound (control)  6a5ea40e21736466
+MATCH  HD hd-s-check scert-10-5-td-horizon (control)  57df3bc13b41f414
+MATCH  HD hd-s-check scert-11-6-nc-bound (control)  fa8f954c485aa35d
+MATCH  HD hd-s-check scert-11-6-td-horizon (control)  57e05e0fcefffd1b
+MATCH  HD hd-s-check scert-9-5-nc-bound (control)  3e6588c7e9e4617f
+MATCH  HD hd-s-check scert-9-5-td-horizon (control)  945297f5a327dbfc
+MISMATCH  HD hd-s-check scheck-10-2-none (control): a34b0e49af8df7976dcb7647326ca1f0c14d1062a3711045b699ffa82e3126dd != expected 81c6962e3d849b1b93038d26acafe9b07b11892a7afb94f7d8b5d14ab072e05d
+MISMATCH  HD hd-s-check scheck-10-3-none (control): 91d22ef3a2fd615f25b065ad990b956fcca253f7d17137e864beee82d38425af != expected 8456954b363ff52afb7a19f0715992cd08059cc5442be4ee365377b67e1cb9b9
+MISMATCH  HD hd-s-check scheck-10-4-none (control): 550db821a296baec4027bc705f823400c399cb2233f4a3ac1bd87c56833ba71d != expected 84b8a3bc21a61371c5533f2fb8c17e44e0733211de04044cd65b314282bb14bd
+MISMATCH  HD hd-s-check scheck-10-5-none (control): 1d0aa6f0204896f145c7058e8457c979063671e9258bfa849c07102fd21bd1cb != expected 8b836b9a4b5c78e62e98828e8455ac919891c43226d6df810b48261768b57e7d
+MISMATCH  HD hd-s-check scheck-11-2-none (control): a3ae8134ce957ce4dc54c80707b15c27d3ba9bcbd712ca06d51f1dca4fa1263c != expected 04a5c97578acbe1698f78577dbbe0672d110488e38d825544209d98ec8cacb37
+MISMATCH  HD hd-s-check scheck-11-3-none (control): 0d6b0fae065b2ee49b9302297f58f36682a75dd43dadc9e07c597ad0666802e5 != expected 62441905e790d5ea2d027f5be08f00309afc5972bebf3070b8b75430759f8a5a
+MISMATCH  HD hd-s-check scheck-11-4-none (control): edd570a31d7021316f5df5f61f41d2d8dfc5bc71c0cde69452ca099ffeac16c9 != expected c2655bbe77bdba33d090059b383a21721691c6d08fc95514e893a31dd0df17ec
+MISMATCH  HD hd-s-check scheck-11-5-none (control): 9d7c663b8def3752724ae7252c77511bf576b8fbf908239c7c037e5f989e2a7e != expected 003271c9031f3b3da68a046739f6a40eb3d9d3ff201e58b3ff4c5396304bf322
+MISMATCH  HD hd-s-check scheck-11-6-none (control): 001433154127c0eaf05d0776657ce9d39cae248f7d7a94a5390077b790409382 != expected 8169510d32a74f70ed5c25c1fe24fae00eea0165d30aba6f75bf4b4e5b4cd7e3
+MISMATCH  HD hd-s-check scheck-11-6-td-direct (control): 35324913fb1a585b0a3ca8243f4b548cea16c10e68c2305d6f45f048f544af2c != expected 1b32db2e4c1a1b080559dc5337b064d56ee31fe229f5e7d2359879224f73dbe6
+MISMATCH  HD hd-s-check scheck-7-2-none (control): 33e7b2d27c3c165a4414eabe013fa7795e6aac3d09e2148983a54ca3e0b6c229 != expected b1ceee7fcfab4011d3b984d3eabe9b0115277aa83246e67e896f140f74474c83
+MISMATCH  HD hd-s-check scheck-7-2-td-direct (control): 63d08d9143c75315bf85c9e0088d176bd2577e61d5f9edd5a9ebdc914957a8cf != expected 86955de910859bb3aac8021ecdcc4e370278ee4830cf9056eb06ae4d8f84e792
+MISMATCH  HD hd-s-check scheck-7-3-none (control): d588a7b6d6e552b5f6bfb73e5fc903e4823bb2b0d738086898cb803e8082fdff != expected d53bddd483d69f021f63e791a9c82871e2dc53e8b1c3d38478c52bb0ed16055d
+MISMATCH  HD hd-s-check scheck-8-2-none (control): 2718f6daf5bf7df23e5e603be591eb34c995ee3c0eff23904860bce05a460857 != expected c08d34e23e8c632fed8ed170848d53b568f3ed8aa575fa6051256913a771e7c2
+MISMATCH  HD hd-s-check scheck-8-3-none (control): 0c704cbb7fc1abf873d445ef34c3d34e3389a6124a55a16026510a0c95420ccd != expected 5130bad25d833b046d9868ffdc65b3bc90f7d4c98d87069fdf7ea0f37d5e57f4
+MISMATCH  HD hd-s-check scheck-8-4-none (control): a6c1b71c0e6b031b4d3e308addc8e9642626ef11d9133b33923f427d1f705149 != expected 992557bd3a2ad28e2087c77c5d890a87df8a08fcf7fd9597b765a9c3782ccef9
+MISMATCH  HD hd-s-check scheck-9-2-none (control): 9b13eac15715763f3d7ee27263ea32db82c168773bae42b5133eab86f95d50b5 != expected 0ed68f2de3172d4214e1d6c630c123d13c5000b193430f7734eecfd25ace1e4d
+MISMATCH  HD hd-s-check scheck-9-3-none (control): 6b4440dd0f24b44b607ac88341983032748a29e389b381e896dc2fab412086d2 != expected f87666707616846d597953b2fa74a21867c174d8d442b9870cfd4ace2f77ef18
+MISMATCH  HD hd-s-check scheck-9-4-none (control): 0cf570753da3f78606a68f29a52623dc54efef6e64d1391ce3087d3fb2e88558 != expected 12fc54752fc49690f2cdb018f39335a46e527362ed55acfeb2c2a99bf3f08ff0
+MISMATCH  HD hd-s-check scheck-9-5-none (control): e0606168ed0878889f554bf54859108251997a6409a51d6f9eb8a45bdea8f98e != expected 002b72670729cc3d87d17f6d925f2f460b1d71d6b683455f7149f03b8e4f0076
+part HD: cited 19/19 MATCH; controls 30/50 MATCH (information); run.log 69/69 byte-identical (information)
+canon compare HD: PASS

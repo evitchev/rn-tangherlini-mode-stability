@@ -88,7 +88,7 @@ its records mention unrelated unpublished work, the author's other projects, a p
 computers and folders the work was done in. Here they are replaced by neutral words, and `REDACTIONS.tsv` lists each
 changed file with the SHA-256 of its original. No computed number, verdict or result changes.
 
-The reproduction package is run on this copy itself before its release (`results/pubkit2/PREREG.md`). `results/pubkit/` records an earlier run, on a copy that still had the local names.
+The reproduction package was run on this copy itself (`results/pubkit2/`). `results/pubkit/` records an earlier run, on a copy that still had the local names.
 
 ## Licenses
 
