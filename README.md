@@ -23,7 +23,7 @@ and a few exact identities, in exact rational arithmetic.
 | `results/stage3/` | Independent checks made of several pieces at once. |
 | `lean/` | Nine Lean developments, each with its build script, its build log, its source hashes and its tests. |
 | `paper/stability/` | Independent checks of the paper's assembly and text. |
-| `literature/` | The report and ledger of the citation check (its copies of the cited papers are not published). |
+| `literature/` | The reports and ledgers of the two citation checks (their copies of the cited papers are not published). |
 | `AUDITS.md` | Every independent check, with its record. |
 | `REDACTIONS.md` | What this public copy changes in the project's records; `REDACTIONS.tsv` lists the changed files. |
 | `requirements.lock` | The pinned Python packages, with their hashes. |

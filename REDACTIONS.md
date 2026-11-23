@@ -1,7 +1,7 @@
 # Redactions of this public copy
 
-This repository is a curated copy of the project's own, made from its commit `2117bb7a37cb` by
-`paper/stability/snapshot/assemble3.sh` of that commit. Some passages of the project's records mention unrelated
+This repository is a curated copy of the project's own, made from its commit `be7f0c22bc7f` by
+`paper/stability/snapshot/assemble4.sh` of that commit. Some passages of the project's records mention unrelated
 unpublished work of the project, the author's other projects, a private working account, or the computers and
 folders the work was done in. Here they are replaced by neutral words:
 
@@ -42,7 +42,7 @@ The reproduction package was run on this copy itself (`results/pubkit2/`).
 
 ## Changed files
 
-`REDACTIONS.tsv` lists the 2464 changed files, each with the SHA-256 of its original and of its copy
+`REDACTIONS.tsv` lists the 2473 changed files, each with the SHA-256 of its original and of its copy
 here, and the number of replacements of each kind. SHA-256 values quoted inside the records themselves, for
 example in check notes and audit manifests, are those of the originals.
 
@@ -153,6 +153,7 @@ a file that is not published is left as it was.
 - `lean/lean_z_d_2026-10-26/lean/SOURCES.tsv`
 - `lean/lean_z_d_2026-10-26/SHA256SUMS`
 - `literature/stability-v04-citecheck-2026-11-18/SHA256SUMS`
+- `literature/stability-v08-citecheck-2026-11-23/SHA256SUMS`
 - `paper/stability/audits/fable_assembly_2026-11-13/SHA256SUMS`
 - `paper/stability/audits/fable_v04_delta_2026-11-18/SHA256SUMS`
 - `paper/stability/audits/kimi_assembly_2026-11-21/SHA256SUMS`

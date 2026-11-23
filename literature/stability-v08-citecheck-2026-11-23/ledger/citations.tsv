@@ -1,0 +1,84 @@
+cite	tex_line	section	keys	pdf_numbers	anchor
+K01	86	sec:intro	S5,S23	[1],[2]	
+K02	87	sec:intro	S6	[3]	
+K03	88	sec:intro	S5,S28	[1],[4]	
+K04	89	sec:intro	S5	[1]	Table~I: ``$d \ge 6$?''
+K05	89	sec:intro	S28	[4]	Table~1
+K06	91	sec:intro	S48	[5]	p.~40
+K07	99	sec:intro	S28	[4]	eqs.~(76)--(77)
+K08	100	sec:intro	S48	[5]	p.~40
+K09	102	sec:intro	S28	[4]	p.~13
+K10	102	sec:intro	S48	[5]	p.~40
+K11	105	sec:intro	S5	[1]	p.~32
+K12	108	sec:intro	S48	[5]	p.~43
+K13	114	sec:intro	S14	[6]	Table~I
+K14	116	sec:intro	S26	[7]	
+K15	117	sec:intro	S32	[8]	
+K16	117	sec:intro	S14	[6]	
+K17	119	sec:intro	S52	[9]	
+K18	121	sec:intro	S52	[9]	pp.~43--44
+K19	121	sec:intro	S51	[10]	p.~6
+K20	126	sec:intro	S9	[11]	
+K21	126	sec:intro	S27	[12]	
+K22	128	sec:intro	S53	[13]	p.~11
+K23	133	sec:intro	S49	[14]	abstract
+K24	136	sec:intro	S50	[15]	abstract
+K25	139	sec:intro	S40	[16]	abstract
+K26	141	sec:intro	S41	[17]	p.~5
+K27	141	sec:intro	S41	[17]	
+K28	142	sec:intro	S41	[17]	p.~7
+K29	144	sec:intro	S43	[18]	abstract
+K30	146	sec:intro	S42	[19]	pp.~3, 7
+K31	154	sec:intro	S37	[20]	abstract
+K32	155	sec:intro	S37	[20]	p.~3
+K33	157	sec:intro	S37	[20]	p.~21
+K34	159	sec:intro	S39	[21]	pp.~3, 23
+K35	161	sec:intro	S38	[22]	abstract
+K36	163	sec:intro	S58	[23]	abstract
+K37	164	sec:intro	S59	[24]	abstract
+K38	168	sec:intro	S57	[25]	abstract
+K39	170	sec:intro	S56	[26]	abstract and p.~2
+K40	170	sec:intro	S44	[27]	abstract
+K41	171	sec:intro	S46	[28]	abstract
+K42	172	sec:intro	S47	[29]	p.~3
+K43	220	sec:intro	S33	[30]	eq.~(4.14)
+K44	222	sec:intro	S5	[1]	Table~I
+K45	223	sec:intro	S28	[4]	Table~1
+K46	223	sec:intro	S48	[5]	p.~40
+K47	226	sec:intro	S37	[20]	
+K48	232	sec:setting	S5	[1]	
+K49	235	sec:setting	S5	[1]	eqs.~(2.12), (2.14)
+K50	236	sec:setting	S5	[1]	p.~3
+K51	238	sec:setting	S5	[1]	eq.~(2.18)
+K52	239	sec:setting	S5	[1]	eq.~(2.19)
+K53	240	sec:setting	S5	[1]	
+K54	249	sec:setting	S5	[1]	eq.~(5.39)
+K55	250	sec:setting	S5	[1]	eqs.~(5.58), (5.60)
+K56	251	sec:setting	S5	[1]	eq.~(5.62b)
+K57	251	sec:setting	S5	[1]	eq.~(5.63b)
+K58	265	sec:setting	S6	[3]	pp.~5, 13
+K59	272	sec:setting	S6	[3]	pp.~4--5
+K60	277	sec:setting	S5	[1]	
+K61	279	sec:setting	S5	[1]	p.~15
+K62	280	sec:setting	S5	[1]	p.~42
+K63	321	sec:results	S33	[30]	eq.~(4.14)
+K64	331	sec:sdef	S6	[3]	eqs.~(2.18)--(2.20)
+K65	672	sec:verification	S6	[3]	
+K66	708	sec:verification	S5	[1]	
+K67	738	sec:discussion	S5	[1]	
+K68	744	sec:discussion	S52	[9]	pp.~43--44
+K69	745	sec:discussion	S51	[10]	p.~6
+K70	749	sec:discussion	S14	[6]	
+K71	751	sec:discussion	S51	[10]	abstract
+K72	753	sec:discussion	S45	[31]	abstract
+K73	753	sec:discussion	S58	[23]	
+K74	759	sec:discussion	S54	[32]	abstract
+K75	761	sec:discussion	S55	[33]	abstract
+K76	762	sec:discussion	S31	[34]	
+K77	768	sec:discussion	S43	[18]	
+K78	769	sec:discussion	S42	[19]	
+K79	771	sec:discussion	S59	[24]	
+K80	773	sec:discussion	S5	[1]	
+K81	830	app:U	S5	[1]	eq.~(5.63b)
+K82	840	app:U	S5	[1]	eq.~(5.62b)
+K83	841	app:U	S5	[1]	

@@ -62,7 +62,7 @@ re-runs it again (`kit/stability/`). Independently of that:
 
 | What | Check | Record |
 |---|---|---|
-| The citations | session-L checked each citation at its anchor. Its copies of the cited papers are not published. | `literature/stability-v04-citecheck-2026-11-18/` (report and ledger) |
+| The citations | session-L checked each citation at its anchor: the references new in an earlier draft, then every citation of the posted text, with any fix made before posting. Its copies of the cited papers are not published. | `literature/stability-v04-citecheck-2026-11-18/` and `literature/stability-v08-citecheck-2026-11-23/` (reports and ledgers) |
 | §§1, 4 and 7 of an earlier draft | Fable. | `paper/stability/audits/fable_v04_delta_2026-11-18/` |
 | The language and notation | The cold reader, from the PDF alone. | `paper/stability/audits/cold_read_2026-11-22/COLD_READ.md` |
 | Appendices A–B and the new statements | The cold reader, against their sources: no difference, no error. | `paper/stability/audits/appendix_check_2026-11-22/CHECK.md` |
